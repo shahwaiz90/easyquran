@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.ahmadshahwaiz.easyquran",
+      "sha256_cert_fingerprints": [
+        "AF:35:6F:ED:E4:BA:A0:A1:58:F4:45:F5:81:85:CD:E0:5E:0A:E7:E6:C2:DF:4F:F6:8D:A0:A9:F3:96:46:9D:E4"
+      ]
+    }
+  }
+]
