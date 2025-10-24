@@ -4,9 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://play.google.com">
+    <link rel="dns-prefetch" href="https://play.google.com">
+    
+    <!-- Preload critical assets -->
+    <img src="placeholder1.webp" alt="Easy Quran app showing Surah reading interface with Arabic text and English translation" width="600" height="auto" loading="lazy">
+    <link rel="preload" as="image" href="placeholder1.webp">
+    <link rel="preload" as="image" href="mosque.png">
     <title>Easy Quran - Read, Listen & Understand Quran with Translations & Tafseer</title>
     <meta name="description" content="Easy Quran app helps you read, listen and understand the Holy Quran easily with multiple translations, tafseer insights, audio recitations, and comparative analysis. Download now on Google Play.">
     <meta name="keywords" content="Quran app, Quran translation, Quran tafseer, Islamic app, Quran recitation, learn Quran, Quran audio, Quran reader, Holy Quran, Quran English">
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Easy Quran - Read, Listen & Understand Quran">
+    <meta property="og:description" content="Easy Quran app helps you read, listen and understand the Holy Quran with translations, tafseer insights, and audio recitations.">
+    <meta property="og:image" content="https://easyquran.app/og-image.jpg">
+    <meta property="og:url" content="https://easyquran.app">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Easy Quran - Read, Listen & Understand Quran">
+    <meta name="twitter:description" content="Read, listen and understand the Holy Quran with translations, tafseer, and audio recitations.">
+    <meta name="twitter:image" content="https://easyquran.app/twitter-image.jpg">
+    
+    <!-- Mobile App Meta -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Easy Quran">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://easyquran.app">
+    
+    <!-- Language -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ar_SA">
+    
+    <!-- Author -->
+    <meta name="author" content="Easy Quran">
+    <meta name="robots" content="index, follow">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-55CXTQTQ');</script>
+    <!-- End Google Tag Manager -->
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://easyquran.app"
+      }]
+    }
+    </script>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "Easy Quran",
+      "description": "Read, listen and understand the Holy Quran with translations, tafseer insights, and audio recitations",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": "Android",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Easy Quran"
+      },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran"
+    }
+    </script>
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "Is Easy Quran app free?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Easy Quran is completely free to download and use with all features included."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use Easy Quran offline?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, after initial download, all content is available offline without internet connection."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which translations are available?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Easy Quran offers multiple translations including English, Urdu, and other major languages."
+        }
+      }]
+    }
+    </script>
+    
     <style>
         * {
             margin: 0;
@@ -431,6 +547,10 @@
     </style>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55CXTQTQ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <header>
         <div class="container">
             <nav>
