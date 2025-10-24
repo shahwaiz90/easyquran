@@ -32,8 +32,11 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="Easy Quran">
     
-    <!--  URL -->
-    <link rel="" href="https://easyquran.app">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+
     
     <!-- Language -->
     <meta property="og:locale" content="en_US">
@@ -72,25 +75,42 @@
       "@context": "https://schema.org",
       "@type": "MobileApplication",
       "name": "Easy Quran",
-      "description": "Read, listen and understand the Holy Quran with translations, tafseer insights, and audio recitations",
-      "applicationCategory": "LifestyleApplication",
+      "description": "Read, listen and understand the Holy Quran with translations, tafseer insights, and audio recitations.",
+      "applicationCategory": "EducationalApplication",
       "operatingSystem": "Android",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "ratingCount": "1250"
-      },
-      "author": {
-        "@type": "Organization",
-        "name": "Easy Quran"
-      },
-      "downloadUrl": "https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran"
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran",
+      "publisher": { "@type": "Organization", "name": "Easy Quran" },
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "reviewCount": "1250" } 
     }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Easy Quran",
+      "url": "https://easyquran.app/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://easyquran.app/search?q={query}",
+        "query-input": "required name=query"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Easy Quran",
+      "url": "https://easyquran.app/",
+      "logo": "https://easyquran.app/og-image.jpg",
+      "sameAs": [
+        "https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran"
+        /* add socials when ready */
+      ]
+    }
+    </script>
+    
     </script>
     <!-- FAQ Schema -->
     <script type="application/ld+json">
@@ -580,7 +600,8 @@
                 <p class="tagline">Read, listen & understand Quran easily with translations & tafseer insights with comparative analysis</p>
                 
                 <div class="cta-buttons">
-                    <a href="https://play.google.com/store/apps/details?id=your.app.id" class="btn btn-primary" target="_blank">
+                    <a href="https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran&utm_source=easyquran.app&utm_medium=landing&utm_campaign=hero_cta"
+   class="btn btn-primary" target="_blank" rel="noopener">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
                         </svg>
@@ -722,7 +743,25 @@
             </a>
         </div>
     </section>
-
+    <section class="features" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <h2 class="section-title" id="faq-title">Frequently Asked Questions</h2>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Is Easy Quran app free?</h3>
+            <p>Yes, Easy Quran is completely free to download and use with all features included.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Can I use Easy Quran offline?</h3>
+            <p>Yes, after initial download, all content is available offline without internet connection.</p>
+          </div>
+          <div class="feature-card">
+            <h3>Which translations are available?</h3>
+            <p>English, Urdu, and more are available—with tafseer insights to deepen understanding.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
         <div class="container">
             <div class="footer-content">
