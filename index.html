@@ -316,6 +316,231 @@
       .footer-content { flex-direction:column; text-align:center; }
     }
     .google-play-badge { height:60px; width:auto; }
+
+    .rating-summary {
+  text-align: center;
+  margin-bottom: 60px;
+}
+/* Tighten spacing between subtitle and rating */
+#reviews .section-subtitle {
+  margin-bottom: 32px; /* was 60px */
+}
+
+.rating-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  background: #E6F4F1;
+  padding: 16px 24px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+}
+
+.rating-score {
+  font-size: 44px;
+  font-weight: 700;
+  color: #004D40;
+}
+
+.stars {
+  font-size: 22px;
+  color: #F6AD55;
+  letter-spacing: 2px;
+}
+
+.rating-meta {
+  font-size: 16px;
+  color: #718096;
+  margin-bottom: 20px;
+}
+
+.reviews-grid {
+  margin-top: 20px;
+}
+
+.review-card {
+  position: relative;
+}
+
+.review-stars {
+  color: #F6AD55;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.review-text {
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.review-author {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #2D3748;
+}
+
+/* Force star color inside review cards */
+.review-card .review-stars {
+  color: #F6AD55;   /* warm yellow */
+  font-size: 18px;
+  line-height: 1;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+/* Ensure review text stays calm */
+.review-card .review-text {
+  color: #4A5568;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* Author styling */
+.review-card .review-author {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #2D3748;
+}
+
+
+/* Contact section */
+.contact-card h3 { margin-bottom: 12px; }
+.contact-item { display:flex; justify-content:space-between; gap:12px; padding:12px 0; border-bottom:1px solid #E2E8F0; }
+.contact-item:last-of-type { border-bottom:none; }
+
+.contact-label { color:#718096; font-weight:600; }
+.contact-link { color:#004D40; font-weight:700; text-decoration:none; }
+.contact-link:hover { text-decoration:underline; }
+
+.contact-actions { display:flex; gap:12px; flex-wrap:wrap; margin-top:18px; }
+.contact-note { margin-top:14px; color:#718096; font-size:14px; line-height:1.5; }
+
+.contact-list { margin-top:10px; padding-left:18px; color:#4A5568; line-height:1.8; }
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 9999;
+}
+
+.modal-overlay.open { display: flex; }
+
+.modal {
+  width: 100%;
+  max-width: 560px;
+  background: #fff;
+  color: #2D3748;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+  overflow: hidden;
+}
+
+.modal-header {
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding: 18px 20px;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.modal-close {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: #718096;
+}
+.modal-close:hover { color:#2D3748; }
+
+.modal-form { padding: 18px 20px 20px; display:flex; flex-direction:column; gap:14px; }
+
+.modal-form label { font-size: 14px; font-weight: 700; color:#2D3748; display:flex; flex-direction:column; gap:8px; }
+
+.modal-form input,
+.modal-form select,
+.modal-form textarea {
+  width: 100%;
+  border: 2px solid #E2E8F0;
+  border-radius: 12px;
+  padding: 12px 12px;
+  font-size: 15px;
+  outline: none;
+}
+
+.modal-form input:focus,
+.modal-form select:focus,
+.modal-form textarea:focus {
+  border-color: #004D40;
+}
+
+.modal-actions { display:flex; gap:12px; flex-wrap:wrap; margin-top: 6px; }
+
+.modal-footnote { margin-top: 8px; color:#718096; font-size: 13px; line-height: 1.5; }
+
+/* ================================
+   Contact Section – Green Theme
+================================ */
+.contact-section {
+  background: linear-gradient(135deg, #004D40 0%, #00695C 100%);
+  color: #fff;
+}
+
+/* Headings */
+.contact-section .section-title {
+  color: #fff;
+}
+
+.contact-section .section-subtitle {
+  color: rgba(255,255,255,0.9);
+}
+
+/* Cards stay white for contrast */
+.contact-section .feature-card {
+  background: #ffffff;
+  color: #2D3748;
+  border: none;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* Card headings */
+.contact-section .feature-card h3 {
+  color: #004D40;
+}
+
+/* Contact items */
+.contact-section .contact-label {
+  color: #718096;
+}
+
+.contact-section .contact-link {
+  color: #004D40;
+  font-weight: 700;
+}
+
+.contact-section .contact-link:hover {
+  text-decoration: underline;
+}
+
+/* Notes & list */
+.contact-section .contact-note {
+  color: #718096;
+}
+
+.contact-section .contact-list {
+  color: #4A5568;
+}
+
+/* Buttons spacing refinement */
+.contact-section .contact-actions {
+  margin-top: 20px;
+}
+
   </style>
 </head>
 
@@ -334,7 +559,8 @@
           <li><a href="#features">Features</a></li>
           <li><a href="#screenshots">Screenshots</a></li>
           <li><a href="#certificate">Certificate</a></li>
-          <li><a href="#download">Download</a></li>
+          <li><a href="#reviews">Reviews</a></li>
+          <li><a href="#contact">Contact us</a></li>
           <li><a href="#faq">FAQs</a></li>
         </ul>
       </nav>
@@ -346,8 +572,8 @@
       <div class="container">
         <div class="hero-grid">
           <div class="hero-content">
-          <h1 id="hero-title">A Smarter Way to Understand the Quran — Ayahs Organized by Topic</h1>
-          <p class="tagline">Read, listen, and learn with accurate translations, tafseer insights, and comparative analysis.</p>
+          <h1 id="hero-title">Authentic, Ad-Free Android Quran App with Urdu & English Translation & Tafseer</h1>
+          <p class="tagline">Read, listen, and understand the Holy Quran with trusted translations and authentic tafseer.</p>
            <div class="cta-buttons">
             <!-- Google Play Button -->
             <a
@@ -390,38 +616,10 @@
       </div>
     </section>
 
-      <section class="features" style="background:#e7ede8; color:#333; padding:80px 0;">
-        <div class="container">
-          <h2 class="section-title">A Research-Backed Topic-Based Ayah Classification Experience</h2>
-          <p class="section-subtitle">Explore Quranic guidance by themes for powerful reflection</p>
-
-          <div class="feature-grid">
-
-            <div class="feature-card">
-              <span class="feature-icon">🎯</span>
-              <h3>Organized Themes</h3>
-              <p>Every Ayah is linked to relevant themes such as charity, justice, gratitude, family matters, ethics, patience, worship, and many more.</p>
-            </div>
-
-            <div class="feature-card">
-              <span class="feature-icon">📚</span>
-              <h3>Deep Reflection</h3>
-              <p>Instead of browsing Surahs manually, instantly explore what the Quran says about any topic of life.</p>
-            </div>
-
-            <div class="feature-card">
-              <span class="feature-icon">🌍</span>
-              <h3>Life Guidance</h3>
-              <p>From personal development to societal ethics, find Quranic wisdom organized in a way no other app provides.</p>
-            </div>
-
-          </div>
-        </div>
-  </section>  
     <section class="features" id="features" aria-labelledby="features-title">
       <div class="container">
-        <h2 class="section-title" id="features-title">Powerful Features for Your Spiritual Journey</h2>
-        <p class="section-subtitle">Everything you need to read, understand, and reflect on the Holy Quran — including exclusive topic-based Ayah classification.</p>
+        <h2 class="section-title" id="features-title">Powerful Features to Explore the Quran</h2>
+        <p class="section-subtitle">Smart tools to explore, understand, and reflect on the Quran effortlessly.</p>
 
 
         <div class="feature-grid">
@@ -615,6 +813,39 @@
     </div>
   </div>
 </section>
+<section class="features" id="team" aria-labelledby="team-title" style="background:#e7ede8;">
+  <div class="container">
+    <h2 class="section-title" id="team-title">Our Team</h2>
+    <p class="section-subtitle">
+      Easy Quran is built with care by a small, dedicated team focused on accuracy, clarity, and trust.
+    </p>
+
+    <div class="feature-grid">
+
+      <div class="feature-card" style="text-align:center;">
+        <img src="founder.png" alt="Founder of Easy Quran"
+             style="width:120px;height:120px;border-radius:50%;margin-bottom:15px;">
+        <h3>Ahmad Shahwaiz</h3>
+        <p style="font-weight:600;">Founder & Lead Developer</p>
+        <p>
+          Responsible for app architecture and long-term vision of Easy Quran.
+        </p>
+      </div>
+
+      <div class="feature-card" style="text-align:center;">
+        <img src="muftiibrahim.png" alt="Shariah Advisor"
+             style="width:120px;height:120px;border-radius:50%;margin-bottom:15px;">
+        <h3>Shariah Review Board</h3>
+        <p style="font-weight:600;">Scholars & Review Committee</p>
+        <p>
+          Certified Islamic scholars who reviewed Arabic text.
+        </p>
+      </div>
+
+
+    </div>
+  </div>
+</section>
 
 
     <!-- Certificate Section -->
@@ -636,10 +867,6 @@
                 View Certificate (PDF)
               </a>
 
-              <a href="CertificateEnglish.pdf" download
-                 class="btn btn-secondary" style="text-decoration:none; display:inline-block;">
-                Download PDF
-              </a>
             </div>
           </div>
 
@@ -654,10 +881,6 @@
                 View Certificate (PDF)
               </a>
 
-              <a href="CertificateUrdu.pdf" download
-                 class="btn btn-secondary" style="text-decoration:none; display:inline-block;">
-                PDF ڈاؤن لوڈ کریں
-              </a>
             </div>
           </div>
 
@@ -665,7 +888,160 @@
       </div>
     </section>
 
-    <section class="cta-section" id="download" aria-labelledby="download-title">
+    <section class="screenshots-section" id="reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <h2 class="section-title" id="reviews-title">What Users Are Saying</h2>
+        <p class="section-subtitle">
+          Trusted by thousands of users worldwide on Google Play
+        </p>
+        <!-- Rating Summary -->
+        <div class="rating-summary">
+          <div class="rating-badge">
+            <span class="rating-score">5.0</span>
+            <div class="stars" aria-label="5 star rating">
+              ★★★★★
+            </div>
+          </div>
+
+          <p class="rating-meta">
+            Rated by real users on Google Play • 60+ reviews
+          </p> 
+        </div>
+
+        <!-- Reviews Grid -->
+        <div class="feature-grid reviews-grid">
+
+          <div class="feature-card review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              “The best app ever, feature I liked the most about: it has options to change the font size, I have weak eye-sight and it helped me a lot to maximise the fonts and read easily, above all you can even change the reciters. Also, you can add ayahs or surahs to your favourite list and you won't have to find them daily. I really liked this app.”
+            </p>
+            <p class="review-author">— Nawal Inayat</p>
+          </div>
+
+          <div class="feature-card review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              “MashALLAH, this is an excellent app. The Urdu translation of the Holy Qur’an is very easy to understand, clear, and touching. The language is simple, which helps readers understand the meaning of the Qur’an better. The app interface is also clean and user-friendly. May Allah reward the developers for this great effort. Ameen.”
+            </p>
+            <p class="review-author">— Muhammad Ajmal</p>
+          </div>
+
+          <div class="feature-card review-card">
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              “Very easy to use, tafseer is also available. Amazing app, once you download the contents you need, you can use it offline. Font size changing feature also available which makes it different from other apps.”
+            </p>
+            <p class="review-author">— Muhammad Akram</p>
+          </div>
+
+        </div>
+
+      </div>
+  </section>
+
+  <section class="features contact-section" id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <h2 class="section-title" id="contact-title">Contact Us</h2>
+      <p class="section-subtitle">
+        We’re here to help you. Have questions, feedback, or suggestions? Reach out and we’ll respond promptly.
+        Whether it’s about app features, technical support, or Shariah board verification, we’re committed to a smooth and reliable experience.
+      </p>
+
+      <div class="feature-grid contact-grid">
+
+        <div class="feature-card contact-card">
+          <h3>Get in Touch</h3>
+
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a class="contact-link" href="mailto:ahmadshahwaiz@gmail.com">ahmadshahwaiz[at]gmail.com</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="contact-label">Phone (optional)</span>
+            <a class="contact-link" href="tel:+966558916961">+966 558916961</a>
+          </div>
+
+          <div class="contact-actions">
+            <a class="btn btn-primary" href="mailto:ahmadshahwaiz@gmail.com?subject=Easy%20Quran%20Support">
+              Email Support
+            </a>
+
+            <button class="btn btn-secondary" type="button" id="openContactModal">
+              Connect Us
+            </button>
+          </div>
+
+          <p class="contact-note">
+            Tip: Include your device model and Android version if you’re reporting an issue.
+          </p>
+        </div>
+
+        <div class="feature-card contact-card">
+          <h3>What can we help with?</h3>
+          <ul class="contact-list">
+            <li>✅ App features & guidance</li>
+            <li>✅ Technical support (crashes, audio, offline)</li>
+            <li>✅ Shariah board verification / certificate questions</li>
+            <li>✅ Suggestions and feedback</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Modal -->
+  <div class="modal-overlay" id="contactModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle">
+      <div class="modal-header">
+        <h3 id="contactModalTitle">Send us a message</h3>
+        <button class="modal-close" type="button" id="closeContactModal" aria-label="Close">✕</button>
+      </div>
+
+      <!-- Uses Formspree-ready structure (optional) OR mailto fallback via JS -->
+      <form id="contactForm" class="modal-form">
+        <label>
+          Your Name
+          <input type="text" name="name" placeholder="Enter your name" required>
+        </label>
+
+        <label>
+          Your Email
+          <input type="email" name="email" placeholder="Enter your email" required>
+        </label>
+
+        <label>
+          Subject
+          <select name="subject" required>
+            <option value="" disabled selected>Select a topic</option>
+            <option value="App Features">App Features</option>
+            <option value="Technical Support">Technical Support</option>
+            <option value="Shariah Verification">Shariah Verification</option>
+            <option value="Feedback / Suggestion">Feedback / Suggestion</option>
+          </select>
+        </label>
+
+        <label>
+          Message
+          <textarea name="message" rows="5" placeholder="Write your message..." required></textarea>
+        </label>
+
+        <div class="modal-actions">
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <button class="btn btn-secondary" type="button" id="cancelContactModal">Cancel</button>
+        </div>
+
+        <p class="modal-footnote">
+          This form opens your email app to send the message (no data is stored on the website).
+        </p>
+      </form>
+    </div>
+  </div>
+
+
+    <!-- <section class="cta-section" id="download" aria-labelledby="download-title">
       <div class="container">
         <h2 id="download-title">Start Your Journey Today</h2>
         <p>Download Easy Quran and begin your spiritual growth with Quranic wisdom</p>
@@ -678,7 +1054,9 @@
           Download on Google Play
         </a>
       </div>
-    </section>
+    </section> -->
+
+
 
     <section class="features" id="faq" aria-labelledby="faq-title">
       <div class="container">
@@ -750,7 +1128,7 @@
         </div>
       </div>
       <div class="copyright">
-        &copy; 2025 Easy Quran. All rights reserved. Made with ❤️ for the Muslim Ummah
+        &copy; 2026 Easy Quran. All rights reserved. Made with ❤️ for the Muslim Ummah
       </div>
     </div>
   </footer>
