@@ -23,7 +23,16 @@
   }
   .container{ max-width:1200px; margin:0 auto; padding:16px; }
   nav{ display:flex; justify-content:space-between; align-items:center; }
-  .logo{ display:flex; align-items:center; gap:8px; }
+
+  .logo{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    text-decoration:none;
+    color:#fff;
+  }
+  .logo:hover{ opacity:.95; }
+
   .logo-icon{
     width:38px; height:38px;
     background:#fff url('https://cdn.jsdelivr.net/gh/shahwaiz90/easyquran@main/newappicon.webp') center/32px 32px no-repeat;
@@ -116,16 +125,20 @@
     opacity:.85;
   }
 
+  /* ✅ FIX: prevent control icons from stretching on mobile */
   .controls{
     display:flex;
     justify-content:center;
     align-items:center;
     gap:12px;
     margin-top:12px;
-    flex-wrap:wrap;
+    flex-wrap:nowrap; /* 🔑 keep them on one line, no stretching */
   }
+
   .btn{
     width:46px; height:46px;
+    min-width:46px; min-height:46px; /* 🔑 fixed size */
+    flex:0 0 auto;                    /* 🔑 never stretch */
     border-radius:50%;
     border:none;
     cursor:pointer;
@@ -136,23 +149,31 @@
   }
   .btn:hover{ transform:translateY(-1px); background:rgba(255,255,255,.24); }
   .btn:active{ transform:translateY(0px); }
+
   .btn-play{
     width:62px; height:62px;
+    min-width:62px; min-height:62px; /* 🔑 fixed size */
+    flex:0 0 auto;                    /* 🔑 never stretch */
     background:#fff;
     color:#004D40;
     font-size:22px;
   }
   .btn-play:hover{ background:#fff; }
+
   .btn-active{
     background:#fff !important;
     color:#004D40 !important;
   }
+
   .btn-wide{
     width:auto;
     height:46px;
+    min-height:46px;
+    flex:0 0 auto; /* 🔑 never stretch */
     border-radius:14px;
     padding:0 14px;
     font-size:14px;
+    white-space:nowrap;
   }
 
   /* GRID */
@@ -198,44 +219,22 @@
     .nav-links{ display:none; }
   }
 
+  footer { background:#2D3748; padding:50px 0 30px; text-align:center; }
+  .footer-content { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:30px; margin-bottom:30px; }
+  .footer-links { display:flex; gap:30px; flex-wrap:wrap; }
+  .footer-links a { color:#CBD5E0; text-decoration:none; transition:color .3s; }
+  .footer-links a:hover { color:#fff; }
+  .social-links { display:flex; gap:20px; }
+  .social-links a { color:#CBD5E0; font-size:24px; transition:all .3s; }
+  .social-links a:hover { color:#fff; transform:translateY(-3px); }
+  .copyright { color:#E2E8F0; padding-top:20px; border-top:1px solid #4A5568; }
 
-    footer { background:#2D3748; padding:50px 0 30px; text-align:center; }
-    .footer-content { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:30px; margin-bottom:30px; }
-    .footer-links { display:flex; gap:30px; flex-wrap:wrap; }
-    .footer-links a { color:#CBD5E0; text-decoration:none; transition:color .3s; }
-    .footer-links a:hover { color:#fff; }
-    .social-links { display:flex; gap:20px; }
-    .social-links a { color:#CBD5E0; font-size:24px; transition:all .3s; }
-    .social-links a:hover { color:#fff; transform:translateY(-3px); }
-    .copyright { color:#E2E8F0; padding-top:20px; border-top:1px solid #4A5568; }
-
-    @media (max-width:968px){
-      .hero-grid { grid-template-columns:1fr; text-align:center; }
-      .hero-content h1 { font-size:42px; }
-      .cta-buttons { justify-content:center; }
-      .key-features { justify-content:center; }
-      .nav-links { display:none; }
-    }
-    @media (max-width:640px){
-      .hero-content h1 { font-size:36px; }
-      .hero-content .tagline { font-size:18px; }
-      .cta-buttons { flex-direction:column; width:100%; }
-      .btn { width:100%; justify-content:center; }
-      .section-title { font-size:32px; }
-      .footer-content { flex-direction:column; text-align:center; }
-    }
-    .google-play-badge { height:60px; width:auto; }
-.logo{
-  display:flex;
-  align-items:center;
-  gap:8px;
-  text-decoration:none;
-  color:#fff;
-}
-.logo:hover{
-  opacity:.95;
-}
-
+  @media (max-width:968px){
+    .nav-links { display:none; }
+  }
+  @media (max-width:640px){
+    .footer-content { flex-direction:column; text-align:center; }
+  }
 </style>
 </head>
 
@@ -249,8 +248,8 @@
     <div class="container">
       <nav aria-label="Primary">
         <a href="index.html" class="logo" aria-label="Go to home">
-            <div class="logo-icon" aria-hidden="true"></div>
-            <span class="logo-text">Easy Quran</span>
+          <div class="logo-icon" aria-hidden="true"></div>
+          <span class="logo-text">Easy Quran</span>
         </a>
 
         <ul class="nav-links">
@@ -270,7 +269,7 @@
     <div class="subtitle">Recitation by Mishary Rashid Al-Afasy</div>
 
     <div class="top-controls">
-      <input id="search" placeholder="🔍 Search Surah by name or number (e.g., 113)" /> 
+      <input id="search" placeholder="🔍 Search Surah by name or number (e.g., 113)" />
       <select id="reciter">
         <option value="afasy">🎙 Mishary Al-Afasy</option>
       </select>
@@ -288,8 +287,7 @@
           <a href="index.html#screenshots">Screenshots</a>
           <a href="index.html#certificate">Certificate</a>
           <a href="privacy-policy.html">Privacy Policy</a>
-
-          <li><a href="#faq">FAQs</a></li>
+          <a href="index.html#faq">FAQs</a>
         </div>
         <div class="social-links">
           <a href="mailto:ahmadshahwaiz@gmail.com" title="Email" aria-label="Email">
@@ -356,8 +354,9 @@ const grid = document.getElementById("grid");
 const player = document.getElementById("player");
 const search = document.getElementById("search");
 
-let currentSurah = 1;        // 1..114
-let repeatOne = false;       // repeat current surah
+/* ✅ FIX: start idle (no default selection) */
+let currentSurah = null;      // null or 1..114
+let repeatOne = false;        // repeat current surah
 
 /* ===== URL builder (Full Surah) ===== */
 function surahUrl(n){
@@ -366,6 +365,40 @@ function surahUrl(n){
 
 /* ===== UI render ===== */
 function renderPlayer(){
+  // ✅ Idle state UI (no surah selected yet)
+  if (currentSurah == null) {
+    player.innerHTML = `
+      <div class="player-top">
+        <div>
+          <p class="track-title">Select a Surah to begin</p>
+          <p class="track-sub">Tap any Surah below to start listening.</p>
+        </div>
+        <div class="pill" title="Playback options">
+          <span>Mode:</span>
+          <strong>Surah</strong>
+        </div>
+      </div>
+
+      <div class="bar" title="Seek">
+        <div class="fill" style="width:0%"></div>
+      </div>
+
+      <div class="time">
+        <span>0:00</span>
+        <span>0:00</span>
+      </div>
+
+      <div class="controls">
+        <button class="btn" title="Previous" disabled style="opacity:.5;cursor:not-allowed">⏮</button>
+        <button class="btn btn-play" title="Play" disabled style="opacity:.5;cursor:not-allowed">▶</button>
+        <button class="btn" title="Next" disabled style="opacity:.5;cursor:not-allowed">⏭</button>
+        <button class="btn" title="Repeat" disabled style="opacity:.5;cursor:not-allowed">🔁</button>
+        <button class="btn btn-wide" title="Download" disabled style="opacity:.5;cursor:not-allowed">⬇ Download</button>
+      </div>
+    `;
+    return;
+  }
+
   const [en, ar] = surahs[currentSurah - 1];
 
   player.innerHTML = `
@@ -390,23 +423,32 @@ function renderPlayer(){
     </div>
 
     <div class="controls">
-      <button class="btn" id="prevBtn" title="Previous Surah">⏮</button>
+      <button class="btn" id="prevBtn" title="Previous Surah" ${currentSurah === 1 ? "disabled style='opacity:.6;cursor:not-allowed'" : ""}>⏮</button>
       <button class="btn btn-play" id="playBtn" title="Play/Pause">▶</button>
-      <button class="btn" id="nextBtn" title="Next Surah">⏭</button>
+      <button class="btn" id="nextBtn" title="Next Surah" ${currentSurah === 114 ? "disabled style='opacity:.6;cursor:not-allowed'" : ""}>⏭</button>
 
       <button class="btn ${repeatOne ? "btn-active" : ""}" id="repeatBtn" title="Repeat One">🔁</button>
-
       <button class="btn btn-wide" id="downloadBtn" title="Download this Surah">⬇ Download</button>
     </div>
   `;
 
   // wire events
-  document.getElementById("prevBtn").onclick = prevSurah;
-  document.getElementById("nextBtn").onclick = nextSurah;
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+
+  if (prevBtn && !prevBtn.disabled) prevBtn.onclick = prevSurah;
+  if (nextBtn && !nextBtn.disabled) nextBtn.onclick = nextSurah;
+
   document.getElementById("playBtn").onclick = togglePlayPause;
   document.getElementById("repeatBtn").onclick = toggleRepeat;
   document.getElementById("downloadBtn").onclick = () => downloadSurah(currentSurah);
   document.getElementById("bar").onclick = seek;
+
+  // reflect current play state on re-render
+  syncPlayIcon();
+  // reflect duration if already known
+  const dur = document.getElementById("dur");
+  if (dur && audio.duration) dur.textContent = formatTime(audio.duration);
 }
 
 function renderGrid(numbers){
@@ -426,14 +468,21 @@ function renderGrid(numbers){
 
 function highlightPlayingCard(){
   document.querySelectorAll(".card").forEach(c => c.classList.remove("playing"));
+  if (currentSurah == null) return;
   document.querySelector(`.card[data-surah="${currentSurah}"]`)?.classList.add("playing");
 }
 
 /* ===== Playback controls ===== */
 function playSurah(n){
+  const isSameSurah = (currentSurah === n);
+
   currentSurah = n;
   renderPlayer();
   highlightPlayingCard();
+
+  // ✅ FIX: if same surah tapped again, force restart
+  audio.pause();
+  audio.currentTime = 0;
 
   audio.src = surahUrl(n);
   audio.load();
@@ -446,6 +495,8 @@ function playSurah(n){
 }
 
 function togglePlayPause(){
+  if (currentSurah == null) return;
+
   if (audio.paused) {
     audio.play().catch(()=>{});
   } else {
@@ -454,12 +505,14 @@ function togglePlayPause(){
 }
 
 function nextSurah(){
+  if (currentSurah == null) return;
   if (currentSurah < 114) {
     playSurah(currentSurah + 1);
   }
 }
 
 function prevSurah(){
+  if (currentSurah == null) return;
   if (currentSurah > 1) {
     playSurah(currentSurah - 1);
   }
@@ -467,7 +520,6 @@ function prevSurah(){
 
 function toggleRepeat(){
   repeatOne = !repeatOne;
-  // just toggle button state without breaking play icon
   const repeatBtn = document.getElementById("repeatBtn");
   if (repeatBtn) repeatBtn.classList.toggle("btn-active", repeatOne);
 }
@@ -483,6 +535,8 @@ audio.onplay = () => syncPlayIcon();
 audio.onpause = () => syncPlayIcon();
 
 audio.onended = () => {
+  if (currentSurah == null) return;
+
   if (repeatOne) {
     audio.currentTime = 0;
     audio.play().catch(()=>{});
@@ -490,7 +544,6 @@ audio.onended = () => {
     if (currentSurah < 114) {
       playSurah(currentSurah + 1);
     } else {
-      // reached end
       syncPlayIcon();
     }
   }
@@ -556,7 +609,7 @@ search.oninput = (e) => {
 };
 
 /* ===== Init ===== */
-renderPlayer();
+renderPlayer(); // idle UI
 renderGrid(Array.from({length:114},(_,i)=>i+1));
 </script>
 
