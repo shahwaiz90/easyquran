@@ -540,6 +540,65 @@
 .contact-section .contact-actions {
   margin-top: 20px;
 }
+/* NAV BASE */
+.logo{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  text-decoration:none;
+  color:#fff;
+}
+
+/* Hamburger button */
+.menu-toggle{
+  display:none;
+  font-size:26px;
+  background:none;
+  border:none;
+  color:#fff;
+  cursor:pointer;
+}
+
+/* Desktop */
+.nav-links{
+  list-style:none;
+  display:flex;
+  gap:20px;
+  margin:0;
+  padding:0;
+}
+
+/* Mobile */
+@media (max-width: 860px){
+  .menu-toggle{
+    display:block;
+  }
+
+  .nav-links{
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    background:#004D40;
+    flex-direction:column;
+    gap:0;
+    display:none;
+    border-top:1px solid rgba(255,255,255,.15);
+  }
+
+  .nav-links li{
+    border-bottom:1px solid rgba(255,255,255,.12);
+  }
+
+  .nav-links li a{
+    display:block;
+    padding:14px 16px;
+  }
+
+  .nav-links.show{
+    display:flex;
+  }
+}
 
   </style>
 </head>
@@ -549,12 +608,17 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55CXTQTQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <header>
-    <div class="container">
-      <nav aria-label="Primary">
-        <div class="logo">
-          <div class="logo-icon" aria-hidden="true"></div>
-          <span class="logo-text">Easy Quran</span>
-        </div>
+  <div class="container">
+    <nav aria-label="Primary">
+      <a href="index.html" class="logo">
+        <div class="logo-icon" aria-hidden="true"></div>
+        <span class="logo-text">Easy Quran</span>
+      </a>
+      <!-- Hamburger (mobile only) -->
+      <button class="menu-toggle" aria-label="Toggle menu" onclick="toggleMenu()">
+        ☰
+      </button>
+
         <ul class="nav-links">
           <li><a href="listenquran.html">Listen Quran</a></li> 
           <li><a href="#features">Features</a></li>
@@ -1132,5 +1196,12 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    function toggleMenu(){
+      document.getElementById("navLinks").classList.toggle("show");
+    }
+  </script>
+
 </body>
 </html>
