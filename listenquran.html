@@ -125,15 +125,16 @@
     opacity:.85;
   }
 
-  /* ✅ FIX: prevent control icons from stretching on mobile */
-  .controls{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:12px;
-    margin-top:12px;
-    flex-wrap:nowrap; /* 🔑 keep them on one line, no stretching */
-  }
+.controls{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:12px;
+  margin-top:12px;
+  flex-wrap:wrap;          /* ✅ allow wrapping */
+  max-width:100%;
+}
+
 
   .btn{
     width:46px; height:46px;
@@ -235,6 +236,20 @@
   @media (max-width:640px){
     .footer-content { flex-direction:column; text-align:center; }
   }
+  @media (max-width: 640px){
+
+  .controls{
+    gap:10px;
+  }
+
+  /* Move download button to its own row */
+  .btn-wide{
+    width:100%;
+    justify-content:center;
+  }
+
+}
+
 </style>
 </head>
 
