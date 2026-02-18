@@ -18,7 +18,11 @@ class EQHeader extends HTMLElement {
               <li><a href="reviews.html" class="${active === 'reviews' ? 'active' : ''}">Reviews</a></li>
               <li><a href="listenquran.html" class="${active === 'listen' ? 'active' : ''}">Listen Quran</a></li>
               <!-- Button link to App Store -->
-              <li><a href="https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran" class="btn-sm-nav" style="background:#F6AD55; color:#004D40; padding: 5px 15px; border-radius:8px; margin-left:10px;">Get App</a></li>
+              <li>
+                <a href="https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran" class="btn-nav-accent">
+                  <span>📲</span> Get App
+                </a>
+              </li>
             </ul>
           </nav>
         </div>

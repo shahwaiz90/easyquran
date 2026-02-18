@@ -1168,7 +1168,28 @@
 
 
 
-    /* Hero Decorations Removed */
+    /* Responsive Hero Alignment */
+    @media (max-width: 500px) {
+      .hero-content {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .tagline {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .cta-buttons {
+        justify-content: center;
+      }
+
+      .key-features {
+        justify-content: center !important;
+      }
+    }
   </style>
 </head>
 
@@ -1243,7 +1264,7 @@
 
           <!-- ENHANCED FAMILY IMAGE -->
           <div class="hero-image"
-            style="display:flex; justify-content:center; align-items:center; position:relative; perspective: 1000px;">
+            style="display:flex; flex-direction: column; justify-content:center; align-items:center; position:relative; perspective: 1000px;">
 
             <!-- Main Image Container -->
             <div
@@ -1253,12 +1274,12 @@
 
               <img src="family-reading-quran.png" alt="Muslim family reading Quran together"
                 style="width:100%; height:auto; border-radius:30px; box-shadow: 20px 20px 60px rgba(0,0,0,0.25); border:4px solid rgba(255,255,255,0.2);">
+            </div>
 
-              <!-- Floating Badge -->
-              <div
-                style="position:absolute; bottom:30px; left:-30px; background:rgba(255,255,255,0.95); backdrop-filter:blur(5px); color:#004D40; padding:12px 24px; border-radius:16px; box-shadow:0 15px 35px rgba(0,0,0,0.15); font-weight:700; display:flex; align-items:center; gap:10px; font-size:15px; animation: float 5s ease-in-out infinite;">
-                <span style="font-size:18px;">❤️</span> Trusted by Muslim Families
-              </div>
+            <!-- Trusted Badge under image -->
+            <div
+              style="margin-top: 25px; background:rgba(255,255,255,0.95); backdrop-filter:blur(5px); color:#004D40; padding:12px 28px; border-radius:16px; box-shadow:0 15px 35px rgba(0,0,0,0.15); font-weight:700; display:flex; align-items:center; gap:10px; font-size:16px; animation: float 5s ease-in-out infinite;">
+              <span style="font-size:20px;">❤️</span> Trusted by 1,000+ Muslim Families
             </div>
 
             <style>
@@ -1527,7 +1548,7 @@
             </p>
           </div>
 
-          <div style="display:flex; gap:15px; flex-shrink: 0;">
+          <div style="display:flex; gap:15px; flex-wrap: wrap; width: 100%; justify-content: flex-start;">
             <a href="CertificateEnglish.pdf" target="_blank" class="btn"
               style="font-size:14px; padding:12px 25px; border:none; border-radius:10px; text-decoration:none; color:#004D40 !important; background: #F6AD55; font-weight: bold; display: flex; align-items: center; gap: 8px;">
               <span>📄</span> View English Certificate
