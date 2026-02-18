@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy – Easy Quran</title>
-  <meta name="description" content="Privacy Policy for Easy Quran – Learn how your data is handled with respect and transparency." />
+  <meta name="description"
+    content="Privacy Policy for Easy Quran – Learn how your data is handled with respect and transparency." />
+
+  <link rel="stylesheet" href="css/global.css">
+  <script src="js/components.js" defer></script>
 
   <style>
     * {
@@ -35,44 +40,11 @@
     }
 
 
-    /* ================= HEADER ================= */
-    header {
-      background: linear-gradient(135deg, #004D40 0%, #00695C 100%);
-      color: #ffffff;
-      padding: 40px 20px;
-      text-align: center;
-      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
-    }
-
-    .logo {
-      display: inline-flex;
-      align-items: center;
-      gap: 12px;
-      justify-content: center;
-    }
-
-    .logo-icon {
-      width: 40px;
-      height: 40px;
-      background: #ffffff url('https://cdn.jsdelivr.net/gh/shahwaiz90/easyquran@main/newappicon.webp') center/36px 36px no-repeat;
-      border-radius: 6px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.25);
-    }
-
-    .logo-text {
-      font-size: 28px;
-      font-weight: 600;
-      color: #ffffff;
-    }
-
-    h1 {
-      font-size: 42px;
-      margin-top: 20px;
-    }
-
-    header p {
-      margin-top: 8px;
-      opacity: 0.95;
+    /* Header styles removed - using global.css */
+    /* Page specific overrides if any */
+    main {
+      margin-top: 40px;
+      /* Adjusted spacing */
     }
 
     /* ================= MAIN CONTENT ================= */
@@ -109,7 +81,8 @@
       color: #2D3748;
     }
 
-    p, li {
+    p,
+    li {
       margin-bottom: 12px;
       font-size: 16px;
       color: #2D3748;
@@ -139,25 +112,7 @@
       border-radius: 10px;
     }
 
-    /* ================= FOOTER ================= */
-    footer {
-      background: #2D3748;
-      color: #E2E8F0;
-      font-size: 14px;
-      text-align: center;
-      padding: 40px 20px;
-      margin-top: 60px;
-    }
-
-    footer a {
-      color: #ffffff;
-      font-weight: 500;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
+    /* Footer styles removed - using global.css */
 
     /* ================= RESPONSIVE ================= */
     @media (max-width: 600px) {
@@ -165,6 +120,7 @@
         padding: 30px 20px;
         margin: 40px 15px;
       }
+
       h1 {
         font-size: 32px;
       }
@@ -175,20 +131,19 @@
 <body>
 
   <!-- HEADER -->
-  <header>
-    <div class="logo">
-      <div class="logo-icon" aria-hidden="true"></div>
-      <span class="logo-text">Easy Quran</span>
-    </div>
+  <eq-header></eq-header>
+
+  <div class="container" style="text-align:center; padding-top:40px;">
     <h1>Privacy Policy</h1>
     <p><strong>Effective Date:</strong> October 2025</p>
-  </header>
+  </div>
 
   <!-- MAIN CONTENT -->
   <main>
     <p>
-      Welcome to <strong>Easy Quran</strong> (“we”, “our”, or “us”).  
-      Your privacy is very important to us. This Privacy Policy explains how we handle your information when you use the <strong>Easy Quran</strong> mobile application.
+      Welcome to <strong>Easy Quran</strong> (“we”, “our”, or “us”).
+      Your privacy is very important to us. This Privacy Policy explains how we handle your information when you use the
+      <strong>Easy Quran</strong> mobile application.
     </p>
 
     <h2>1. Information We Collect</h2>
@@ -196,7 +151,8 @@
     <h3>a. Information You Provide</h3>
     <p>
       We do <strong>not</strong> require any account registration or personal data to use Easy Quran.
-      If you contact us for support or feedback, we may collect the information you voluntarily share, such as your name and email address.
+      If you contact us for support or feedback, we may collect the information you voluntarily share, such as your name
+      and email address.
     </p>
 
     <h3>b. Automatically Collected Information</h3>
@@ -241,7 +197,8 @@
     <p>These services operate under their respective privacy policies:</p>
     <ul>
       <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></li>
-      <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy Policy</a></li>
+      <li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy
+          Policy</a></li>
     </ul>
 
     <h2>5. Children’s Privacy</h2>
@@ -286,10 +243,8 @@
   </main>
 
   <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2026 Easy Quran. Designed with ❤️ for the Muslim Ummah.</p>
-    <p><a href="index.html">← Back to Home</a></p>
-  </footer>
+  <eq-footer></eq-footer>
 
 </body>
+
 </html>

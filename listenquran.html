@@ -1,283 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Listen to Quran | Easy Quran</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Listen to Quran Recitations Online | Easy Quran</title>
+  <meta name="title" content="Listen to Quran Recitations Online | Easy Quran">
+  <meta name="description"
+    content="Listen to beautiful Quran recitations by world-renowned Qaris. High-quality audio with translation access, completely ad-free for a peaceful listening experience.">
+  <meta name="keywords"
+    content="listen Quran online, Quran mp3, Quran recitation, world renowned Qaris, Holy Quran audio, ad-free Quran audio">
+  <meta name="author" content="Easy Quran">
+  <link rel="canonical" href="https://easyquran.app/listenquran.html" />
 
-<style>
-  * { box-sizing: border-box; }
-  body{
-    margin:0;
-    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-    background:#004D40;
-    color:#fff;
-  }
+  <!-- Open Graph -->
+  <meta property="og:title" content="Listen to Quran Recitations Online - Easy Quran">
+  <meta property="og:description"
+    content="Streams high-quality audio recitations of the Holy Quran for free with the Easy Quran app.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://easyquran.app/listenquran.html">
+  <meta property="og:image" content="https://easyquran.app/newappicon.webp">
+  <meta property="og:site_name" content="Easy Quran">
+  <meta property="og:locale" content="en_US">
 
-  /* HEADER (your template) */
-  header{
-    position:sticky;
-    top:0;
-    background:#004D40;
-    z-index:1000;
-  }
-  .container{ max-width:1200px; margin:0 auto; padding:16px; }
-  nav{ display:flex; justify-content:space-between; align-items:center; }
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Listen to Quran Recitations | Easy Quran App">
+  <meta name="twitter:description" content="High-quality, ad-free Quran audio recitations by top Qaris.">
+  <meta name="twitter:image" content="https://easyquran.app/newappicon.webp">
 
-  .logo{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    text-decoration:none;
-    color:#fff;
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://easyquran.app/"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Listen Quran",
+      "item": "https://easyquran.app/listenquran.html"
+    }]
   }
-  .logo:hover{ opacity:.95; }
+  </script>
 
-  .logo-icon{
-    width:38px; height:38px;
-    background:#fff url('https://cdn.jsdelivr.net/gh/shahwaiz90/easyquran@main/newappicon.webp') center/32px 32px no-repeat;
-    border-radius:6px;
-  }
-  .logo-text{ font-size:22px; font-weight:600; }
-  .nav-links{ list-style:none; display:flex; gap:20px; margin:0; padding:0; }
-  .nav-links a{ color:#fff; text-decoration:none; opacity:.9; }
-  .nav-links a:hover{ opacity:1; }
+  <link rel="stylesheet" href="css/global.css">
+  <script src="js/components.js" defer></script>
 
-  /* PAGE */
-  h1{ text-align:center; margin:22px 0 6px; }
-  .subtitle{ text-align:center; opacity:.85; margin-bottom:18px; }
+  <style>
+    /* Override global body to keep this page dark */
+    body {
+      background: #004D40 !important;
+      color: #fff !important;
+    }
 
-  /* SEARCH + SELECTORS */
-  .top-controls{
-    display:flex;
-    gap:12px;
-    flex-wrap:wrap;
-    justify-content:center;
-    margin-bottom:18px;
-  }
-  input, select{
-    padding:10px 14px;
-    border-radius:10px;
-    border:none;
-    font-size:14px;
-    outline:none;
-  }
-  input{ min-width:260px; }
+    /* Ensure content sits above decorations */
+    .container {
+      position: relative;
+      z-index: 10;
+    }
 
-  /* PLAYER */
-  .player{
-    background:linear-gradient(135deg,#00695C,#004D40);
-    border:1px solid rgba(255,255,255,.12);
-    border-radius:18px;
-    padding:18px;
-    margin:0 auto 18px;
-    box-shadow:0 12px 30px rgba(0,0,0,.25);
-  }
-  .player-top{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    gap:12px;
-    flex-wrap:wrap;
-  }
-  .track-title{
-    font-size:18px;
-    font-weight:700;
-    margin:0 0 6px;
-  }
-  .track-sub{
-    font-size:13px;
-    opacity:.85;
-    margin:0;
-  }
-  .pill{
-    display:inline-flex;
-    align-items:center;
-    gap:8px;
-    padding:8px 10px;
-    border-radius:12px;
-    background:rgba(255,255,255,.12);
-    border:1px solid rgba(255,255,255,.12);
-    font-size:13px;
-    user-select:none;
-  }
+    * {
+      box-sizing: border-box;
+    }
 
-  .bar{
-    height:10px;
-    background:rgba(255,255,255,.25);
-    border-radius:999px;
-    margin:14px 0 10px;
-    cursor:pointer;
-    position:relative;
-    overflow:hidden;
-  }
-  .fill{
-    position:absolute;
-    inset:0;
-    width:0%;
-    background:#fff;
-    border-radius:999px;
-  }
-  .time{
-    display:flex;
-    justify-content:space-between;
-    font-size:13px;
-    opacity:.85;
-  }
+    /* Header styles removed, using eq-header */
 
-.controls{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:12px;
-  margin-top:12px;
-  flex-wrap:wrap;          /* ✅ allow wrapping */
-  max-width:100%;
-}
+    /* Nav styles removed */
+
+    /* PAGE */
+    h1 {
+      text-align: center;
+      margin: 22px 0 6px;
+    }
+
+    .subtitle {
+      text-align: center;
+      opacity: .85;
+      margin-bottom: 18px;
+    }
+
+    /* SEARCH + SELECTORS */
+    .top-controls {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 18px;
+    }
+
+    input,
+    select {
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: none;
+      font-size: 14px;
+      outline: none;
+    }
+
+    input {
+      min-width: 260px;
+    }
+
+    /* PLAYER */
+    .player {
+      background: linear-gradient(135deg, #00695C, #004D40);
+      border: 1px solid rgba(255, 255, 255, .12);
+      border-radius: 18px;
+      padding: 18px;
+      margin: 0 auto 18px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .25);
+    }
+
+    .player-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .track-title {
+      font-size: 18px;
+      font-weight: 700;
+      margin: 0 0 6px;
+    }
+
+    .track-sub {
+      font-size: 13px;
+      opacity: .85;
+      margin: 0;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 10px;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, .12);
+      border: 1px solid rgba(255, 255, 255, .12);
+      font-size: 13px;
+      user-select: none;
+    }
+
+    .bar {
+      height: 10px;
+      background: rgba(255, 255, 255, .25);
+      border-radius: 999px;
+      margin: 14px 0 10px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .fill {
+      position: absolute;
+      inset: 0;
+      width: 0%;
+      background: #fff;
+      border-radius: 999px;
+    }
+
+    .time {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      opacity: .85;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+      /* ✅ allow wrapping */
+      max-width: 100%;
+    }
 
 
-  .btn{
-    width:46px; height:46px;
-    min-width:46px; min-height:46px; /* 🔑 fixed size */
-    flex:0 0 auto;                    /* 🔑 never stretch */
-    border-radius:50%;
-    border:none;
-    cursor:pointer;
-    font-size:18px;
-    background:rgba(255,255,255,.18);
-    color:#fff;
-    transition:transform .12s ease, background .12s ease;
-  }
-  .btn:hover{ transform:translateY(-1px); background:rgba(255,255,255,.24); }
-  .btn:active{ transform:translateY(0px); }
+    .btn {
+      width: 46px;
+      height: 46px;
+      min-width: 46px;
+      min-height: 46px;
+      padding: 0;
+      /* Ensure no browser padding */
+      flex: 0 0 auto;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      background: rgba(255, 255, 255, .18);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform .12s ease, background .12s ease;
+    }
 
-  .btn-play{
-    width:62px; height:62px;
-    min-width:62px; min-height:62px; /* 🔑 fixed size */
-    flex:0 0 auto;                    /* 🔑 never stretch */
-    background:#fff;
-    color:#004D40;
-    font-size:22px;
-  }
-  .btn-play:hover{ background:#fff; }
+    .btn:hover {
+      transform: translateY(-1px);
+      background: rgba(255, 255, 255, .24);
+    }
 
-  .btn-active{
-    background:#fff !important;
-    color:#004D40 !important;
-  }
+    .btn:active {
+      transform: translateY(0px);
+    }
 
-  .btn-wide{
-    width:auto;
-    height:46px;
-    min-height:46px;
-    flex:0 0 auto; /* 🔑 never stretch */
-    border-radius:14px;
-    padding:0 14px;
-    font-size:14px;
-    white-space:nowrap;
-  }
+    .btn-play {
+      width: 62px;
+      height: 62px;
+      min-width: 62px;
+      min-height: 62px;
+      /* 🔑 fixed size */
+      flex: 0 0 auto;
+      /* 🔑 never stretch */
+      background: #fff;
+      color: #004D40;
+      font-size: 22px;
+    }
 
-  /* GRID */
-  .grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fill,minmax(260px,1fr));
-    gap:16px;
-    padding-bottom:40px;
-  }
-  .card{
-    background:rgba(255,255,255,.12);
-    border-radius:14px;
-    padding:14px;
-    cursor:pointer;
-    position:relative;
-    border:1px solid rgba(255,255,255,.10);
-    transition:transform .15s ease, background .15s ease, border-color .15s ease;
-  }
-  .card:hover{
-    transform:translateY(-3px);
-    background:rgba(255,255,255,.16);
-    border-color:rgba(255,255,255,.18);
-  }
-  .card.playing{
-    border:2px solid #fff;
-    background:rgba(255,255,255,.18);
-  }
-  .num{
-    position:absolute;
-    top:10px; right:10px;
-    width:34px; height:34px;
-    border-radius:50%;
-    background:rgba(255,255,255,.22);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-weight:700;
-  }
-  .ar{ font-size:20px; direction:rtl; margin:6px 0; }
-  .meta{ font-size:13px; opacity:.85; }
+    .btn-play:hover {
+      background: #fff;
+    }
 
-  @media (max-width: 860px){
-    .nav-links{ display:none; }
-  }
+    .btn-active {
+      background: #fff !important;
+      color: #004D40 !important;
+    }
 
-  footer { background:#2D3748; padding:50px 0 30px; text-align:center; }
-  .footer-content { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:30px; margin-bottom:30px; }
-  .footer-links { display:flex; gap:30px; flex-wrap:wrap; }
-  .footer-links a { color:#CBD5E0; text-decoration:none; transition:color .3s; }
-  .footer-links a:hover { color:#fff; }
-  .social-links { display:flex; gap:20px; }
-  .social-links a { color:#CBD5E0; font-size:24px; transition:all .3s; }
-  .social-links a:hover { color:#fff; transform:translateY(-3px); }
-  .copyright { color:#E2E8F0; padding-top:20px; border-top:1px solid #4A5568; }
+    .btn-wide {
+      width: auto;
+      height: 46px;
+      min-height: 46px;
+      flex: 0 0 auto;
+      /* 🔑 never stretch */
+      border-radius: 14px;
+      padding: 0 14px;
+      font-size: 14px;
+      white-space: nowrap;
+    }
 
-  @media (max-width:968px){
-    .nav-links { display:none; }
-  }
-  @media (max-width:640px){
-    .footer-content { flex-direction:column; text-align:center; }
-  }
-  @media (max-width: 640px){
+    /* GRID */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 16px;
+      padding-bottom: 40px;
+    }
 
-  .controls{
-    gap:10px;
-  }
+    .card {
+      background: rgba(255, 255, 255, .12);
+      border-radius: 14px;
+      padding: 14px;
+      cursor: pointer;
+      position: relative;
+      border: 1px solid rgba(255, 255, 255, .10);
+      transition: transform .15s ease, background .15s ease, border-color .15s ease;
+    }
 
-  /* Move download button to its own row */
-  .btn-wide{
-    width:100%;
-    justify-content:center;
-  }
+    .card:hover {
+      transform: translateY(-3px);
+      background: rgba(255, 255, 255, .16);
+      border-color: rgba(255, 255, 255, .18);
+    }
 
-}
+    .card.playing {
+      border: 2px solid #fff;
+      background: rgba(255, 255, 255, .18);
+    }
 
-</style>
+    .num {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, .22);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+    }
+
+    .ar {
+      font-size: 20px;
+      direction: rtl;
+      margin: 6px 0;
+    }
+
+    .meta {
+      font-size: 13px;
+      opacity: .85;
+    }
+
+    /* Footer styles removed */
+
+    @media (max-width: 640px) {
+
+      .controls {
+        gap: 10px;
+      }
+
+      /* Move download button to its own row */
+      .btn-wide {
+        width: 100%;
+        justify-content: center;
+      }
+
+    }
+  </style>
 </head>
 
 <body>
   <!-- Google Tag Manager (noscript) -->
   <noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55CXTQTQ" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-55CXTQTQ" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe>
   </noscript>
 
-  <header>
-    <div class="container">
-      <nav aria-label="Primary">
-        <a href="index.html" class="logo" aria-label="Go to home">
-          <div class="logo-icon" aria-hidden="true"></div>
-          <span class="logo-text">Easy Quran</span>
-        </a>
-
-        <ul class="nav-links">
-          <li><a href="index.html#features">Features</a></li>
-          <li><a href="index.html#screenshots">Screenshots</a></li>
-          <li><a href="index.html#certificate">Certificate</a></li>
-          <li><a href="index.html#reviews">Reviews</a></li>
-          <li><a href="index.html#contact">Contact us</a></li>
-          <li><a href="index.html#faq">FAQs</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <eq-header active="listen"></eq-header>
 
   <main class="container">
     <h1>Listen to the Holy Quran</h1>
@@ -294,95 +344,73 @@
     <div id="grid" class="grid"></div>
   </main>
 
-  <footer role="contentinfo">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-links">
-          <a href="index.html#features">Features</a>
-          <a href="index.html#screenshots">Screenshots</a>
-          <a href="index.html#certificate">Certificate</a>
-          <a href="privacy-policy.html">Privacy Policy</a>
-          <a href="index.html#faq">FAQs</a>
-        </div>
-        <div class="social-links">
-          <a href="mailto:ahmadshahwaiz@gmail.com" title="Email" aria-label="Email">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-              <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-      <div class="copyright">
-        &copy; 2026 Easy Quran. All rights reserved. Made with ❤️ for the Muslim Ummah
-      </div>
-    </div>
-  </footer>
+  <eq-footer></eq-footer>
 
   <audio id="audio" preload="metadata"></audio>
 
-<script>
-/* ===== Surah list ===== */
-const surahs = [
-  ["Al-Fatihah","الفاتحة"],["Al-Baqarah","البقرة"],["Ali 'Imran","آل عمران"],
-  ["An-Nisa","النساء"],["Al-Ma'idah","المائدة"],["Al-An'am","الأنعام"],
-  ["Al-A'raf","الأعراف"],["Al-Anfal","الأنفال"],["At-Tawbah","التوبة"],
-  ["Yunus","يونس"],["Hud","هود"],["Yusuf","يوسف"],["Ar-Ra'd","الرعد"],
-  ["Ibrahim","إبراهيم"],["Al-Hijr","الحجر"],["An-Nahl","النحل"],
-  ["Al-Isra","الإسراء"],["Al-Kahf","الكهف"],["Maryam","مريم"],
-  ["Taha","طه"],["Al-Anbya","الأنبياء"],["Al-Hajj","الحج"],
-  ["Al-Mu'minun","المؤمنون"],["An-Nur","النور"],["Al-Furqan","الفرقان"],
-  ["Ash-Shu'ara","الشعراء"],["An-Naml","النمل"],["Al-Qasas","القصص"],
-  ["Al-'Ankabut","العنكبوت"],["Ar-Rum","الروم"],["Luqman","لقمان"],
-  ["As-Sajdah","السجدة"],["Al-Ahzab","الأحزاب"],["Saba","سبإ"],
-  ["Fatir","فاطر"],["Ya-Sin","يس"],["As-Saffat","الصافات"],
-  ["Sad","ص"],["Az-Zumar","الزمر"],["Ghafir","غافر"],
-  ["Fussilat","فصلت"],["Ash-Shuraa","الشورى"],["Az-Zukhruf","الزخرف"],
-  ["Ad-Dukhan","الدخان"],["Al-Jathiyah","الجاثية"],["Al-Ahqaf","الأحقاف"],
-  ["Muhammad","محمد"],["Al-Fath","الفتح"],["Al-Hujurat","الحجرات"],
-  ["Qaf","ق"],["Adh-Dhariyat","الذاريات"],["At-Tur","الطور"],
-  ["An-Najm","النجم"],["Al-Qamar","القمر"],["Ar-Rahman","الرحمن"],
-  ["Al-Waqi'ah","الواقعة"],["Al-Hadid","الحديد"],["Al-Mujadila","المجادلة"],
-  ["Al-Hashr","الحشر"],["Al-Mumtahanah","الممتحنة"],["As-Saf","الصف"],
-  ["Al-Jumu'ah","الجمعة"],["Al-Munafiqun","المنافقون"],
-  ["At-Taghabun","التغابن"],["At-Talaq","الطلاق"],["At-Tahrim","التحريم"],
-  ["Al-Mulk","الملك"],["Al-Qalam","القلم"],["Al-Haqqah","الحاقة"],
-  ["Al-Ma'arij","المعارج"],["Nuh","نوح"],["Al-Jinn","الجن"],
-  ["Al-Muzzammil","المزمل"],["Al-Muddaththir","المدثر"],["Al-Qiyamah","القيامة"],
-  ["Al-Insan","الإنسان"],["Al-Mursalat","المرسلات"],["An-Naba","النبأ"],
-  ["An-Nazi'at","النازعات"],["'Abasa","عبس"],["At-Takwir","التكوير"],
-  ["Al-Infitar","الإنفطار"],["Al-Mutaffifin","المطففين"],["Al-Inshiqaq","الإنشقاق"],
-  ["Al-Buruj","البروج"],["At-Tariq","الطارق"],["Al-A'la","الأعلى"],
-  ["Al-Ghashiyah","الغاشية"],["Al-Fajr","الفجر"],["Al-Balad","البلد"],
-  ["Ash-Shams","الشمس"],["Al-Layl","الليل"],["Ad-Duhaa","الضحى"],
-  ["Ash-Sharh","الشرح"],["At-Tin","التين"],["Al-'Alaq","العلق"],
-  ["Al-Qadr","القدر"],["Al-Bayyinah","البينة"],["Az-Zalzalah","الزلزلة"],
-  ["Al-'Adiyat","العاديات"],["Al-Qari'ah","القارعة"],["At-Takathur","التكاثر"],
-  ["Al-'Asr","العصر"],["Al-Humazah","الهمزة"],["Al-Fil","الفيل"],
-  ["Quraysh","قريش"],["Al-Ma'un","الماعون"],["Al-Kawthar","الكوثر"],
-  ["Al-Kafirun","الكافرون"],["An-Nasr","النصر"],["Al-Masad","المسد"],
-  ["Al-Ikhlas","الإخلاص"],["Al-Falaq","الفلق"],["An-Nas","الناس"]
-];
+  <script>
+    /* ===== Surah list ===== */
+    const surahs = [
+      ["Al-Fatihah", "الفاتحة"], ["Al-Baqarah", "البقرة"], ["Ali 'Imran", "آل عمران"],
+      ["An-Nisa", "النساء"], ["Al-Ma'idah", "المائدة"], ["Al-An'am", "الأنعام"],
+      ["Al-A'raf", "الأعراف"], ["Al-Anfal", "الأنفال"], ["At-Tawbah", "التوبة"],
+      ["Yunus", "يونس"], ["Hud", "هود"], ["Yusuf", "يوسف"], ["Ar-Ra'd", "الرعد"],
+      ["Ibrahim", "إبراهيم"], ["Al-Hijr", "الحجر"], ["An-Nahl", "النحل"],
+      ["Al-Isra", "الإسراء"], ["Al-Kahf", "الكهف"], ["Maryam", "مريم"],
+      ["Taha", "طه"], ["Al-Anbya", "الأنبياء"], ["Al-Hajj", "الحج"],
+      ["Al-Mu'minun", "المؤمنون"], ["An-Nur", "النور"], ["Al-Furqan", "الفرقان"],
+      ["Ash-Shu'ara", "الشعراء"], ["An-Naml", "النمل"], ["Al-Qasas", "القصص"],
+      ["Al-'Ankabut", "العنكبوت"], ["Ar-Rum", "الروم"], ["Luqman", "لقمان"],
+      ["As-Sajdah", "السجدة"], ["Al-Ahzab", "الأحزاب"], ["Saba", "سبإ"],
+      ["Fatir", "فاطر"], ["Ya-Sin", "يس"], ["As-Saffat", "الصافات"],
+      ["Sad", "ص"], ["Az-Zumar", "الزمر"], ["Ghafir", "غافر"],
+      ["Fussilat", "فصلت"], ["Ash-Shuraa", "الشورى"], ["Az-Zukhruf", "الزخرف"],
+      ["Ad-Dukhan", "الدخان"], ["Al-Jathiyah", "الجاثية"], ["Al-Ahqaf", "الأحقاف"],
+      ["Muhammad", "محمد"], ["Al-Fath", "الفتح"], ["Al-Hujurat", "الحجرات"],
+      ["Qaf", "ق"], ["Adh-Dhariyat", "الذاريات"], ["At-Tur", "الطور"],
+      ["An-Najm", "النجم"], ["Al-Qamar", "القمر"], ["Ar-Rahman", "الرحمن"],
+      ["Al-Waqi'ah", "الواقعة"], ["Al-Hadid", "الحديد"], ["Al-Mujadila", "المجادلة"],
+      ["Al-Hashr", "الحشر"], ["Al-Mumtahanah", "الممتحنة"], ["As-Saf", "الصف"],
+      ["Al-Jumu'ah", "الجمعة"], ["Al-Munafiqun", "المنافقون"],
+      ["At-Taghabun", "التغابن"], ["At-Talaq", "الطلاق"], ["At-Tahrim", "التحريم"],
+      ["Al-Mulk", "الملك"], ["Al-Qalam", "القلم"], ["Al-Haqqah", "الحاقة"],
+      ["Al-Ma'arij", "المعارج"], ["Nuh", "نوح"], ["Al-Jinn", "الجن"],
+      ["Al-Muzzammil", "المزمل"], ["Al-Muddaththir", "المدثر"], ["Al-Qiyamah", "القيامة"],
+      ["Al-Insan", "الإنسان"], ["Al-Mursalat", "المرسلات"], ["An-Naba", "النبأ"],
+      ["An-Nazi'at", "النازعات"], ["'Abasa", "عبس"], ["At-Takwir", "التكوير"],
+      ["Al-Infitar", "الإنفطار"], ["Al-Mutaffifin", "المطففين"], ["Al-Inshiqaq", "الإنشقاق"],
+      ["Al-Buruj", "البروج"], ["At-Tariq", "الطارق"], ["Al-A'la", "الأعلى"],
+      ["Al-Ghashiyah", "الغاشية"], ["Al-Fajr", "الفجر"], ["Al-Balad", "البلد"],
+      ["Ash-Shams", "الشمس"], ["Al-Layl", "الليل"], ["Ad-Duhaa", "الضحى"],
+      ["Ash-Sharh", "الشرح"], ["At-Tin", "التين"], ["Al-'Alaq", "العلق"],
+      ["Al-Qadr", "القدر"], ["Al-Bayyinah", "البينة"], ["Az-Zalzalah", "الزلزلة"],
+      ["Al-'Adiyat", "العاديات"], ["Al-Qari'ah", "القارعة"], ["At-Takathur", "التكاثر"],
+      ["Al-'Asr", "العصر"], ["Al-Humazah", "الهمزة"], ["Al-Fil", "الفيل"],
+      ["Quraysh", "قريش"], ["Al-Ma'un", "الماعون"], ["Al-Kawthar", "الكوثر"],
+      ["Al-Kafirun", "الكافرون"], ["An-Nasr", "النصر"], ["Al-Masad", "المسد"],
+      ["Al-Ikhlas", "الإخلاص"], ["Al-Falaq", "الفلق"], ["An-Nas", "الناس"]
+    ];
 
-/* ===== DOM ===== */
-const audio = document.getElementById("audio");
-const grid = document.getElementById("grid");
-const player = document.getElementById("player");
-const search = document.getElementById("search");
+    /* ===== DOM ===== */
+    const audio = document.getElementById("audio");
+    const grid = document.getElementById("grid");
+    const player = document.getElementById("player");
+    const search = document.getElementById("search");
 
-/* ✅ FIX: start idle (no default selection) */
-let currentSurah = null;      // null or 1..114
-let repeatOne = false;        // repeat current surah
+    /* ✅ FIX: start idle (no default selection) */
+    let currentSurah = null;      // null or 1..114
+    let repeatOne = false;        // repeat current surah
 
-/* ===== URL builder (Full Surah) ===== */
-function surahUrl(n){
-  return `https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/${n}.mp3`;
-}
+    /* ===== URL builder (Full Surah) ===== */
+    function surahUrl(n) {
+      return `https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/${n}.mp3`;
+    }
 
-/* ===== UI render ===== */
-function renderPlayer(){
-  // ✅ Idle state UI (no surah selected yet)
-  if (currentSurah == null) {
-    player.innerHTML = `
+    /* ===== UI render ===== */
+    function renderPlayer() {
+      // ✅ Idle state UI (no surah selected yet)
+      if (currentSurah == null) {
+        player.innerHTML = `
       <div class="player-top">
         <div>
           <p class="track-title">Select a Surah to begin</p>
@@ -411,12 +439,12 @@ function renderPlayer(){
         <button class="btn btn-wide" title="Download" disabled style="opacity:.5;cursor:not-allowed">⬇ Download</button>
       </div>
     `;
-    return;
-  }
+        return;
+      }
 
-  const [en, ar] = surahs[currentSurah - 1];
+      const [en, ar] = surahs[currentSurah - 1];
 
-  player.innerHTML = `
+      player.innerHTML = `
     <div class="player-top">
       <div>
         <p class="track-title">${currentSurah}. ${en}</p>
@@ -447,29 +475,29 @@ function renderPlayer(){
     </div>
   `;
 
-  // wire events
-  const prevBtn = document.getElementById("prevBtn");
-  const nextBtn = document.getElementById("nextBtn");
+      // wire events
+      const prevBtn = document.getElementById("prevBtn");
+      const nextBtn = document.getElementById("nextBtn");
 
-  if (prevBtn && !prevBtn.disabled) prevBtn.onclick = prevSurah;
-  if (nextBtn && !nextBtn.disabled) nextBtn.onclick = nextSurah;
+      if (prevBtn && !prevBtn.disabled) prevBtn.onclick = prevSurah;
+      if (nextBtn && !nextBtn.disabled) nextBtn.onclick = nextSurah;
 
-  document.getElementById("playBtn").onclick = togglePlayPause;
-  document.getElementById("repeatBtn").onclick = toggleRepeat;
-  document.getElementById("downloadBtn").onclick = () => downloadSurah(currentSurah);
-  document.getElementById("bar").onclick = seek;
+      document.getElementById("playBtn").onclick = togglePlayPause;
+      document.getElementById("repeatBtn").onclick = toggleRepeat;
+      document.getElementById("downloadBtn").onclick = () => downloadSurah(currentSurah);
+      document.getElementById("bar").onclick = seek;
 
-  // reflect current play state on re-render
-  syncPlayIcon();
-  // reflect duration if already known
-  const dur = document.getElementById("dur");
-  if (dur && audio.duration) dur.textContent = formatTime(audio.duration);
-}
+      // reflect current play state on re-render
+      syncPlayIcon();
+      // reflect duration if already known
+      const dur = document.getElementById("dur");
+      if (dur && audio.duration) dur.textContent = formatTime(audio.duration);
+    }
 
-function renderGrid(numbers){
-  grid.innerHTML = numbers.map(n => {
-    const [en, ar] = surahs[n - 1];
-    return `
+    function renderGrid(numbers) {
+      grid.innerHTML = numbers.map(n => {
+        const [en, ar] = surahs[n - 1];
+        return `
       <div class="card" data-surah="${n}" onclick="playSurah(${n})">
         <div class="num">${n}</div>
         <h3>${en}</h3>
@@ -477,156 +505,157 @@ function renderGrid(numbers){
         <div class="meta">Tap to play</div>
       </div>
     `;
-  }).join("");
-  highlightPlayingCard();
-}
-
-function highlightPlayingCard(){
-  document.querySelectorAll(".card").forEach(c => c.classList.remove("playing"));
-  if (currentSurah == null) return;
-  document.querySelector(`.card[data-surah="${currentSurah}"]`)?.classList.add("playing");
-}
-
-/* ===== Playback controls ===== */
-function playSurah(n){
-  const isSameSurah = (currentSurah === n);
-
-  currentSurah = n;
-  renderPlayer();
-  highlightPlayingCard();
-
-  // ✅ FIX: if same surah tapped again, force restart
-  audio.pause();
-  audio.currentTime = 0;
-
-  audio.src = surahUrl(n);
-  audio.load();
-
-  // Called from user click → safe to call play()
-  audio.play().catch(() => {
-    // If any browser blocks (unlikely here), user can press play
-    syncPlayIcon();
-  });
-}
-
-function togglePlayPause(){
-  if (currentSurah == null) return;
-
-  if (audio.paused) {
-    audio.play().catch(()=>{});
-  } else {
-    audio.pause();
-  }
-}
-
-function nextSurah(){
-  if (currentSurah == null) return;
-  if (currentSurah < 114) {
-    playSurah(currentSurah + 1);
-  }
-}
-
-function prevSurah(){
-  if (currentSurah == null) return;
-  if (currentSurah > 1) {
-    playSurah(currentSurah - 1);
-  }
-}
-
-function toggleRepeat(){
-  repeatOne = !repeatOne;
-  const repeatBtn = document.getElementById("repeatBtn");
-  if (repeatBtn) repeatBtn.classList.toggle("btn-active", repeatOne);
-}
-
-/* ===== Audio events: keep icons always correct ===== */
-function syncPlayIcon(){
-  const playBtn = document.getElementById("playBtn");
-  if (!playBtn) return;
-  playBtn.textContent = audio.paused ? "▶" : "⏸";
-}
-
-audio.onplay = () => syncPlayIcon();
-audio.onpause = () => syncPlayIcon();
-
-audio.onended = () => {
-  if (currentSurah == null) return;
-
-  if (repeatOne) {
-    audio.currentTime = 0;
-    audio.play().catch(()=>{});
-  } else {
-    if (currentSurah < 114) {
-      playSurah(currentSurah + 1);
-    } else {
-      syncPlayIcon();
+      }).join("");
+      highlightPlayingCard();
     }
-  }
-};
 
-audio.onloadedmetadata = () => {
-  const dur = document.getElementById("dur");
-  if (dur) dur.textContent = formatTime(audio.duration);
-};
+    function highlightPlayingCard() {
+      document.querySelectorAll(".card").forEach(c => c.classList.remove("playing"));
+      if (currentSurah == null) return;
+      document.querySelector(`.card[data-surah="${currentSurah}"]`)?.classList.add("playing");
+    }
 
-audio.ontimeupdate = () => {
-  const cur = document.getElementById("cur");
-  const fill = document.getElementById("fill");
-  if (cur) cur.textContent = formatTime(audio.currentTime);
-  if (fill && audio.duration) {
-    fill.style.width = (audio.currentTime / audio.duration * 100) + "%";
-  }
-};
+    /* ===== Playback controls ===== */
+    function playSurah(n) {
+      const isSameSurah = (currentSurah === n);
 
-/* ===== Seek ===== */
-function seek(e){
-  if (!audio.duration) return;
-  const rect = e.currentTarget.getBoundingClientRect();
-  const pct = (e.clientX - rect.left) / rect.width;
-  audio.currentTime = Math.max(0, Math.min(audio.duration, pct * audio.duration));
-}
+      currentSurah = n;
+      renderPlayer();
+      highlightPlayingCard();
 
-/* ===== Download ===== */
-function downloadSurah(n){
-  const a = document.createElement("a");
-  a.href = surahUrl(n);
-  a.download = `surah-${n}.mp3`;
-  document.body.appendChild(a);
-  a.click();
-  a.remove();
-}
+      // ✅ FIX: if same surah tapped again, force restart
+      audio.pause();
+      audio.currentTime = 0;
 
-/* ===== Helpers ===== */
-function formatTime(sec){
-  if (!sec || isNaN(sec)) return "0:00";
-  const m = Math.floor(sec / 60);
-  const s = Math.floor(sec % 60);
-  return `${m}:${String(s).padStart(2,"0")}`;
-}
+      audio.src = surahUrl(n);
+      audio.load();
 
-/* ===== Search ===== */
-search.oninput = (e) => {
-  const q = e.target.value.trim().toLowerCase();
+      // Called from user click → safe to call play()
+      audio.play().catch(() => {
+        // If any browser blocks (unlikely here), user can press play
+        syncPlayIcon();
+      });
+    }
 
-  // numeric direct
-  const n = Number(q);
-  if (q && !isNaN(n) && n >= 1 && n <= 114) {
-    renderGrid([n]);
-    return;
-  }
+    function togglePlayPause() {
+      if (currentSurah == null) return;
 
-  const matched = [];
-  for (let i = 1; i <= 114; i++) {
-    const en = surahs[i - 1][0].toLowerCase();
-    if (!q || en.includes(q)) matched.push(i);
-  }
-  renderGrid(matched);
-};
+      if (audio.paused) {
+        audio.play().catch(() => { });
+      } else {
+        audio.pause();
+      }
+    }
 
-/* ===== Init ===== */
-renderPlayer(); // idle UI
-renderGrid(Array.from({length:114},(_,i)=>i+1));
-</script>
+    function nextSurah() {
+      if (currentSurah == null) return;
+      if (currentSurah < 114) {
+        playSurah(currentSurah + 1);
+      }
+    }
+
+    function prevSurah() {
+      if (currentSurah == null) return;
+      if (currentSurah > 1) {
+        playSurah(currentSurah - 1);
+      }
+    }
+
+    function toggleRepeat() {
+      repeatOne = !repeatOne;
+      const repeatBtn = document.getElementById("repeatBtn");
+      if (repeatBtn) repeatBtn.classList.toggle("btn-active", repeatOne);
+    }
+
+    /* ===== Audio events: keep icons always correct ===== */
+    function syncPlayIcon() {
+      const playBtn = document.getElementById("playBtn");
+      if (!playBtn) return;
+      playBtn.textContent = audio.paused ? "▶" : "⏸";
+    }
+
+    audio.onplay = () => syncPlayIcon();
+    audio.onpause = () => syncPlayIcon();
+
+    audio.onended = () => {
+      if (currentSurah == null) return;
+
+      if (repeatOne) {
+        audio.currentTime = 0;
+        audio.play().catch(() => { });
+      } else {
+        if (currentSurah < 114) {
+          playSurah(currentSurah + 1);
+        } else {
+          syncPlayIcon();
+        }
+      }
+    };
+
+    audio.onloadedmetadata = () => {
+      const dur = document.getElementById("dur");
+      if (dur) dur.textContent = formatTime(audio.duration);
+    };
+
+    audio.ontimeupdate = () => {
+      const cur = document.getElementById("cur");
+      const fill = document.getElementById("fill");
+      if (cur) cur.textContent = formatTime(audio.currentTime);
+      if (fill && audio.duration) {
+        fill.style.width = (audio.currentTime / audio.duration * 100) + "%";
+      }
+    };
+
+    /* ===== Seek ===== */
+    function seek(e) {
+      if (!audio.duration) return;
+      const rect = e.currentTarget.getBoundingClientRect();
+      const pct = (e.clientX - rect.left) / rect.width;
+      audio.currentTime = Math.max(0, Math.min(audio.duration, pct * audio.duration));
+    }
+
+    /* ===== Download ===== */
+    function downloadSurah(n) {
+      const a = document.createElement("a");
+      a.href = surahUrl(n);
+      a.download = `surah-${n}.mp3`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    }
+
+    /* Helpers */
+    function formatTime(sec) {
+      if (!sec || isNaN(sec)) return "0:00";
+      const m = Math.floor(sec / 60);
+      const s = Math.floor(sec % 60);
+      return `${m}:${String(s).padStart(2, "0")}`;
+    }
+
+    /* ===== Search ===== */
+    search.oninput = (e) => {
+      const q = e.target.value.trim().toLowerCase();
+
+      // numeric direct
+      const n = Number(q);
+      if (q && !isNaN(n) && n >= 1 && n <= 114) {
+        renderGrid([n]);
+        return;
+      }
+
+      const matched = [];
+      for (let i = 1; i <= 114; i++) {
+        const en = surahs[i - 1][0].toLowerCase();
+        if (!q || en.includes(q)) matched.push(i);
+      }
+      renderGrid(matched);
+    };
+
+    /* ===== Init ===== */
+    renderPlayer(); // idle UI
+    renderGrid(Array.from({ length: 114 }, (_, i) => i + 1));
+  </script>
 
 </body>
+
 </html>
