@@ -217,6 +217,12 @@ nav {
   gap: 30px;
   margin: 0;
   padding: 0;
+  align-items: center;
+}
+
+.nav-links li {
+  display: flex;
+  align-items: center;
 }
 
 .nav-links a {
@@ -250,20 +256,27 @@ nav {
   transform: translateY(-2px);
 }
 
+/* Perfect alignment for the header */
+header .container nav {
+  display: flex;
+  align-items: center;
+}
+
 .btn-nav-accent {
   background: var(--accent);
   color: var(--primary) !important;
-  padding: 8px 18px !important;
+  padding: 10px 22px !important;
   border-radius: 50px;
   font-weight: 700;
-  margin-left: 15px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 15px rgba(246, 173, 85, 0.2);
   text-decoration: none;
   font-size: 15px;
+  line-height: 1;
 }
 
 .btn-nav-accent:hover {
@@ -306,6 +319,7 @@ nav {
     display: none;
     z-index: 9999;
     box-shadow: 0 10px 30px rgba(0, 0, 0, .35);
+    align-items: stretch;
   }
 
   .nav-links li {
@@ -318,18 +332,19 @@ nav {
   }
 
   .nav-links li:last-child {
-    padding: 15px 20px 25px;
+    padding: 10px 20px 30px;
     border-bottom: none;
   }
 
   .btn-nav-accent {
-    margin-left: 0;
     width: 100%;
-    justify-content: center;
-    padding: 14px !important;
+    justify-content: flex-start;
+    /* Match left alignment of other links */
+    padding: 14px 20px !important;
+    /* Perfect align with text above */
     font-size: 16px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    margin-top: 10px;
+    margin: 0;
   }
 }
 
