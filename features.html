@@ -57,161 +57,357 @@
     <script src="js/components.js" defer></script>
 
     <style>
-        /* Hero Section */
-        .features-hero {
-            background: linear-gradient(135deg, #004D40 0%, #00695C 100%);
-            color: white;
-            padding: 100px 0 140px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
+        /* Apple-inspired Animation Variables */
+        :root {
+            --transition-curve: cubic-bezier(0.165, 0.84, 0.44, 1);
+            --glass-bg: rgba(255, 255, 255, 0.7);
+            --glass-border: rgba(255, 255, 255, 0.5);
+            --blur: 20px;
         }
 
-        .features-hero::before {
-            content: '';
+        /* Base Typography Enhancements */
+        body {
+            background-color: #F5F5F7;
+            /* Apple light gray */
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Hero Section - Immersive */
+        .features-hero {
+            position: relative;
+            background: #000;
+            color: white;
+            padding: 180px 20px 140px;
+            text-align: center;
+            overflow: hidden;
+            border-bottom-left-radius: 40px;
+            border-bottom-right-radius: 40px;
+        }
+
+        .hero-bg-gradient {
             position: absolute;
-            top: -100px;
-            right: -100px;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(255, 255, 255, 0.05) 0%, transparent 70%);
-            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            background: radial-gradient(circle at center, #004D40 0%, #000 60%);
+            opacity: 0.6;
+            filter: blur(80px);
+            z-index: 0;
+            animation: pulse-glow 10s infinite alternate;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .section-title {
-            font-size: 48px;
-            font-weight: 800;
-            margin-bottom: 20px;
-            letter-spacing: -1px;
+            font-size: clamp(48px, 8vw, 80px);
+            font-weight: 700;
+            letter-spacing: -2px;
+            line-height: 1.05;
+            margin-bottom: 24px;
+            background: linear-gradient(to right, #fff, #a5b4fc);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0;
+            /* For animation */
         }
 
         .section-subtitle {
-            font-size: 20px;
-            color: rgba(255, 255, 255, 0.9);
-            max-width: 700px;
+            font-size: clamp(20px, 4vw, 24px);
+            font-weight: 400;
+            color: #A1A1AA;
+            max-width: 680px;
             margin: 0 auto 40px;
-            line-height: 1.6;
+            line-height: 1.4;
+            opacity: 0;
+            /* For animation */
         }
 
-        /* Feature Blocks */
-        .feature-block {
-            padding: 100px 0;
+        .section-title.visible,
+        .section-subtitle.visible,
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Animation Classes */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s var(--transition-curve), transform 1s var(--transition-curve);
+        }
+
+        /* Feature Section - "Bento" / Large Card Style */
+        .features-container {
+            max-width: 1200px;
+            margin: -60px auto 0;
+            padding: 0 20px;
+            position: relative;
+            z-index: 10;
             display: flex;
-            align-items: center;
-            gap: 60px;
+            flex-direction: column;
+            gap: 40px;
         }
 
-        .feature-block.reverse {
-            flex-direction: row-reverse;
-            background: #F7FAFC;
+        .feature-block {
+            background: #fff;
+            border-radius: 30px;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 0;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+            transition: transform 0.5s var(--transition-curve), opacity 0.8s ease-out;
+            opacity: 0;
+            transform: translateY(50px);
+        }
+
+        .feature-block.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .feature-block:hover {
+            transform: scale(1.01);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.08);
         }
 
         .feature-content {
-            flex: 1;
+            padding: 60px;
+            z-index: 2;
         }
 
         .feature-visual {
-            flex: 1;
+            background: #F2F2F7;
+            height: 100%;
+            min-height: 500px;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
         }
 
-        .feature-badge {
-            display: inline-block;
-            background: rgba(0, 77, 64, 0.1);
-            color: #004D40;
-            padding: 8px 16px;
-            border-radius: 50px;
+        .feature-block.reverse .feature-content {
+            order: 2;
+        }
+
+        .feature-block.reverse .feature-visual {
+            order: 1;
+        }
+
+        .feature-eyebrow {
             font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 20px;
+            font-weight: 700;
+            letter-spacing: 2px;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            color: #F6AD55;
+            margin-bottom: 16px;
+            display: block;
         }
 
         .feature-title {
-            font-size: 36px;
+            font-size: 40px;
             font-weight: 700;
-            color: #2D3748;
+            color: #111;
             margin-bottom: 20px;
-            line-height: 1.2;
+            line-height: 1.1;
+            letter-spacing: -1px;
         }
 
         .feature-desc {
             font-size: 18px;
-            color: #4A5568;
-            line-height: 1.7;
+            color: #666;
+            line-height: 1.6;
             margin-bottom: 30px;
         }
 
         .feature-list {
             list-style: none;
             padding: 0;
+            display: grid;
+            gap: 12px;
         }
 
         .feature-list li {
             position: relative;
-            padding-left: 30px;
-            margin-bottom: 15px;
-            color: #2D3748;
+            padding-left: 28px;
             font-weight: 500;
+            color: #333;
         }
 
         .feature-list li::before {
-            content: '✓';
+            content: '';
             position: absolute;
             left: 0;
-            color: #004D40;
-            font-weight: bold;
+            top: 4px;
+            width: 18px;
+            height: 18px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23004D40' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E") no-repeat center center;
         }
 
-        /* Mockup Containers */
-        .mockup-container {
-            background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            border: 1px solid #E2E8F0;
-            aspect-ratio: 4/3;
+        /* Abstract Device / UI Mockups (CSS Only) */
+        .ui-card {
+            width: 320px;
+            max-width: 90%;
+            background: #fff;
+            border-radius: 24px;
+            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.15);
+            padding: 12px;
+            /* reduced padding inside device frame */
+            position: relative;
+            transform: scale(0.9) rotateY(-10deg) rotateX(10deg);
+            transition: transform 0.8s var(--transition-curve);
+            border: 8px solid #333;
+            /* Phone bezel */
+            background-clip: padding-box;
+            aspect-ratio: 9/16;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .ui-screen {
+            background: #fff;
+            border-radius: 16px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            overflow: hidden;
             position: relative;
         }
 
-        .mockup-placeholder {
-            font-size: 80px;
-            opacity: 0.2;
+        .feature-block:hover .ui-card {
+            transform: scale(0.95) rotateY(0deg) rotateX(0deg);
         }
 
-        .mockup-overlay {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            right: 20px;
-            background: rgba(255, 255, 255, 0.9);
-            backdrop-filter: blur(5px);
-            padding: 15px;
+        /* Glassmorphism Elements inside UI Card */
+        .glass-row {
+            height: 12px;
+            background: #F0F0F0;
+            border-radius: 8px;
+            margin-bottom: 12px;
+            width: 100%;
+        }
+
+        .glass-row.short {
+            width: 60%;
+        }
+
+        .glass-row.half {
+            width: 40%;
+        }
+
+        .glass-header {
+            height: 48px;
+            background: #004D40;
             border-radius: 12px;
-            border: 1px solid rgba(0, 0, 0, 0.05);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 16px;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
         }
 
-        /* Mobile */
+        .ui-accent-circle {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            filter: blur(60px);
+            z-index: -1;
+            mix-blend-mode: multiply;
+        }
+
+        /* CTA Section */
+        .cta-premium {
+            text-align: center;
+            padding: 120px 20px;
+            background: white;
+            margin-top: 60px;
+            border-radius: 40px 40px 0 0;
+            position: relative;
+            z-index: 5;
+        }
+
+        /* Mobile Responsive */
         @media (max-width: 900px) {
-            .feature-block {
-                flex-direction: column;
-                padding: 60px 0;
-                text-align: center;
+            .features-hero {
+                padding-top: 140px;
+                padding-bottom: 100px;
+                border-radius: 0 0 30px 30px;
             }
 
-            .feature-block.reverse {
-                flex-direction: column;
+            .features-container {
+                margin-top: -40px;
+                gap: 20px;
+            }
+
+            .feature-block {
+                grid-template-columns: 1fr;
+                border-radius: 24px;
+            }
+
+            .feature-content {
+                padding: 40px 24px;
+                text-align: center;
+                order: 2 !important;
+                /* Always text below image on mobile for flow */
+            }
+
+            .feature-visual {
+                order: 1 !important;
+                min-height: 400px;
+                padding: 40px 0;
             }
 
             .feature-list {
                 text-align: left;
                 display: inline-block;
+                margin-top: 20px;
             }
+
+            .section-title {
+                font-size: 40px;
+                margin-bottom: 16px;
+            }
+
+            .feature-title {
+                font-size: 32px;
+            }
+        }
+
+        /* Animations */
+        @keyframes pulse-glow {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: translate(-50%, -50%) scale(1.2);
+                opacity: 0.7;
+            }
+        }
+
+        .anim-delay-1 {
+            transition-delay: 0.1s;
+        }
+
+        .anim-delay-2 {
+            transition-delay: 0.2s;
         }
     </style>
 </head>
@@ -223,146 +419,209 @@
     <main>
         <!-- Hero Section -->
         <section class="features-hero">
-            <div class="container">
-                <h1 class="section-title">Powerful Features.<br>Deeper Understanding.</h1>
-                <p class="section-subtitle">
-                    Easy Quran is built to help you connect with the Holy Book on a deeper level.
-                    From comparative analysis to insight-driven reflection tools.
+            <div class="hero-bg-gradient"></div>
+            <div class="hero-content">
+                <h1 class="section-title fade-up">The Quran.<br>Crystal Clear.</h1>
+                <p class="section-subtitle fade-up anim-delay-1">
+                    An experience designed for understanding. Compare translations, listen to world-class recitation,
+                    and dive deep into Tafseer.
                 </p>
-                <a href="https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran"
-                    class="btn btn-primary"
-                    style="background: #F6AD55; color: #004D40; padding: 16px 36px; border-radius: 50px; font-weight: 700; text-decoration: none; display: inline-block;">
-                    Download App
-                </a>
-            </div>
-        </section>
-
-        <!-- Feature 1: Comparative Analysis -->
-        <section class="feature-block">
-            <div class="container" style="display:flex; gap:60px; align-items:center;">
-                <div class="feature-content">
-                    <span class="feature-badge">Study Tools</span>
-                    <h2 class="feature-title">Comparative Analysis & Tafseer</h2>
-                    <p class="feature-desc">
-                        Don't settle for a single translation. Compare multiple translations side-by-side to grasp the
-                        nuance of every Ayah. Switch seamlessly to Tafseer for scholarly interpretation.
-                    </p>
-                    <ul class="feature-list">
-                        <li>Compare English & Urdu translations simultaneously</li>
-                        <li>Access Tafseer Ibn Kathir and other authentic sources</li>
-                        <li>Tap any word for instant meaning (coming soon)</li>
-                    </ul>
-                </div>
-                <div class="feature-visual">
-                    <div class="mockup-container"
-                        style="background: linear-gradient(135deg, #E0F2F1 0%, #B2DFDB 100%);">
-                        <div style="font-size: 100px;">📖</div>
-                        <div class="mockup-overlay">
-                            <div style="font-weight:700; color:#004D40; margin-bottom:5px;">Verse Comparision</div>
-                            <div style="font-size:12px; color:#555;">Sahih International vs. Maududi</div>
-                        </div>
-                    </div>
+                <div class="fade-up anim-delay-2">
+                    <a href="https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran"
+                        class="btn btn-primary"
+                        style="background: #F6AD55; color: #000; padding: 18px 42px; border-radius: 50px; font-weight: 700; text-decoration: none; border: none; font-size: 18px;">
+                        Download on Play Store
+                    </a>
                 </div>
             </div>
         </section>
 
-        <!-- Feature 2: Audio Recitation -->
-        <section class="feature-block reverse">
-            <div class="container" style="display:flex; gap:60px; align-items:center;">
-                <div class="feature-content">
-                    <span class="feature-badge">Audio Experience</span>
-                    <h2 class="feature-title">Immersive Audio Recitation</h2>
-                    <p class="feature-desc">
-                        Listen to beautiful recitations by world-renowned Qaris. Control playback speed to learn
-                        pronunciation or simply immerse yourself in the divine words.
-                    </p>
-                    <ul class="feature-list">
-                        <li>Recitation by Mishary Rashid Al-Afasy</li>
-                        <li>Adjust playback speed (0.5x to 2.0x)</li>
-                        <li>Background play support</li>
-                        <li>Repeat Ayah for memorization</li>
-                    </ul>
-                </div>
-                <div class="feature-visual">
-                    <div class="mockup-container"
-                        style="background: linear-gradient(135deg, #FFF3E0 0%, #FFCC80 100%);">
-                        <div style="font-size: 100px;">🎧</div>
-                        <div class="mockup-overlay">
-                            <div style="font-weight:700; color:#E65100; margin-bottom:5px;">Now Playing</div>
-                            <div style="font-size:12px; color:#555;">Surah Al-Mulk • 1.2x Speed</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="features-container">
 
-        <!-- Feature 3: Context & Insights -->
-        <section class="feature-block">
-            <div class="container" style="display:flex; gap:60px; align-items:center;">
+            <!-- Feature 1: Comparative Analysis -->
+            <div class="feature-block">
                 <div class="feature-content">
-                    <span class="feature-badge">Deeper Meaning</span>
-                    <h2 class="feature-title">Surah Insights & Context</h2>
+                    <span class="feature-eyebrow">Intellect</span>
+                    <h2 class="feature-title">Compare & Reflect.</h2>
                     <p class="feature-desc">
-                        Before you start reading, understand the "When, Where, and Why". Our Surah Insights give you the
-                        historical context and central themes of every chapter.
+                        Nuance matters. View multiple translations side-by-side to grasp the full depth of every Ayah.
+                        Switch seamlessly to Tafseer for scholarly interpretation.
                     </p>
                     <ul class="feature-list">
-                        <li>Revelation period (Makki/Madani)</li>
-                        <li>Central themes and core messages</li>
-                        <li>Historical background context</li>
+                        <li>Simultaneous dual-translation view</li>
+                        <li>Instant Tafseer access (Ibn Kathir)</li>
+                        <li>Word-by-word analysis (Coming Soon)</li>
                     </ul>
                 </div>
                 <div class="feature-visual">
-                    <div class="mockup-container"
-                        style="background: linear-gradient(135deg, #E8EAF6 0%, #C5CAE9 100%);">
-                        <div style="font-size: 100px;">💡</div>
-                        <div class="mockup-overlay">
-                            <div style="font-weight:700; color:#1A237E; margin-bottom:5px;">Surah Background</div>
-                            <div style="font-size:12px; color:#555;">Revealed in Makkah • 111 Ayahs</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    <div class="ui-accent-circle" style="background: rgba(0, 77, 64, 0.2); left: 20%; top: 20%;"></div>
+                    <!-- CSS UI Mockup -->
+                    <div class="ui-card">
+                        <div class="ui-screen">
+                            <div class="glass-header">
+                                <span>Surah Al-Mulk</span>
+                                <span>⋮</span>
+                            </div>
 
-        <!-- Feature 4: Topics & Collections -->
-        <section class="feature-block reverse">
-            <div class="container" style="display:flex; gap:60px; align-items:center;">
-                <div class="feature-content">
-                    <span class="feature-badge">Organization</span>
-                    <h2 class="feature-title">Topic Browser & Collections</h2>
-                    <p class="feature-desc">
-                        Navigate the Quran not just by chapters, but by topics. Explore verses about Patience, Charity,
-                        Family, and more. Create your own collections to save verses that touch your heart.
-                    </p>
-                    <ul class="feature-list">
-                        <li>Curated topics (e.g., Justice, Peace, Parents)</li>
-                        <li>Create unlimited personal collections</li>
-                        <li>Quick search by keyword</li>
-                    </ul>
-                </div>
-                <div class="feature-visual">
-                    <div class="mockup-container"
-                        style="background: linear-gradient(135deg, #F3E5F5 0%, #CE93D8 100%);">
-                        <div style="font-size: 100px;">📂</div>
-                        <div class="mockup-overlay">
-                            <div style="font-weight:700; color:#4A148C; margin-bottom:5px;">My Collections</div>
-                            <div style="font-size:12px; color:#555;">Verses on Patience (5 saved)</div>
+                            <div style="font-size: 14px; font-weight: 600; color: #004D40; margin-bottom: 8px;">Sahih
+                                International</div>
+                            <div class="glass-row" style="margin-bottom: 20px;"></div>
+
+                            <div style="margin: 0 0 20px; border-top: 1px dashed #ddd;"></div>
+
+                            <div style="font-size: 14px; font-weight: 600; color: #004D40; margin-bottom: 8px;">Abul Ala
+                                Maududi</div>
+                            <div class="glass-row"></div>
+                            <div class="glass-row half"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+
+            <!-- Feature 2: Audio Experience -->
+            <div class="feature-block reverse">
+                <div class="feature-content">
+                    <span class="feature-eyebrow">Immerse</span>
+                    <h2 class="feature-title">Listen. Feel.<br>Connect.</h2>
+                    <p class="feature-desc">
+                        Let the divine words resonate. Experience gapless playback with world-renowned Qaris. Perfect
+                        for memorization or spiritual reflection.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Mishary Rashid Al-Afasy</li>
+                        <li>Adjustable playback speed (0.5x - 2.0x)</li>
+                        <li>Seamless background play</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="ui-accent-circle" style="background: rgba(246, 173, 85, 0.3); right: 20%; bottom: 20%;">
+                    </div>
+                    <!-- CSS UI Mockup -->
+                    <div class="ui-card">
+                        <div class="ui-screen"
+                            style="align-items: center; justify-content: center; text-align: center;">
+                            <div
+                                style="width: 100px; height: 100px; background: #F6AD55; border-radius: 50%; margin-bottom: 30px; box-shadow: 0 20px 40px rgba(246, 173, 85, 0.3); display: flex; align-items: center; justify-content: center; color: white; font-size: 40px;">
+                                ▶</div>
+                            <div style="font-weight: bold; margin-bottom: 5px;">Mishary Al-Afasy</div>
+                            <div style="font-size: 12px; color:#666; margin-bottom: 20px;">Surah Al-Mulk</div>
+
+                            <!-- Waveform bars -->
+                            <div
+                                style="display: flex; gap: 4px; align-items: center; height: 30px; justify-content: center;">
+                                <div style="width: 4px; height: 10px; background: #ddd; border-radius: 2px;"></div>
+                                <div style="width: 4px; height: 20px; background: #ddd; border-radius: 2px;"></div>
+                                <div style="width: 4px; height: 15px; background: #ddd; border-radius: 2px;"></div>
+                                <div style="width: 4px; height: 25px; background: #F6AD55; border-radius: 2px;"></div>
+                                <div style="width: 4px; height: 30px; background: #F6AD55; border-radius: 2px;"></div>
+                                <div style="width: 4px; height: 20px; background: #F6AD55; border-radius: 2px;"></div>
+                                <div style="width: 4px; height: 10px; background: #ddd; border-radius: 2px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 3: Context -->
+            <div class="feature-block">
+                <div class="feature-content">
+                    <span class="feature-eyebrow">Insight</span>
+                    <h2 class="feature-title">Context is Key.</h2>
+                    <p class="feature-desc">
+                        Every Surah has a story. Our curated insights provide the historical backdrop, revelation
+                        period, and core themes before you even start reading.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Makki vs. Madani indicators</li>
+                        <li>Historical context summaries</li>
+                        <li>Core themes breakdown</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="ui-accent-circle" style="background: rgba(59, 130, 246, 0.2); left: 10%; top: 40%;">
+                    </div>
+                    <!-- CSS UI Mockup -->
+                    <div class="ui-card">
+                        <div class="ui-screen">
+                            <div style="font-size: 20px; font-weight: 700; margin-bottom: 4px;">Al-Mulk</div>
+                            <div style="color: #666; font-size: 12px; margin-bottom: 20px;">The Sovereignty • Mecca
+                            </div>
+
+                            <div
+                                style="background: #EBF8FF; padding: 15px; border-radius: 12px; border-left: 4px solid #3182CE; flex: 1;">
+                                <div style="font-size: 12px; font-weight: bold; color: #2B6CB0; margin-bottom: 10px;">
+                                    About this Surah</div>
+                                <div class="glass-row" style="background: #BEE3F8; width: 95%;"></div>
+                                <div class="glass-row" style="background: #BEE3F8; width: 85%;"></div>
+                                <div class="glass-row" style="background: #BEE3F8; width: 60%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature 4: Collections -->
+            <div class="feature-block reverse">
+                <div class="feature-content">
+                    <span class="feature-eyebrow">Organize</span>
+                    <h2 class="feature-title">Your Personal Collections.</h2>
+                    <p class="feature-desc">
+                        Build your spiritual library. Save verses that resonate with you into custom collections, or
+                        browse curated topics like Patience, Family, and Mercy.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Unlimited personal collections</li>
+                        <li>Curated topic browser</li>
+                        <li>One-tap save</li>
+                    </ul>
+                </div>
+                <div class="feature-visual">
+                    <div class="ui-accent-circle"
+                        style="background: rgba(159, 122, 234, 0.2); right: 10%; bottom: 30%;"></div>
+                    <!-- CSS UI Mockup -->
+                    <div class="ui-card">
+                        <div class="ui-screen">
+                            <div style="font-weight: bold; margin-bottom: 20px;">My Library</div>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                                <div
+                                    style="background: #FAF5FF; padding: 15px; border-radius: 12px; text-align: center; aspect-ratio: 1;">
+                                    <div style="font-size: 24px; margin-bottom: 5px;">❤️</div>
+                                    <div style="font-size: 10px; font-weight: 600; color: #553C9A;">Favorites</div>
+                                </div>
+                                <div
+                                    style="background: #F0FFF4; padding: 15px; border-radius: 12px; text-align: center; aspect-ratio: 1;">
+                                    <div style="font-size: 24px; margin-bottom: 5px;">🤲</div>
+                                    <div style="font-size: 10px; font-weight: 600; color: #276749;">Duas</div>
+                                </div>
+                                <div
+                                    style="background: #EBF8FF; padding: 15px; border-radius: 12px; grid-column: span 2; display: flex; align-items: center; gap: 10px;">
+                                    <div style="font-size: 20px;">📂</div>
+                                    <div>
+                                        <div style="font-size: 12px; font-weight: 600; color: #2C5282;">On Patience
+                                        </div>
+                                        <div style="font-size: 10px; color: #666;">12 Verses</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
         <!-- CTA Section -->
-        <section class="cta-section" style="background: #2D3748; color: white; padding: 80px 0; text-align: center;">
-            <div class="container">
-                <h2 class="section-title" style="color: white;">Ready to Explore?</h2>
-                <p class="section-subtitle">Experience the Quran like never before. Ad-free and privacy-focused.</p>
+        <section class="cta-premium">
+            <h2 class="section-title"
+                style="color: #111; font-size: clamp(32px, 5vw, 48px); background: none; -webkit-text-fill-color: initial;">
+                Start Your Journey.</h2>
+            <p class="section-subtitle" style="color: #666; margin-bottom: 40px;">Millions of users rely on Easy Quran
+                for their daily reading. Join them today.</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                 <a href="https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran"
                     class="btn btn-primary"
-                    style="background: #004D40; color: white; padding: 16px 36px; border-radius: 50px; font-weight: 700; text-decoration: none; display: inline-block;">
-                    Get It on Google Play
+                    style="background: #004D40; color: white; padding: 18px 48px; border-radius: 50px; font-size: 18px; font-weight: 700; box-shadow: 0 20px 40px rgba(0, 77, 64, 0.3);">
+                    Get App Free
                 </a>
             </div>
         </section>
@@ -370,6 +629,31 @@
     </main>
 
     <eq-footer></eq-footer>
+
+    <script>
+        // Simple Intersection Observer Implementation for Animations
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        // Add a small delay for staggered effect if needed, or just add class
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                        }, 100);
+                        observer.unobserve(entry.target); // Only animate once
+                    }
+                });
+            }, observerOptions);
+
+            const animatedElements = document.querySelectorAll('.fade-up, .section-title, .section-subtitle, .feature-block');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
 
 </body>
 
