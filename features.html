@@ -462,30 +462,34 @@
         }
     </style>
 
-  <!-- Google Analytics (gtag) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5T5Y28ND45"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-5T5Y28ND45');
-  </script>
+    <!-- Google Analytics (gtag) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5T5Y28ND45"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-5T5Y28ND45');
+    </script>
 
-  <!-- Google Tag Manager (load after page load) -->
-  <script>
-    window.addEventListener('load', function () {
-      setTimeout(function () {
-        (function (w, d, s, l, i) {
-          w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-              new Date().getTime(), event: 'gtm.js'
-          }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-              'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-55CXTQTQ');
-      }, 2000);
-    });
-  </script>
+    <!-- Google Tag Manager (load after page load) -->
+    <script>
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                (function (w, d, s, l, i) {
+                    w[l] = w[l] || []; w[l].push({
+                        'gtm.start':
+                            new Date().getTime(), event: 'gtm.js'
+                    }); var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-55CXTQTQ');
+            }, 2000);
+        });
+    </script>
+
+    <!-- Mobile Browser & PWA Compatibility -->
+    <link rel="apple-touch-icon" href="newappicon.webp">
+    <meta name="theme-color" content="#004D40">
 </head>
 
 <body>
@@ -631,10 +635,10 @@
                 <div class="feature-content">
                     <span class="feature-eyebrow">Engage</span>
                     <h2 class="feature-title">Interactive Tools.</h2>
-                    <p class="feature-desc">Easily highlight, bookmark, and share verses. Interact with the text in a
+                    <p class="feature-desc">Easily bookmark, and share verses. Interact with the text in a
                         natural, seamless way.</p>
                     <ul class="feature-list">
-                        <li>Smooth highlight tools</li>
+                        <li>Smooth Bookmark tools</li>
                         <li>Easy sharing options</li>
                         <li>Quick access bookmarks</li>
                     </ul>
@@ -669,8 +673,8 @@
                 <div class="feature-content">
                     <span class="feature-eyebrow">Comfort</span>
                     <h2 class="feature-title">Adaptive Reading UI.</h2>
-                    <p class="feature-desc">Read comfortably for hours. Adjust font sizes and Arabic scripts to what
-                        suits your eyes best.</p>
+                    <p class="feature-desc">Read comfortably for hours. Adjust font sizes and audio speed to what
+                        suits your eyes & ears best.</p>
                     <ul class="feature-list">
                         <li>Adjustable Arabic text size</li>
                         <li>Adjustable Translation text size</li>
@@ -712,7 +716,7 @@
             <h2 class="section-title"
                 style="color: #111; font-size: clamp(32px, 5vw, 48px); background: none; -webkit-text-fill-color: initial;">
                 Start Your Journey.</h2>
-            <p class="section-subtitle" style="color: #666; margin-bottom: 40px;">Millions of users rely on Easy Quran
+            <p class="section-subtitle" style="color: #666; margin-bottom: 40px;">Thousands of users rely on Easy Quran
                 for their daily reading. Join them today.</p>
             <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;">
                 <a href="https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran"
