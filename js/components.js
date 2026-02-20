@@ -39,8 +39,10 @@ class EQHeader extends HTMLElement {
     }
 
     // Auto-spawn decorations
-    this.spawnDecorations();
-    this.setupScrollAnimations();
+    requestAnimationFrame(() => {
+      this.spawnDecorations();
+      this.setupScrollAnimations();
+    });
   }
 
   spawnDecorations() {

@@ -302,32 +302,40 @@
         }
     </style>
 
-    <!-- Google Analytics (gtag) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5T5Y28ND45"></script>
-    <script>
+    
+
+    
+
+    
+  <!-- Google Analytics & Tag Manager (Deferred 2s for Performance) -->
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        // Load GTAG
+        var gtagScript = document.createElement('script');
+        gtagScript.async = true;
+        gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-5T5Y28ND45';
+        document.head.appendChild(gtagScript);
+
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-5T5Y28ND45');
-    </script>
 
-    <!-- Google Tag Manager (load after page load) -->
-    <script>
-        window.addEventListener('load', function () {
-            setTimeout(function () {
-                (function (w, d, s, l, i) {
-                    w[l] = w[l] || []; w[l].push({
-                        'gtm.start':
-                            new Date().getTime(), event: 'gtm.js'
-                    }); var f = d.getElementsByTagName(s)[0],
-                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                            'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-                })(window, document, 'script', 'dataLayer', 'GTM-55CXTQTQ');
-            }, 2000);
-        });
-    </script>
+        // Load GTM
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || []; w[l].push({
+            'gtm.start':
+              new Date().getTime(), event: 'gtm.js'
+          }); var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+              'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-55CXTQTQ');
+      }, 2000);
+    });
+  </script>
 
-    <!-- Mobile Browser & PWA Compatibility -->
+  <!-- Mobile Browser & PWA Compatibility -->
     <link rel="apple-touch-icon" href="newappicon.webp">
     <meta name="theme-color" content="#004D40">
 </head>

@@ -172,6 +172,16 @@ body {
   transform: translateY(-3px);
 }
 
+/* Custom Elements Hydration Shells (Prevents Layout Shift) */
+eq-header {
+  display: block;
+  min-height: 80px;
+}
+
+eq-footer {
+  display: block;
+}
+
 /* Header & Navigation */
 header {
   background: var(--primary);
