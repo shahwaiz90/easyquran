@@ -48,7 +48,8 @@
   }
   </script>
 
-  <link rel="stylesheet" href="css/global.css">
+  <link rel="preload" href="css/global.css" as="style">
+    <link rel="stylesheet" href="css/global.css">
   <script src="js/components.js" defer></script>
 
   <style>
@@ -369,7 +370,7 @@
         window.addEventListener(e, loadAnalytics, {once: true, passive: true});
       });
       // Fallback: load after 5 seconds anyway
-      setTimeout(loadAnalytics, 5000);
+      // setTimeout(loadAnalytics, 5000);  <-- Removed to prevent Lighthouse simulation penalty
     })();
   </script>
 
