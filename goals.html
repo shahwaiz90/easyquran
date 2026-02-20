@@ -237,22 +237,21 @@
             position: relative;
             overflow: hidden;
             border-bottom: 4px solid transparent;
-            /* 3D Unfold Animation */
+            /* Subtle Flow Animation */
             opacity: 0;
-            transform: perspective(600px) rotateX(20deg) translateY(40px) scale(0.9);
-            transform-origin: top center;
-            animation: elegantUnfold 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            transform: translateY(20px) scale(0.98);
+            animation: flowEnter 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
         }
 
-        @keyframes elegantUnfold {
+        @keyframes flowEnter {
             0% {
                 opacity: 0;
-                transform: perspective(600px) rotateX(20deg) translateY(40px) scale(0.9);
+                transform: translateY(30px) scale(0.95);
             }
 
             100% {
                 opacity: 1;
-                transform: perspective(600px) rotateX(0deg) translateY(0) scale(1);
+                transform: translateY(0) scale(1);
             }
         }
 
