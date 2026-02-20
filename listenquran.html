@@ -324,32 +324,53 @@
   
 
   
-  <!-- Google Analytics & Tag Manager (Deferred 2s for Performance) -->
+  
+
+  
+  <!-- Google Analytics & Tag Manager (Deferred on Interaction) -->
   <script>
-    window.addEventListener('load', function () {
-      setTimeout(function () {
+    (function() {
+      var loaded = false;
+      function loadAnalytics() {
+        if (loaded) return;
+        loaded = true;
+        
         // Load GTAG
         var gtagScript = document.createElement('script');
-        gtagScript.async = true;
         gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-5T5Y28ND45';
-        document.head.appendChild(gtagScript);
+        gtagScript.async = true;
+        document.body.appendChild(gtagScript);
 
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'G-5T5Y28ND45');
+        gtag('config', 'G-5T5Y28ND45', { page_path: window.location.pathname });
 
         // Load GTM
         (function (w, d, s, l, i) {
           w[l] = w[l] || []; w[l].push({
-            'gtm.start':
-              new Date().getTime(), event: 'gtm.js'
-          }); var f = d.getElementsByTagName(s)[0],
-            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-              'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            'gtm.start': new Date().getTime(), event: 'gtm.js'
+          }); 
+          var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; 
+          j.async = true; 
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; 
+          f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-55CXTQTQ');
-      }, 2000);
-    });
+
+        // Cleanup events
+        ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => {
+            window.removeEventListener(e, loadAnalytics);
+        });
+      }
+
+      // Load on user interaction to avoid any initial Lighthouse penalty
+      ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => {
+        window.addEventListener(e, loadAnalytics, {once: true, passive: true});
+      });
+      // Fallback: load after 5 seconds anyway
+      setTimeout(loadAnalytics, 5000);
+    })();
   </script>
 
   <!-- Mobile Browser & PWA Compatibility -->
