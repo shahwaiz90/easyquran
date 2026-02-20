@@ -235,21 +235,22 @@
             position: relative;
             overflow: hidden;
             border-bottom: 4px solid transparent;
-            /* Premium Animation Setup */
+            /* 3D Unfold Animation */
             opacity: 0;
-            transform: scale(0.95);
-            animation: smoothScaleIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+            transform: perspective(600px) rotateX(20deg) translateY(40px) scale(0.9);
+            transform-origin: top center;
+            animation: elegantUnfold 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
         }
 
-        @keyframes smoothScaleIn {
+        @keyframes elegantUnfold {
             0% {
                 opacity: 0;
-                transform: scale(0.95) translateY(10px);
+                transform: perspective(600px) rotateX(20deg) translateY(40px) scale(0.9);
             }
 
             100% {
                 opacity: 1;
-                transform: scale(1) translateY(0);
+                transform: perspective(600px) rotateX(0deg) translateY(0) scale(1);
             }
         }
 
@@ -749,10 +750,6 @@
     <!-- Mobile Browser & PWA Compatibility -->
     <link rel="apple-touch-icon" href="newappicon.webp">
     <meta name="theme-color" content="#004D40">
-
-
-    <link rel="preload" href="css/global.css" as="style">
-    <link rel="stylesheet" href="css/global.css">
 </head>
 
 <body>
