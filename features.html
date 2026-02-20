@@ -185,7 +185,8 @@
             z-index: 2;
         }
 
-        .feature-visual {
+        .feature-visual,
+        .old-feature-visual-removed {
             background: #F2F2F7;
             height: 100%;
             min-height: 500px;
@@ -200,7 +201,8 @@
             order: 2;
         }
 
-        .feature-block.reverse .feature-visual {
+        .feature-block.reverse .feature-visual,
+        .old-feature-visual-removed {
             order: 1;
         }
 
@@ -255,21 +257,27 @@
         }
 
         /* Abstract Device / UI Mockups (CSS Only) */
+        /* Abstract UI Card */
         .ui-card {
-            width: 320px;
+            width: 360px;
+            /* Slightly wider */
             max-width: 90%;
             background: #fff;
-            border-radius: 24px;
-            box-shadow: 0 40px 80px rgba(0, 0, 0, 0.15);
-            padding: 12px;
-            /* reduced padding inside device frame */
+            border-radius: 28px;
+            /* Slightly more rounded */
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+            /* softer shadow */
+            padding: 0;
+            /* Removing inner padding to look like a surface */
             position: relative;
-            transform: scale(0.9) rotateY(-10deg) rotateX(10deg);
-            transition: transform 0.8s var(--transition-curve);
-            border: 8px solid #333;
-            /* Phone bezel */
-            background-clip: padding-box;
-            aspect-ratio: 9/16;
+            transform: translateY(0);
+            /* Reset transform */
+            transition: transform 0.4s var(--transition-curve), box-shadow 0.4s var(--transition-curve);
+            border: 1px solid rgba(0, 0, 0, 0.04);
+            /* Subtle border instead of bezel */
+            /* Removed fixed phone aspect ratio */
+            min-height: 480px;
+            /* Ensure substantial height */
             display: flex;
             flex-direction: column;
             overflow: hidden;
@@ -277,17 +285,20 @@
 
         .ui-screen {
             background: #fff;
-            border-radius: 16px;
+            /* border-radius: 16px; removed to flush with card */
             flex: 1;
             display: flex;
             flex-direction: column;
-            padding: 16px;
+            padding: 24px;
+            /* More padding for card look */
             overflow: hidden;
             position: relative;
         }
 
         .feature-block:hover .ui-card {
-            transform: scale(0.95) rotateY(0deg) rotateX(0deg);
+            transform: translateY(-10px);
+            /* Simple float effect */
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.12);
         }
 
         /* Glassmorphism Elements inside UI Card */
@@ -367,7 +378,8 @@
                 /* Always text below image on mobile for flow */
             }
 
-            .feature-visual {
+            .feature-visual,
+            .old-feature-visual-removed {
                 order: 1 !important;
                 min-height: 400px;
                 padding: 40px 0;
@@ -409,6 +421,45 @@
         .anim-delay-2 {
             transition-delay: 0.2s;
         }
+
+        .feature-image-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            background: #F2F2F7;
+            height: 100%;
+            min-height: 500px;
+            overflow: hidden;
+        }
+
+        .feature-image-wrapper img {
+            max-width: 100%;
+            max-height: 500px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+            object-fit: contain;
+            z-index: 2;
+        }
+
+        .feature-block:hover .feature-image-wrapper img {
+            transform: translateY(-10px) scale(1.02);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive max heights */
+        @media (max-width: 900px) {
+            .feature-image-wrapper {
+                min-height: 400px;
+                padding: 30px 15px;
+            }
+
+            .feature-image-wrapper img {
+                max-height: 400px;
+            }
+        }
     </style>
 </head>
 
@@ -438,173 +489,194 @@
 
         <div class="features-container">
 
-            <!-- Feature 1: Comparative Analysis -->
+            <div class="feature-block">
+                <div class="feature-content">
+                    <span class="feature-eyebrow">Consistency</span>
+                    <h2 class="feature-title">Daily Quran Goals</h2>
+                    <p class="feature-desc">Build a deeper connection with the Quran by setting daily reading goals that
+                        fit your schedule. Track by minutes or ayahs.</p>
+                    <ul class="feature-list">
+                        <li>Read 5 to 60 minutes daily</li>
+                        <li>Custom Ayah targets</li>
+                        <li>Stay motivated with reminders</li>
+                    </ul>
+                </div>
+                <div class="feature-image-wrapper">
+                    <div class="ui-accent-circle" style="background: rgba(0, 77, 64, 0.2); left: 20%; top: 20%;"></div>
+                    <img src="screenshots/6.webp" alt="Feature: Daily Quran Goals" loading="lazy">
+                </div>
+            </div>
+
+            <div class="feature-block reverse">
+                <div class="feature-content">
+                    <span class="feature-eyebrow">Motivation</span>
+                    <h2 class="feature-title">Track Reading Progress</h2>
+                    <p class="feature-desc">Visualize your journey. See your daily streak, Juz completed, and remaining
+                        days to reach your ultimate destination.</p>
+                    <ul class="feature-list">
+                        <li>Streak & consistency tracking</li>
+                        <li>Detailed progress dashboard</li>
+                        <li>Visual target completions</li>
+                    </ul>
+                </div>
+                <div class="feature-image-wrapper">
+                    <div class="ui-accent-circle" style="background: rgba(246, 173, 85, 0.3); right: 20%; bottom: 20%;">
+                    </div>
+                    <img src="screenshots/trackgoal.webp" alt="Feature: Track Reading Progress" loading="lazy">
+                </div>
+            </div>
+
             <div class="feature-block">
                 <div class="feature-content">
                     <span class="feature-eyebrow">Intellect</span>
                     <h2 class="feature-title">Compare & Reflect.</h2>
-                    <p class="feature-desc">
-                        Nuance matters. View multiple translations side-by-side to grasp the full depth of every Ayah.
-                        Switch seamlessly to Tafseer for scholarly interpretation.
-                    </p>
+                    <p class="feature-desc">Nuance matters. View multiple translations side-by-side to grasp the full
+                        depth of every Ayah.</p>
                     <ul class="feature-list">
                         <li>Simultaneous dual-translation view</li>
-                        <li>Instant Tafseer access (Ibn Kathir)</li>
-                        <li>Word-by-word analysis (Coming Soon)</li>
+                        <li>Comparative Tafseer access</li>
+                        <li>Comparative Translation access</li>
                     </ul>
                 </div>
-                <div class="feature-visual">
-                    <div class="ui-accent-circle" style="background: rgba(0, 77, 64, 0.2); left: 20%; top: 20%;"></div>
-                    <!-- CSS UI Mockup -->
-                    <div class="ui-card">
-                        <div class="ui-screen">
-                            <div class="glass-header">
-                                <span>Surah Al-Mulk</span>
-                                <span>⋮</span>
-                            </div>
-
-                            <div style="font-size: 14px; font-weight: 600; color: #004D40; margin-bottom: 8px;">Sahih
-                                International</div>
-                            <div class="glass-row" style="margin-bottom: 20px;"></div>
-
-                            <div style="margin: 0 0 20px; border-top: 1px dashed #ddd;"></div>
-
-                            <div style="font-size: 14px; font-weight: 600; color: #004D40; margin-bottom: 8px;">Abul Ala
-                                Maududi</div>
-                            <div class="glass-row"></div>
-                            <div class="glass-row half"></div>
-                        </div>
+                <div class="feature-image-wrapper">
+                    <div class="ui-accent-circle" style="background: rgba(59, 130, 246, 0.2); left: 20%; top: 20%;">
                     </div>
+                    <img src="screenshots/compare.webp" alt="Feature: Compare & Reflect." loading="lazy">
                 </div>
             </div>
 
-            <!-- Feature 2: Audio Experience -->
             <div class="feature-block reverse">
                 <div class="feature-content">
                     <span class="feature-eyebrow">Immerse</span>
-                    <h2 class="feature-title">Listen. Feel.<br>Connect.</h2>
-                    <p class="feature-desc">
-                        Let the divine words resonate. Experience gapless playback with world-renowned Qaris. Perfect
-                        for memorization or spiritual reflection.
-                    </p>
+                    <h2 class="feature-title">Listen. Feel. Connect.</h2>
+                    <p class="feature-desc">Let the divine words resonate. Experience gapless playback with
+                        world-renowned Qaris. Perfect for memorization.</p>
                     <ul class="feature-list">
-                        <li>Mishary Rashid Al-Afasy</li>
-                        <li>Adjustable playback speed (0.5x - 2.0x)</li>
+                        <li>Mishary Rashid Al-Afasy & more</li>
+                        <li>Adjustable playback speed</li>
                         <li>Seamless background play</li>
                     </ul>
                 </div>
-                <div class="feature-visual">
-                    <div class="ui-accent-circle" style="background: rgba(246, 173, 85, 0.3); right: 20%; bottom: 20%;">
-                    </div>
-                    <!-- CSS UI Mockup -->
-                    <div class="ui-card">
-                        <div class="ui-screen"
-                            style="align-items: center; justify-content: center; text-align: center;">
-                            <div
-                                style="width: 100px; height: 100px; background: #F6AD55; border-radius: 50%; margin-bottom: 30px; box-shadow: 0 20px 40px rgba(246, 173, 85, 0.3); display: flex; align-items: center; justify-content: center; color: white; font-size: 40px;">
-                                ▶</div>
-                            <div style="font-weight: bold; margin-bottom: 5px;">Mishary Al-Afasy</div>
-                            <div style="font-size: 12px; color:#666; margin-bottom: 20px;">Surah Al-Mulk</div>
-
-                            <!-- Waveform bars -->
-                            <div
-                                style="display: flex; gap: 4px; align-items: center; height: 30px; justify-content: center;">
-                                <div style="width: 4px; height: 10px; background: #ddd; border-radius: 2px;"></div>
-                                <div style="width: 4px; height: 20px; background: #ddd; border-radius: 2px;"></div>
-                                <div style="width: 4px; height: 15px; background: #ddd; border-radius: 2px;"></div>
-                                <div style="width: 4px; height: 25px; background: #F6AD55; border-radius: 2px;"></div>
-                                <div style="width: 4px; height: 30px; background: #F6AD55; border-radius: 2px;"></div>
-                                <div style="width: 4px; height: 20px; background: #F6AD55; border-radius: 2px;"></div>
-                                <div style="width: 4px; height: 10px; background: #ddd; border-radius: 2px;"></div>
-                            </div>
-                        </div>
-                    </div>
+                <div class="feature-image-wrapper">
+                    <div class="ui-accent-circle"
+                        style="background: rgba(159, 122, 234, 0.2); right: 20%; bottom: 20%;"></div>
+                    <img src="screenshots/4.webp" alt="Feature: Listen. Feel. Connect." loading="lazy">
                 </div>
             </div>
 
-            <!-- Feature 3: Context -->
             <div class="feature-block">
                 <div class="feature-content">
                     <span class="feature-eyebrow">Insight</span>
                     <h2 class="feature-title">Context is Key.</h2>
-                    <p class="feature-desc">
-                        Every Surah has a story. Our curated insights provide the historical backdrop, revelation
-                        period, and core themes before you even start reading.
-                    </p>
+                    <p class="feature-desc">Every Surah has a story. Our curated insights provide the historical
+                        backdrop, revelation period, and core themes.</p>
                     <ul class="feature-list">
                         <li>Makki vs. Madani indicators</li>
                         <li>Historical context summaries</li>
                         <li>Core themes breakdown</li>
                     </ul>
                 </div>
-                <div class="feature-visual">
-                    <div class="ui-accent-circle" style="background: rgba(59, 130, 246, 0.2); left: 10%; top: 40%;">
+                <div class="feature-image-wrapper">
+                    <div class="ui-accent-circle" style="background: rgba(236, 72, 153, 0.2); left: 20%; top: 20%;">
                     </div>
-                    <!-- CSS UI Mockup -->
-                    <div class="ui-card">
-                        <div class="ui-screen">
-                            <div style="font-size: 20px; font-weight: 700; margin-bottom: 4px;">Al-Mulk</div>
-                            <div style="color: #666; font-size: 12px; margin-bottom: 20px;">The Sovereignty • Mecca
-                            </div>
-
-                            <div
-                                style="background: #EBF8FF; padding: 15px; border-radius: 12px; border-left: 4px solid #3182CE; flex: 1;">
-                                <div style="font-size: 12px; font-weight: bold; color: #2B6CB0; margin-bottom: 10px;">
-                                    About this Surah</div>
-                                <div class="glass-row" style="background: #BEE3F8; width: 95%;"></div>
-                                <div class="glass-row" style="background: #BEE3F8; width: 85%;"></div>
-                                <div class="glass-row" style="background: #BEE3F8; width: 60%;"></div>
-                            </div>
-                        </div>
-                    </div>
+                    <img src="screenshots/insight.webp" alt="Feature: Context is Key." loading="lazy">
                 </div>
             </div>
 
-            <!-- Feature 4: Collections -->
             <div class="feature-block reverse">
                 <div class="feature-content">
                     <span class="feature-eyebrow">Organize</span>
                     <h2 class="feature-title">Your Personal Collections.</h2>
-                    <p class="feature-desc">
-                        Build your spiritual library. Save verses that resonate with you into custom collections, or
-                        browse curated topics like Patience, Family, and Mercy.
-                    </p>
+                    <p class="feature-desc">Build your spiritual library. Save verses that resonate with you into custom
+                        collections, or browse curated topics.</p>
                     <ul class="feature-list">
                         <li>Unlimited personal collections</li>
                         <li>Curated topic browser</li>
                         <li>One-tap save</li>
                     </ul>
                 </div>
-                <div class="feature-visual">
-                    <div class="ui-accent-circle"
-                        style="background: rgba(159, 122, 234, 0.2); right: 10%; bottom: 30%;"></div>
-                    <!-- CSS UI Mockup -->
-                    <div class="ui-card">
-                        <div class="ui-screen">
-                            <div style="font-weight: bold; margin-bottom: 20px;">My Library</div>
-                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-                                <div
-                                    style="background: #FAF5FF; padding: 15px; border-radius: 12px; text-align: center; aspect-ratio: 1;">
-                                    <div style="font-size: 24px; margin-bottom: 5px;">❤️</div>
-                                    <div style="font-size: 10px; font-weight: 600; color: #553C9A;">Favorites</div>
-                                </div>
-                                <div
-                                    style="background: #F0FFF4; padding: 15px; border-radius: 12px; text-align: center; aspect-ratio: 1;">
-                                    <div style="font-size: 24px; margin-bottom: 5px;">🤲</div>
-                                    <div style="font-size: 10px; font-weight: 600; color: #276749;">Duas</div>
-                                </div>
-                                <div
-                                    style="background: #EBF8FF; padding: 15px; border-radius: 12px; grid-column: span 2; display: flex; align-items: center; gap: 10px;">
-                                    <div style="font-size: 20px;">📂</div>
-                                    <div>
-                                        <div style="font-size: 12px; font-weight: 600; color: #2C5282;">On Patience
-                                        </div>
-                                        <div style="font-size: 10px; color: #666;">12 Verses</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="feature-image-wrapper">
+                    <div class="ui-accent-circle" style="background: rgba(16, 185, 129, 0.2); right: 20%; bottom: 20%;">
                     </div>
+                    <img src="screenshots/3.webp" alt="Feature: Your Personal Collections." loading="lazy">
+                </div>
+            </div>
+
+            <div class="feature-block">
+                <div class="feature-content">
+                    <span class="feature-eyebrow">Engage</span>
+                    <h2 class="feature-title">Interactive Tools.</h2>
+                    <p class="feature-desc">Easily highlight, bookmark, and share verses. Interact with the text in a
+                        natural, seamless way.</p>
+                    <ul class="feature-list">
+                        <li>Smooth highlight tools</li>
+                        <li>Easy sharing options</li>
+                        <li>Quick access bookmarks</li>
+                    </ul>
+                </div>
+                <div class="feature-image-wrapper">
+                    <div class="ui-accent-circle" style="background: rgba(245, 158, 11, 0.2); left: 20%; top: 20%;">
+                    </div>
+                    <img src="screenshots/share.webp" alt="Feature: Interactive Tools." loading="lazy">
+                </div>
+            </div>
+
+            <div class="feature-block reverse">
+                <div class="feature-content">
+                    <span class="feature-eyebrow">Aesthetic</span>
+                    <h2 class="feature-title">Beautiful Custom Themes.</h2>
+                    <p class="feature-desc">Personalize your reading experience. Choose between carefully crafted light
+                        and dark themes tailored for focus.</p>
+                    <ul class="feature-list">
+                        <li>True Dark Mode</li>
+                        <li>Soft Light Theme</li>
+                        <li>Eye-comfort colors</li>
+                    </ul>
+                </div>
+                <div class="feature-image-wrapper">
+                    <div class="ui-accent-circle" style="background: rgba(99, 102, 241, 0.2); right: 20%; bottom: 20%;">
+                    </div>
+                    <img src="screenshots/2.webp" alt="Feature: Beautiful Custom Themes." loading="lazy">
+                </div>
+            </div>
+
+            <div class="feature-block">
+                <div class="feature-content">
+                    <span class="feature-eyebrow">Comfort</span>
+                    <h2 class="feature-title">Adaptive Reading UI.</h2>
+                    <p class="feature-desc">Read comfortably for hours. Adjust font sizes and Arabic scripts to what
+                        suits your eyes best.</p>
+                    <ul class="feature-list">
+                        <li>Adjustable Arabic text size</li>
+                        <li>Adjustable Translation text size</li>
+                        <li>Adjust Scroll Speed</li>
+                        <li>Adjust Audio Speed</li>
+                        <li>Indo-Pak scripts</li>
+                    </ul>
+                </div>
+                <div class="feature-image-wrapper">
+                    <div class="ui-accent-circle" style="background: rgba(20, 184, 166, 0.2); left: 20%; top: 20%;">
+                    </div>
+                    <img src="screenshots/settings.webp" alt="Feature: Adaptive Reading UI." loading="lazy">
+                </div>
+            </div>
+
+            <div class="feature-block reverse">
+                <div class="feature-content">
+                    <span class="feature-eyebrow">Focus</span>
+                    <h2 class="feature-title">Premium Ad-Free Experience.</h2>
+                    <p class="feature-desc">Submerge yourself in the words of Allah without distractions. Pure,
+                        uninterrupted flow.</p>
+                    <ul class="feature-list">
+                        <li>Zero advertisements</li>
+                        <li>No interruptions</li>
+                        <li>Beautifully minimal interface</li>
+                    </ul>
+                </div>
+                <div class="feature-image-wrapper">
+                    <div class="ui-accent-circle" style="background: rgba(239, 68, 68, 0.2); right: 20%; bottom: 20%;">
+                    </div>
+                    <img src="screenshots/5.webp" alt="Feature: Premium Ad-Free Experience." loading="lazy">
                 </div>
             </div>
 
