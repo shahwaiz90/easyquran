@@ -237,21 +237,34 @@
             position: relative;
             overflow: hidden;
             border-bottom: 4px solid transparent;
-            /* Pop Up Animation */
+            /* Side Slide Animation */
             opacity: 0;
-            transform: scale(0.5);
-            animation: popUpEnter 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+            animation-duration: 0.8s;
+            animation-timing-function: cubic-bezier(0.25, 1, 0.5, 1);
+            animation-fill-mode: forwards;
         }
 
-        @keyframes popUpEnter {
+        @keyframes slideFromLeft {
             0% {
                 opacity: 0;
-                transform: scale(0.5);
+                transform: translateX(-60px);
             }
 
             100% {
                 opacity: 1;
-                transform: scale(1);
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideFromRight {
+            0% {
+                opacity: 0;
+                transform: translateX(60px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateX(0);
             }
         }
 
@@ -262,21 +275,25 @@
 
         .goal-card.easy {
             border-color: #48BB78;
+            animation-name: slideFromLeft;
             animation-delay: 0.1s;
         }
 
         .goal-card.medium {
             border-color: #4299E1;
+            animation-name: slideFromLeft;
             animation-delay: 0.25s;
         }
 
         .goal-card.hard {
             border-color: var(--primary);
+            animation-name: slideFromRight;
             animation-delay: 0.4s;
         }
 
         .goal-card.hafiz {
             border-color: #805AD5;
+            animation-name: slideFromRight;
             animation-delay: 0.55s;
         }
 
