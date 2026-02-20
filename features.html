@@ -76,7 +76,7 @@
         /* Hero Section - Immersive */
         .features-hero {
             position: relative;
-            background: #000;
+            background: #004D40;
             color: white;
             padding: 180px 20px 140px;
             text-align: center;
@@ -92,8 +92,8 @@
             transform: translate(-50%, -50%);
             width: 120%;
             height: 120%;
-            background: radial-gradient(circle at center, #004D40 0%, #000 60%);
-            opacity: 0.6;
+            background: radial-gradient(circle at center, #00695C 0%, #004D40 60%);
+            opacity: 0.8;
             filter: blur(80px);
             z-index: 0;
             animation: pulse-glow 10s infinite alternate;
@@ -112,10 +112,7 @@
             letter-spacing: -2px;
             line-height: 1.05;
             margin-bottom: 24px;
-            background: linear-gradient(to right, #fff, #a5b4fc);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+            color: white;
             opacity: 0;
             /* For animation */
         }
@@ -123,7 +120,7 @@
         .section-subtitle {
             font-size: clamp(20px, 4vw, 24px);
             font-weight: 400;
-            color: #A1A1AA;
+            color: rgba(255, 255, 255, 0.9);
             max-width: 680px;
             margin: 0 auto 40px;
             line-height: 1.4;
@@ -143,6 +140,18 @@
             opacity: 0;
             transform: translateY(30px);
             transition: opacity 1s var(--transition-curve), transform 1s var(--transition-curve);
+        }
+
+        @keyframes pulse-glow {
+            0% {
+                opacity: 0.5;
+                transform: translate(-50%, -50%) scale(1);
+            }
+
+            100% {
+                opacity: 0.9;
+                transform: translate(-50%, -50%) scale(1.1);
+            }
         }
 
         /* Feature Section - "Bento" / Large Card Style */
@@ -463,61 +472,61 @@
         }
     </style>
 
-    
 
-    
 
-    
-  
 
-  
-  <!-- Google Analytics & Tag Manager (Deferred on Interaction) -->
-  <script>
-    (function() {
-      var loaded = false;
-      function loadAnalytics() {
-        if (loaded) return;
-        loaded = true;
-        
-        // Load GTAG
-        var gtagScript = document.createElement('script');
-        gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-5T5Y28ND45';
-        gtagScript.async = true;
-        document.body.appendChild(gtagScript);
 
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-5T5Y28ND45', { page_path: window.location.pathname });
 
-        // Load GTM
-        (function (w, d, s, l, i) {
-          w[l] = w[l] || []; w[l].push({
-            'gtm.start': new Date().getTime(), event: 'gtm.js'
-          }); 
-          var f = d.getElementsByTagName(s)[0],
-              j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; 
-          j.async = true; 
-          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; 
-          f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-55CXTQTQ');
 
-        // Cleanup events
-        ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => {
-            window.removeEventListener(e, loadAnalytics);
-        });
-      }
 
-      // Load on user interaction to avoid any initial Lighthouse penalty
-      ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => {
-        window.addEventListener(e, loadAnalytics, {once: true, passive: true});
-      });
-      // Fallback: load after 5 seconds anyway
-      // setTimeout(loadAnalytics, 5000);  <-- Removed to prevent Lighthouse simulation penalty
-    })();
-  </script>
 
-  <!-- Mobile Browser & PWA Compatibility -->
+    <!-- Google Analytics & Tag Manager (Deferred on Interaction) -->
+    <script>
+        (function () {
+            var loaded = false;
+            function loadAnalytics() {
+                if (loaded) return;
+                loaded = true;
+
+                // Load GTAG
+                var gtagScript = document.createElement('script');
+                gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-5T5Y28ND45';
+                gtagScript.async = true;
+                document.body.appendChild(gtagScript);
+
+                window.dataLayer = window.dataLayer || [];
+                function gtag() { dataLayer.push(arguments); }
+                gtag('js', new Date());
+                gtag('config', 'G-5T5Y28ND45', { page_path: window.location.pathname });
+
+                // Load GTM
+                (function (w, d, s, l, i) {
+                    w[l] = w[l] || []; w[l].push({
+                        'gtm.start': new Date().getTime(), event: 'gtm.js'
+                    });
+                    var f = d.getElementsByTagName(s)[0],
+                        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                    j.async = true;
+                    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                    f.parentNode.insertBefore(j, f);
+                })(window, document, 'script', 'dataLayer', 'GTM-55CXTQTQ');
+
+                // Cleanup events
+                ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => {
+                    window.removeEventListener(e, loadAnalytics);
+                });
+            }
+
+            // Load on user interaction to avoid any initial Lighthouse penalty
+            ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => {
+                window.addEventListener(e, loadAnalytics, { once: true, passive: true });
+            });
+            // Fallback: load after 5 seconds anyway
+            // setTimeout(loadAnalytics, 5000);  <-- Removed to prevent Lighthouse simulation penalty
+        })();
+    </script>
+
+    <!-- Mobile Browser & PWA Compatibility -->
     <link rel="apple-touch-icon" href="newappicon.webp">
     <meta name="theme-color" content="#004D40">
 </head>
