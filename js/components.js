@@ -83,7 +83,7 @@ class EQHeader extends HTMLElement {
       });
     }, { threshold: 0.1 });
 
-    document.querySelectorAll('section, h2, .feature-card, .goal-card').forEach(el => {
+    document.querySelectorAll('section:not(.hero):not(.goals-hero), h2, .feature-card:not(.hero *), .goal-card').forEach(el => {
       el.classList.add('fade-up');
       observer.observe(el);
     });
