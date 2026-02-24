@@ -28,5 +28,11 @@
     "title_en": "Daily Life",
     "title_ur": "روزمرہ کی دعائیں",
     "imageUrl": "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "ramadan_duas",
+    "title_en": "Ramadan Duas",
+    "title_ur": "رمضان کی دعائیں",
+    "imageUrl": "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?auto=format&fit=crop&q=80&w=800"
   }
 ]
