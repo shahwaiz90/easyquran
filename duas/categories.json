@@ -1,32 +1,32 @@
 [
   {
-    "id": "everyday",
-    "title_en": "Everyday",
-    "title_ur": "روزمرہ",
+    "id": "daily-dua",
+    "title_en": "Daily Duas",
+    "title_ur": "روزمرہ مسنون دعائیں",
     "imageUrl": "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?auto=format&fit=crop&q=80&w=800"
   },
   {
-    "id": "morning_evening",
-    "title_en": "Morning & Evening",
-    "title_ur": "صبح و شام",
+    "id": "dhikr-after-salah",
+    "title_en": "After Salah",
+    "title_ur": "نماز کے بعد",
     "imageUrl": "https://images.unsplash.com/photo-1472552944129-b035e9ea3744?auto=format&fit=crop&q=80&w=800"
   },
   {
-    "id": "hereafter",
-    "title_en": "Hereafter",
-    "title_ur": "آخرت",
+    "id": "evening-dhikr",
+    "title_en": "Evening Dhikr",
+    "title_ur": "شام کے اذکار",
+    "imageUrl": "https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "morning-dhikr",
+    "title_en": "Morning Dhikr",
+    "title_ur": "صبح کے اذکار",
     "imageUrl": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=800"
   },
   {
-    "id": "forgiveness",
-    "title_en": "Forgiveness",
-    "title_ur": "التوبہ والاستغفار",
+    "id": "selected-dua",
+    "title_en": "Selected Duas",
+    "title_ur": "منتخب دعائیں",
     "imageUrl": "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&q=80&w=800"
-  },
-  {
-    "id": "protection",
-    "title_en": "Protection",
-    "title_ur": "حفاظت",
-    "imageUrl": "https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?auto=format&fit=crop&q=80&w=800"
   }
 ]
