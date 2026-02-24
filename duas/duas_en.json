@@ -1,0 +1,51 @@
+[
+  {
+    "id": "1",
+    "category": "everyday",
+    "arabicText": "بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+    "translation": "In the name of Allah, I trust in Allah; there is no might and no power but in Allah.",
+    "reference": "Abu Dawud"
+  },
+  {
+    "id": "2",
+    "category": "everyday",
+    "arabicText": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا",
+    "translation": "O Allah, I ask You for knowledge that is of benefit, a good provision, and deeds that will be accepted.",
+    "reference": "Ibn Majah"
+  },
+  {
+    "id": "3",
+    "category": "hereafter",
+    "arabicText": "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+    "translation": "Our Lord, give us in this world [that which is] good and in the Hereafter [that which is] good and protect us from the punishment of the Fire.",
+    "reference": "Quran 2:201"
+  },
+  {
+    "id": "4",
+    "category": "hereafter",
+    "arabicText": "اللَّهُمَّ حَاسِبْنِي حِسَاباً يَسِيراً",
+    "translation": "O Allah, grant me an easy reckoning.",
+    "reference": "Ahmad"
+  },
+  {
+    "id": "5",
+    "category": "morning_evening",
+    "arabicText": "اللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ النُّشُورُ",
+    "translation": "O Allah, by Your leave we have reached the morning and by Your leave we have reached the evening, by Your leave we live and die and unto You is our resurrection.",
+    "reference": "Tirmidhi"
+  },
+  {
+    "id": "6",
+    "category": "forgiveness",
+    "arabicText": "اللَّهُمَّ إِنَّكَ عَفُوٌّ تُحِبُّ الْعَفْوَ فَاعْفُ عَنِّي",
+    "translation": "O Allah, You are forgiving and love forgiveness, so forgive me.",
+    "reference": "Tirmidhi"
+  },
+  {
+    "id": "7",
+    "category": "protection",
+    "arabicText": "بِسْمِ اللَّهِ الَّذِي لَا يَضُرُّ مَعَ اسْمِهِ شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
+    "translation": "In the name of Allah, with Whose name nothing on earth or in the heavens can cause harm, and He is the All-Hearing, the All-Knowing.",
+    "reference": "Abu Dawud"
+  }
+]
