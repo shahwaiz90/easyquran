@@ -1,32 +1,50 @@
 [
   {
-    "id": "daily-dua",
-    "title_en": "Daily Duas",
-    "title_ur": "روزمرہ مسنون دعائیں",
-    "imageUrl": "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?auto=format&fit=crop&q=80&w=800"
-  },
-  {
-    "id": "dhikr-after-salah",
-    "title_en": "After Salah",
-    "title_ur": "نماز کے بعد",
-    "imageUrl": "https://images.unsplash.com/photo-1472552944129-b035e9ea3744?auto=format&fit=crop&q=80&w=800"
-  },
-  {
-    "id": "evening-dhikr",
-    "title_en": "Evening Dhikr",
-    "title_ur": "شام کے اذکار",
-    "imageUrl": "https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?auto=format&fit=crop&q=80&w=800"
-  },
-  {
-    "id": "morning-dhikr",
+    "id": "morning",
     "title_en": "Morning Dhikr",
     "title_ur": "صبح کے اذکار",
     "imageUrl": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=800"
   },
   {
-    "id": "selected-dua",
-    "title_en": "Selected Duas",
-    "title_ur": "منتخب دعائیں",
+    "id": "evening",
+    "title_en": "Evening Dhikr",
+    "title_ur": "شام کے اذکار",
+    "imageUrl": "https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "waking_up",
+    "title_en": "Waking Up",
+    "title_ur": "بیدار ہونے کی دعائیں",
+    "imageUrl": "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "clothes",
+    "title_en": "Wearing Clothes",
+    "title_ur": "لباس پہننے کی دعائیں",
+    "imageUrl": "https://images.unsplash.com/photo-1472552944129-b035e9ea3744?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "bathroom",
+    "title_en": "Bathroom Duas",
+    "title_ur": "بیت الخلاء کی دعائیں",
     "imageUrl": "https://images.unsplash.com/photo-1490730141103-6cac27aaab94?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "wudu",
+    "title_en": "Wudu (Ablution)",
+    "title_ur": "وضو کی دعائیں",
+    "imageUrl": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "home",
+    "title_en": "Home Duas",
+    "title_ur": "گھر کی دعائیں",
+    "imageUrl": "https://images.unsplash.com/photo-1542816417-0983c9c9ad53?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    "id": "masjid",
+    "title_en": "Masjid Duas",
+    "title_ur": "مسجد کی دعائیں",
+    "imageUrl": "https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?auto=format&fit=crop&q=80&w=800"
   }
 ]

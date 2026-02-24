@@ -1,681 +1,576 @@
 [
   {
     "id": "1",
-    "category": "daily-dua",
-    "arabicText": "بِاسْمِكَ اللَّهُمَّ أَمُوْتُ وَأَحْيَا",
-    "translation": "In Your name, O Allah, I die and I live.",
-    "reference": "HR. al-Bukhari"
+    "category": "morning",
+    "arabicText": "أَصْـبَحْنا وَأَصْـبَحَ المُـلْكُ لله وَالحَمدُ لله ، لا إلهَ إلاّ اللّهُ وَحدَهُ لا شَريكَ لهُ، لهُ المُـلكُ ولهُ الحَمْـد، وهُوَ على كلّ شَيءٍ قدير ، رَبِّ أسْـأَلُـكَ خَـيرَ ما في هـذا اليوم وَخَـيرَ ما بَعْـدَه ، وَأَعـوذُ بِكَ مِنْ شَـرِّ ما في هـذا اليوم وَشَرِّ ما بَعْـدَه، رَبِّ أَعـوذُبِكَ مِنَ الْكَسَـلِ وَسـوءِ الْكِـبَر ، رَبِّ أَعـوذُ بِكَ مِنْ عَـذابٍ في النّـارِ وَعَـذابٍ في القَـبْر.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "مسلم"
   },
   {
     "id": "2",
-    "category": "daily-dua",
-    "arabicText": "الحَمْدُ للهِ الَّذِي أَحْيَانَا بعْدَ مَا أماتَنَا وإِلَيْهِ النُّشُورُ",
-    "translation": "All praise is for Allah who gives us life after He has caused us to die, and to Him is the resurrection.",
-    "reference": "HR. Bukhari: 6327"
+    "category": "morning",
+    "arabicText": "اللّهُـمَّ بِكَ أَصْـبَحْنا وَبِكَ أَمْسَـينا ، وَبِكَ نَحْـيا وَبِكَ نَمُـوتُ وَإِلَـيْكَ النُّـشُور.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "الترمذي"
   },
   {
     "id": "3",
-    "category": "daily-dua",
-    "arabicText": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ",
-    "translation": "O Allah, I seek refuge in You from the evil and the wicked.",
-    "reference": "HR. al-Bukhari and Muslim"
+    "category": "morning",
+    "arabicText": "أَصْبَـحْـنا عَلَى فِطْرَةِ الإسْلاَمِ، وَعَلَى كَلِمَةِ الإِخْلاَصِ، وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ، وَعَلَى مِلَّةِ أَبِينَا إبْرَاهِيمَ حَنِيفاً مُسْلِماً وَمَا كَانَ مِنَ المُشْرِكِينَ.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "أحمد"
   },
   {
     "id": "4",
-    "category": "daily-dua",
-    "arabicText": "غُفْرَانَكَ",
-    "translation": "I ask for Your forgiveness (O Allah).",
-    "reference": "HR. at-Tirmidzi"
+    "category": "morning",
+    "arabicText": "سُبْحـانَ اللهِ وَبِحَمْـدِهِ عَدَدَ خَلْـقِه ، وَرِضـا نَفْسِـه ، وَزِنَـةَ عَـرْشِـه ، وَمِـدادَ كَلِمـاتِـه.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "مسلم"
   },
   {
     "id": "5",
-    "category": "daily-dua",
-    "arabicText": "بِسْمِ اللَّهِ",
-    "translation": "In the name of Allah.",
-    "reference": "HR. al-Bukari No. 5376 and Muslim No. 2022"
+    "category": "morning",
+    "arabicText": "اللّهُـمَّ عافِـني في بَدَنـي ، اللّهُـمَّ عافِـني في سَمْـعي ، اللّهُـمَّ عافِـني في بَصَـري ، لا إلهَ إلاّ أَنْـتَ.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "أحمد"
   },
   {
     "id": "6",
-    "category": "daily-dua",
-    "arabicText": "بِسْمِ اللَّهِ أَوَّلَهُ وَآخِرَهُ",
-    "translation": "In the name of Allah, at its beginning and its end.",
-    "reference": "HR. Abu Dawud"
+    "category": "morning",
+    "arabicText": "اللّهُـمَّ إِنّـي أَعـوذُ بِكَ مِنَ الْكُـفر ، وَالفَـقْر ، وَأَعـوذُ بِكَ مِنْ عَذابِ القَـبْر ، لا إلهَ إلاّ أَنْـتَ.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "7",
-    "category": "daily-dua",
-    "arabicText": "الْحَمْدُ لِلَّهِ الَّذِى أَطْعَمَنِى هَذَا وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّى وَلاَ قُوَّةٍ",
-    "translation": "All praise is to Allah who has fed me this and provided for me without any power or strength from me.",
-    "reference": "Shahih at-Tirmidzi"
+    "category": "morning",
+    "arabicText": "اللّهُـمَّ إِنِّـي أسْـأَلُـكَ العَـفْوَ وَالعـافِـيةَ في الدُّنْـيا وَالآخِـرَة ، اللّهُـمَّ إِنِّـي أسْـأَلُـكَ العَـفْوَ وَالعـافِـيةَ في ديني وَدُنْـيايَ وَأهْـلي وَمالـي ، اللّهُـمَّ اسْتُـرْ عـوْراتي وَآمِـنْ رَوْعاتـي ، اللّهُـمَّ احْفَظْـني مِن بَـينِ يَدَيَّ وَمِن خَلْفـي وَعَن يَمـيني وَعَن شِمـالي ، وَمِن فَوْقـي ، وَأَعـوذُ بِعَظَمَـتِكَ أَن أُغْـتالَ مِن تَحْتـي.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "أبو داود"
   },
   {
     "id": "8",
-    "category": "daily-dua",
-    "arabicText": "اَللَّهُمَّ افْتَحْ لِيْ أَبْوَابَ رَحْمَتِكَ",
-    "translation": "O Allah, open the doors of Your mercy for me.",
-    "reference": "HR. Muslim"
+    "category": "morning",
+    "arabicText": "يَا حَيُّ يَا قيُّومُ بِرَحْمَتِكَ أسْتَغِيثُ أصْلِحْ لِي شَأنِي كُلَّهُ وَلاَ تَكِلْنِي إلَى نَفْسِي طَـرْفَةَ عَيْنٍ.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "الترمذي"
   },
   {
     "id": "9",
-    "category": "daily-dua",
-    "arabicText": "اَللَّهُمَّ إِنِّيْ أَسْأَلُكَ مِنْ فَضْلِكَ",
-    "translation": "O Allah, I ask You for Your bounty.",
-    "reference": "HR. Muslim No. 713"
+    "category": "morning",
+    "arabicText": "أَصْبَـحْـنا وَأَصْبَـحْ المُـلكُ للهِ رَبِّ العـالَمـين ، اللّهُـمَّ إِنِّـي أسْـأَلُـكَ خَـيْرَ هـذا الـيَوْم ، فَـتْحَهُ ، وَنَصْـرَهُ ، وَنـورَهُ وَبَـرَكَتَـهُ ، وَهُـداهُ ، وَأَعـوذُ بِـكَ مِـنْ شَـرِّ ما فـيهِ وَشَـرِّ ما بَعْـدَه.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "أبو داود"
   },
   {
     "id": "10",
-    "category": "daily-dua",
-    "arabicText": "بِسْمِ اللَّهِ",
-    "translation": "In the name of Allah.",
-    "reference": "HR. at-Tirmidzi and al-Baihaqi"
+    "category": "morning",
+    "arabicText": "اللّهُـمَّ عالِـمَ الغَـيْبِ وَالشّـهادَةِ فاطِـرَ السّماواتِ وَالأرْضِ رَبَّ كـلِّ شَـيءٍ وَمَليـكَه ، أَشْهَـدُ أَنْ لا إِلـهَ إِلاّ أَنْت ، أَعـوذُ بِكَ مِن شَـرِّ نَفْسـي وَمِن شَـرِّ الشَّيْـطانِ وَشِرْكِهِ ، وَأَنْ أَقْتَـرِفَ عَلـى نَفْسـي سوءاً أَوْ أَجُـرَّهُ إِلـى مُسْـلِم.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "الترمذي"
   },
   {
     "id": "11",
-    "category": "daily-dua",
-    "arabicText": "أشْهَدُ أنْ لا إله إِلاَّ اللَّهُ وَحْدَهُ لا شَرِيك لَهُ ، وأشْهَدُ أنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ ، اللَّهُمَّ اجْعَلْنِي مِنَ التَوَّابِينَ ، واجْعَلْني مِنَ المُتَطَهِّرِينَ ، سُبْحانَكَ اللَّهُمَّ وبِحَمْدِكَ ، أشْهَدُ أنْ لا إلهَ إِلاَّ أنْتَ ، أسْتَغْفِرُكَ وأتُوبُ إِلَيْكَ",
-    "translation": "I bear witness that there is no deity except Allah alone, with no partner, and I bear witness that Muhammad is His servant and Messenger. O Allah, make me among those who repent and make me among those who purify themselves. Glory be to You, O Allah, and with Your praise, I bear witness that there is no deity except You. I seek Your forgiveness and repent to You.",
-    "reference": "HR. Muslim, at-Tirmidzi and an-Nasa'i"
+    "category": "morning",
+    "arabicText": "أَعـوذُ بِكَلِمـاتِ اللّهِ التّـامّـاتِ مِنْ شَـرِّ ما خَلَـق.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "12",
-    "category": "daily-dua",
-    "arabicText": "ذَهَبَ الظَّمَأُ وابْتَلَّتِ الْعُرُوقُ وثَبَتَ اْلأَجْرُ إِنْ شَاءَاللهُ",
-    "translation": "The thirst has gone, the veins are moistened, and the reward is confirmed, Insha Allah.",
-    "reference": "HR. Abu Daud, As-Sunan Al-Kubra Lil Baihaqi, Vol. 4, p. 239, al-Hakim in Mustadrak 'alas Shahihain No. 1484"
+    "category": "morning",
+    "arabicText": "اللَّهُمَّ إِنَّا نَعُوذُ بِكَ مِنْ أَنْ نُشْرِكَ بِكَ شَيْئًا نَعْلَمُهُ ، وَنَسْتَغْفِرُكَ لِمَا لَا نَعْلَمُهُ.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "13",
-    "category": "daily-dua",
-    "arabicText": "اَلسَّلَامُ عَلَيْكُمْ",
-    "translation": "Peace be upon you.",
-    "reference": "HR. at-Tirmidzi"
+    "category": "morning",
+    "arabicText": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ الْهَمِّ وَالْحَزَنِ، وَأَعُوذُ بِكَ مِنْ الْعَجْزِ وَالْكَسَلِ، وَأَعُوذُ بِكَ مِنْ الْجُبْنِ وَالْبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ، وَقَهْرِ الرِّجَالِ.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "أبو داود"
   },
   {
     "id": "14",
-    "category": "daily-dua",
-    "arabicText": "اَلسَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَا تُهُ",
-    "translation": "Peace, mercy, and blessings of Allah be upon you.",
-    "reference": "HR. at-Tirmidzi"
+    "category": "morning",
+    "arabicText": "أسْتَغْفِرُ اللهَ العَظِيمَ الَّذِي لاَ إلَهَ إلاَّ هُوَ، الحَيُّ القَيُّومُ، وَأتُوبُ إلَيهِ.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "15",
-    "category": "daily-dua",
-    "arabicText": "بِسْمِ اللَّهِ تَوَكَّلْتُ عَلَى اللَّهِ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
-    "translation": "In the name of Allah, I place my trust in Allah. There is no might nor power except with Allah.",
-    "reference": "HR. Abu Dawud and at-Tirmidzi"
+    "category": "morning",
+    "arabicText": "يَا رَبِّ , لَكَ الْحَمْدُ كَمَا يَنْبَغِي لِجَلَالِ وَجْهِكَ , وَلِعَظِيمِ سُلْطَانِكَ.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "16",
-    "category": "daily-dua",
-    "arabicText": "اللَّهُمَّ إِنِّى أَعُوذُ بِكَ أَنْ أَضِلَّ أَوْ أُضَلَّ أَوْ أَزِلَّ أَوْ أُزَلَّ أَوْ أَظْلِمَ أَوْ أُظْلَمَ أَوْ أَجْهَلَ أَوْ يُجْهَلَ عَلَىَّ",
-    "translation": "O Allah, I seek refuge in You lest I should stray or be led astray, slip or be tripped, wrong or be wronged, or act foolishly or have foolishness done to me.",
-    "reference": "HR. Abu Dawud, at-Tirmidzi, Ibn Majah and an-Nasa'i"
+    "category": "morning",
+    "arabicText": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا، وَرِزْقًا طَيِّبًا، وَعَمَلًا مُتَقَبَّلًا.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "ابن ماجة"
   },
   {
     "id": "17",
-    "category": "daily-dua",
-    "arabicText": "الله أَكْبَرُ،الله أَكْبَرُ،الله أَكْبَرُ،سُبْحَانَ الَّذِى سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ اللَّهُمَّ إِنَّا نَسْأَلُكَ فِى سَفَرِنَا هَذَا الْبِرَّ وَالتَّقْوَى وَمِنَ الْعَمَلِ مَا تَرْضَى اللَّهُمَّ هَوِّنْ عَلَيْنَا سَفَرَنَا هَذَا وَاطْوِ عَنَّا بُعْدَهُ اللَّهُمَّ أَنْتَ الصَّاحِبُ فِى السَّفَرِ وَالْخَلِيفَةُ فِى الأَهْلِ اللَّهُمَّ إِنِّى أَعُوذُ بِكَ مِنْ وَعْثَاءِ السَّفَرِ وَكَآبَةِ الْمَنْظَرِ وَسُوءِ الْمُنْقَلَبِ فِى الْمَالِ وَالأَهْلِ",
-    "translation": "Allah is the Greatest, Allah is the Greatest, Allah is the Greatest. Glory be to Him who has provided this for us, though we could never have had it by our own efforts. Surely to our Lord we are returning. O Allah, we ask You for righteousness and piety in this journey of ours, and for deeds that please You. O Allah, lighten for us the hardship of this journey and quickly bring us to our destination. O Allah, You are our Companion on the journey and the Guardian of our families. O Allah, I seek refuge in You from the hardship of travel, from a bad return, and from seeing something unpleasant concerning our wealth, family, or children.",
-    "reference": "HR. Muslim"
+    "category": "morning",
+    "arabicText": "اللّهُـمَّ إِنِّـي أَصْبَـحْتُ أُشْـهِدُك ، وَأُشْـهِدُ حَمَلَـةَ عَـرْشِـك ، وَمَلَائِكَتَكَ ، وَجَمـيعَ خَلْـقِك ، أَنَّـكَ أَنْـتَ اللهُ لا إلهَ إلاّ أَنْـتَ وَحْـدَكَ لا شَريكَ لَـك ، وَأَنَّ ُ مُحَمّـداً عَبْـدُكَ وَرَسـولُـك.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "أبو داود"
   },
   {
     "id": "18",
-    "category": "daily-dua",
-    "arabicText": "أَسْتَوْدِعُ اللَّهَ دِينَكَ وَأَمَانَتَكَ وَخَوَاتِيمَ عَمَلِكَ",
-    "translation": "I entrust your religion, your trust, and the end of your deeds to Allah.",
-    "reference": "HR. Abu Dawud: 2601"
+    "category": "morning",
+    "arabicText": "بِسـمِ اللهِ الذي لا يَضُـرُّ مَعَ اسمِـهِ شَيءٌ في الأرْضِ وَلا في السّمـاءِ وَهـوَ السّمـيعُ العَلـيم.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "ابن ماجة"
   },
   {
     "id": "19",
-    "category": "daily-dua",
-    "arabicText": "زَوَّدَكَ اللَّهُ التَّقْوَى وَغَفَرَ ذَنْبَكَ  وَيَسَّرَ لَكَ الْخَيْرَ حَيْثُمَا كُنْتَ",
-    "translation": "May Allah provide you with piety, forgive your sins, and ease goodness for you wherever you are.",
-    "reference": "HR. at-Tirmidzi"
+    "category": "morning",
+    "arabicText": "حَسْبِـيَ اللّهُ لا إلهَ إلاّ هُوَ عَلَـيهِ تَوَكَّـلتُ وَهُوَ رَبُّ العَرْشِ العَظـيم.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "أبن السني"
   },
   {
     "id": "20",
-    "category": "daily-dua",
-    "arabicText": "اللَّهُمَّ لَكَ الْحَمْدُ أَنْتَ كَسَوْتَنِيهِ أَسْأَلُكَ مِنْ خَيْرِهِ وَخَيْرِ مَا صُنِعَ لَهُ وَأَعُوذُ بِكَ مِنْ شَرِّهِ وَشَرِّ مَا صُنِعَ لَهُ",
-    "translation": "O Allah, to You is all praise. You have clothed me with this. I ask You for its goodness and the goodness for which it was made, and I seek refuge in You from its evil and the evil for which it was made.",
-    "reference": "HR. Ahmad, Abu Dawud, at-Tirmidzi and Al-Hakim"
+    "category": "morning",
+    "arabicText": "بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم\nقُلْ هُوَ ٱللَّهُ أَحَدٌ، ٱللَّهُ ٱلصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "سورة الإخلاص"
   },
   {
     "id": "21",
-    "category": "daily-dua",
-    "arabicText": "الْحَمْدُ لِلَّهِ الَّذِى كَسَانِى هَذَا الثَّوْبَ وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّى وَلاَ قُوَّةٍ",
-    "translation": "Praise be to Allah who has clothed me with this garment and provided it for me without any power or strength from me.",
-    "reference": "HR. all compilers of Sunan books, except Nasa'i"
+    "category": "morning",
+    "arabicText": "بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم\nقُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ، مَلِكِ ٱلنَّاسِ، إِلَٰهِ ٱلنَّاسِ، مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ، ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ، مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "سورة الناس"
   },
   {
     "id": "22",
-    "category": "daily-dua",
-    "arabicText": "بِسْمِ اللَّهِ، بِسْمِ اللَّهِ، بِسْمِ اللَّهِ، الحَمْدُ للِه، سُبْحَانَ الَّذِى سَخَّرَ لَنَا هَذَا وَمَا كُنَّا لَهُ مُقْرِنِينَ وَإِنَّا إِلَى رَبِّنَا لَمُنْقَلِبُونَ، سُبْحَانَكَ إِنِّى قَدْ ظَلَمْتُ نَفْسِى فَاغْفِرْ لِى فَإِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ",
-    "translation": "In the name of Allah, in the name of Allah, in the name of Allah. All praise is to Allah. Glory be to Him who has subjected this to us, and we could not have done so by ourselves. And indeed, to our Lord we will return. Glory be to You, indeed I have wronged myself, so forgive me, for none can forgive sins except You.",
-    "reference": "HR. Abu Dawud and at-Tirmidzi"
+    "category": "morning",
+    "arabicText": "اللّهُـمَّ ما أَصْبَـَحَ بي مِـنْ نِعْـمَةٍ أَو بِأَحَـدٍ مِـنْ خَلْـقِك ، فَمِـنْكَ وَحْـدَكَ لا شريكَ لَـك ، فَلَـكَ الْحَمْـدُ وَلَـكَ الشُّكْـر.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "أبو داود"
   },
   {
     "id": "23",
-    "category": "daily-dua",
-    "arabicText": "اللَّهُمَّ صَيِّبًا نَافِعًا",
-    "translation": "O Allah, make it a beneficial rain.",
-    "reference": "HR. al-Bukhari No. 1032"
+    "category": "morning",
+    "arabicText": "اللَّهُمَّ أَنْتَ رَبِّي لا إِلَهَ إِلا أَنْتَ ، عَلَيْكَ تَوَكَّلْتُ ، وَأَنْتَ رَبُّ الْعَرْشِ الْعَظِيمِ , مَا شَاءَ اللَّهُ كَانَ ، وَمَا لَمْ يَشَأْ لَمْ يَكُنْ ، وَلا حَوْلَ وَلا قُوَّةَ إِلا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ , أَعْلَمُ أَنَّ اللَّهَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ ، وَأَنَّ اللَّهَ قَدْ أَحَاطَ بِكُلِّ شَيْءٍ عِلْمًا , اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي ، وَمِنْ شَرِّ كُلِّ دَابَّةٍ أَنْتَ آخِذٌ بِنَاصِيَتِهَا ، إِنَّ رَبِّي عَلَى صِرَاطٍ مُسْتَقِيمٍ.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "24",
-    "category": "daily-dua",
-    "arabicText": "اللَّهُمَّ حَوَالَيْنَا وَلاَ عَلَيْنَا ، اللَّهُمَّ عَلَى الآكَامِ وَالظِّرَابِ وَبُطُونِ الأَوْدِيَةِ وَمَنَابِتِ الشَّجَرِ",
-    "translation": "O Allah, (let the rain fall) around us, not on us. O Allah, (let it fall) on the hills, mountains, small mountains, valleys, and places where trees grow.",
-    "reference": "HR. al-Bukhari No. 1014"
+    "category": "morning",
+    "arabicText": "رَضيـتُ بِاللهِ رَبَّـاً وَبِالإسْلامِ ديـناً وَبِمُحَـمَّدٍ صلى الله عليه وسلم نَبِيّـاً.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "أحمد"
   },
   {
     "id": "25",
-    "category": "daily-dua",
-    "arabicText": "مُطِرْنا بفَضْلِ اللهِ ورَحْمَتِهِ",
-    "translation": "We have been given rain by the bounty and mercy of Allah.",
-    "reference": "HR. al-Bukhari No. 846 and Muslim No. 71"
+    "category": "morning",
+    "arabicText": "بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم\nقُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "سورة الفلق"
   },
   {
     "id": "26",
-    "category": "daily-dua",
-    "arabicText": "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَهَا، وَأَعُوْذُ بِكَ مِنْ شَرِّهَا",
-    "translation": "O Allah, I ask You for the good of this wind, and I seek refuge in You from its evil.",
-    "reference": "HR. Abu Dawud and Ibn Majah"
+    "category": "morning",
+    "arabicText": "اللّهـمَّ أَنْتَ رَبِّـي لا إلهَ إلاّ أَنْتَ ، خَلَقْتَنـي وَأَنا عَبْـدُك ، وَأَنا عَلـى عَهْـدِكَ وَوَعْـدِكَ ما اسْتَـطَعْـت ، أَعـوذُبِكَ مِنْ شَـرِّ ما صَنَـعْت ، أَبـوءُ لَـكَ بِنِعْـمَتِـكَ عَلَـيَّ وَأَبـوءُ بِذَنْـبي فَاغْفـِرْ لي فَإِنَّـهُ لا يَغْـفِرُ الذُّنـوبَ إِلاّ أَنْتَ .",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "البخاري"
   },
   {
     "id": "27",
-    "category": "daily-dua",
-    "arabicText": "اَللَّهُمَّ أَنْتَ رَبِّيْ ، لَا إِلٰـهَ إِلاَّ أَنْتَ خَلَقْتَنِيْ وَأَنَا عَبْدُكَ ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ ، أَعُوْذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ ، أَبُوْءُ لَكَ بِنِعْمتِكَ عَلَيَّ ، وَأَبُوْءُ بِذَنْبِيْ فَاغْفِرْ لِيْ ، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ",
-    "translation": "O Allah, You are my Lord. There is no deity worthy of worship except You. You created me, and I am Your servant. I abide to Your covenant and promise as best I can. I seek refuge in You from the evil of what I have done. I acknowledge Your blessings upon me, and I acknowledge my sin. So forgive me, for none can forgive sins except You.",
-    "reference": "HR. al-Bukhari No. 6306, 6323, Ahmad IV/122-125, an-Nasa'i VIII/279-280"
+    "category": "morning",
+    "arabicText": "أسْتَغْفِرُ اللهَ وَأتُوبُ إلَيْهِ",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "البخاري"
   },
   {
     "id": "28",
-    "category": "daily-dua",
-    "arabicText": "اللَّهُمَّ لاَ سَهْلَ إِلاَّ مَا جَعَلْتَهُ سَهْلاً وَأَنْتَ تَجْعَلُ الحَزْنَ إِذَا شِئْتَ سَهْلاً",
-    "translation": "O Allah, there is no ease except in that which You make easy, and You make the difficult easy if You wish.",
-    "reference": "HR. Ibn Hibban"
+    "category": "morning",
+    "arabicText": "لَا إلَه إلّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءِ قَدِيرِ.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "الترمذي"
   },
   {
     "id": "29",
-    "category": "daily-dua",
-    "arabicText": "إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ اللَّهُمَّ أْجُرْنِى فِى مُصِيبَتِى وَأَخْلِفْ لِى خَيْرًا مِنْهَا",
-    "translation": "Indeed we belong to Allah, and indeed to Him we will return. O Allah, reward me for my affliction and replace it with something better.",
-    "reference": "HR. Muslim"
+    "category": "morning",
+    "arabicText": "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ على نَبِيِّنَا مُحمَّد.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "الطبراني"
   },
   {
     "id": "30",
-    "category": "daily-dua",
-    "arabicText": "اللَّهُمَّ اكْفِنِى بِحَلاَلِكَ عَنْ حَرَامِكَ وَأَغْنِنِى بِفَضْلِكَ عَمَّنْ سِوَاكَ",
-    "translation": "O Allah, suffice me with what is lawful and keep me away from what is unlawful, and enrich me with Your bounty so I do not depend on anyone besides You.",
-    "reference": "HR. at-Tirmidzi No. 2563"
+    "category": "morning",
+    "arabicText": "سُبْحـانَ اللهِ وَبِحَمْـدِهِ.",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "مسلم"
   },
   {
     "id": "31",
-    "category": "daily-dua",
-    "arabicText": "اَللّٰهُمَّ إِنِّى أَعُوْذُبِكَ مِنَ الْهَمِّ وَالْحَزْنِ وَأَعُوْذُبِكَ مِنَ الْعَجْزِ وَالْكَسَلِ وَأَعُوْذُبِكَ مِنَ الْجُبْنِ وَالْبُخْلِ وَأَعُوْذُبِكَ مِنْ غَلَبَتِ الدَّيْنِ وَقَهْرِ الرجال",
-    "translation": "O Allah, I seek refuge in You from anxiety and grief, and I seek refuge in You from incapacity and laziness, and I seek refuge in You from cowardice and miserliness, and I seek refuge in You from being overpowered by debt and from being overcome by men.",
-    "reference": "HR. Abu Dawud No. 1555"
+    "category": "morning",
+    "arabicText": "أَعُوذُ بِاللهِ مِنْ الشَّيْطَانِ الرَّجِيمِ\nاللّهُ لاَ إِلَـهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا شَاء وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالأَرْضَ وَلاَ يَؤُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ.\n[آية الكرسى - البقرة 255].",
+    "translation": "أذكار الصباح (Translation coming soon)",
+    "reference": "[آية الكرسى - البقرة 255]."
   },
   {
     "id": "32",
-    "category": "daily-dua",
-    "arabicText": "الحَمْدُ للهِ",
-    "translation": "All praise is to Allah.",
-    "reference": "HR. al-Bukhari"
+    "category": "evening",
+    "arabicText": "بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم\nقُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ، مِن شَرِّ مَا خَلَقَ، وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ، وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ، وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "سورة الفلق"
   },
   {
     "id": "33",
-    "category": "daily-dua",
-    "arabicText": "يَرْحَمُكَ اللهُ",
-    "translation": "May Allah have mercy on you.",
-    "reference": "HR. al-Bukhari"
+    "category": "evening",
+    "arabicText": "بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم\nقُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ، مَلِكِ ٱلنَّاسِ، إِلَٰهِ ٱلنَّاسِ، مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ، ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ، مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "سورة الناس"
   },
   {
     "id": "34",
-    "category": "daily-dua",
-    "arabicText": "يَهْدِيكُمُ اللهُ وَيُصْلِحُ بَالَكُمْ",
-    "translation": "May Allah guide you and improve your condition.",
-    "reference": "HR. al-Bukhari"
+    "category": "evening",
+    "arabicText": "أَمْسَيْـنا وَأَمْسـى المـلكُ لله وَالحَمدُ لله ، لا إلهَ إلاّ اللّهُ وَحدَهُ لا شَريكَ لهُ، لهُ المُـلكُ ولهُ الحَمْـد، وهُوَ على كلّ شَيءٍ قدير ، رَبِّ أسْـأَلُـكَ خَـيرَ ما في هـذهِ اللَّـيْلَةِ وَخَـيرَ ما بَعْـدَهـا ، وَأَعـوذُ بِكَ مِنْ شَـرِّ ما في هـذهِ اللَّـيْلةِ وَشَرِّ ما بَعْـدَهـا ، رَبِّ أَعـوذُبِكَ مِنَ الْكَسَـلِ وَسـوءِ الْكِـبَر ، رَبِّ أَعـوذُ بِكَ مِنْ عَـذابٍ في النّـارِ وَعَـذابٍ في القَـبْر.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "مسلم"
   },
   {
     "id": "35",
-    "category": "daily-dua",
-    "arabicText": "اللَّهُمَّ كَمَا حَسَّنْتَ خَلْقِي فَحَسِّنْ خُلُقِي",
-    "translation": "O Allah, just as You have made my external form good, make my character good as well.",
-    "reference": "HR. Ahmad, authenticated by al-Albani in al-Irwa', 1/115"
+    "category": "evening",
+    "arabicText": "اللّهُـمَّ بِكَ أَمْسَـينا وَبِكَ أَصْـبَحْنا، وَبِكَ نَحْـيا وَبِكَ نَمُـوتُ وَإِلَـيْكَ الْمَصِيرُ.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "الترمذي"
   },
   {
     "id": "36",
-    "category": "daily-dua",
-    "arabicText": "رَبِّ أَعُوْذُ بِكَ مِنْ هَمَزَاتِ الشَّيَاطِيْنِ وَأَعُوْذُ بِكَ رَبِّ أَنْ يَحْضُرُوْنِ",
-    "translation": "My Lord, I seek refuge in You from the whispers of Satan, and I seek refuge in You, my Lord, from their presence around me.",
-    "reference": "QS. Al-Mu'minun: 97-98"
+    "category": "evening",
+    "arabicText": "أَمْسَيْنَا عَلَى فِطْرَةِ الإسْلاَمِ، وَعَلَى كَلِمَةِ الإِخْلاَصِ، وَعَلَى دِينِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ، وَعَلَى مِلَّةِ أَبِينَا إبْرَاهِيمَ حَنِيفاً مُسْلِماً وَمَا كَانَ مِنَ المُشْرِكِينَ.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "أحمد"
   },
   {
     "id": "37",
-    "category": "daily-dua",
-    "arabicText": "اللَّهُمَّ رَبَّ هَذِهِ الدَّعْوَةِ التَّامَّةِ، وَالصَّلَاةِ الْقَائِمَةِ، آتِ مُحَمَّدًا الْوَسِيلَةَ وَالْفَضِيلَةَ، وَابْعَثْهُ مَقَامًا مَحْمُودًا الَّذِي وَعَدْتَهُ",
-    "translation": "O Allah, Lord of this perfect call and the established prayer, grant Muhammad the wasilah (a high status in Paradise) and the excellence (above all creation), and raise him to the praiseworthy station that You have promised him.",
-    "reference": "Narrated by Abu Dawud (529), at-Tirmidhi (211), an-Nasa'i (2:26), Ibn Majah (722)"
+    "category": "evening",
+    "arabicText": "سُبْحـانَ اللهِ وَبِحَمْـدِهِ عَدَدَ خَلْـقِه ، وَرِضـا نَفْسِـه ، وَزِنَـةَ عَـرْشِـه ، وَمِـدادَ كَلِمـاتِـه.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "مسلم"
   },
   {
     "id": "38",
-    "category": "daily-dua",
-    "arabicText": "رَبَّنَا ٱغْفِرْ لِى وَلِوَٰلِدَىَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ ٱلْحِسَابُ",
-    "translation": "Our Lord, forgive me and my parents and all the believers on the Day the account is established.",
-    "reference": "QS. Ibrahim: 41"
+    "category": "evening",
+    "arabicText": "اللّهُـمَّ عافِـني في بَدَنـي ، اللّهُـمَّ عافِـني في سَمْـعي ، اللّهُـمَّ عافِـني في بَصَـري ، لا إلهَ إلاّ أَنْـتَ.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "أحمد"
   },
   {
     "id": "39",
-    "category": "dhikr-after-salah",
-    "arabicText": "أَسْتَغْفِرُ اللَّهَ",
-    "translation": "I seek forgiveness from Allah.",
-    "reference": "HR. Muslim No. 591"
+    "category": "evening",
+    "arabicText": "اللّهُـمَّ إِنّـي أَعـوذُ بِكَ مِنَ الْكُـفر ، وَالفَـقْر ، وَأَعـوذُ بِكَ مِنْ عَذابِ القَـبْر ، لا إلهَ إلاّ أَنْـتَ.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "40",
-    "category": "dhikr-after-salah",
-    "arabicText": "اَللَّهُمَّ أَنْتَ السَّلاَمُ، وَمِنْكَ السَّلاَمُ، تَبَارَكْتَ يَا ذَا الْجَلاَلِ وَاْلإِكْرَامِ",
-    "translation": "O Allah, You are Peace, and from You is peace. Blessed are You, O Possessor of majesty and honor.",
-    "reference": "HR. Muslim No. 591"
+    "category": "evening",
+    "arabicText": "اللّهُـمَّ إِنِّـي أسْـأَلُـكَ العَـفْوَ وَالعـافِـيةَ في الدُّنْـيا وَالآخِـرَة ، اللّهُـمَّ إِنِّـي أسْـأَلُـكَ العَـفْوَ وَالعـافِـيةَ في ديني وَدُنْـيايَ وَأهْـلي وَمالـي ، اللّهُـمَّ اسْتُـرْ عـوْراتي وَآمِـنْ رَوْعاتـي ، اللّهُـمَّ احْفَظْـني مِن بَـينِ يَدَيَّ وَمِن خَلْفـي وَعَن يَمـيني وَعَن شِمـالي ، وَمِن فَوْقـي ، وَأَعـوذُ بِعَظَمَـتِكَ أَن أُغْـتالَ مِن تَحْتـي.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "أبو داود"
   },
   {
     "id": "41",
-    "category": "dhikr-after-salah",
-    "arabicText": "لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ، اَللَّهُمَّ لاَ مَانِعَ لِمَا أَعْطَيْتَ، وَلاَ مُعْطِيَ لِمَا مَنَعْتَ، وَلاَ يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ",
-    "translation": "There is no deity worthy of worship except Allah alone, He has no partner. To Him belongs dominion and praise, and He is over all things competent. O Allah, there is no preventer of what You give, and no giver of what You withhold, and wealth and honor do not benefit their possessor (except faith and righteous deeds that save from punishment). Only from You is wealth and honor.",
-    "reference": "HR. Bukhari No. 844 and Muslim No. 593"
+    "category": "evening",
+    "arabicText": "يَا حَيُّ يَا قيُّومُ بِرَحْمَتِكَ أسْتَغِيثُ أصْلِحْ لِي شَأنِي كُلَّهُ وَلاَ تَكِلْنِي إلَى نَفْسِي طَـرْفَةَ عَيْنٍ.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "الترمذي"
   },
   {
     "id": "42",
-    "category": "dhikr-after-salah",
-    "arabicText": "لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ. لاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللهِ، لاَ إِلَـهَ إِلاَّ اللهُ، وَلاَ نَعْبُدُ إِلاَّ إِيَّاهُ، لَهُ النِّعْمَةُ وَلَهُ الْفَضْلُ وَلَهُ الثَّنَاءُ الْحَسَنُ، لاَ إِلَـهَ إِلاَّ اللهُ مُخْلِصِيْنَ لَهُ الدِّيْنَ وَلَوْ كَرِهَ الْكَافِرُوْنَ",
-    "translation": "There is no deity worthy of worship except Allah alone, He has no partner. To Him belongs dominion and praise, and He is over all things competent. There is no power and no strength except by Allah. There is no deity worthy of worship except Allah, and we do not worship except Him. To Him belongs all favor, grace, and good praise. There is no deity worthy of worship except Allah, making our religion sincerely for Him, even if the disbelievers dislike it.",
-    "reference": "HR. Muslim No. 594"
+    "category": "evening",
+    "arabicText": "أَمْسَيْنا وَأَمْسَى الْمُلْكُ للهِ رَبِّ الْعَالَمَيْنِ، اللَّهُمَّ إِنَّي أسْأَلُكَ خَيْرَ هَذَه اللَّيْلَةِ فَتْحَهَا ونَصْرَهَا، ونُوْرَهَا وبَرَكَتهَا، وَهُدَاهَا، وَأَعُوذُ بِكَ مِنْ شَرِّ مَا فيهِا وَشَرَّ مَا بَعْدَهَا.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "أبو داود"
   },
   {
     "id": "43",
-    "category": "dhikr-after-salah",
-    "arabicText": "سُبْحَانَ اللهِ",
-    "translation": "Glory be to Allah",
-    "reference": null
+    "category": "evening",
+    "arabicText": "اللّهُـمَّ عالِـمَ الغَـيْبِ وَالشّـهادَةِ فاطِـرَ السّماواتِ وَالأرْضِ رَبَّ كـلِّ شَـيءٍ وَمَليـكَه ، أَشْهَـدُ أَنْ لا إِلـهَ إِلاّ أَنْت ، أَعـوذُ بِكَ مِن شَـرِّ نَفْسـي وَمِن شَـرِّ الشَّيْـطانِ وَشِرْكِهِ ، وَأَنْ أَقْتَـرِفَ عَلـى نَفْسـي سوءاً أَوْ أَجُـرَّهُ إِلـى مُسْـلِم.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "الترمذي"
   },
   {
     "id": "44",
-    "category": "dhikr-after-salah",
-    "arabicText": "الْحَمْدُ لِلَّهِ",
-    "translation": "All praise is for Allah",
-    "reference": null
+    "category": "evening",
+    "arabicText": "أَعـوذُ بِكَلِمـاتِ اللّهِ التّـامّـاتِ مِنْ شَـرِّ ما خَلَـق.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "45",
-    "category": "dhikr-after-salah",
-    "arabicText": "اللهُ أَكْبَرُ",
-    "translation": "Allah is the Greatest",
-    "reference": null
+    "category": "evening",
+    "arabicText": "اللَّهُمَّ إِنَّا نَعُوذُ بِكَ مِنْ أَنْ نُشْرِكَ بِكَ شَيْئًا نَعْلَمُهُ ، وَنَسْتَغْفِرُكَ لِمَا لَا نَعْلَمُهُ.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "46",
-    "category": "dhikr-after-salah",
-    "arabicText": "لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ",
-    "translation": "There is no deity worthy of worship except Allah alone, He has no partner. To Him belongs dominion and praise, and He is over all things competent.",
-    "reference": "Sharh Shahih Muslim, 5: 84"
+    "category": "evening",
+    "arabicText": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ الْهَمِّ وَالْحَزَنِ، وَأَعُوذُ بِكَ مِنْ الْعَجْزِ وَالْكَسَلِ، وَأَعُوذُ بِكَ مِنْ الْجُبْنِ وَالْبُخْلِ، وَأَعُوذُ بِكَ مِنْ غَلَبَةِ الدَّيْنِ، وَقَهْرِ الرِّجَالِ.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "أبو داود"
   },
   {
     "id": "47",
-    "category": "dhikr-after-salah",
-    "arabicText": "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ ۚ لَا تَأْخُذُهُۥ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۗ مَن ذَا ٱلَّذِى يَشْفَعُ عِندَهُۥٓ إِلَّا بِإِذْنِهِۦ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَىْءٍ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ ۚ وَسِعَ كُرْسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ ۖ وَلَا يَـُٔودُهُۥ حِفْظُهُمَا ۚ وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ",
-    "translation": "Allah - there is no deity except Him, the Ever-Living, the Sustainer of [all] existence. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is [presently] before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursi extends over the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Most Great.",
-    "reference": "HR. an-Nasai in Al-Kubro 9: 44. This hadith is declared sahih by Ibn Hibban, as mentioned by Ibn Hajar in Bulugh al-Maram"
+    "category": "evening",
+    "arabicText": "أسْتَغْفِرُ اللهَ العَظِيمَ الَّذِي لاَ إلَهَ إلاَّ هُوَ، الحَيُّ القَيُّومُ، وَأتُوبُ إلَيهِ.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "48",
-    "category": "dhikr-after-salah",
-    "arabicText": "قُلْ هُوَ ٱللَّهُ أَحَدٌ (1) ٱللَّهُ ٱلصَّمَدُ (2) لَمْ يَلِدْ وَلَمْ يُولَدْ (3) وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ (4)",
-    "translation": "Say, \"He is Allah , [who is] One, (1) Allah , the Eternal Refuge. (2) He neither begets nor is born, (3) Nor is there to Him any equivalent.\" (4)",
-    "reference": "HR. Abu Dawud No. 1523 and an-Nasa'i No. 1337. Al-Hafiz Abu Tahir said that the chain of this hadith is hasan"
+    "category": "evening",
+    "arabicText": "يَا رَبِّ , لَكَ الْحَمْدُ كَمَا يَنْبَغِي لِجَلَالِ وَجْهِكَ , وَلِعَظِيمِ سُلْطَانِكَ.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "49",
-    "category": "dhikr-after-salah",
-    "arabicText": "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ (1) مِن شَرِّ مَا خَلَقَ (2) وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ (3) وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ (4) وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ (5)",
-    "translation": "Say, \"I seek refuge in the Lord of daybreak (1) From the evil of that which He created (2) And from the evil of darkness when it settles (3) And from the evil of the blowers in knots (4) And from the evil of an envier when he envies.\" (5)",
-    "reference": "HR. Abu Dawud No. 1523 and an-Nasa'i No. 1337. Al-Hafiz Abu Tahir said that the chain of this hadith is hasan"
+    "category": "evening",
+    "arabicText": "سُبْحـانَ اللهِ وَبِحَمْـدِهِ.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "مسلم"
   },
   {
     "id": "50",
-    "category": "dhikr-after-salah",
-    "arabicText": "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ (1) مَلِكِ ٱلنَّاسِ (2) إِلَٰهِ ٱلنَّاسِ (3) مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ (4) ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ (5) مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ (6)",
-    "translation": "Say, \"I seek refuge in the Lord of mankind, (1) The King of mankind. (2) The God of mankind, (3) From the evil of the whisperer who withdraws, (4) Who whispers in the breasts of mankind, (5) Of the jinn and mankind.\" (6)",
-    "reference": "HR. Abu Dawud No. 1523 and an-Nasa'i No. 1337. Al-Hafiz Abu Tahir said that the chain of this hadith is hasan"
+    "category": "evening",
+    "arabicText": "اللّهـمَّ أَنْتَ رَبِّـي لا إلهَ إلاّ أَنْتَ ، خَلَقْتَنـي وَأَنا عَبْـدُك ، وَأَنا عَلـى عَهْـدِكَ وَوَعْـدِكَ ما اسْتَـطَعْـت ، أَعـوذُبِكَ مِنْ شَـرِّ ما صَنَـعْت ، أَبـوءُ لَـكَ بِنِعْـمَتِـكَ عَلَـيَّ وَأَبـوءُ بِذَنْـبي فَاغْفـِرْ لي فَإِنَّـهُ لا يَغْـفِرُ الذُّنـوبَ إِلاّ أَنْتَ .",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "البخاري"
   },
   {
     "id": "51",
-    "category": "dhikr-after-salah",
-    "arabicText": "اللَّهُمَّ إِنِّى أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلاً مُتَقَبَّلاً",
-    "translation": "O Allah, I ask You for beneficial knowledge, good provision, and accepted deeds.",
-    "reference": "HR. Ibn Majah No. 925 and Ahmad 6: 305, 322. Al-Hafiz Abu Tahir said that this hadith is sahih"
+    "category": "evening",
+    "arabicText": "بِسـمِ اللهِ الذي لا يَضُـرُّ مَعَ اسمِـهِ شَيءٌ في الأرْضِ وَلا في السّمـاءِ وَهـوَ السّمـيعُ العَلـيم.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "ابن ماجة"
   },
   {
     "id": "52",
-    "category": "evening-dhikr",
-    "arabicText": "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ ۚ لَا تَأْخُذُهُۥ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۗ مَن ذَا ٱلَّذِى يَشْفَعُ عِندَهُۥٓ إِلَّا بِإِذْنِهِۦ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَىْءٍ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ ۚ وَسِعَ كُرْسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ ۖ وَلَا يَـُٔودُهُۥ حِفْظُهُمَا ۚ وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ",
-    "translation": "Allah - there is no deity except Him, the Ever-Living, the Sustainer of [all] existence. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is [presently] before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursi extends over the heavens and the earth, and their preservation tires Him not. And He is the Most High, the Most Great.",
-    "reference": "HR. at-Tirmidzi: 2879"
+    "category": "evening",
+    "arabicText": "حَسْبِـيَ اللّهُ لا إلهَ إلاّ هُوَ عَلَـيهِ تَوَكَّـلتُ وَهُوَ رَبُّ العَرْشِ العَظـيم.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "أبن السني"
   },
   {
     "id": "53",
-    "category": "evening-dhikr",
-    "arabicText": "قُلْ هُوَ ٱللَّهُ أَحَدٌ (1) ٱللَّهُ ٱلصَّمَدُ (2) لَمْ يَلِدْ وَلَمْ يُولَدْ (3) وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ (4)",
-    "translation": "Say, \"He is Allah , [who is] One, (1) Allah , the Eternal Refuge. (2) He neither begets nor is born, (3) Nor is there to Him any equivalent.\" (4)",
-    "reference": "HR. Abu Dawud No. 4241"
+    "category": "evening",
+    "arabicText": "بِسْمِ اللهِ الرَّحْمنِ الرَّحِيم\nقُلْ هُوَ ٱللَّهُ أَحَدٌ، ٱللَّهُ ٱلصَّمَدُ، لَمْ يَلِدْ وَلَمْ يُولَدْ، وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "سورة الإخلاص"
   },
   {
     "id": "54",
-    "category": "evening-dhikr",
-    "arabicText": "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ (1) مِن شَرِّ مَا خَلَقَ (2) وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ (3) وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ (4) وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ (5)",
-    "translation": "Say, \"I seek refuge in the Lord of daybreak (1) From the evil of that which He created (2) And from the evil of darkness when it settles (3) And from the evil of the blowers in knots (4) And from the evil of an envier when he envies.\" (5)",
-    "reference": "HR. Abu Dawud No. 4241"
+    "category": "evening",
+    "arabicText": "اللَّهُمَّ صَلِّ وَسَلِّمْ وَبَارِكْ على نَبِيِّنَا مُحمَّد.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "الطبراني"
   },
   {
     "id": "55",
-    "category": "evening-dhikr",
-    "arabicText": "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ (1) مَلِكِ ٱلنَّاسِ (2) إِلَٰهِ ٱلنَّاسِ (3) مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ (4) ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ (5) مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ (6)",
-    "translation": "Say, \"I seek refuge in the Lord of mankind, (1) The King of mankind. (2) The God of mankind, (3) From the evil of the whisperer who withdraws, (4) Who whispers in the breasts of mankind, (5) Of the jinn and mankind.\" (6)",
-    "reference": "HR. Abu Dawud No. 4241"
+    "category": "evening",
+    "arabicText": "اللّهُـمَّ إِنِّـي أَمسيتُ أُشْـهِدُك ، وَأُشْـهِدُ حَمَلَـةَ عَـرْشِـك ، وَمَلَائِكَتَكَ ، وَجَمـيعَ خَلْـقِك ، أَنَّـكَ أَنْـتَ اللهُ لا إلهَ إلاّ أَنْـتَ وَحْـدَكَ لا شَريكَ لَـك ، وَأَنَّ ُ مُحَمّـداً عَبْـدُكَ وَرَسـولُـك.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "أبو داود"
   },
   {
     "id": "56",
-    "category": "evening-dhikr",
-    "arabicText": "أَمْسَيْنَا وَأَمْسَى الْمُلْكُ للهِ، وَالْحَمْدُ للهِ، لَا إِلَهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، رَبِّ أَسْأَلُكَ خَيْرَ مَا فِي هَذِهِ اللَّيْلَةِ وَخَيْرَ مَا بَعْدَهَا، وَأَعُوذُبِكَ مِنْ شَرِّ مَا فِي هَذِهِ اللَّيْلَةِ وَشَرِّ مَا بَعْدَهَا، رَبِّ أَعُوذُبِكَ مِنَ الْكَسَلِ وَسُوءِ الْكِبَرِ، رَبِّ أَعُوذُبِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ",
-    "translation": "We have entered the evening and the dominion belongs to Allah, and all praise is for Allah. There is no deity worthy of worship except Allah alone, He has no partner. To Him belongs the dominion and to Him is praise, and He is over all things competent. My Lord, I ask You for the good of this night and the good of what follows it, and I seek refuge in You from the evil of this night and the evil of what follows it. My Lord, I seek refuge in You from laziness and the evil of old age. My Lord, I seek refuge in You from the punishment of the Fire and the punishment of the grave.",
-    "reference": "HR. Muslim No. 2723 (75), Abu Dawud No. 5071, and at-Tirmidzi 3390, sahih from Abdullah Ibn Mas'ud"
+    "category": "evening",
+    "arabicText": "لَا إلَه إلّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءِ قَدِيرِ.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "الترمذي"
   },
   {
     "id": "57",
-    "category": "evening-dhikr",
-    "arabicText": "اللَّهُمَّ بِكَ أَمْسَيْنَا، وَبِكَ أَصْبَحْنَا،وَبِكَ نَحْيَا، وَبِكَ نَمُوتُ، وَإِلَيْكَ الْمَصِيْرُ",
-    "translation": "O Allah, by Your grace and help we have entered the evening, and by Your grace and help we enter the morning. By Your grace and help we live and by Your will we die. And to You is the final return (of all creatures).",
-    "reference": "HR. al-Bukhari in al-Adab al-Mufrad No. 1199, this wording is the wording of al-Bukhari at-Tirmidzi No. 3391, Abu Dawud No. 5068, Ahmad 11/354, Ibn Majah No. 3868"
+    "category": "evening",
+    "arabicText": "اللَّهُمَّ أَنْتَ رَبِّي لا إِلَهَ إِلا أَنْتَ ، عَلَيْكَ تَوَكَّلْتُ ، وَأَنْتَ رَبُّ الْعَرْشِ الْعَظِيمِ , مَا شَاءَ اللَّهُ كَانَ ، وَمَا لَمْ يَشَأْ لَمْ يَكُنْ ، وَلا حَوْلَ وَلا قُوَّةَ إِلا بِاللَّهِ الْعَلِيِّ الْعَظِيمِ , أَعْلَمُ أَنَّ اللَّهَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ ، وَأَنَّ اللَّهَ قَدْ أَحَاطَ بِكُلِّ شَيْءٍ عِلْمًا , اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ شَرِّ نَفْسِي ، وَمِنْ شَرِّ كُلِّ دَابَّةٍ أَنْتَ آخِذٌ بِنَاصِيَتِهَا ، إِنَّ رَبِّي عَلَى صِرَاطٍ مُسْتَقِيمٍ.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "58",
-    "category": "evening-dhikr",
-    "arabicText": "اَللَّهُمَّ أَنْتَ رَبِّيْ ، لَا إِلٰـهَ إِلاَّ أَنْتَ خَلَقْتَنِيْ وَأَنَا عَبْدُكَ ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ ، أَعُوْذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ ، أَبُوْءُ لَكَ بِنِعْمتِكَ عَلَيَّ ، وَأَبُوْءُ بِذَنْبِيْ فَاغْفِرْ لِيْ ، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ",
-    "translation": "O Allah, You are my Lord, there is no deity worthy of worship except You, You created me and I am Your servant. I will be true to my covenant and promise to You as much as I can. I seek refuge in You from the evil of what I have done. I acknowledge Your favor upon me and I acknowledge my sin, therefore, forgive me. Indeed, there is no one who can forgive sins except You.",
-    "reference": "HR. al-Bukhari No. 6306, 6323, Ahmad IV/122-125, an-Nasa'i VIII/279-280"
+    "category": "evening",
+    "arabicText": "اللّهُـمَّ ما أَمسى بي مِـنْ نِعْـمَةٍ أَو بِأَحَـدٍ مِـنْ خَلْـقِك ، فَمِـنْكَ وَحْـدَكَ لا شريكَ لَـك ، فَلَـكَ الْحَمْـدُ وَلَـكَ الشُّكْـر.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "أبو داود"
   },
   {
     "id": "59",
-    "category": "evening-dhikr",
-    "arabicText": "اَللَّهُمَّ عَافِنِيْ فِيْ بَدَنِيْ ، اَللَّهُمَّ عَافِنِيْ فِيْ سَمْعِيْ ، اَللَّهُمَّ عَافِنِيْ فِيْ بَصَرِيْ ، لَا إِلَـهَ إِلَّا أَنْتَ ، اَللَّهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنَ الْكُفْرِوَالْفَقْرِ ، وَأَعُوْذُ بِكَ مِنْ عَذَابِ الْقَبْرِ ، لَا إِلَـهَ إِلَّا أَنْتَ",
-    "translation": "O Allah, protect my body (from illness and from what I do not want). O Allah, protect my hearing (from illness and disobedience or from what I do not want). O Allah, protect my sight, there is no deity worthy of worship except You. O Allah, indeed I seek refuge in You from disbelief and poverty. I seek refuge in You from the punishment of the grave, there is no deity worthy of worship except You.",
-    "reference": "HR. al-Bukhari in Sahih al-Adab al-Mufrad No. 701, Abu Dawud No. 5090, Ahmad V/42, hasan"
+    "category": "evening",
+    "arabicText": "رَضيـتُ بِاللهِ رَبَّـاً وَبِالإسْلامِ ديـناً وَبِمُحَـمَّدٍ صلى الله عليه وسلم نَبِيّـاً.",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "أحمد"
   },
   {
     "id": "60",
-    "category": "evening-dhikr",
-    "arabicText": "اَللَّهُمَّ إِنِّيْ أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَاْلآخِرَةِ، اَللَّهُمَّ إِنِّيْ أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي دِيْنِيْ وَدُنْيَايَ وَأَهْلِيْ وَمَالِيْ اللَّهُمَّ اسْتُرْ عَوْرَاتِى وَآمِنْ رَوْعَاتِى. اَللَّهُمَّ احْفَظْنِيْ مِنْ بَيْنِ يَدَيَّ، وَمِنْ خَلْفِيْ، وَعَنْ يَمِيْنِيْ وَعَنْ شِمَالِيْ، وَمِنْ فَوْقِيْ، وَأَعُوْذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِيْ",
-    "translation": "O Allah, indeed I ask You for well-being and safety in this world and the Hereafter. O Allah, indeed I ask You for well-being and safety in my religion, my world, my family and my wealth. O Allah, cover my flaws (faults and things that are not appropriate for others to see) and calm me from fear. O Allah, protect me from the front, behind, right, left and above me. I seek refuge in Your greatness, so that I am not snatched from below me (by snakes or swallowed by the earth, etc., which would cause me to fall).",
-    "reference": "HR. al-Bukhari in al-Adab al-Mufrad No. 1200, Abu Dawud No. 5074, an-Nasa'i VII/282, Ibn Majah No. 3871, al-Hakim 1/517-518, and others from Ibn Umar radhiyallahu 'anhuma"
+    "category": "evening",
+    "arabicText": "أَعُوذُ بِاللهِ مِنْ الشَّيْطَانِ الرَّجِيمِ\nاللّهُ لاَ إِلَـهَ إِلاَّ هُوَ الْحَيُّ الْقَيُّومُ لاَ تَأْخُذُهُ سِنَةٌ وَلاَ نَوْمٌ لَّهُ مَا فِي السَّمَاوَاتِ وَمَا فِي الأَرْضِ مَن ذَا الَّذِي يَشْفَعُ عِنْدَهُ إِلاَّ بِإِذْنِهِ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ وَلاَ يُحِيطُونَ بِشَيْءٍ مِّنْ عِلْمِهِ إِلاَّ بِمَا شَاء وَسِعَ كُرْسِيُّهُ السَّمَاوَاتِ وَالأَرْضَ وَلاَ يَؤُودُهُ حِفْظُهُمَا وَهُوَ الْعَلِيُّ الْعَظِيمُ.\n[آية الكرسى - البقرة 255].",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "[آية الكرسى - البقرة 255]."
   },
   {
     "id": "61",
-    "category": "evening-dhikr",
-    "arabicText": "اَللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ فَاطِرَ السَّمَاوَاتِ وَاْلأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيْكَهُ، أَشْهَدُ أَنْ لاَ إِلَـهَ إِلاَّ أَنْتَ، أَعُوْذُ بِكَ مِنْ شَرِّ نَفْسِيْ، وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ، وَأَنْ أَقْتَرِفَ عَلَى نَفْسِيْ سُوْءًا أَوْ أَجُرَّهُ إِلَى مُسْلِمٍ",
-    "translation": "O Allah, Knower of the unseen and the seen, Creator of the heavens and the earth, Lord of all things and their Sovereign. I bear witness that there is no deity worthy of worship except You. I seek refuge in You from the evil of myself, Satan and his soldiers (temptations to commit shirk against Allah), and I (seek refuge in You) from committing evil against myself or dragging it to a Muslim.",
-    "reference": "HR. al-Bukhari in al-Adab al-Mufrad No. 1202, at-Tirmidzi No. 3392 and Abu Dawud No. 5067"
+    "category": "evening",
+    "arabicText": "أَعُوذُ بِاللهِ مِنْ الشَّيْطَانِ الرَّجِيمِ\nآمَنَ الرَّسُولُ بِمَا أُنْزِلَ إِلَيْهِ مِنْ رَبِّهِ وَالْمُؤْمِنُونَ ۚ كُلٌّ آمَنَ بِاللَّهِ وَمَلَائِكَتِهِ وَكُتُبِهِ وَرُسُلِهِ لَا نُفَرِّقُ بَيْنَ أَحَدٍ مِنْ رُسُلِهِ ۚ وَقَالُوا سَمِعْنَا وَأَطَعْنَا ۖ غُفْرَانَكَ رَبَّنَا وَإِلَيْكَ الْمَصِيرُ. لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ رَبَّنَا لَا تُؤَاخِذْنَا إِنْ نَّسِينَآ أَوْ أَخْطَأْنَا رَبَّنَا وَلَا تَحْمِلْ عَلَيْنَا إِصْرًا كَمَا حَمَلْتَهُ عَلَى الَّذِينَ مِنْ قَبْلِنَا رَبَّنَا وَلَا تُحَمِّلْنَا مَا لَا طَاقَةَ لَنَا بِهِ وَاعْفُ عَنَّا وَاغْفِرْ لَنَا وَارْحَمْنَا أَنْتَ مَوْلَانَا فَانْصُرْنَا عَلَى الْقَوْمِ الْكَافِرِينَ.\n[البقرة 285 - 286].",
+    "translation": "أذكار المساء (Translation coming soon)",
+    "reference": "[البقرة 285 - 286]."
   },
   {
     "id": "62",
-    "category": "evening-dhikr",
-    "arabicText": "بِسْمِ اللَّهِ الَّذِى لاَ يَضُرُّ مَعَ اسْمِهِ شَىْءٌ فِى الأَرْضِ وَلاَ فِى السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
-    "translation": "In the name of Allah, with whose name nothing in the earth or the heavens can cause harm, and He is the All-Hearing, the All-Knowing.",
-    "reference": "HR. at-Tirmidzi No. 3388, Abu Dawud No. 5088, Ibn Majah No. 3869, al-Hakim 1/514, and Ahmad No. 446 and 474"
+    "category": "waking_up",
+    "arabicText": "( الْحَمْدُ للَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا، وَإِلَيْهِ النُّشُورُ )",
+    "translation": "أذكار الاستيقاظ من النوم (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "63",
-    "category": "evening-dhikr",
-    "arabicText": "رَضِيْتُ بِاللهِ رَبًّا، وَبِاْلإِسْلاَمِ دِيْنًا، وَبِمُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ نَبِيًّا",
-    "translation": "I am pleased with Allah as my Lord, Islam as my religion, and Muhammad, sallallahu 'alayhi wa sallam, as my Prophet.",
-    "reference": "HR. Ahmad IV/337, Abu Dawud No. 5072, at-Tirmidzi No. 3389, Ibn Majah No. 3870, an-Nasa'i in 'Amalul Yaum wal Lailah No. 4 and Ibnus Sunni No. 68"
+    "category": "waking_up",
+    "arabicText": "( لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَريكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ، وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ، سُبْحَانَ اللَّهِ، وَالْحَمْدُ للَّهِ، وَلاَ إِلَهَ إِلاَّ اللَّهُ، وَاللَّهُ أَكبَرُ، وَلاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ الْعَلِيِّ الْعَظِيمِ، رَبِّ اغْفرْ لِي ).",
+    "translation": "أذكار الاستيقاظ من النوم (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "64",
-    "category": "evening-dhikr",
-    "arabicText": "يَا حَيُّ يَا قَيُّوْمُ بِرَحْمَتِكَ أَسْتَغِيْثُ، وَأَصْلِحْ لِيْ شَأْنِيْ كُلَّهُ وَلاَ تَكِلْنِيْ إِلَى نَفْسِيْ طَرْفَةَ عَيْنٍ أَبَدًا",
-    "translation": "O Ever-Living, O Self-Sustaining, by Your mercy I seek help, rectify all my affairs and do not leave me to myself even for the blink of an eye.",
-    "reference": "HR. an-Nasa'i in 'Amalul Yaum wal Lailah No. 575, and al-Hakim 1/545, see Sahih at-Targhib wat Tarhib 1/417 No. 661, As-Sahihah No. 227, hasan"
+    "category": "waking_up",
+    "arabicText": "( الْحَمْدُ لِلَّهِ الَّذِي عَافَانِي فِي جَسَدِي، وَرَدَّ عَلَيَّ رُوحِي، وَأَذِنَ لي بِذِكْرِهِ )",
+    "translation": "أذكار الاستيقاظ من النوم (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "65",
-    "category": "evening-dhikr",
-    "arabicText": "أَمْسَيْنَا عَلَى فِطْرَةِ اْلإِسْلاَمِ وَعَلَى كَلِمَةِ اْلإِخْلاَصِ، وَعَلَى دِيْنِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ، وَعَلَى مِلَّةِ أَبِيْنَا إِبْرَاهِيْمَ، حَنِيْفًا مُسْلِمًا وَمَا كَانَ مِنَ الْمُشْرِكِيْنَ",
-    "translation": "In the evening we are upon the fitrah of Islam, the word of sincerity (the testimony of faith), the religion of our Prophet Muhammad, sallallahu 'alayhi wa sallam, and the religion of our father Abraham, who stood upon the straight path, a Muslim, and was not among the polytheists.",
-    "reference": "HR. Ahmad III/406, 407, ad-Darimi II/292 and Ibnus Sunni in Amalul Yaum wal Lailah No. 34, Mishkat al-Masabih No. 2415, Sahih al-Jami' as-Saghir No. 4674, sahih"
+    "category": "waking_up",
+    "arabicText": "﴿ إِنَّ فِي خَلْقِ السَّمَوَاتِ وَالأَرْضِ وَاخْتِلاَفِ اللَّيْلِ وَالنَّهَارِ لَآيَاتٍ لأُوْلِي الألْبَابِ * الَّذِينَ يَذْكُرُونَ اللَّهَ قِيَاماً وَقُعُوداً وَعَلَىَ جُنُوبِهِمْ وَيَتَفَكَّرُونَ فِي خَلْقِ السَّمَوَاتِ وَالأَرْضِ رَبَّنَا مَا خَلَقْتَ هَذا بَاطِلاً سُبْحَانَكَ فَقِنَا عَذَابَ النَّارِ* رَبَّنَا إِنَّكَ مَن تُدْخِلِ النَّارَ فَقَدْ أَخْزَيْتَهُ وَمَا لِلظَّالِمِينَ مِنْ أَنصَارٍ* رَّبَّنَا إِنَّنَا سَمِعْنَا مُنَادِياً يُنَادِي لِلإِيمَانِ أَنْ آمِنُواْ بِرَبِّكُمْ فَآمَنَّا رَبَّنَا فَاغْفِرْ لَنَا ذُنُوبَنَا وَكَفِّرْ عَنَّا سَيِّئَاتِنَا وَتَوَفَّنَا مَعَ الأبْرَارِ* رَبَّنَا وَآتِنَا مَا وَعَدتَّنَا عَلَى رُسُلِكَ وَلاَ تُخْزِنَا يَوْمَ الْقِيَامَةِ إِنَّكَ لاَ تُخْلِفُ الْمِيعَادَ* فَاسْتَجَابَ لَهُمْ رَبُّهُمْ أَنِّي لاَ أُضِيعُ عَمَلَ عَامِلٍ مِّنكُم مِّن ذَكَرٍ أَوْ أُنثَى بَعْضُكُم مِّن بَعْضٍ فَالَّذِينَ هَاجَرُواْ وَأُخْرِجُواْ مِن دِيَارِهِمْ وَأُوذُواْ فِي سَبِيلِي وَقَاتَلُواْ وَقُتِلُواْ لأُكَفِّرَنَّ عَنْهُمْ سَيِّئَاتِهِمْ وَلأُدْخِلَنَّهُمْ جَنَّاتٍ تَجْرِي مِن تَحْتِهَا الأَنْهَارُ ثَوَاباً مِّن عِندِ اللَّهِ وَاللَّهُ عِندَهُ حُسْنُ الثَّوَابِ * لاَ يَغُرَّنَّكَ تَقَلُّبُ الَّذِينَ كَفَرُواْ فِي الْبِلاَدِ * مَتَاعٌ قَلِيلٌ ثُمَّ مَأْوَاهُمْ جَهَنَّمُ وَبِئْسَ الْمِهَادُ * لَكِنِ الَّذِينَ اتَّقَوْاْ رَبَّهُمْ لَهُمْ جَنَّاتٌ تَجْرِي مِنْ تَحْتِهَا الأَنْهَارُ خَالِدِينَ فِيهَا نُزُلاً مِّنْ عِندِ اللَّهِ وَمَا عِندَ اللَّهِ خَيْرٌ لِّلأَبْرَارِ * وَإِنَّ مِنْ أَهْلِ الْكِتَابِ لَمَن يُؤْمِنُ بِاللَّهِ وَمَا أُنزِلَ إِلَيْكُمْ وَمَآ أُنزِلَ إِلَيْهِمْ خَاشِعِينَ لِلَّهِ لاَ يَشْتَرُونَ بِآيَاتِ اللَّهِ ثَمَناً قَلِيلاً أُوْلَئِكَ لَهُمْ أَجْرُهُمْ عِندَ رَبِّهِمْ إِنَّ اللَّهَ سَرِيعُ الْحِسَابِ*يَا أَيُّهَا الَّذِينَ آمَنُواْ اصْبِرُواْ وَصَابِرُواْ وَرَابِطُواْ وَاتَّقُواْ اللَّهَ لَعَلَّكُمْ تُفْلِحُونَ ﴾",
+    "translation": "أذكار الاستيقاظ من النوم (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "66",
-    "category": "evening-dhikr",
-    "arabicText": "لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ",
-    "translation": "There is no deity worthy of worship except Allah alone, He has no partner. To Him belongs the dominion and all praise. He is over all things competent.",
-    "reference": "HR al-Bukhari No. 3293 and 6403, Muslim IV/2071 No. 2691 (28), at-Tirmidzi No. 3468, Ibn Majah No. 3798"
+    "category": "clothes",
+    "arabicText": "(الْحَمْدُ للَّهِ الَّذِي كَسَانِي هَذَا (الثَّوْبَ) وَرَزَقَنِيهِ مِنْ غَيْرِ حَوْلٍ مِنِّي وَلاَ قُوَّة...)",
+    "translation": "دعاء لبس الثوب (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "67",
-    "category": "evening-dhikr",
-    "arabicText": "سُبْحَانَ اللهِ وَبِحَمْدِهِ عَدَدَ خَلْقَهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ",
-    "translation": "Glory be to Allah, as many as His creations, Glory be to Allah as much as His pleasure, Glory be to Allah as much as the weight of His Throne, and as much as the ink of His written words.",
-    "reference": "HR. Muslim No. 2726. Sharh Muslim XVII/44. From Juwairiyah bint al-Harith radhiyallahu 'anha"
+    "category": "clothes",
+    "arabicText": "( اللَّهُمَّ لَكَ الْحَمْدُ أَنْتَ كَسَوْتَنِيهِ، أَسْأَلُكَ مِنْ خَيْرِهِ وَخَيْرِ مَا صُنِعَ لَهُ، وَأَعُوذُ بِكَ مِنْ شَرِّهِ وَشَرِّ مَا صُنِعَ لَهُ).",
+    "translation": "دعاء لبس الثوب الجديد (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "68",
-    "category": "evening-dhikr",
-    "arabicText": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ",
-    "translation": "Glory be to Allah, and praise be to Him.",
-    "reference": "HR. Muslim No. 2691 and No. 2692, from Abu Hurairah radhiyallahu 'anhu Sharh Muslim XVII/17-18, Sahih at-Targhib wat Tarhib 1/413 No. 653"
+    "category": "clothes",
+    "arabicText": "(تُبْلِي وَيُخْلِفُ اللَّهُ تَعَالَى)",
+    "translation": "دعاء لبس الثوب الجديد (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "69",
-    "category": "evening-dhikr",
-    "arabicText": "أَسْتَغْفِرُ الله وَأَتُوْبُ إِلَيْهِ",
-    "translation": "I seek forgiveness from Allah and repent to Him.",
-    "reference": "HR. al-Bukhari/Fat-hul Baari XI/101 and Muslim No. 2702"
+    "category": "clothes",
+    "arabicText": "(اِلْبَسْ جَدِيداً وَعِشْ حَمِيداً وَمُتْ شَهِيداً).",
+    "translation": "دعاء لبس الثوب الجديد (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "70",
-    "category": "evening-dhikr",
-    "arabicText": "أَعُوْذُ بِكَلِمَاتِ اللهِ التَّآمَّاتِ مِنْ شَرِّ مَا خَلَقَ",
-    "translation": "I seek refuge in the perfect words of Allah from the evil of what He has created.",
-    "reference": "HR. Ahmad 11/290, an-Nasa'i in 'Amalul Yaum wal Lailah No. 596, Sahih at-Targhib wat Tarhib 1/412 No. 652, Sahih al-Jami' as-Saghir No. 6427"
+    "category": "clothes",
+    "arabicText": "(بِسْمِ اللَّهِ).",
+    "translation": "ما يقول إذا وضع الثوب (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "71",
-    "category": "morning-dhikr",
-    "arabicText": "ٱللَّهُ لَآ إِلَٰهَ إِلَّا هُوَ ٱلْحَىُّ ٱلْقَيُّومُ ۚ لَا تَأْخُذُهُۥ سِنَةٌ وَلَا نَوْمٌ ۚ لَّهُۥ مَا فِى ٱلسَّمَٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۗ مَن ذَا ٱلَّذِى يَشْفَعُ عِندَهُۥٓ إِلَّا بِإِذْنِهِۦ ۚ يَعْلَمُ مَا بَيْنَ أَيْدِيهِمْ وَمَا خَلْفَهُمْ ۖ وَلَا يُحِيطُونَ بِشَىْءٍ مِّنْ عِلْمِهِۦٓ إِلَّا بِمَا شَآءَ ۚ وَسِعَ كُرْسِيُّهُ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ ۖ وَلَا يَـُٔودُهُۥ حِفْظُهُمَا ۚ وَهُوَ ٱلْعَلِىُّ ٱلْعَظِيمُ",
-    "translation": "Allah - there is no deity except Him, the Ever-Living, the Sustainer of [all] existence. Neither drowsiness overtakes Him nor sleep. To Him belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except by His permission? He knows what is [presently] before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursi extends over the heavens and the earth, and their preservation tires Him not. And He is the Most Hight, the Most Great.",
-    "reference": "HR. at-Tirmidzi: 2879"
+    "category": "bathroom",
+    "arabicText": "([بِسْمِ اللَّهِ] اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبْثِ وَالْخَبائِث).",
+    "translation": "دعاء دخول الخلاء - الحمام (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "72",
-    "category": "morning-dhikr",
-    "arabicText": "قُلْ هُوَ ٱللَّهُ أَحَدٌ (1) ٱللَّهُ ٱلصَّمَدُ (2) لَمْ يَلِدْ وَلَمْ يُولَدْ (3) وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ (4)",
-    "translation": "Say, \"He is Allah, [who is] One, (1) Allah, the Eternal Refuge. (2) He neither begets nor is born, (3) Nor is there to Him any equivalent.\" (4)",
-    "reference": "HR. Abu Dawud No. 4241"
+    "category": "bathroom",
+    "arabicText": "(غُفْرَانَكَ).",
+    "translation": "دعاء الخروج من الخلاء - الحمام (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "73",
-    "category": "morning-dhikr",
-    "arabicText": "قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ (1) مِن شَرِّ مَا خَلَقَ (2) وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ (3) وَمِن شَرِّ ٱلنَّفَّٰثَٰتِ فِى ٱلْعُقَدِ (4) وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ (5)",
-    "translation": "Say, \"I seek refuge in the Lord of daybreak (1) From the evil of that which He created (2) And from the evil of darkness when it settles (3) And from the evil of the blowers in knots (4) And from the evil of an envier when he envies.\" (5)",
-    "reference": "HR. Abu Dawud No. 4241"
+    "category": "wudu",
+    "arabicText": "(بِسْمِ اللَّهِ).",
+    "translation": "الذكر قبل الوضوء (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "74",
-    "category": "morning-dhikr",
-    "arabicText": "قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ (1) مَلِكِ ٱلنَّاسِ (2) إِلَٰهِ ٱلنَّاسِ (3) مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ (4) ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ (5) مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ (6)",
-    "translation": "Say, \"I seek refuge in the Lord of mankind, (1) The King of mankind. (2) The God of mankind, (3) From the evil of the whisperer who withdraws, (4) Who whispers in the breasts of mankind, (5) Of the jinn and mankind.\" (6)",
-    "reference": "HR. Abu Dawud No. 4241"
+    "category": "wudu",
+    "arabicText": "(أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ..).",
+    "translation": "الذكر بعد الفراغ من الوضوء (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "75",
-    "category": "morning-dhikr",
-    "arabicText": "أَصْبَحْنَا وَأَصْبَحَ الْمُلْكُ لِلَّهِ، وَالْحَمْدُ لِلَّهِ، لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ. رَبِّ أَسْأَلُكَ خَيْرَ مَا فِيْ هَذَا الْيَوْمِ وَخَيْرَ مَا بَعْدَهُ، وَأَعُوْذُ بِكَ مِنْ شَرِّ مَا فِيْ هَذَا الْيَوْمِ وَشَرِّ مَا بَعْدَهُ، رَبِّ أَعُوْذُ بِكَ مِنَ الْكَسَلِ وَسُوْءِ الْكِبَرِ، رَبِّ أَعُوْذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ",
-    "translation": "We have entered the morning and the dominion belongs to Allah, and all praise is for Allah. There is no deity worthy of worship except Allah alone, He has no partner. To Him belongs the dominion and to Him is praise, and He is over all things competent. My Lord, I ask You for the good of this day and the good of what follows it, and I seek refuge in You from the evil of this day and the evil of what follows it. My Lord, I seek refuge in You from laziness and the evil of old age. My Lord, I seek refuge in You from the punishment of the Fire and the punishment of the grave.",
-    "reference": "HR. Muslim No. 2723 (75), Abu Dawud No. 5071, and at-Tirmidzi 3390, sahih from Abdullah Ibn Mas'ud"
+    "category": "wudu",
+    "arabicText": "(اللَّهُمَّ اجْعَلْنِي مِنَ التَّوَّابِينَ وَاجْعَلْنِي مِنَ الْمُتَطَهِّرِينَ)",
+    "translation": "الذكر بعد الفراغ من الوضوء (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "76",
-    "category": "morning-dhikr",
-    "arabicText": "اَللَّهُمَّ بِكَ أَصْبَحْنَا، وَبِكَ أَمْسَيْنَا، وَبِكَ نَحْيَا، وَبِكَ نَمُوْتُ وَإِلَيْكَ النُّشُوْرُ",
-    "translation": "O Allah, with Your grace and help we enter the morning, and with Your grace and help we enter the evening. By Your grace and will we live and by Your grace and will we die. And to You is the resurrection (for all creatures).",
-    "reference": "HR. al-Bukhari in al-Adab al-Mufrad No. 1199, this wording is the wording of al-Bukhari, at-Tirmidzi No. 3391, Abu Dawud No. 5068, Ahmad 11/354, Ibn Majah No. 3868"
+    "category": "wudu",
+    "arabicText": "(سُبْحانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ أَنْتَ، أَسْتَغْفِرُكَ وَأَتوبُ إِلَيْكَ).",
+    "translation": "الذكر بعد الفراغ من الوضوء (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "77",
-    "category": "morning-dhikr",
-    "arabicText": "اَللَّهُمَّ أَنْتَ رَبِّيْ ، لَا إِلٰـهَ إِلاَّ أَنْتَ خَلَقْتَنِيْ وَأَنَا عَبْدُكَ ، وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ ، أَعُوْذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ ، أَبُوْءُ لَكَ بِنِعْمتِكَ عَلَيَّ ، وَأَبُوْءُ بِذَنْبِيْ فَاغْفِرْ لِيْ ، فَإِنَّهُ لَا يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ",
-    "translation": "O Allah, You are my Lord. There is no deity worthy of worship except You. You created me and I am Your servant. I will be true to my covenant and promise to You as much as I can. I seek refuge in You from the evil of what I have done. I acknowledge Your favor upon me and I acknowledge my sin, therefore, forgive me. Indeed, there is no one who can forgive sins except You.",
-    "reference": "HR. al-Bukhari No. 6306, 6323, Ahmad IV/122-125, an-Nasa'i VIII/279-280"
+    "category": "home",
+    "arabicText": "(بِسْمِ اللَّهِ، تَوَكَّلْتُ عَلَى اللَّهِ، وَلَاَ حَوْلَ وَلَا قُوَّةَ إِلاَّ بِاللَّهِ).",
+    "translation": "الذكر عند الخروج من المنزل (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "78",
-    "category": "morning-dhikr",
-    "arabicText": "اَللَّهُمَّ عَافِنِيْ فِيْ بَدَنِيْ ، اَللَّهُمَّ عَافِنِيْ فِيْ سَمْعِيْ ، اَللَّهُمَّ عَافِنِيْ فِيْ بَصَرِيْ ، لَا إِلَـهَ إِلَّا أَنْتَ ، اَللَّهُمَّ إِنِّيْ أَعُوْذُ بِكَ مِنَ الْكُفْرِوَالْفَقْرِ ، وَأَعُوْذُ بِكَ مِنْ عَذَابِ الْقَبْرِ ، لَا إِلَـهَ إِلَّا أَنْتَ",
-    "translation": "O Allah, protect my body (from illness and from what I do not want). O Allah, protect my hearing (from illness and disobedience or from what I do not want). O Allah, protect my sight, there is no deity worthy of worship except You. O Allah, indeed I seek refuge in You from disbelief and poverty. I seek refuge in You from the punishment of the grave, there is no deity worthy of worship except You.",
-    "reference": "HR. al-Bukhari in Sahih al-Adab al-Mufrad No. 701, Abu Dawud No. 5090, Ahmad V/42, hasan"
+    "category": "home",
+    "arabicText": "(اللَّهُمَّ إِنِّي أَعُوذُ بِكَ أَنْ أَضِلَّ، أَوْ أُضَلَّ، أَوْ أَزِلَّ، أَوْ أُزَلَّ، أَوْ أَظْلِمَ، أَوْ أُظْلَمَ، أَوْ أَجْهَلَ، أَوْ يُجْهَلَ عَلَيَّ).",
+    "translation": "الذكر عند الخروج من المنزل (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "79",
-    "category": "morning-dhikr",
-    "arabicText": "اَللَّهُمَّ إِنِّيْ أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَاْلآخِرَةِ، اَللَّهُمَّ إِنِّيْ أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي دِيْنِيْ وَدُنْيَايَ وَأَهْلِيْ وَمَالِيْ اللَّهُمَّ اسْتُرْ عَوْرَاتِى وَآمِنْ رَوْعَاتِى. اَللَّهُمَّ احْفَظْنِيْ مِنْ بَيْنِ يَدَيَّ، وَمِنْ خَلْفِيْ، وَعَنْ يَمِيْنِيْ وَعَنْ شِمَالِيْ، وَمِنْ فَوْقِيْ، وَأَعُوْذُ بِعَظَمَتِكَ أَنْ أُغْتَالَ مِنْ تَحْتِيْ",
-    "translation": "O Allah, indeed I ask You for well-being and safety in this world and the Hereafter. O Allah, indeed I ask You for well-being and safety in my religion, my world, my family and my wealth. O Allah, cover my flaws (faults and things that are not appropriate for others to see) and calm me from fear. O Allah, protect me from the front, behind, right, left and above me. I seek refuge in Your greatness, so that I am not snatched from below me (by snakes or swallowed by the earth, etc., which would cause me to fall).",
-    "reference": "HR. al-Bukhari in al-Adab al-Mufrad No. 1200, Abu Dawud No. 5074, an-Nasa'i VII/282, Ibn Majah No. 3871, al-Hakim 1/517-518, and others from Ibn Umar radhiyallahu 'anhuma"
+    "category": "home",
+    "arabicText": "(بِسْمِ اللَّهِ وَلَجْنَا، وَبِسْمِ اللَّهِ خَرَجْنَا، وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا، ثُمَّ لِيُسَلِّمْ عَلَى أَهْلِهِ).",
+    "translation": "الذكر عند دخول المنزل (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "80",
-    "category": "morning-dhikr",
-    "arabicText": "اَللَّهُمَّ عَالِمَ الْغَيْبِ وَالشَّهَادَةِ فَاطِرَ السَّمَاوَاتِ وَاْلأَرْضِ، رَبَّ كُلِّ شَيْءٍ وَمَلِيْكَهُ، أَشْهَدُ أَنْ لاَ إِلَـهَ إِلاَّ أَنْتَ، أَعُوْذُ بِكَ مِنْ شَرِّ نَفْسِيْ، وَمِنْ شَرِّ الشَّيْطَانِ وَشِرْكِهِ، وَأَنْ أَقْتَرِفَ عَلَى نَفْسِيْ سُوْءًا أَوْ أَجُرَّهُ إِلَى مُسْلِمٍ",
-    "translation": "O Allah, Knower of the unseen and the seen, Creator of the heavens and the earth, Lord of all things and their Sovereign. I bear witness that there is no deity worthy of worship except You. I seek refuge in You from the evil of myself, Satan and his soldiers (temptations to commit shirk against Allah), and I (seek refuge in You) from committing evil against myself or dragging it to a Muslim.",
-    "reference": "HR. al-Bukhari in al-Adab al-Mufrad No. 1202, at-Tirmidzi No. 3392 and Abu Dawud No. 5067"
+    "category": "masjid",
+    "arabicText": "(اللَّهُمَّ اجْعَلْ فِي قَلْبِي نُوراً، وَفِي لِسَانِي نُوراً، وَفِي سَمْعِي نُوراً، وَفِي بَصَرِي نُوراً، وَمِنْ فَوْقِي نُوراً، وَمِنْ تَحْتِي نُوراً، وَعَنْ يَمِينِي نُوراً، وَعَنْ شِمَالِي نُوراً، وَمِنْ أَمَامِي نُوراً، وَمِنْ خَلْفِي نُوراً، وَاجْعَلْ فِي نَفْسِي نُوراً، وَأَعْظِمْ لِي نُوراً، وَعَظِّم لِي نُوراً، وَاجْعَلْ لِي نُوراً، وَاجْعَلْنِي نُوراً، اللَّهُمَّ أَعْطِنِي نُوراً، وَاجْعَلْ فِي عَصَبِي نُوراً، وَفِي لَحْمِي نُوراً، وَفِي دَمِي نُوراً، وَفِي شَعْرِي نُوراً، وَفِي بَشَرِي نُوراً)([اللَّهُمَّ اجْعَلْ لِي نُوراً فِي قَبْرِي... وَنُوراً فِي عِظَامِي])[(وَزِدْنِي نُوراً، وَزِدْنِي نُوراً، وَزِدْنِي نُوراً)][(وَهَبْ لِي نُوراً عَلَى نُورٍ)]",
+    "translation": "دعاء الذهاب إلى المسجد (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "81",
-    "category": "morning-dhikr",
-    "arabicText": "بِسْمِ اللَّهِ الَّذِى لاَ يَضُرُّ مَعَ اسْمِهِ شَىْءٌ فِى الأَرْضِ وَلاَ فِى السَّمَاءِ وَهُوَ السَّمِيعُ الْعَلِيمُ",
-    "translation": "In the name of Allah with Whose name nothing can harm on earth or in heaven, and He is the All-Hearing, All-Knowing.",
-    "reference": "HR. at-Tirmidzi No. 3388, Abu Dawud No. 5088, Ibn Majah No. 3869, al-Hakim 1/514, and Ahmad No. 446 and 474"
+    "category": "masjid",
+    "arabicText": "(يَبْدَأُ بِرِجْلِهِ الْيُمْنَى) ، وَيَقُولُ: ((أَعُوذُ بِاللَّهِ العَظِيمِ، وَبِوَجْهِهِ الْكَرِيمِ، وَسُلْطَانِهِ الْقَدِيمِ، مِنَ الشَّيْطَانِ الرَّجِيمِ))  [بِسْمِ اللَّهِ، وَالصَّلَاةُ] [وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ]  ((اللَّهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ)).",
+    "translation": "دعاء دخول المسجد (Translation coming soon)",
+    "reference": ""
   },
   {
     "id": "82",
-    "category": "morning-dhikr",
-    "arabicText": "رَضِيْتُ بِاللهِ رَبًّا، وَبِاْلإِسْلاَمِ دِيْنًا، وَبِمُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ نَبِيًّا",
-    "translation": "I am pleased with Allah as my Lord, Islam as my religion and Muhammad sallallahu 'alayhi wa sallam as my Prophet (sent by Allah).",
-    "reference": "HR. Ahmad IV/337, Abu Dawud No. 5072, at-Tirmidzi No. 3389, Ibn Majah No. 3870, an-Nasa'i in 'Amalul Yaum wal Lailah No. 4 and Ibnus Sunni No. 68"
-  },
-  {
-    "id": "83",
-    "category": "morning-dhikr",
-    "arabicText": "يَا حَيُّ يَا قَيُّوْمُ بِرَحْمَتِكَ أَسْتَغِيْثُ، وَأَصْلِحْ لِيْ شَأْنِيْ كُلَّهُ وَلاَ تَكِلْنِيْ إِلَى نَفْسِيْ طَرْفَةَ عَيْنٍ أَبَدًا",
-    "translation": "O Ever-Living, O Self-Sustaining, by Your mercy I seek help, rectify all my affairs and do not leave me to myself even for the blink of an eye.",
-    "reference": "HR. an-Nasa'i in 'Amalul Yaum wal Lailah No. 575, and al-Hakim 1/545, Sahih at-Targhib wat Tarhib 1/417 No. 661, As-Sahihah No. 227, hasan"
-  },
-  {
-    "id": "84",
-    "category": "morning-dhikr",
-    "arabicText": "أَصْبَحْنَا عَلَى فِطْرَةِ اْلإِسْلاَمِ وَعَلَى كَلِمَةِ اْلإِخْلاَصِ، وَعَلَى دِيْنِ نَبِيِّنَا مُحَمَّدٍ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ، وَعَلَى مِلَّةِ أَبِيْنَا إِبْرَاهِيْمَ، حَنِيْفًا مُسْلِمًا وَمَا كَانَ مِنَ الْمُشْرِكِيْنَ",
-    "translation": "In the morning we are upon the fitrah of Islam, the word of sincerity (the testimony of faith), the religion of our Prophet Muhammad, sallallahu 'alayhi wa sallam, and the religion of our father Abraham, who stood upon the straight path, a Muslim, and was not among the polytheists.",
-    "reference": "HR. Ahmad III/406, 407, ad-Darimi II/292 and Ibnus Sunni in Amalul Yaum wal Lailah No. 34, Mishkat al-Masabih No. 2415, Sahih al-Jami' as-Saghir No. 4674, sahih"
-  },
-  {
-    "id": "85",
-    "category": "morning-dhikr",
-    "arabicText": "لاَ إِلَـهَ إِلاَّ اللهُ وَحْدَهُ لاَ شَرِيْكَ لَهُ، لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرُ",
-    "translation": "There is no deity worthy of worship except Allah alone, He has no partner. To Him belongs the dominion and all praise. And He is over all things competent.",
-    "reference": "HR al-Bukhari No. 3293 and 6403, Muslim IV/2071 No. 2691 (28), at-Tirmidzi No. 3468, Ibn Majah No. 3798"
-  },
-  {
-    "id": "86",
-    "category": "morning-dhikr",
-    "arabicText": "سُبْحَانَ اللهِ وَبِحَمْدِهِ عَدَدَ خَلْقَهِ وَرِضَى نَفْسِهِ وَزِنَةَ عَرْشِهِ وَمِدَادَ كَلِمَاتِهِ",
-    "translation": "Glory to Allah, I praise Him as many as the number of His creatures, Glory to Allah according to His pleasure, as pure as the weight of His Throne, and as pure as the ink (which writes) His words.",
-    "reference": "HR. Muslim No. 2726. Sharh Muslim XVII/44. From Juwairiyah binti al-Harits radhiyallahu 'anhuma"
-  },
-  {
-    "id": "87",
-    "category": "morning-dhikr",
-    "arabicText": "اللَّهُمَّ إِنِّى أَسْأَلُكَ عِلْمًا نَافِعًا وَرِزْقًا طَيِّبًا وَعَمَلاً مُتَقَبَّلاً",
-    "translation": "O Allah, I really ask You for knowledge that is beneficial, sustenance that is lawful, and deeds that are accepted.",
-    "reference": "HR. Ibnu Majah No. 925, Sahih Ibni Majah 1/152 No. 753 Ibnus Sunni in 'Amalul Yaum wal Lailah No. 54, 110, and Ahmad VI/294, 305, 318, 322. From Ummu Salamah, sahih"
-  },
-  {
-    "id": "88",
-    "category": "morning-dhikr",
-    "arabicText": "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ",
-    "translation": "Glory be to Allah, I praise Him.",
-    "reference": "HR. Muslim No. 2691 and No. 2692, from Abu Hurairah radhiyallahu 'anhu Sharh Muslim XVII/17-18, Sahih at-Targhib wat Tarhib 1/413 No. 653"
-  },
-  {
-    "id": "89",
-    "category": "morning-dhikr",
-    "arabicText": "أَسْتَغْفِرُ الله وَأَتُوْبُ إِلَيْهِ",
-    "translation": "I seek forgiveness from Allah and repent to Him.",
-    "reference": "HR. al-Bukhari/Fat-hul Baari XI/101 and Muslim No. 2702"
-  },
-  {
-    "id": "90",
-    "category": "selected-dua",
-    "arabicText": "رَبَّنَا آَتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآَخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
-    "translation": "Our Lord! Give us good in this world and give us good in the Hereafter, and save us from the torment of the hell fire.",
-    "reference": "QS. Al-Baqarah: 201, al-Bukhari: 6389, HR. Muslim: 2690"
-  },
-  {
-    "id": "91",
-    "category": "selected-dua",
-    "arabicText": "يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِى عَلَى دِينِكَ",
-    "translation": "O Changer of the hearts, make my heart firm upon Your religion.",
-    "reference": "HR. at-Tirmidzi, No. 3522 and Ahmad, 6: 315"
-  },
-  {
-    "id": "92",
-    "category": "selected-dua",
-    "arabicText": "اللَّهُمَّ مُصَرِّفَ الْقُلُوبِ صَرِّفْ قُلُوبَنَا عَلَى طَاعَتِكَ",
-    "translation": "O Allah! Controller of the hearts, direct our hearts to Your obedience.",
-    "reference": "HR. Muslim No. 2654"
-  },
-  {
-    "id": "93",
-    "category": "selected-dua",
-    "arabicText": "رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا",
-    "translation": "O our Lord, do not make our hearts incline to error after You have guided us.",
-    "reference": "QS. Ali Imran: 8"
-  },
-  {
-    "id": "94",
-    "category": "selected-dua",
-    "arabicText": "اللَّهُمَّ إِنِّى أَعُوذُ بِكَ مِنْ زَوَالِ نِعْمَتِكَ وَتَحَوُّلِ عَافِيَتِكَ وَفُجَاءَةِ نِقْمَتِكَ وَجَمِيعِ سَخَطِكَ",
-    "translation": "O Allah, I seek refuge in You from the loss of the pleasures that You have bestowed, from changes in the health that You have bestowed, from Your sudden torment, and from all Your wrath.",
-    "reference": "HR. Muslim No. 2739"
-  },
-  {
-    "id": "95",
-    "category": "selected-dua",
-    "arabicText": "اللَّهُمَّ إِنِّي أَعُوْذُ بِكَ مِنْ جَهْدِ البَلاَءِ ، وَدَرَكِ الشَّقَاءِ ، وَسُوءِ القَضَاءِ ، وَشَمَاتَةِ الأَعْدَاء",
-    "translation": "O Allah, I seek refuge in You from severe calamity, being overtaken by misery, evil destiny, and the triumphant mockery of enemies.",
-    "reference": "HR. al-Bukhari: 6616, Muslim: 2707"
-  },
-  {
-    "id": "96",
-    "category": "selected-dua",
-    "arabicText": "اَللّٰهُمَّ إِنِّى أَعُوْذُبِكَ مِنَ الْهَمِّ وَالْحَزْنِ وَأَعُوْذُبِكَ مِنَ الْعَجْزِ وَالْكَسَلِ وَأَعُوْذُبِكَ مِنَ الْجُبْنِ وَالْبُخْلِ وَأَعُوْذُبِكَ مِنْ غَلَبَتِ الدَّيْنِ وَقَهْرِ الرجال",
-    "translation": "O Allah, I seek refuge in You from care and grief, I seek refuge in You from incapacity and slackness, I seek refuge in You from cowardice and niggardliness, and I seek refuge in You from being overcome by debt and being put in subjection by men.",
-    "reference": "HR. Abu Dawud No. 1555"
-  },
-  {
-    "id": "97",
-    "category": "selected-dua",
-    "arabicText": "الْحَمْدُ لِلَّهِ الَّذِى بِنِعْمَتِهِ تَتِمُّ الصَّالِحَاتُ",
-    "translation": "Praise be to Allah, by whose grace goodness is perfected.",
-    "reference": "HR. Ibn Majah in the Sunan, No. 3803 and al-Hakim in al-Mustadrak (1/499)"
+    "category": "masjid",
+    "arabicText": "((يَبْدَأُ بِرِجْلِهِ الْيُسْرَى))  وَيَقُولُ: ((بِسْمِ اللَّهِ وَالصّلَاةُ وَالسَّلَامُ عَلَى رَسُولِ اللَّهِ، اللَّهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِك، اللَّهُمَّ اعْصِمْنِي مِنَ الشَّيْطَانِ الرَّجِيمِ)).",
+    "translation": "دعاء الخروج من المسجد (Translation coming soon)",
+    "reference": ""
   }
 ]
