@@ -11,7 +11,7 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 
   <!-- Preconnect / DNS Prefetch -->
-      <!-- Preload critical assets -->
+  <!-- Preload critical assets -->
   <link rel="preload" as="image" href="https://cdn.jsdelivr.net/gh/shahwaiz90/easyquran@main/newappicon.webp">
 
   <title>Easy Quran | Quran Pak App with Urdu & English Translation</title>
@@ -48,9 +48,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Easy Quran">
 
-  
 
-  
+
+
 
   <!-- Structured Data: WebSite -->
   <script type="application/ld+json">
@@ -1178,18 +1178,18 @@
     }
   </style>
 
-  
-  
 
-  
+
+
+
   <!-- Google Analytics & Tag Manager (Deferred on Interaction) -->
   <script>
-    (function() {
+    (function () {
       var loaded = false;
       function loadAnalytics() {
         if (loaded) return;
         loaded = true;
-        
+
         // Load GTAG
         var gtagScript = document.createElement('script');
         gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-5T5Y28ND45';
@@ -1205,23 +1205,23 @@
         (function (w, d, s, l, i) {
           w[l] = w[l] || []; w[l].push({
             'gtm.start': new Date().getTime(), event: 'gtm.js'
-          }); 
+          });
           var f = d.getElementsByTagName(s)[0],
-              j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; 
-          j.async = true; 
-          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; 
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
           f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-55CXTQTQ');
 
         // Cleanup events
         ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => {
-            window.removeEventListener(e, loadAnalytics);
+          window.removeEventListener(e, loadAnalytics);
         });
       }
 
       // Load on user interaction to avoid any initial Lighthouse penalty
       ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => {
-        window.addEventListener(e, loadAnalytics, {once: true, passive: true});
+        window.addEventListener(e, loadAnalytics, { once: true, passive: true });
       });
       // Fallback: load after 5 seconds anyway
       // setTimeout(loadAnalytics, 5000);  <-- Removed to prevent Lighthouse simulation penalty
@@ -1521,6 +1521,28 @@
               srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube-nocookie.com/embed/yOiCxKvzVwg?autoplay=1&rel=0&modestbranding=1><img src=https://img.youtube.com/vi/yOiCxKvzVwg/hqdefault.jpg alt='Mufti Ibrahim Essa Recommendation'><span>▶</span></a>"
               src="https://www.youtube-nocookie.com/embed/yOiCxKvzVwg?rel=0&modestbranding=1"
               title="Mufti Ibrahim Essa Recommendation" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Second Video: Osama Naseem, CEO of AdsSpider -->
+        <div style="text-align: center; margin-bottom: 20px;">
+          <h2 class="section-title" style="margin-bottom: 10px; font-size: 32px; color: white !important;">Testimonial
+            Review</h2>
+          <p style="color: rgba(255,255,255,0.9); font-size: 18px; font-weight: 500;">
+            by <strong>Osama Naseem</strong> &nbsp;·&nbsp; <span style="color: #F6AD55;">CEO, AdsSpider</span>
+          </p>
+        </div>
+
+        <div class="video-container"
+          style="max-width: 800px; margin: 0 auto 60px; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.3); border: 2px solid rgba(255,255,255,0.1);">
+          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+            <iframe width="100%" height="100%" loading="lazy"
+              srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube-nocookie.com/embed/Qk9cvHcYtdc?autoplay=1&rel=0&modestbranding=1><img src=https://img.youtube.com/vi/Qk9cvHcYtdc/hqdefault.jpg alt='Osama Naseem CEO AdsSpider Testimonial'><span>▶</span></a>"
+              src="https://www.youtube-nocookie.com/embed/Qk9cvHcYtdc?rel=0&modestbranding=1"
+              title="Osama Naseem – CEO, AdsSpider – Easy Quran Testimonial" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
             </iframe>
