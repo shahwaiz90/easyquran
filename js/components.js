@@ -84,6 +84,12 @@ class EQHeader extends HTMLElement {
           color: #F6AD55 !important;
         }
         .lang-btn:hover { background: rgba(255,255,255,0.15) !important; }
+        /* Always render the logo name in English/Latin font, even on RTL/Urdu pages */
+        .logo-text {
+          font-family: Inter, system-ui, -apple-system, sans-serif !important;
+          direction: ltr !important;
+          unicode-bidi: embed;
+        }
       </style>
     `;
 
