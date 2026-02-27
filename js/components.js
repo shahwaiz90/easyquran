@@ -31,6 +31,9 @@ const RTL_CSS = `
 class EQHeader extends HTMLElement {
   connectedCallback() {
     const active = this.getAttribute('active') || '';
+    // Stay within /ur/ when navigating from a Urdu page
+    const isUrdu = window.location.pathname.includes('/ur/');
+    const L = isUrdu ? 'ur/' : '';   // nav link prefix
 
     this.innerHTML = `
       <header>
@@ -42,11 +45,11 @@ class EQHeader extends HTMLElement {
             </a>
             <button class="menu-toggle" aria-label="Toggle menu">☰</button>
             <ul class="nav-links">
-              <li><a href="index.html"       class="${active === 'home' ? 'active' : ''}" data-i18n="nav.home">Home</a></li>
-              <li><a href="goals.html"       class="${active === 'goals' ? 'active' : ''}" style="color:#F6AD55;font-weight:bold;" data-i18n="nav.goals">Ramadan Goals</a></li>
-              <li><a href="features.html"    class="${active === 'features' ? 'active' : ''}" data-i18n="nav.features">Features</a></li>
-              <li><a href="reviews.html"     class="${active === 'reviews' ? 'active' : ''}" data-i18n="nav.reviews">Reviews</a></li>
-              <li><a href="listenquran.html" class="${active === 'listen' ? 'active' : ''}" data-i18n="nav.listen">Listen Quran</a></li>
+              <li><a href="${L}index.html"       class="${active === 'home' ? 'active' : ''}" data-i18n="nav.home">Home</a></li>
+              <li><a href="${L}goals.html"       class="${active === 'goals' ? 'active' : ''}" style="color:#F6AD55;font-weight:bold;" data-i18n="nav.goals">Ramadan Goals</a></li>
+              <li><a href="${L}features.html"    class="${active === 'features' ? 'active' : ''}" data-i18n="nav.features">Features</a></li>
+              <li><a href="${L}reviews.html"     class="${active === 'reviews' ? 'active' : ''}" data-i18n="nav.reviews">Reviews</a></li>
+              <li><a href="${L}listenquran.html" class="${active === 'listen' ? 'active' : ''}" data-i18n="nav.listen">Listen Quran</a></li>
               <li>
                 <a href="https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran" class="btn-nav-accent">
                   <span data-i18n="nav.get_app">📲 Get App</span>

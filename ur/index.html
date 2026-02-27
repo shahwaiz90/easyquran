@@ -52,9 +52,16 @@
   }
   </script>
 
-    <!-- Urdu Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <!-- IndoPak Urdu Font (local) -->
+    <style>
+        @font-face {
+            font-family: 'IndoPak';
+            src: url('indopak2.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+    </style>
 
     <!-- Global Styles -->
     <link rel="preload" href="css/global.css" as="style">
@@ -68,8 +75,8 @@
     <style>
         html[lang="ur"] body,
         html[dir="rtl"] body {
-            font-family: 'Noto Nastaliq Urdu', 'Segoe UI', sans-serif;
-            line-height: 2;
+            font-family: 'IndoPak', 'Noto Nastaliq Urdu', serif;
+            line-height: 2.2;
         }
 
         /* RTL overrides for inline left-aligned elements */
