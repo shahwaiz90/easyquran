@@ -85,19 +85,31 @@
 
         async setLang(lang) {
             if (!SUPPORTED.includes(lang)) return;
-            currentLang = lang;
             localStorage.setItem('eq-lang', lang);
 
-            if (lang === 'en') {
-                // Reload the page so the native English HTML shows cleanly
-                location.reload();
+            const pathParts = window.location.pathname.split('/');
+            const isUrdu = pathParts.includes('ur');
+            const page = pathParts.pop() || 'index.html';
+
+            if (lang === 'ur' && !isUrdu) {
+                // English → Urdu: navigate to /ur/<page>
+                window.location.href = 'ur/' + page;
+                return;
+            }
+            if (lang === 'en' && isUrdu) {
+                // Urdu → English: navigate up to /<page>
+                window.location.href = '../' + page;
                 return;
             }
 
-            translations = await loadLocale(lang);
-            applyDirection(lang);
-            applyTranslations();
-            updateSwitcherUI(lang);
+            // Same language, just apply in-place (shouldn't normally happen)
+            currentLang = lang;
+            if (lang !== 'en') {
+                translations = await loadLocale(lang);
+                applyDirection(lang);
+                applyTranslations();
+                updateSwitcherUI(lang);
+            }
         },
 
         getCurrentLang: () => currentLang,

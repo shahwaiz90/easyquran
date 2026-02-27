@@ -12,6 +12,9 @@
     content="listen Quran online, Quran mp3, Quran recitation, world renowned Qaris, Holy Quran audio, ad-free Quran audio">
   <meta name="author" content="Easy Quran">
   <link rel="canonical" href="https://easyquran.app/listenquran.html" />
+  <link rel="alternate" hreflang="en" href="https://easyquran.app/listenquran.html" />
+  <link rel="alternate" hreflang="ur" href="https://easyquran.app/ur/listenquran.html" />
+  <link rel="alternate" hreflang="x-default" href="https://easyquran.app/listenquran.html" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Listen to Quran Recitations Online - Easy Quran">
@@ -320,22 +323,22 @@
     }
   </style>
 
-  
 
-  
 
-  
-  
 
-  
+
+
+
+
+
   <!-- Google Analytics & Tag Manager (Deferred on Interaction) -->
   <script>
-    (function() {
+    (function () {
       var loaded = false;
       function loadAnalytics() {
         if (loaded) return;
         loaded = true;
-        
+
         // Load GTAG
         var gtagScript = document.createElement('script');
         gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-5T5Y28ND45';
@@ -351,23 +354,23 @@
         (function (w, d, s, l, i) {
           w[l] = w[l] || []; w[l].push({
             'gtm.start': new Date().getTime(), event: 'gtm.js'
-          }); 
+          });
           var f = d.getElementsByTagName(s)[0],
-              j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; 
-          j.async = true; 
-          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; 
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
           f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-55CXTQTQ');
 
         // Cleanup events
         ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => {
-            window.removeEventListener(e, loadAnalytics);
+          window.removeEventListener(e, loadAnalytics);
         });
       }
 
       // Load on user interaction to avoid any initial Lighthouse penalty
       ['scroll', 'mousemove', 'touchstart', 'click'].forEach(e => {
-        window.addEventListener(e, loadAnalytics, {once: true, passive: true});
+        window.addEventListener(e, loadAnalytics, { once: true, passive: true });
       });
       // Fallback: load after 5 seconds anyway
       // setTimeout(loadAnalytics, 5000);  <-- Removed to prevent Lighthouse simulation penalty
