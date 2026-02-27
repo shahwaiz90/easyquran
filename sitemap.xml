@@ -69,6 +69,23 @@
     <xhtml:link rel="alternate" hreflang="ur" href="https://easyquran.app/ur/reviews.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://easyquran.app/reviews.html"/>
   </url>
+  <url>
+    <loc>https://easyquran.app/ur/features.html</loc>
+    <lastmod>2026-02-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://easyquran.app/ur/features.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://easyquran.app/features.html"/>
+  </url>
+  <url>
+    <loc>https://easyquran.app/ur/listenquran.html</loc>
+    <lastmod>2026-02-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ur" href="https://easyquran.app/ur/listenquran.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://easyquran.app/listenquran.html"/>
+  </url>
 
 </urlset>
+
 

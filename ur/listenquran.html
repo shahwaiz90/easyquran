@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="../">
+    <script>localStorage.setItem('eq-lang', 'ur');</script>
+
+    <title>قرآن مجید سنیں | ایزی قرآن</title>
+    <meta name="description"
+        content="مشاری راشد العفاسی کی خوبصورت تلاوت کے ساتھ قرآن مجید آن لائن سنیں۔ اعلیٰ معیاری آڈیو، آف لائن ڈاؤنلوڈ، اور ریپیٹ موڈ — مفت اور اشتہار سے پاک۔">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Easy Quran">
+    <link rel="canonical" href="https://easyquran.app/ur/listenquran.html">
+    <link rel="alternate" hreflang="ur" href="https://easyquran.app/ur/listenquran.html">
+    <link rel="alternate" hreflang="en" href="https://easyquran.app/listenquran.html">
+    <link rel="alternate" hreflang="x-default" href="https://easyquran.app/listenquran.html">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <meta property="og:title" content="قرآن مجید سنیں | ایزی قرآن">
+    <meta property="og:description"
+        content="مشاری راشد العفاسی کی خوبصورت تلاوت کے ساتھ قرآن مجید آن لائن سنیں — مفت اور اشتہار سے پاک۔">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://easyquran.app/ur/listenquran.html">
+    <meta property="og:image" content="https://easyquran.app/newappicon.webp">
+    <meta property="og:locale" content="ur_PK">
+
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type":"ListItem","position":1,"name":"ہوم","item":"https://easyquran.app/ur/index.html"},
+      {"@type":"ListItem","position":2,"name":"قرآن سنیں","item":"https://easyquran.app/ur/listenquran.html"}
+    ]
+  }
+  </script>
+
+    <style>
+        @font-face {
+            font-family: 'IndoPak';
+            src: url('../indopak2.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        html[lang="ur"] body {
+            font-family: 'IndoPak', serif;
+            line-height: 2.2;
+        }
+    </style>
+
+    <link rel="preload" href="css/global.css" as="style">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="js/components.js" defer></script>
+    <script src="js/i18n.js" defer></script>
+    <meta name="theme-color" content="#004D40">
+    <link rel="apple-touch-icon" href="newappicon.webp">
+
+    <style>
+        .hero {
+            background: linear-gradient(135deg, #004D40, #00695C);
+            color: white;
+            padding: 120px 20px 80px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: clamp(28px, 5vw, 50px);
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: .9;
+            max-width: 650px;
+            margin: 0 auto 40px;
+            line-height: 2;
+        }
+
+        .btn-hero {
+            background: #F6AD55;
+            color: #004D40;
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        section {
+            padding: 70px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .info-strip {
+            background: white;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .info-card {
+            text-align: center;
+            padding: 30px 20px;
+            background: #f8fffe;
+            border-radius: 16px;
+            border: 1px solid #e0f0ee;
+        }
+
+        .info-icon {
+            font-size: 36px;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .info-card h3 {
+            font-size: 17px;
+            font-weight: 700;
+            color: #004D40;
+            margin-bottom: 8px;
+        }
+
+        .info-card p {
+            font-size: 14px;
+            color: #4A5568;
+            line-height: 1.8;
+        }
+
+        .player-section {
+            background: #F5F5F7;
+        }
+
+        .player-notice {
+            background: linear-gradient(135deg, #004D40, #00695C);
+            color: white;
+            border-radius: 24px;
+            padding: 40px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .player-notice h2 {
+            font-size: clamp(22px, 3vw, 30px);
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .player-notice p {
+            opacity: .9;
+            font-size: 16px;
+            margin-bottom: 24px;
+            line-height: 2;
+        }
+
+        .surah-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 12px;
+        }
+
+        .surah-item {
+            background: white;
+            border-radius: 12px;
+            padding: 14px 18px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, .06);
+            cursor: pointer;
+            transition: all .2s;
+            border: 1px solid #eee;
+        }
+
+        .surah-item:hover {
+            background: #004D40;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .surah-num {
+            background: #F6AD55;
+            color: #004D40;
+            border-radius: 8px;
+            width: 36px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 13px;
+            flex-shrink: 0;
+        }
+
+        .surah-name {
+            font-weight: 600;
+            font-size: 14px;
+            direction: rtl;
+        }
+
+        .surah-ar {
+            font-size: 16px;
+            color: #004D40;
+            font-family: serif;
+        }
+
+        .surah-item:hover .surah-ar {
+            color: #F6AD55;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #004D40, #00695C);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .btn-primary {
+            background: #F6AD55;
+            color: #004D40;
+            padding: 16px 40px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 18px;
+            text-decoration: none;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <eq-header active="listen"></eq-header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <h1>قرآن مجید سنیں</h1>
+            <p>مشاری راشد العفاسی کی خوبصورت تلاوت کے ساتھ قرآن مجید کا لطف اٹھائیں۔ آن لائن سنیں، آیات دہرائیں، اور
+                آفلائن سننے کے لیے ڈاؤنلوڈ کریں۔</p>
+            <a href="https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran" class="btn-hero"
+                target="_blank" rel="noopener">
+                ایپ ڈاؤنلوڈ کریں — مفت
+            </a>
+        </section>
+
+        <!-- Info cards -->
+        <section class="info-strip">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <span class="info-icon">🎧</span>
+                        <h3>اعلیٰ معیاری آڈیو</h3>
+                        <p>بلکل واضح اور خوبصورت آواز جو آپ کے روح کو سکون دے</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">🔁</span>
+                        <h3>ریپیٹ موڈ</h3>
+                        <p>حفظ کے لیے کسی بھی آیت یا سورت کو بار بار سنیں</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">⬇️</span>
+                        <h3>آف لائن ڈاؤنلوڈ</h3>
+                        <p>سورتیں ڈاؤنلوڈ کریں اور بغیر انٹرنیٹ کے سنیں</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="info-icon">🚫</span>
+                        <h3>اشتہار سے پاک</h3>
+                        <p>تلاوت کے دوران کوئی اشتہار نہیں — مکمل پرسکون انداز</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Player Notice + Surah List -->
+        <section class="player-section">
+            <div class="container">
+                <div class="player-notice">
+                    <h2>📲 بہترین تجربے کے لیے ایپ ڈاؤنلوڈ کریں</h2>
+                    <p>ایزی قرآن ایپ میں تمام ۱۱۴ سورتیں اعلیٰ معیاری آڈیو کے ساتھ دستیاب ہیں — بیک گراؤنڈ پلے بیک،
+                        ریپیٹ موڈ اور آف لائن ڈاؤنلوڈ کے ساتھ۔</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran" class="btn-hero"
+                        target="_blank" rel="noopener" style="display:inline-block;">گوگل پلے پر حاصل کریں</a>
+                </div>
+
+                <h2
+                    style="font-size:clamp(22px,3vw,30px); font-weight:800; color:#111; text-align:center; margin-bottom:32px;">
+                    تمام سورتیں — ۱ تا ۱۱۴</h2>
+                <div class="surah-list" id="surah-list">
+                    <!-- Surahs rendered by JS below, with Urdu labels -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <h2 style="font-size:clamp(26px,4vw,38px); font-weight:800; margin-bottom:16px;">ابھی سننا شروع کریں</h2>
+            <p style="font-size:18px; opacity:.9; margin-bottom:40px;">مفت ڈاؤنلوڈ کریں اور اپنی روحانی تلاوت کا آغاز
+                کریں</p>
+            <a href="https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran" class="btn-primary"
+                target="_blank" rel="noopener">
+                ایزی قرآن مفت حاصل کریں
+            </a>
+        </section>
+    </main>
+
+    <eq-footer></eq-footer>
+
+    <script>
+        // Render surah list with Arabic names
+        const surahs = [
+            [1, 'Al-Fatihah', 'الفاتحة'], [2, 'Al-Baqarah', 'البقرة'], [3, 'Ali Imran', 'آل عمران'],
+            [4, 'An-Nisa', 'النساء'], [5, 'Al-Maidah', 'المائدة'], [6, 'Al-Anam', 'الأنعام'],
+            [7, 'Al-Araf', 'الأعراف'], [8, 'Al-Anfal', 'الأنفال'], [9, 'At-Tawbah', 'التوبة'],
+            [10, 'Yunus', 'يونس'], [11, 'Hud', 'هود'], [12, 'Yusuf', 'يوسف'],
+            [13, 'Ar-Rad', 'الرعد'], [14, 'Ibrahim', 'إبراهيم'], [15, 'Al-Hijr', 'الحجر'],
+            [16, 'An-Nahl', 'النحل'], [17, 'Al-Isra', 'الإسراء'], [18, 'Al-Kahf', 'الكهف'],
+            [19, 'Maryam', 'مريم'], [20, 'Ta-Ha', 'طه'], [21, 'Al-Anbiya', 'الأنبياء'],
+            [22, 'Al-Hajj', 'الحج'], [23, 'Al-Muminun', 'المؤمنون'], [24, 'An-Nur', 'النور'],
+            [25, 'Al-Furqan', 'الفرقان'], [26, 'Ash-Shuara', 'الشعراء'], [27, 'An-Naml', 'النمل'],
+            [28, 'Al-Qasas', 'القصص'], [29, 'Al-Ankabut', 'العنكبوت'], [30, 'Ar-Rum', 'الروم'],
+            [31, 'Luqman', 'لقمان'], [32, 'As-Sajdah', 'السجدة'], [33, 'Al-Ahzab', 'الأحزاب'],
+            [34, 'Saba', 'سبأ'], [35, 'Fatir', 'فاطر'], [36, 'Ya-Sin', 'يس'],
+            [37, 'As-Saffat', 'الصافات'], [38, 'Sad', 'ص'], [39, 'Az-Zumar', 'الزمر'],
+            [40, 'Ghafir', 'غافر'], [41, 'Fussilat', 'فصلت'], [42, 'Ash-Shuraa', 'الشورى'],
+            [43, 'Az-Zukhruf', 'الزخرف'], [44, 'Ad-Dukhan', 'الدخان'], [45, 'Al-Jathiyah', 'الجاثية'],
+            [46, 'Al-Ahqaf', 'الأحقاف'], [47, 'Muhammad', 'محمد'], [48, 'Al-Fath', 'الفتح'],
+            [49, 'Al-Hujurat', 'الحجرات'], [50, 'Qaf', 'ق'], [51, 'Adh-Dhariyat', 'الذاريات'],
+            [52, 'At-Tur', 'الطور'], [53, 'An-Najm', 'النجم'], [54, 'Al-Qamar', 'القمر'],
+            [55, 'Ar-Rahman', 'الرحمن'], [56, 'Al-Waqiah', 'الواقعة'], [57, 'Al-Hadid', 'الحديد'],
+            [58, 'Al-Mujadila', 'المجادلة'], [59, 'Al-Hashr', 'الحشر'], [60, 'Al-Mumtahanah', 'الممتحنة'],
+            [61, 'As-Saf', 'الصف'], [62, 'Al-Jumuah', 'الجمعة'], [63, 'Al-Munafiqun', 'المنافقون'],
+            [64, 'At-Taghabun', 'التغابن'], [65, 'At-Talaq', 'الطلاق'], [66, 'At-Tahrim', 'التحريم'],
+            [67, 'Al-Mulk', 'الملك'], [68, 'Al-Qalam', 'القلم'], [69, 'Al-Haqqah', 'الحاقة'],
+            [70, 'Al-Maarij', 'المعارج'], [71, 'Nuh', 'نوح'], [72, 'Al-Jinn', 'الجن'],
+            [73, 'Al-Muzzammil', 'المزمل'], [74, 'Al-Muddaththir', 'المدثر'], [75, 'Al-Qiyamah', 'القيامة'],
+            [76, 'Al-Insan', 'الإنسان'], [77, 'Al-Mursalat', 'المرسلات'], [78, 'An-Naba', 'النبأ'],
+            [79, 'An-Naziat', 'النازعات'], [80, 'Abasa', 'عبس'], [81, 'At-Takwir', 'التكوير'],
+            [82, 'Al-Infitar', 'الانفطار'], [83, 'Al-Mutaffifin', 'المطففين'], [84, 'Al-Inshiqaq', 'الانشقاق'],
+            [85, 'Al-Buruj', 'البروج'], [86, 'At-Tariq', 'الطارق'], [87, 'Al-Ala', 'الأعلى'],
+            [88, 'Al-Ghashiyah', 'الغاشية'], [89, 'Al-Fajr', 'الفجر'], [90, 'Al-Balad', 'البلد'],
+            [91, 'Ash-Shams', 'الشمس'], [92, 'Al-Layl', 'الليل'], [93, 'Ad-Duha', 'الضحى'],
+            [94, 'Ash-Sharh', 'الشرح'], [95, 'At-Tin', 'التين'], [96, 'Al-Alaq', 'العلق'],
+            [97, 'Al-Qadr', 'القدر'], [98, 'Al-Bayyinah', 'البينة'], [99, 'Az-Zalzalah', 'الزلزلة'],
+            [100, 'Al-Adiyat', 'العاديات'], [101, 'Al-Qariah', 'القارعة'], [102, 'At-Takathur', 'التكاثر'],
+            [103, 'Al-Asr', 'العصر'], [104, 'Al-Humazah', 'الهمزة'], [105, 'Al-Fil', 'الفيل'],
+            [106, 'Quraysh', 'قريش'], [107, 'Al-Maun', 'الماعون'], [108, 'Al-Kawthar', 'الكوثر'],
+            [109, 'Al-Kafirun', 'الكافرون'], [110, 'An-Nasr', 'النصر'], [111, 'Al-Masad', 'المسد'],
+            [112, 'Al-Ikhlas', 'الإخلاص'], [113, 'Al-Falaq', 'الفلق'], [114, 'An-Nas', 'الناس']
+        ];
+
+        const list = document.getElementById('surah-list');
+        if (list) {
+            surahs.forEach(([num, name, ar]) => {
+                const n = String(num).padStart(3, '0');
+                const el = document.createElement('div');
+                el.className = 'surah-item';
+                el.innerHTML = `<span class="surah-num">${n}</span><span class="surah-ar">${ar}</span>`;
+                list.appendChild(el);
+            });
+        }
+    </script>
+</body>
+
+</html>
