@@ -1,0 +1,130 @@
+{
+  "nav": {
+    "home": "Home",
+    "goals": "Ramadan Goals",
+    "features": "Features",
+    "reviews": "Reviews",
+    "listen": "Listen Quran",
+    "get_app": "📲 Get App"
+  },
+  "footer": {
+    "home": "Home",
+    "goals": "Ramadan Goals",
+    "listen": "Listen Quran",
+    "privacy": "Privacy Policy",
+    "sitemap": "Sitemap",
+    "copyright": "© 2026 Easy Quran. All rights reserved. Made with ❤️ for the Muslim Ummah"
+  },
+  "hero": {
+    "title": "The Quran App for Every Muslim Family",
+    "tagline": "Teach your kids, connect with your faith, and instill family values this Ramadan. <br><span style=\"color:#F6AD55; font-weight:700;\">Authentic • Ad-Free • Family Friendly</span>",
+    "cta_play": "Get it on Google Play",
+    "trusted": "❤️ Trusted by 1,000+ Muslim Families"
+  },
+  "chips": {
+    "ramadan": "🌙 Ramadan Ready",
+    "goals": "🎯 Set Goals",
+    "translation": "📚 Easy Translation",
+    "family": "👨‍👩‍👧‍👦 Family Friendly",
+    "no_ads": "🚫 Ad-Free",
+    "free": "✨ 100% Free"
+  },
+  "goals_section": {
+    "badge": "New for Ramadan 🌙",
+    "title": "Set Your Quran Goals",
+    "desc": "Build a habit this Ramadan. Choose from 5, 10, 30, or 60 minutes daily goals. Track your streak and understanding.",
+    "cta": "View Goals Challenge",
+    "daily": "5 Min / Day",
+    "beginner": "Beginner Friendly",
+    "progress": "Progress: 60%",
+    "on_track": "On Track"
+  },
+  "listen_section": {
+    "title": "Listen to the Holy Quran",
+    "desc": "Experience the beauty of Quranic recitation by Mishary Rashid Al-Afasy. Listen online, repeat verses, and download Surahs for offline playback.",
+    "feat1": "Crystal clear audio quality",
+    "feat2": "Repeat mode for memorization",
+    "feat3": "Download support",
+    "cta_app": "Download App for Best Experience",
+    "cta_web": "Listen on Web",
+    "now_playing": "Now Playing",
+    "surah": "001. Al-Fatihah"
+  },
+  "features_section": {
+    "title": "Powerful Features to Explore the Quran",
+    "subtitle": "Smart tools to explore, understand, and reflect on the Quran effortlessly.",
+    "f1_title": "Complete Quran Access",
+    "f1_desc": "Read all 114 Surahs with beautiful Arabic text, multiple translations, and easy navigation",
+    "f2_title": "Audio Recitations",
+    "f2_desc": "Listen to renowned Qaris with high-quality audio. Play in background while multitasking",
+    "f3_title": "Surah Insights",
+    "f3_desc": "Understand the structure and themes of each Surah with organized verse groupings",
+    "f4_title": "Offline Mode",
+    "f4_desc": "Access everything offline - no internet required after initial download",
+    "f5_title": "Comparative Analysis",
+    "f5_desc": "Compare different translations and tafseer side-by-side for deeper understanding",
+    "f6_title": "Personal Collections",
+    "f6_desc": "Save verses to custom collections — organize by themes, reflections, or reminders",
+    "view_all": "View All Features"
+  },
+  "reviews_section": {
+    "watch_title": "Watch the Recommendation",
+    "watch_by_mufti": "by <strong>Mufti Ibrahim Essa</strong>",
+    "testimonial_title": "Testimonial Review",
+    "testimonial_by": "by <strong>Osama Naseem</strong>",
+    "testimonial_role": "CEO, AdsSpider",
+    "title": "What Users Are Saying",
+    "subtitle": "Trusted by thousands of users worldwide on Google Play",
+    "rating_meta": "Rated by real users on Google Play • 116 reviews",
+    "read_all": "Read all reviews →",
+    "r1_text": "\"This Quran app is truly amazing and very easy to use. I really love the font style — it's clear, beautiful, and very comfortable to read. The revelation order of the Surahs gives a deeper perspective. May Allah reward the developers! 🌸\"",
+    "r1_author": "— Hoor Fatima",
+    "r2_text": "\"Very nice Quran app. No ads and completely free. It has all the required and very nice extra features such as tafseer as well.\"",
+    "r2_author": "— Tallat Habib",
+    "r3_text": "\"Impressive UI. Very simple to use. No Ads and easy to understand.\"",
+    "r3_author": "— Saad Azhar",
+    "cert_badge": "OFFICIAL SHARIAH AUTHENTICATION",
+    "cert_title": "Certified for Accuracy &amp; Trust",
+    "cert_desc": "Easy Quran has been rigorously reviewed and certified by recognized Islamic scholars (Mufti Ibrahim Essa) to ensure 100% accuracy of the Arabic text, translations, and Islamic content.",
+    "cert_en_btn": "📄 View English Certificate",
+    "cert_ur_btn": "📄 View Urdu Certificate"
+  },
+  "faq_section": {
+    "title": "Frequently Asked Questions",
+    "q1": "Is Easy Quran app free?",
+    "a1": "Yes, Easy Quran is completely free to download and use with all features included.",
+    "q2": "Can I use Easy Quran offline?",
+    "a2": "Yes, after initial download, all content is available offline without internet connection.",
+    "q3": "Which translations are available?",
+    "a3": "English, Urdu, Arabic are available—with tafseer insights to deepen understanding.",
+    "q4": "Is Easy Quran app proofread or reviewed by scholars?",
+    "a4": "Yes. The Arabic Quran text of Easy Quran is reviewed and authenticated by qualified Islamic scholars. A verified Shariah Board Certificate (in English and Urdu) is also attached above on this page.",
+    "q5": "Is Easy Quran ad-free?",
+    "a5": "Yes. Easy Quran is completely ad-free. There are no banners, video ads, or pop-ups — ensuring a distraction-free and peaceful Quran reading experience.",
+    "q6": "Which scholar's tafseer does Easy Quran include?",
+    "a6": "Easy Quran provides tafseer from renowned scholars including Ibn Kathir, Maududi, and others — allowing you to compare explanations and understand verses deeply.",
+    "q7": "Can I create personal collections of verses?",
+    "a7": "Yes. You can save any verse and organize it into your own custom collections — such as patience, charity, motivation, family values, reminders, or spiritual reflections.",
+    "q8": "Does Easy Quran support topic-based browsing?",
+    "a8": "Yes. Easy Quran allows you to explore the Quran by topics such as charity, family values, justice, finance, patience, gratitude, social ethics, and many more.",
+    "q9": "Is Easy Quran the only app that classifies Ayahs by topics?",
+    "a9": "Yes. Easy Quran is currently the only Quran app that automatically organizes verses into meaningful topics such as charity, patience, gratitude, justice, family values, finance, and social ethics."
+  },
+  "reviews_page": {
+    "hero_title": "Loved by the Muslim Ummah",
+    "hero_subtitle": "Thousands of users trust Easy Quran for their daily spiritual journey. Read our verified stories and reviews from users worldwide.",
+    "downloads": "Downloads",
+    "avg_rating": "Average Rating",
+    "no_ads": "No Ads",
+    "experience": "Experience",
+    "free": "100% Free",
+    "no_purchases": "No In-App Purchases",
+    "load_more_text": "Reading these reviews? Experience it yourself.",
+    "get_free_cta": "Get Easy Quran for Free"
+  },
+  "common": {
+    "lang_en": "English",
+    "lang_ur": "اردو",
+    "change_lang": "Change language"
+  }
+}
