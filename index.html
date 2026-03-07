@@ -1176,9 +1176,164 @@
         justify-content: center;
       }
 
-      .key-features {
-        justify-content: center !important;
+    /* Video Carousel Styles */
+    .video-carousel-container {
+      position: relative;
+      width: 100%;
+      margin: 40px auto 60px;
+      padding: 0 10px;
+    }
+
+    .video-carousel {
+      display: flex;
+      gap: 25px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      padding: 20px 5px;
+    }
+
+    .video-carousel::-webkit-scrollbar {
+      display: none;
+    }
+
+    .video-carousel-item {
+      flex: 0 0 90%;
+      scroll-snap-align: center;
+      border-radius: 24px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+      background: #000;
+      position: relative;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    @media (min-width: 768px) {
+      .video-carousel-item {
+        flex: 0 0 65%;
       }
+    }
+
+    @media (min-width: 1024px) {
+      .video-carousel-item {
+        flex: 0 0 800px;
+      }
+    }
+
+    .video-carousel-item:hover {
+      transform: scale(1.02);
+      border-color: rgba(246, 173, 85, 0.4);
+    }
+
+    .video-card-info {
+      background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+      padding: 30px 25px 20px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: white;
+      text-align: left;
+    }
+
+    .video-card-info h3 {
+      font-size: 22px;
+      color: #F6AD55;
+      margin-bottom: 5px;
+    }
+
+    .video-card-info p {
+      opacity: 0.9;
+      font-size: 16px;
+    }
+
+    .carousel-control {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 54px;
+      height: 54px;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 10;
+      transition: all 0.3s ease;
+      font-size: 20px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .carousel-control:hover {
+      background: rgba(255, 255, 255, 0.3);
+      transform: translateY(-50%) scale(1.1);
+      border-color: #F6AD55;
+    }
+
+    .carousel-control.prev {
+      left: -20px;
+    }
+
+    .carousel-control.next {
+      right: -20px;
+    }
+
+    @media (max-width: 1280px) {
+      .carousel-control.prev {
+        left: 5px;
+      }
+
+      .carousel-control.next {
+        right: 5px;
+      }
+    }
+
+    .carousel-indicators {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .indicator {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+    }
+
+    .indicator.active {
+      background: #F6AD55;
+      width: 32px;
+      border-radius: 20px;
+    }
+
+    .short-video-label {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: #FF0000;
+      color: white;
+      padding: 4px 12px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
   </style>
 
@@ -1525,51 +1680,80 @@
     <!-- Reviews Section (Moved Above Team) -->
     <section class="screenshots-section" id="reviews" aria-labelledby="reviews-title">
       <div class="container">
-        <!-- 1. Video Recommendation First -->
-        <div style="text-align: center; margin-bottom: 20px;">
-          <h2 class="section-title" style="margin-bottom: 10px; font-size: 32px; color: white !important;">Watch the
-            Recommendation</h2>
-          <p style="color: rgba(255,255,255,0.9); font-size: 18px; font-weight: 500;">
-            by <strong>Mufti Ibrahim Essa</strong>
+        <!-- 1. Video Reviews Carousel -->
+        <div style="text-align: center; margin-bottom: 30px;">
+          <h2 class="section-title" style="margin-bottom: 10px; font-size: 36px; color: white !important;">Watch the Video
+            Reviews</h2>
+          <p style="color: rgba(255,255,255,0.9); font-size: 19px; max-width: 700px; margin: 0 auto;">
+            See why scholars and influencers recommend Easy Quran for every Muslim family.
           </p>
         </div>
 
-        <div class="video-container"
-          style="max-width: 800px; margin: 0 auto 60px; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.3); border: 2px solid rgba(255,255,255,0.1);">
-          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-            <iframe width="100%" height="100%" loading="lazy"
-              srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube-nocookie.com/embed/yOiCxKvzVwg?autoplay=1&rel=0&modestbranding=1><img src=https://img.youtube.com/vi/yOiCxKvzVwg/hqdefault.jpg alt='Mufti Ibrahim Essa Recommendation'><span>▶</span></a>"
-              src="https://www.youtube-nocookie.com/embed/yOiCxKvzVwg?rel=0&modestbranding=1"
-              title="Mufti Ibrahim Essa Recommendation" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-            </iframe>
+        <div class="video-carousel-container">
+          <button class="carousel-control prev" aria-label="Previous Video">&#10094;</button>
+
+          <div class="video-carousel" id="videoCarousel">
+            <!-- Video 1: Mufti Ibrahim Essa -->
+            <div class="video-carousel-item">
+              <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <iframe width="100%" height="100%" loading="lazy"
+                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube-nocookie.com/embed/yOiCxKvzVwg?autoplay=1&rel=0&modestbranding=1><img src=https://img.youtube.com/vi/yOiCxKvzVwg/hqdefault.jpg alt='Mufti Ibrahim Essa Recommendation'><span>▶</span></a>"
+                  src="https://www.youtube-nocookie.com/embed/yOiCxKvzVwg?rel=0&modestbranding=1"
+                  title="Mufti Ibrahim Essa Recommendation" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                </iframe>
+              </div>
+              <div class="video-card-info">
+                <h3>Mufti Ibrahim Essa</h3>
+                <p>Scholar Recommendation & Shariah Certification Review</p>
+              </div>
+            </div>
+
+            <!-- Video 2: New Influencer Review (Short) -->
+            <div class="video-carousel-item">
+              <span class="short-video-label"><span>▶</span> SHORTS</span>
+              <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <iframe width="100%" height="100%" loading="lazy"
+                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube-nocookie.com/embed/_Xcv7-zDCkQ?autoplay=1&rel=0&modestbranding=1><img src=https://img.youtube.com/vi/_Xcv7-zDCkQ/hqdefault.jpg alt='Influencer App Review'><span>▶</span></a>"
+                  src="https://www.youtube-nocookie.com/embed/_Xcv7-zDCkQ?rel=0&modestbranding=1"
+                  title="Influencer App Review" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                </iframe>
+              </div>
+              <div class="video-card-info">
+                <h3>Influencer Review</h3>
+                <p>Features walkthrough and why users love the app</p>
+              </div>
+            </div>
+
+            <!-- Video 3: Osama Naseem -->
+            <div class="video-carousel-item">
+              <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+                <iframe width="100%" height="100%" loading="lazy"
+                  srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube-nocookie.com/embed/Qk9cvHcYtdc?autoplay=1&rel=0&modestbranding=1><img src=https://img.youtube.com/vi/Qk9cvHcYtdc/hqdefault.jpg alt='Osama Naseem CEO AdsSpider Testimonial'><span>▶</span></a>"
+                  src="https://www.youtube-nocookie.com/embed/Qk9cvHcYtdc?rel=0&modestbranding=1"
+                  title="Osama Naseem – CEO, AdsSpider – Easy Quran Testimonial" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                </iframe>
+              </div>
+              <div class="video-card-info">
+                <h3>Osama Naseem</h3>
+                <p>CEO, AdsSpider — User Testimonial & Review</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="carousel-control next" aria-label="Next Video">&#10095;</button>
+
+          <div class="carousel-indicators">
+            <button class="indicator active" data-index="0" aria-label="Go to video 1"></button>
+            <button class="indicator" data-index="1" aria-label="Go to video 2"></button>
+            <button class="indicator" data-index="2" aria-label="Go to video 3"></button>
           </div>
         </div>
-
-        <!-- Second Video: Osama Naseem, CEO of AdsSpider -->
-        <div style="text-align: center; margin-bottom: 20px;">
-          <h2 class="section-title" style="margin-bottom: 10px; font-size: 32px; color: white !important;">Testimonial
-            Review</h2>
-          <p style="color: rgba(255,255,255,0.9); font-size: 18px; font-weight: 500;">
-            by <strong>Osama Naseem</strong> &nbsp;·&nbsp; <span style="color: #F6AD55;">CEO, AdsSpider</span>
-          </p>
-        </div>
-
-        <div class="video-container"
-          style="max-width: 800px; margin: 0 auto 60px; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 50px rgba(0,0,0,0.3); border: 2px solid rgba(255,255,255,0.1);">
-          <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-            <iframe width="100%" height="100%" loading="lazy"
-              srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube-nocookie.com/embed/Qk9cvHcYtdc?autoplay=1&rel=0&modestbranding=1><img src=https://img.youtube.com/vi/Qk9cvHcYtdc/hqdefault.jpg alt='Osama Naseem CEO AdsSpider Testimonial'><span>▶</span></a>"
-              src="https://www.youtube-nocookie.com/embed/Qk9cvHcYtdc?rel=0&modestbranding=1"
-              title="Osama Naseem – CEO, AdsSpider – Easy Quran Testimonial" frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
-            </iframe>
-          </div>
-        </div>
-
-        <hr style="border: 0; height: 1px; background: rgba(255,255,255,0.1); margin: 60px auto; max-width: 200px;">
 
         <!-- 2. Reviews Section -->
         <h2 class="section-title" id="reviews-title" style="color: white !important;">
@@ -1756,6 +1940,49 @@
   </main>
 
   <eq-footer></eq-footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const carousel = document.getElementById('videoCarousel');
+      const prevBtn = document.querySelector('.carousel-control.prev');
+      const nextBtn = document.querySelector('.carousel-control.next');
+      const indicators = document.querySelectorAll('.indicator');
+
+      if (!carousel || !prevBtn || !nextBtn) return;
+
+      const getScrollAmount = () => {
+        const item = carousel.querySelector('.video-carousel-item');
+        return item ? item.offsetWidth + 25 : carousel.offsetWidth;
+      };
+
+      const updateActiveIndicator = () => {
+        const scrollPos = carousel.scrollLeft;
+        const itemWidth = getScrollAmount();
+        const index = Math.round(scrollPos / itemWidth);
+        indicators.forEach((ind, i) => {
+          ind.classList.toggle('active', i === index);
+        });
+      };
+
+      carousel.addEventListener('scroll', updateActiveIndicator);
+
+      prevBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+      });
+
+      nextBtn.addEventListener('click', () => {
+        carousel.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+      });
+
+      indicators.forEach((ind) => {
+        ind.addEventListener('click', () => {
+          const index = parseInt(ind.getAttribute('data-index'));
+          const itemWidth = getScrollAmount();
+          carousel.scrollTo({ left: index * itemWidth, behavior: 'smooth' });
+        });
+      });
+    });
+  </script>
 
 </body>
 
