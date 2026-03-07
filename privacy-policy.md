@@ -1,6 +1,6 @@
 # Privacy Policy for Easy Quran
 
-**Effective Date:** October 2025  
+**Effective Date:** March 2026  
 
 Welcome to **Easy Quran** (“we”, “our”, or “us”).  
 Your privacy is very important to us. This Privacy Policy explains how we handle your information when you use the **Easy Quran** mobile application.
@@ -21,17 +21,23 @@ The app may collect limited, non-personal data to improve performance, such as:
 
 This data helps us enhance app stability and user experience.
 
-### c. No Sensitive Data  
-We **do not** collect or store any religious, biometric, or financial information.
+### c. App Permissions  
+Easy Quran may request the following permissions to provide specific features:
+- **Location Permission:** Used to calculate and display accurate prayer times (Salat) based on your current city or region. This location data may be processed in the background to ensure accurate prayer times and timely notifications.
+- **Notification Permission:** Used to send you timely alerts for Namaz/prayer times and alarms you set within the app.
+
+### d. No Other Sensitive Data  
+We **do not** collect or store any other sensitive personal data, such as biometric or financial information.
 
 ---
 
 ## 2. How We Use Information
 
 Collected information (if any) is used solely to:
+- Provide accurate prayer times and notifications based on your location
 - Improve the app’s design, functionality, and performance  
 - Identify and fix technical issues  
-- Respond to user requests and feedback  
+- Respond to user requests and feedback
 
 We **never** sell, rent, or share your information for advertising or tracking.
 
@@ -97,4 +103,4 @@ If you have any questions, suggestions, or concerns about this Privacy Policy, p
 ---
 
 **Easy Quran** – Read, Listen & Understand the Quran Easily  
-© 2025 Easy Quran. All rights reserved.
+© 2026 Easy Quran. All rights reserved.
