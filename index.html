@@ -1177,22 +1177,24 @@
       }
 
     /* Video Carousel Styles */
+    /* Advanced Video Slider */
     .video-carousel-container {
       position: relative;
       width: 100%;
-      margin: 40px auto 60px;
-      padding: 0 10px;
+      margin: 60px auto 80px;
+      padding: 0;
+      overflow: visible;
     }
 
     .video-carousel {
       display: flex;
-      gap: 25px;
+      gap: 30px;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
       scrollbar-width: none;
       -ms-overflow-style: none;
-      padding: 20px 5px;
+      padding: 40px 10vw; /* Side padding for partial views */
     }
 
     .video-carousel::-webkit-scrollbar {
@@ -1200,140 +1202,167 @@
     }
 
     .video-carousel-item {
-      flex: 0 0 90%;
+      flex: 0 0 85vw; /* Almost full width on mobile */
       scroll-snap-align: center;
-      border-radius: 24px;
+      border-radius: 28px;
       overflow: hidden;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
       background: #000;
       position: relative;
-      border: 2px solid rgba(255, 255, 255, 0.1);
-      transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      border: 3px solid rgba(255, 255, 255, 0.05);
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+      transform: scale(0.9);
+      opacity: 0.6;
+      filter: grayscale(40%);
+    }
+
+    /* Active Item Focus */
+    .video-carousel-item.active {
+      transform: scale(1);
+      opacity: 1;
+      filter: grayscale(0%);
+      border-color: #F6AD55;
+      box-shadow: 0 40px 80px rgba(0, 0, 0, 0.6), 0 0 20px rgba(246, 173, 85, 0.2);
+      z-index: 5;
     }
 
     @media (min-width: 768px) {
       .video-carousel-item {
-        flex: 0 0 65%;
+        flex: 0 0 600px;
+      }
+      .video-carousel {
+        padding: 40px 20vw;
       }
     }
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1200px) {
       .video-carousel-item {
         flex: 0 0 800px;
       }
-    }
-
-    .video-carousel-item:hover {
-      transform: scale(1.02);
-      border-color: rgba(246, 173, 85, 0.4);
+      .video-carousel {
+        padding: 40px 30vw;
+      }
     }
 
     .video-card-info {
-      background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
-      padding: 30px 25px 20px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.6) 50%, transparent 100%);
+      padding: 60px 35px 30px;
       position: absolute;
       bottom: 0;
       left: 0;
       right: 0;
       color: white;
       text-align: left;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
+
+    .video-carousel-item:not(.active) .video-card-info {
+      opacity: 0.5;
     }
 
     .video-card-info h3 {
-      font-size: 22px;
+      font-size: 26px;
       color: #F6AD55;
-      margin-bottom: 5px;
+      margin-bottom: 8px;
+      font-weight: 800;
     }
 
     .video-card-info p {
       opacity: 0.9;
-      font-size: 16px;
+      font-size: 18px;
+      line-height: 1.4;
     }
 
+    /* Controls Overhaul */
     .carousel-control {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: 54px;
-      height: 54px;
-      background: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.3);
+      width: 64px;
+      height: 64px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.2);
       color: white;
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       cursor: pointer;
-      z-index: 10;
-      transition: all 0.3s ease;
-      font-size: 20px;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      z-index: 20;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      font-size: 24px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
     }
 
     .carousel-control:hover {
-      background: rgba(255, 255, 255, 0.3);
-      transform: translateY(-50%) scale(1.1);
-      border-color: #F6AD55;
+      background: #F6AD55;
+      color: #004D40;
+      transform: translateY(-50%) scale(1.15);
+      border-color: #fff;
     }
 
     .carousel-control.prev {
-      left: -20px;
+      left: 40px;
     }
 
     .carousel-control.next {
-      right: -20px;
+      right: 40px;
     }
 
-    @media (max-width: 1280px) {
-      .carousel-control.prev {
-        left: 5px;
+    @media (max-width: 900px) {
+      .carousel-control {
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
       }
-
-      .carousel-control.next {
-        right: 5px;
-      }
+      .carousel-control.prev { left: 10px; }
+      .carousel-control.next { right: 10px; }
     }
 
     .carousel-indicators {
       display: flex;
       justify-content: center;
-      gap: 12px;
-      margin-top: 25px;
+      gap: 15px;
+      margin-top: 10px;
     }
 
     .indicator {
       width: 12px;
       height: 12px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.15);
       cursor: pointer;
-      transition: all 0.3s ease;
-      border: none;
+      transition: all 0.4s ease;
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     .indicator.active {
       background: #F6AD55;
-      width: 32px;
+      width: 40px;
       border-radius: 20px;
+      box-shadow: 0 0 15px rgba(246, 173, 85, 0.4);
     }
 
     .short-video-label {
       position: absolute;
-      top: 20px;
-      right: 20px;
+      top: 30px;
+      right: 30px;
       background: #FF0000;
       color: white;
-      padding: 4px 12px;
+      padding: 6px 16px;
       border-radius: 50px;
       font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 1px;
-      z-index: 5;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      z-index: 10;
       display: flex;
       align-items: center;
-      gap: 6px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      gap: 8px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+      text-transform: uppercase;
     }
   </style>
 
@@ -1947,24 +1976,53 @@
       const prevBtn = document.querySelector('.carousel-control.prev');
       const nextBtn = document.querySelector('.carousel-control.next');
       const indicators = document.querySelectorAll('.indicator');
+      const items = document.querySelectorAll('.video-carousel-item');
 
       if (!carousel || !prevBtn || !nextBtn) return;
 
-      const getScrollAmount = () => {
-        const item = carousel.querySelector('.video-carousel-item');
-        return item ? item.offsetWidth + 25 : carousel.offsetWidth;
-      };
+      const updateActiveState = () => {
+        const carouselRect = carousel.getBoundingClientRect();
+        const carouselCenter = carouselRect.left + carouselRect.width / 2;
+        
+        let closestIndex = 0;
+        let minDistance = Infinity;
 
-      const updateActiveIndicator = () => {
-        const scrollPos = carousel.scrollLeft;
-        const itemWidth = getScrollAmount();
-        const index = Math.round(scrollPos / itemWidth);
-        indicators.forEach((ind, i) => {
-          ind.classList.toggle('active', i === index);
+        items.forEach((item, index) => {
+          const itemRect = item.getBoundingClientRect();
+          const itemCenter = itemRect.left + itemRect.width / 2;
+          const distance = Math.abs(carouselCenter - itemCenter);
+
+          if (distance < minDistance) {
+            minDistance = distance;
+            closestIndex = index;
+          }
+        });
+
+        // Update classes
+        items.forEach((item, index) => {
+          item.classList.toggle('active', index === closestIndex);
+        });
+
+        // Update indicators
+        indicators.forEach((ind, index) => {
+          ind.classList.toggle('active', index === closestIndex);
         });
       };
 
-      carousel.addEventListener('scroll', updateActiveIndicator);
+      // Initial state
+      updateActiveState();
+
+      // Update on scroll
+      let scrollTimeout;
+      carousel.addEventListener('scroll', () => {
+        clearTimeout(scrollTimeout);
+        scrollTimeout = setTimeout(updateActiveState, 50);
+      });
+
+      const getScrollAmount = () => {
+        const item = carousel.querySelector('.video-carousel-item');
+        return item ? item.offsetWidth + 30 : carousel.offsetWidth;
+      };
 
       prevBtn.addEventListener('click', () => {
         carousel.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
@@ -1974,11 +2032,17 @@
         carousel.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
       });
 
-      indicators.forEach((ind) => {
+      indicators.forEach((ind, index) => {
         ind.addEventListener('click', () => {
-          const index = parseInt(ind.getAttribute('data-index'));
           const itemWidth = getScrollAmount();
-          carousel.scrollTo({ left: index * itemWidth, behavior: 'smooth' });
+          const targetScroll = index * itemWidth;
+          
+          // Centering logic override for clicking indicators
+          const containerPadding = parseFloat(window.getComputedStyle(carousel).paddingLeft);
+          carousel.scrollTo({ 
+            left: index * itemWidth, 
+            behavior: 'smooth' 
+          });
         });
       });
     });
