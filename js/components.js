@@ -15,13 +15,13 @@ class EQHeader extends HTMLElement {
       <header>
         <div class="container">
           <nav aria-label="Primary">
-            <a href="index.html" class="logo">
+            <a href="/" class="logo">
               <div class="logo-icon" aria-hidden="true" style="background-image: url('newappicon.webp'); background-size: cover;"></div>
               <span class="logo-text">Easy Quran</span>
             </a>
             <button class="menu-toggle" aria-label="Toggle menu">☰</button>
             <ul class="nav-links">
-              <li><a href="index.html"       class="${active === 'home' ? 'active' : ''}">Home</a></li>
+              <li><a href="/"       class="${active === 'home' ? 'active' : ''}">Home</a></li>
               <li><a href="goals.html"       class="${active === 'goals' ? 'active' : ''}" style="color:#F6AD55;font-weight:bold;">Ramadan Goals</a></li>
               <li><a href="features.html"    class="${active === 'features' ? 'active' : ''}">Features</a></li>
               <li><a href="reviews.html"     class="${active === 'reviews' ? 'active' : ''}">Reviews</a></li>
@@ -103,7 +103,7 @@ class EQFooter extends HTMLElement {
         <div class="container">
           <div class="footer-content">
             <div class="footer-links">
-               <a href="index.html">Home</a>
+               <a href="/">Home</a>
                <a href="goals.html" style="color:#F6AD55;font-weight:bold;">Ramadan Goals</a>
                <a href="listenquran.html">Listen Quran</a>
                <a href="privacy-policy.html">Privacy Policy</a>
