@@ -31,9 +31,9 @@
     <meta name="twitter:description" content="Read authentic reviews from thousands of Easy Quran users worldwide.">
     <meta name="twitter:image" content="https://easyquran.app/newappicon.webp">
 
-    <!-- Structured Data -->
+    <!-- Unified Structured Data -->
     <script type="application/ld+json">
-    {
+    [{
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [{
@@ -47,59 +47,69 @@
         "name": "Reviews",
         "item": "https://easyquran.app/reviews.html"
       }]
-    }
-    </script>
-    <script type="application/ld+json">
+    },
     {
       "@context": "https://schema.org",
-      "@type": "Product",
+      "@type": "SoftwareApplication",
       "name": "Easy Quran App",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "Android",
       "description": "Read, listen and understand the Holy Quran with beautiful Arabic text, Urdu & English translations, tafseer insights, audio recitations, and topic-based study tools. 100% free and ad-free.",
       "image": "https://easyquran.app/newappicon.webp",
-      "url": "https://easyquran.app/reviews.html",
-      "brand": {
-        "@type": "Brand",
-        "name": "Easy Quran"
-      },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran",
       "offers": {
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD",
         "availability": "https://schema.org/InStock",
-        "url": "https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran"
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "bestRating": "5",
-        "worstRating": "1",
-        "reviewCount": "120"
-      },
-      "review": [
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Hoor Fatima" },
-          "datePublished": "2026-02-27",
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-          "reviewBody": "This Quran app is truly amazing and very easy to use. I really love the font style — it's clear, beautiful, and very comfortable to read for a long time. The revelation order of the Surahs gives a deeper and more meaningful perspective while reading. May Allah reward the developers for this beautiful effort."
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": { "@type": "MonetaryAmount", "value": "0", "currency": "USD" },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "DAY" },
+            "transitTime": { "@type": "QuantitativeValue", "minValue": 0, "maxValue": 0, "unitCode": "DAY" }
+          }
         },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Tallat Habib" },
-          "datePublished": "2026-02-19",
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-          "reviewBody": "Very nice Quran app. No ads and completely free. It has all the required and very nice extra features such as tafseer as well."
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Roheen Zulfiqar" },
-          "datePublished": "2026-01-20",
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-          "reviewBody": "This app is easy to use, and the font is very clear for tilawat. Translations and Tafseer are easily available making it easy to read with understanding."
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/NoReturns"
         }
-      ]
-    }
-    </script>
+      },
+    "review": [
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Hoor Fatima" },
+        "datePublished": "2026-02-27",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "reviewBody": "This Quran app is truly amazing and very easy to use. I really love the font style — it's clear, beautiful, and very comfortable to read for a long time."
+      },
+      {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Tallat Habib" },
+        "datePublished": "2026-02-19",
+        "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+        "reviewBody": "Very nice Quran app. No ads and completely free. It has all the required and very nice extra features such as tafseer as well."
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://easyquran.app/"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Reviews",
+      "item": "https://easyquran.app/reviews.html"
+    }]
+  }]
+  </script>
     <link rel="preload" href="css/global.css" as="style">
     <link rel="stylesheet" href="css/global.css">
     <script src="js/components.js" defer></script>
