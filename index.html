@@ -1370,6 +1370,127 @@
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
       text-transform: uppercase;
     }
+
+    /* Popular Surahs Grid */
+    .surah-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .surah-card {
+      background: #fff;
+      padding: 24px;
+      border-radius: 16px;
+      text-align: center;
+      text-decoration: none;
+      color: #2D3748;
+      border: 1px solid #E2E8F0;
+      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .surah-card:hover {
+      transform: translateY(-5px);
+      border-color: #004D40;
+      box-shadow: 0 10px 25px rgba(0, 77, 64, 0.1);
+    }
+
+    .surah-number {
+      font-size: 12px;
+      font-weight: 700;
+      color: #718096;
+      background: #F7FAFC;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    .surah-name {
+      font-size: 18px;
+      font-weight: 700;
+      color: #004D40;
+    }
+
+    .surah-name-ar {
+      font-size: 24px;
+      font-family: serif;
+      color: #2D3748;
+    }
+
+    .app-badge-small {
+      font-size: 10px;
+      background: #E6F4F1;
+      color: #004D40;
+      padding: 4px 8px;
+      border-radius: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    /* Quick Access Dashboard */
+    .quick-dashboard {
+      background: #F7FAFC;
+      padding: 60px 0;
+    }
+
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .dashboard-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      text-decoration: none;
+      color: #2D3748;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      transition: all 0.3s;
+      border: 1px solid transparent;
+    }
+
+    .dashboard-card:hover {
+      transform: scale(1.02);
+      border-color: #004D40;
+      box-shadow: 0 10px 30px rgba(0, 77, 64, 0.1);
+    }
+
+    .dashboard-icon {
+      font-size: 32px;
+      background: #E6F4F1;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      flex-shrink: 0;
+    }
+
+    .dashboard-info h3 {
+      font-size: 18px;
+      margin-bottom: 4px;
+      color: #004D40;
+    }
+
+    .dashboard-info p {
+      font-size: 14px;
+      color: #718096;
+    }
   </style>
 
 
@@ -1591,6 +1712,7 @@
               this Ramadan. Choose from 5,
               10, 30, or 60 minutes daily goals. Track your streak and understanding.</p>
             <a href="goals.html" class="btn btn-primary" style="border: none; color: #004D40;">View Goals Challenge</a>
+            <a href="https://www.easyquran.app/goals" class="btn btn-secondary" style="border: 1px solid white; color: white; background: transparent;">Track in App →</a>
           </div>
 
           <div
@@ -1598,19 +1720,18 @@
             <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
               <div
                 style="font-size: 30px; background: rgba(255,255,255,0.2); width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
-                ⏱️</div>
+                🎯</div>
               <div>
-                <div style="font-weight: bold; font-size: 18px;">5 Min / Day</div>
-                <div style="font-size: 12px; opacity: 0.8;">Beginner Friendly</div>
+                <div style="font-weight: bold; font-size: 14px; opacity: 0.8;">CURRENT GOAL</div>
+                <div style="font-size: 20px; font-weight: 800;">30 Mins Daily</div>
               </div>
             </div>
-            <div
-              style="width: 100%; background: rgba(255,255,255,0.2); height: 8px; border-radius: 4px; margin-bottom: 10px;">
-              <div style="width: 60%; background: #F6AD55; height: 100%; border-radius: 4px;"></div>
+            <div style="height: 8px; background: rgba(255,255,255,0.2); border-radius: 10px; margin-bottom: 10px; overflow: hidden;">
+              <div style="width: 70%; height: 100%; background: #F6AD55; border-radius: 10px;"></div>
             </div>
-            <div style="font-size: 12px; display: flex; justify-content: space-between;">
-              <span>Progress: 60%</span>
-              <span>On Track</span>
+            <div style="font-size: 14px; opacity: 0.9; display: flex; justify-content: space-between;">
+              <span>Progress: 21m / 30m</span>
+              <span style="font-weight: bold; color: #F6AD55;">70%</span>
             </div>
           </div>
         </div>
@@ -1681,6 +1802,92 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPULAR SURAHS GRID (Item 2) -->
+    <section class="features" style="background:#fff; padding:80px 0; border-bottom:1px solid #E2E8F0;">
+      <div class="container">
+        <h2 class="section-title" style="font-size: 36px; margin-bottom: 10px;">Read the Holy Quran</h2>
+        <p class="section-subtitle">Open these Surahs directly in the Easy Quran app for an immersive experience.</p>
+        
+        <div class="surah-grid">
+          <a href="https://www.easyquran.app/surah/1" class="surah-card">
+            <span class="surah-number">1</span>
+            <span class="surah-name">Al-Fatiha</span>
+            <span class="surah-name-ar">الفاتحة</span>
+            <span class="app-badge-small">Open in App</span>
+          </a>
+          <a href="https://www.easyquran.app/surah/2" class="surah-card">
+            <span class="surah-number">2</span>
+            <span class="surah-name">Al-Baqarah</span>
+            <span class="surah-name-ar">البقرة</span>
+            <span class="app-badge-small">Open in App</span>
+          </a>
+          <a href="https://www.easyquran.app/surah/18" class="surah-card">
+            <span class="surah-number">18</span>
+            <span class="surah-name">Al-Kahf</span>
+            <span class="surah-name-ar">الكهف</span>
+            <span class="app-badge-small">Open in App</span>
+          </a>
+          <a href="https://www.easyquran.app/surah/36" class="surah-card">
+            <span class="surah-number">36</span>
+            <span class="surah-name">Ya-Sin</span>
+            <span class="surah-name-ar">يس</span>
+            <span class="app-badge-small">Open in App</span>
+          </a>
+          <a href="https://www.easyquran.app/surah/55" class="surah-card">
+            <span class="surah-number">55</span>
+            <span class="surah-name">Ar-Rahman</span>
+            <span class="surah-name-ar">الرحمن</span>
+            <span class="app-badge-small">Open in App</span>
+          </a>
+          <a href="https://www.easyquran.app/surah/67" class="surah-card">
+            <span class="surah-number">67</span>
+            <span class="surah-name">Al-Mulk</span>
+            <span class="surah-name-ar">الملك</span>
+            <span class="app-badge-small">Open in App</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUICK ACCESS DASHBOARD (Item 5) -->
+    <section class="quick-dashboard">
+      <div class="container">
+        <h2 class="section-title" style="margin-bottom: 10px;">App Quick Access</h2>
+        <p class="section-subtitle">Jump straight to your favorite sections within the app.</p>
+        
+        <div class="dashboard-grid">
+          <a href="https://www.easyquran.app/home" class="dashboard-card">
+            <div class="dashboard-icon">🏠</div>
+            <div class="dashboard-info">
+              <h3>Dashboard</h3>
+              <p>Your personalized home</p>
+            </div>
+          </a>
+          <a href="https://www.easyquran.app/last-read" class="dashboard-card">
+            <div class="dashboard-icon">📖</div>
+            <div class="dashboard-info">
+              <h3>Continue Reading</h3>
+              <p>Pick up where you left off</p>
+            </div>
+          </a>
+          <a href="https://www.easyquran.app/juz" class="dashboard-card">
+            <div class="dashboard-icon">📜</div>
+            <div class="dashboard-info">
+              <h3>Juz List</h3>
+              <p>Explore the 30 parts</p>
+            </div>
+          </a>
+          <a href="https://www.easyquran.app/progress" class="dashboard-card">
+            <div class="dashboard-icon">📈</div>
+            <div class="dashboard-info">
+              <h3>Your Progress</h3>
+              <p>View stats & streaks</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
@@ -2088,6 +2295,78 @@
         });
       });
     });
+  </script>
+
+  <!-- SMART APP BANNER (Item 4) -->
+  <style>
+    .smart-app-banner {
+      display: none;
+      background: #004D40;
+      color: white;
+      padding: 12px 20px;
+      position: sticky;
+      top: 0;
+      z-index: 99999;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .smart-app-banner.visible { display: flex; }
+    .banner-content { display: flex; align-items: center; gap: 12px; }
+    .banner-btn {
+      background: #F6AD55;
+      color: #004D40;
+      padding: 6px 14px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .banner-close {
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.5);
+      font-size: 20px;
+      cursor: pointer;
+    }
+  </style>
+
+  <div id="smartBanner" class="smart-app-banner" aria-label="Open in app">
+    <div class="banner-content">
+      <img src="newappicon.webp" width="36" height="36" alt="Easy Quran Icon" style="border-radius: 8px;">
+      <div>
+        <div style="font-weight: bold; font-size: 14px;">Open in Easy Quran</div>
+        <div style="font-size: 12px; opacity: 0.8;">Better experience in the app</div>
+      </div>
+    </div>
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <a href="#" id="openInAppBtn" class="banner-btn">OPEN</a>
+      <button class="banner-close" onclick="document.getElementById('smartBanner').style.display='none'">×</button>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      const isAndroid = /Android/i.test(navigator.userAgent);
+      const banner = document.getElementById('smartBanner');
+      const btn = document.getElementById('openInAppBtn');
+      
+      if (isAndroid) {
+        banner.classList.add('visible');
+        
+        // Map current page to deep link
+        let path = window.location.pathname;
+        let deepLink = "https://www.easyquran.app" + path;
+        
+        // If on homepage, default to home
+        if (path === "/" || path === "/index.html") {
+          deepLink = "https://www.easyquran.app/home";
+        }
+        
+        btn.href = deepLink;
+      }
+    })();
   </script>
 
 </body>
