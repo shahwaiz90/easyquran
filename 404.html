@@ -51,24 +51,25 @@
         const appLink = document.getElementById('app-link');
         const statusText = document.getElementById('status');
         
-        // Map web path to app deep link
-        let deepLink = 'easyquran:/' + path;
+        // Android Intent URI (Most reliable for Chrome/Samsung Browser)
+        // Format: intent://<path>#Intent;scheme=<scheme>;package=<pkg>;end
+        const intentUri = `intent:/${path}#Intent;scheme=easyquran;package=com.ahmadshahwaiz.easyquran;S.browser_fallback_url=https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran;end`;
         
-        if (path.startsWith('/surah/')) {
-            const id = path.split('/')[2];
-            statusText.innerText = "Opening Surah " + id + "...";
+        if (path.startsWith('/surah/') || path.startsWith('/juz/') || path.startsWith('/progress')) {
+            const id = path.split('/')[2] || "";
+            statusText.innerText = "Opening Easy Quran...";
             appLink.style.display = 'inline-block';
-            appLink.href = deepLink;
+            appLink.href = intentUri;
             
-            // Auto-redirect try
+            // Auto-trigger the intent
             setTimeout(() => {
-                window.location.href = deepLink;
+                window.location.href = intentUri;
             }, 500);
         } else {
-            // If it's a real 404, go home
+            // Real 404 - send to home after 3s
             setTimeout(() => {
                 window.location.href = '/';
-            }, 2000);
+            }, 3000);
         }
     </script>
 </body>
