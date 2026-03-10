@@ -1448,10 +1448,64 @@
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
     }
-
     @media (min-width: 992px) {
       .mobile-only {
         display: none !important;
+      }
+    }
+
+    /* Quran Goals Responsive Styles */
+    .goals-banner {
+      background: linear-gradient(135deg, #004D40 0%, #00695C 100%);
+      border-radius: 20px;
+      padding: 40px;
+      color: white;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .goals-content {
+      flex: 1;
+      min-width: 300px;
+      z-index: 1;
+    }
+
+    .goals-card {
+      z-index: 1;
+      background: rgba(255,255,255,0.1);
+      padding: 25px;
+      border-radius: 15px;
+      backdrop-filter: blur(10px);
+      min-width: 280px;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    @media (max-width: 768px) {
+      .goals-banner {
+        padding: 30px 20px;
+        flex-direction: column;
+        text-align: center;
+      }
+      .goals-content {
+        min-width: 100%;
+      }
+      .goals-card {
+        width: 100%;
+        min-width: 100%;
+      }
+      .goals-content .cta-buttons {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          align-items: stretch;
+      }
+      .goals-content h2 {
+          font-size: 28px !important;
       }
     }
 
@@ -1704,11 +1758,8 @@
     <!-- NEW FEATURED SECTION FOR GOALS -->
     <section class="features" style="background:#fff; padding:40px 0 80px; border-bottom:1px solid #E2E8F0;">
       <div class="container">
-        <div
-          style="background: linear-gradient(135deg, #004D40 0%, #00695C 100%); border-radius: 20px; padding: 40px; color: white; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 30px;">
-
-
-          <div style="max-width: 600px; z-index: 1;">
+        <div class="goals-banner">
+          <div class="goals-content">
             <span
               style="background: #F6AD55; color: #004D40; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 14px; display: inline-block; margin-bottom: 15px;">New
               for Ramadan 🌙</span>
@@ -1717,17 +1768,17 @@
             <p style="font-size: 18px; opacity: 0.9; margin-bottom: 25px;">Build a habit
               this Ramadan. Choose from 5,
               10, 30, or 60 minutes daily goals. Track your streak and understanding.</p>
-            <a href="goals.html" class="btn btn-primary" style="border: none; color: #004D40;">View Goals Challenge</a>
-            <a href="https://www.easyquran.app/goals" class="btn btn-secondary" style="border: 1px solid white; color: white; background: transparent;">Track in App →</a>
+            <div class="cta-buttons">
+              <a href="goals.html" class="btn btn-primary" style="border: none; color: #004D40;">View Goals Challenge</a>
+            </div>
           </div>
 
-          <div
-            style="z-index: 1; background: rgba(255,255,255,0.1); padding: 25px; border-radius: 15px; backdrop-filter: blur(10px); min-width: 280px; border: 1px solid rgba(255,255,255,0.2);">
-            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+          <div class="goals-card">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px; justify-content: inherit;">
               <div
                 style="font-size: 30px; background: rgba(255,255,255,0.2); width: 50px; height: 50px; display: flex; align-items: center; justify-content: center; border-radius: 50%;">
                 🎯</div>
-              <div>
+              <div style="text-align: left;">
                 <div style="font-weight: bold; font-size: 14px; opacity: 0.8;">CURRENT GOAL</div>
                 <div style="font-size: 20px; font-weight: 800;">30 Mins Daily</div>
               </div>
