@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening Easy Quran...</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f8f9fa;
+            text-align: center;
+            color: #333;
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #28a745;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        .btn {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader" id="loader"></div>
+    <h2 id="status">Opening in Easy Quran...</h2>
+    <p id="sub-status">If the app doesn't open automatically, click below.</p>
+    
+    <a href="#" id="app-link" class="btn">Open in App</a>
+
+    <script>
+        const path = window.location.pathname;
+        const appLink = document.getElementById('app-link');
+        const statusText = document.getElementById('status');
+        
+        // Map web path to app deep link
+        let deepLink = 'easyquran:/' + path;
+        
+        if (path.startsWith('/surah/')) {
+            const id = path.split('/')[2];
+            statusText.innerText = "Opening Surah " + id + "...";
+            appLink.style.display = 'inline-block';
+            appLink.href = deepLink;
+            
+            // Auto-redirect try
+            setTimeout(() => {
+                window.location.href = deepLink;
+            }, 500);
+        } else {
+            // If it's a real 404, go home
+            setTimeout(() => {
+                window.location.href = '/';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
