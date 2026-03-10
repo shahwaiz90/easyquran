@@ -2345,7 +2345,7 @@
     });
   </script>
 
-  <!-- SMART APP BANNER (Item 4) -->
+  <!-- SMART APP BANNER (Item 4) - Commented out for later
   <style>
     .smart-app-banner {
       display: none;
@@ -2403,11 +2403,9 @@
       if (isAndroid) {
         banner.classList.add('visible');
         
-        // Map current page to deep link
         let path = window.location.pathname;
         let deepLink = "https://www.easyquran.app" + path;
         
-        // If on homepage, default to home
         if (path === "/" || path === "/index.html") {
           deepLink = "https://www.easyquran.app/home";
         }
@@ -2416,6 +2414,7 @@
       }
     })();
   </script>
+  -->
 
 </body>
 
