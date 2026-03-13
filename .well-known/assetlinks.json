@@ -11,5 +11,13 @@
         "AF:35:6F:ED:E4:BA:A0:A1:58:F4:45:F5:81:85:CD:E0:5E:0A:E7:E6:C2:DF:4F:F6:8D:A0:A9:F3:96:46:9D:E4"
       ]
     }
+  },
+{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.ahmadshahwaiz.easyquran.dev",
+      "sha256_cert_fingerprints": ["14:D4:61:F7:30:38:3A:4A:66:65:CF:8A:2C:4A:55:02:36:F7:7C:A7:86:4A:20:4C:45:0D:48:0F:93:3E:69:1E"]
+    }
   }
 ]
