@@ -8,6 +8,8 @@
   --text-gray: #718096;
 }
 
+.hidden { display: none !important; }
+
 * {
   margin: 0;
   padding: 0;
