@@ -22,11 +22,11 @@ class EQHeader extends HTMLElement {
             <button class="menu-toggle" aria-label="Toggle menu">☰</button>
             <ul class="nav-links">
               <li><a id="nav-home" href="/"       class="${active === 'home' ? 'active' : ''}">Home</a></li>
-              <li><a id="nav-goals" href="goals.html"       class="${active === 'goals' ? 'active' : ''}" style="color:#F6AD55;font-weight:bold;">Ramadan Goals</a></li>
-              <li><a id="nav-features" href="features.html"    class="${active === 'features' ? 'active' : ''}">Features</a></li>
-              <li><a id="nav-reviews" href="reviews.html"     class="${active === 'reviews' ? 'active' : ''}">Reviews</a></li>
-              <li><a id="nav-ambassadors" href="ambassadors.html" class="${active === 'ambassadors' ? 'active' : ''}">Join us as Ambassador</a></li>
-              <li><a id="nav-listen" href="listenquran.html" class="${active === 'listen' ? 'active' : ''}">Listen Quran</a></li>
+              <li><a id="nav-goals" href="/goals.html"       class="${active === 'goals' ? 'active' : ''}" style="color:#F6AD55;font-weight:bold;">Ramadan Goals</a></li>
+              <li><a id="nav-features" href="/features.html"    class="${active === 'features' ? 'active' : ''}">Features</a></li>
+              <li><a id="nav-reviews" href="/reviews.html"     class="${active === 'reviews' ? 'active' : ''}">Reviews</a></li>
+              <li><a id="nav-ambassadors" href="/ambassadors.html" class="${active === 'ambassadors' ? 'active' : ''}">Join us as Ambassador</a></li>
+              <li><a id="nav-listen" href="/listenquran.html" class="${active === 'listen' ? 'active' : ''}">Listen Quran</a></li>
               <li>
                 <a href="https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran" class="btn-nav-accent">
                   📲 Get App
