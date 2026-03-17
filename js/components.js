@@ -16,7 +16,7 @@ class EQHeader extends HTMLElement {
         <div class="container">
           <nav aria-label="Primary">
             <a href="/" class="logo">
-              <div class="logo-icon" aria-hidden="true" style="background-image: url('newappicon.webp'); background-size: cover;"></div>
+              <div class="logo-icon" aria-hidden="true"></div>
               <span class="logo-text">Easy Quran</span>
             </a>
             <button class="menu-toggle" aria-label="Toggle menu">☰</button>
