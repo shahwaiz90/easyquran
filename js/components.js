@@ -117,11 +117,11 @@ class EQFooter extends HTMLElement {
               <a href="https://www.instagram.com/easyquran.app/" target="_blank" rel="noopener" aria-label="Instagram">
                 <img src="/icons/instagram.png" alt="Instagram" style="width:28px;height:28px;">
               </a>
-              <a href="https://youtube.com/@easyquranapp" target="_blank" rel="noopener" aria-label="YouTube">
+              <a href="https://www.youtube.com/@easyquranapp/shorts" target="_blank" rel="noopener" aria-label="YouTube">
                 <img src="/icons/youtube.png" alt="YouTube" style="width:28px;height:28px;">
               </a>
-              <a href="https://tiktok.com/@easyquranapp" target="_blank" rel="noopener" aria-label="TikTok">
-                <img src="/icons/tiktok-2.png" alt="TikTok" style="width:28px;height:28px;">
+              <a href="https://www.tiktok.com/@easyquran.app" target="_blank" rel="noopener" aria-label="TikTok">
+                <img src="/icons/tiktok.png" alt="TikTok" style="width:28px;height:28px;">
               </a>
               <a href="https://www.facebook.com/profile.php?id=61586484481410" target="_blank" rel="noopener" aria-label="Facebook">
                 <img src="/icons/facebook.png" alt="Facebook" style="width:28px;height:28px;">
