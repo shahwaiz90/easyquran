@@ -22,7 +22,7 @@ class EQHeader extends HTMLElement {
             <button class="menu-toggle" aria-label="Toggle menu">☰</button>
             <ul class="nav-links">
               <li><a id="nav-home" href="/"       class="${active === 'home' ? 'active' : ''}">Home</a></li>
-              <li><a id="nav-goals" href="/goals.html"       class="${active === 'goals' ? 'active' : ''}" style="color:#F6AD55;font-weight:bold;">Ramadan Goals</a></li>
+              <li><a id="nav-goals" href="/goals.html"       class="${active === 'goals' ? 'active' : ''}" style="color:#F6AD55;font-weight:bold;">Quran Goals</a></li>
               <li><a id="nav-features" href="/features.html"    class="${active === 'features' ? 'active' : ''}">Features</a></li>
               <li><a id="nav-reviews" href="/reviews.html"     class="${active === 'reviews' ? 'active' : ''}">Reviews</a></li>
               <li><a id="nav-ambassadors" href="/ambassadors.html" class="${active === 'ambassadors' ? 'active' : ''}">Join us as Ambassador</a></li>
@@ -57,7 +57,7 @@ class EQHeader extends HTMLElement {
 
   spawnDecorations() {
     const bg = document.createElement('div');
-    bg.className = 'ramadan-bg-container';
+    bg.className = 'goals-bg-container';
     for (let i = 0; i < 30; i++) {
       const star = document.createElement('div');
       star.className = 'star-deco';
@@ -105,7 +105,7 @@ class EQFooter extends HTMLElement {
           <div class="footer-content">
             <div class="footer-links">
                <a href="/">Home</a>
-               <a href="goals.html" style="color:#F6AD55;font-weight:bold;">Ramadan Goals</a>
+               <a href="goals.html" style="color:#F6AD55;font-weight:bold;">Quran Goals</a>
                <a href="listenquran.html">Listen Quran</a>
                <a href="privacy-policy.html">Privacy Policy</a>
                <a href="sitemap.xml">Sitemap</a>
@@ -113,6 +113,18 @@ class EQFooter extends HTMLElement {
             <div class="social-links">
               <a href="mailto:ahmadshahwaiz@gmail.com" title="Email" aria-label="Email">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/></svg>
+              </a>
+              <a href="https://www.instagram.com/easyquran.app/" target="_blank" rel="noopener" aria-label="Instagram">
+                <img src="/icons/instagram.png" alt="Instagram" style="width:28px;height:28px;">
+              </a>
+              <a href="https://youtube.com/@easyquranapp" target="_blank" rel="noopener" aria-label="YouTube">
+                <img src="/icons/youtube.png" alt="YouTube" style="width:28px;height:28px;">
+              </a>
+              <a href="https://tiktok.com/@easyquranapp" target="_blank" rel="noopener" aria-label="TikTok">
+                <img src="/icons/tiktok-2.png" alt="TikTok" style="width:28px;height:28px;">
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61586484481410" target="_blank" rel="noopener" aria-label="Facebook">
+                <img src="/icons/facebook.png" alt="Facebook" style="width:28px;height:28px;">
               </a>
             </div>
           </div>

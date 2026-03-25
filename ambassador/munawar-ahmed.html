@@ -39,7 +39,6 @@
         .profile-name { font-size: 42px; color: #fff; margin-bottom: 5px; font-weight: 800; text-shadow: 0 2px 10px rgba(0,0,0,0.3); }
         .profile-role { color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 30px; font-size: 14px; text-shadow: 0 1px 5px rgba(0,0,0,0.2); }
         .profile-bio { font-size: 20px; line-height: 1.8; color: var(--text-dark); margin-bottom: 45px; font-weight: 400; }
-        
         .info-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -56,7 +55,14 @@
         }
         .info-card h4 { color: var(--primary); margin-bottom: 12px; font-size: 18px; }
         .info-card p { font-size: 15px; color: var(--text-gray); line-height: 1.6; }
-
+        .recruitment-card {
+            background: #E6FFFA;
+            padding: 40px;
+            border-radius: 20px;
+            border: 2px dashed #319795;
+            margin-top: 60px;
+        }
+        .recruitment-card h3 { color: #234E52; margin-bottom: 15px; }
         .linkedin-link {
             display: inline-flex;
             align-items: center;
@@ -77,7 +83,6 @@
             background: rgba(255,255,255,0.25);
             transform: translateY(-2px);
         }
-        
         .recruitment-card {
             background: #E6FFFA;
             padding: 40px;
@@ -86,10 +91,8 @@
             margin-top: 60px;
         }
         .recruitment-card h3 { color: #234E52; margin-bottom: 15px; }
-
         #amb-loader { padding: 100px; text-align: center; font-size: 20px; color: var(--text-gray); }
         .hidden { display: none !important; }
-        
         @media (max-width: 768px) {
             .profile-content { padding: 40px 25px; margin-top: -80px; }
             .info-grid { grid-template-columns: 1fr; }
@@ -99,48 +102,43 @@
 </head>
 <body>
     <eq-header active="ambassadors"></eq-header>
-
     <div id="amb-content">
         <section class="profile-hero">
             <div class="container">
-                <img id="amb-photo" src="../saad.png" alt="Saad Azhar Saeed" class="profile-photo">
-                <h1 id="amb-name" class="profile-name">Saad Azhar Saeed</h1>
+                <img id="amb-photo" src="../ambassador/munawar.jpeg" alt="Munawar Ahmed" class="profile-photo">
+                <h1 id="amb-name" class="profile-name">Munawar Ahmed</h1>
                 <p id="amb-role" class="profile-role">Brand Ambassador</p>
-                <a id="amb-linkedin" href="https://www.linkedin.com/in/saadazharsaeed/" target="_blank" class="linkedin-link">
+                <a id="amb-linkedin" href="https://www.linkedin.com/in/munawarahmed5/" target="_blank" class="linkedin-link">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
                     Professional Profile
                 </a>
             </div>
         </section>
-
         <section class="container">
             <div class="profile-content">
-                <p id="amb-bio" class="profile-bio">Passionate about leveraging technology to make Quranic education accessible and engaging for the modern generation. Saad Azhar Saeed is dedicated to spreading the message of Easy Quran across his campus and beyond.</p>
-                
+                <p id="amb-bio" class="profile-bio">As an Easy Quran Ambassador, Munawar Ahmed is dedicated to empowering the Muslim community through technology and data, making Quranic knowledge accessible, relevant, and inspiring for all. He strives to promote Islamic values, integrity, and excellence, helping others connect with the Quran in their daily lives.</p>
                 <div class="info-grid">
                     <div class="info-card premium-card" style="border: 3px solid #319795; background: #F8FAFC; box-shadow: 0 4px 18px rgba(49,151,149,0.07);">
                         <div class="card-icon" style="background: #E6FFFA; border-radius: 50%; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; box-shadow: 0 4px 16px rgba(0,0,0,0.07);">
                             <svg width="28" height="28" fill="none" stroke="#319795" stroke-width="2" viewBox="0 0 24 24"><path d="M12 3L2 8.5l10 5.5 10-5.5L12 3z"/><path d="M2 17.5l10 5.5 10-5.5"/><path d="M2 12l10 5.5 10-5.5"/></svg>
                         </div>
                         <h4 style="font-size: 20px; color: #234E52; margin-bottom: 10px;">Education</h4>
-                        <ul style="font-size: 16px; color: #2D3748; font-weight: 500; margin: 0; padding-left: 18px;">
-                          <li>Masters of CS, FAST Lahore</li>
-                          <li>Bachelors of CS, PUCIT Lahore</li>
-                        </ul>
+                        <p style="font-size: 16px; color: #2D3748; font-weight: 500;">Masters in Computer Science</p>
+                        <p style="font-size: 15px; color: #319795; margin-top: 4px;">FAST Lahore</p>
                     </div>
                     <div class="info-card premium-card" style="border: 3px solid #F6AD55; background: #FFFBF5; box-shadow: 0 4px 18px rgba(246,173,85,0.07);">
                         <div class="card-icon" style="background: #FFF7E6; border-radius: 50%; width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; box-shadow: 0 4px 16px rgba(0,0,0,0.07);">
                             <svg width="28" height="28" fill="none" stroke="#F6AD55" stroke-width="2" viewBox="0 0 24 24"><path d="M6 22V12M18 22V12M2 7l10-5 10 5M2 7v6c0 5.25 7 9.75 10 11 3-1.25 10-5.75 10-11V7"/></svg>
                         </div>
                         <h4 style="font-size: 20px; color: #7B341E; margin-bottom: 10px;">Experience</h4>
-                        <ul style="font-size: 16px; color: #2D3748; font-weight: 500; margin: 0; padding-left: 18px;">
-                          <li>University of Lahore, Lahore</li>
+                        <ul style="list-style:none; padding:0; margin:0;">
+                            <li style="font-size: 16px; color: #2D3748; font-weight: 500;">YAP <span style="color:#F6AD55; font-size:13px;">(Head of Data)</span></li>
+                            <li style="font-size: 15px; color: #A0AEC0;">Afiniti</li>
+                            <li style="font-size: 15px; color: #A0AEC0;">i2c</li>
+                            <li style="font-size: 15px; color: #A0AEC0;">XeoSol</li>
                         </ul>
                     </div>
                 </div>
-
-                <!-- Removed Get the App via my Link button and its container -->
-
                 <div class="recruitment-card">
                     <h3>Join the Mission</h3>
                     <p>Interested in becoming a Brand Ambassador for Easy Quran in your university? We are actively looking for passionate individuals to join our growing network.</p>
@@ -151,7 +149,6 @@
             </div>
         </section>
     </div>
-
     <eq-footer></eq-footer>
 </body>
 </html>
