@@ -1,9 +1,0 @@
-body{font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:#f7fafc;color:#0f172a;margin:0;padding:20px}
-.container{max-width:900px;margin:0 auto;background:#fff;padding:24px;border-radius:8px;box-shadow:0 6px 18px rgba(2,6,23,.08)}
-input{display:block;width:100%;padding:10px;margin:8px 0;border:1px solid #e2e8f0;border-radius:6px}
-button{background:#0ea5a4;color:#fff;padding:10px 14px;border-radius:6px;border:0}
-.hidden{display:none}
-table{width:100%;border-collapse:collapse;margin-top:12px}
-th,td{padding:8px;border-bottom:1px solid #e6eef6;text-align:left;font-size:13px}
-#error{color:#b91c1c;background:#fee2e2;padding:10px;border-radius:6px;margin-top:12px}
-#unauth-msg{color:#92400e;background:#fff7ed;padding:10px;border-radius:6px;margin-top:12px}

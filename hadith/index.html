@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadith Collections - Sahih al-Bukhari</title>
+    <link rel="stylesheet" href="/hadith/css/hadith.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Scheherazade+New:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/js/components.js" defer></script>
+</head>
+<body class="hadith-page">
+    <eq-sidebar type="hadith" active-tab="hadith"></eq-sidebar>
+
+    <!-- Main Content -->
+    <div class="main-layout">
+        <header class="header">
+            <div class="header-left">
+                <button class="mobile-toggle" id="sidebar-toggle">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+            
+            <div class="header-center">
+                <div class="breadcrumb-mini">
+                    <span id="breadcrumb-home" style="cursor: pointer;">All Collections</span>
+                    <i data-lucide="chevron-right"></i>
+                    <span id="breadcrumb-collection" style="cursor: pointer;">Sahih al-Bukhari</span>
+                    <i data-lucide="chevron-right"></i>
+                    <span id="breadcrumb-book" style="cursor: pointer;">All Books</span>
+                </div>
+                
+                <div class="search-bar-container">
+                    <i data-lucide="search"></i>
+                    <input type="text" id="hadith-search-input" placeholder="Search Hadith Collections (Bukhari, Muslim, etc)...">
+                </div>
+            </div>
+
+            <div class="header-right">
+                <!-- Quran Switcher Removed -->
+            </div>
+        </header>
+
+        <main class="content-area">
+            <!-- Book Selection View -->
+            <div id="book-selection-view" class="view-container">
+                <div class="view-header">
+                    <h1>All Collections</h1>
+                    <p class="view-subtitle">Access the most authentic compilations of Prophetic Traditions (ﷺ)</p>
+                </div>
+
+                <!-- Collection Metadata & Bio -->
+                <div id="collection-metadata" class="collection-metadata-card" style="display: none;">
+                    <div class="metadata-content">
+                        <div class="metadata-text">
+                            <h3>About this Collection</h3>
+                            <p id="metadata-about"></p>
+                        </div>
+                        <div class="metadata-bio">
+                            <h3>About the Author</h3>
+                            <p id="metadata-bio"></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="books-grid" class="books-grid">
+                    <div class="loader-container"><div class="loader"></div></div>
+                </div>
+            </div>
+
+            <!-- Hadith List View -->
+            <div id="hadith-list-view" class="view-container" style="display: none;">
+                <div class="book-header-card">
+                    <div class="book-meta">
+                        <span id="view-book-number">Book 1</span>
+                        <h2 id="view-book-name">Revelation</h2>
+                    </div>
+                </div>
+                <div id="hadiths-container" class="hadiths-container">
+                    <!-- Hadiths injected here -->
+                </div>
+            </div>
+
+            <!-- Search Results View -->
+            <div id="search-results-view" class="view-container" style="display: none;">
+                <div class="view-header">
+                    <h1>Search Results</h1>
+                    <p id="search-query-text" class="view-subtitle">Showing results for "..."</p>
+                </div>
+                <div id="search-results-container" class="hadiths-container">
+                    <!-- Results injected here -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/hadith/js/hadith.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

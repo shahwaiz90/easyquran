@@ -1,0 +1,27 @@
+{
+  "name": "easyquranwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "quran-api-proxy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahwaiz90/easyquran.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shahwaiz90/easyquran/issues"
+  },
+  "homepage": "https://github.com/shahwaiz90/easyquran#readme",
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "node-fetch": "^2.7.0"
+  }
+}

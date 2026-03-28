@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Read Quran - EasyQuran Reader</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Google Fonts for Arabic and Urdu -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Scheherazade+New:wght@400;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="/js/components.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <style>
+        .logo-img { height: 32px; width: 32px; border-radius: 8px; margin-right: 12px; }
+    </style>
+</head>
+<body class="quran-app-page">
+    <!-- Sidebar - Deep Teal Theme -->
+    <eq-sidebar type="quran" active-tab="quran"></eq-sidebar>
+
+    <!-- Main Content Layout -->
+    <div class="main-layout">
+        <!-- Modern Unified Header -->
+        <header class="header">
+            <div class="header-left">
+                <button class="player-btn mobile-toggle" id="sidebar-toggle" style="margin-right: 15px;">
+                    <i data-lucide="menu"></i>
+                </button>
+                <div id="reader-header-back" style="display: none;">
+                    <button class="player-btn" onclick="navToHome()" title="Back to Dashboard" style="background: var(--bg-light); padding: 8px; border-radius: 10px; color: var(--primary-color);">
+                        <i data-lucide="arrow-left" style="width: 20px;"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="header-center">
+                <!-- Reader Context -->
+                <div id="reader-header-center" style="display: none; align-items: center; gap: 10px;">
+                    <div class="breadcrumb-mini">
+                        <span onclick="navToHome()" style="cursor: pointer;">Quran</span>
+                        <i data-lucide="chevron-right" style="width: 14px; margin: 0 5px;"></i>
+                        <span id="current-surah-title" style="color: var(--primary-color); font-weight: 700;">Surah</span>
+                    </div>
+                </div>
+                
+                <!-- Dashboard Context -->
+                <div id="dashboard-header-center" style="display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 500px;">
+                     <div class="header-explorer" onclick="openNavigator()" title="Browse Ayahs (Shortcut: /)">
+                        <div class="explorer-left">
+                            <i data-lucide="compass"></i>
+                            <span>What would you like to read?</span>
+                        </div>
+                        <div class="explorer-shortcut">/</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-right">
+                <div id="reader-header-right" style="display: none; align-items: center; gap: 10px;">
+                    <select id="verse-selector" class="select-modern" style="width: 90px;" title="Go to Verse">
+                        <option value="" disabled selected>Ayah</option>
+                    </select>
+                </div>
+                <div class="header-controls">
+                    <a href="https://github.com/shahwaiz90/easyquran" target="_blank" style="color: var(--text-muted); opacity: 0.4; padding: 10px;">
+                        <i data-lucide="github"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Dynamic Content Area -->
+        <main class="content-area">
+            <div id="loading" class="loader" style="display: none;"></div>
+            
+            <!-- Home Dashboard (Welcome View) -->
+            <div id="home-dashboard" class="home-dashboard" style="display: block;">
+                <!-- Content will be injected by JS -->
+            </div>
+
+            <!-- Verse Reader (Surah View) -->
+            <div id="verses-container" class="verses-container" style="display: none;">
+                <!-- Verses will be dynamically injected here -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Hidden audio element for fallback recitation -->
+    <audio id="quran-audio" style="display: none;"></audio>
+
+    <!-- Persistent Audio Player Bar -->
+    <div id="audio-player-bar" class="audio-player-bar">
+        <div class="player-content">
+            <div class="player-left" style="margin-right: 40px;">
+                <div class="mini-reciter-control">
+                    <select id="player-reciter-select" class="player-select" onchange="changePlayerReciter(this.value)">
+                    </select>
+                </div>
+            </div>
+
+            <div class="player-center">
+                <button class="player-btn" onclick="playPreviousAyah()" title="Previous Ayah">
+                    <i data-lucide="skip-back"></i>
+                </button>
+                <button id="player-play-btn" class="player-btn play-main" onclick="togglePlayerPause()">
+                    <i data-lucide="play"></i>
+                </button>
+                <button class="player-btn" onclick="playNextAyah()" title="Next Ayah">
+                    <i data-lucide="skip-forward"></i>
+                </button>
+                <button id="player-stop-btn" class="player-btn stop" style="margin-right: 40px;" onclick="stopRecitation()" title="Stop">
+                    <i data-lucide="square"></i>
+                </button>
+            </div>
+
+            <div class="player-right">
+                <div class="player-info">
+                    <span id="player-verse-info" style="font-weight: 700; font-size: 0.85rem; color: var(--text-dark);">1:1</span>
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px;">
+                    <div class="repeat-control">
+                        <button id="player-repeat-btn" class="player-btn secondary" onclick="toggleRepeatMode()" title="Repeat Ayah">
+                            <i data-lucide="repeat"></i>
+                            <span id="repeat-count-badge" class="badge">1</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Comparative Modal -->
+    <div id="comparative-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">
+                <i data-lucide="x"></i>
+            </button>
+            <div class="modal-header">
+                <h2 id="modal-title" style="color: var(--primary);">Verse</h2>
+            </div>
+            <div id="modal-arabic" class="arabic-text" style="text-align: center; margin-bottom: 30px;">
+            </div>
+            <div id="modal-comparative-body">
+            </div>
+        </div>
+    </div>
+
+    <!-- Quick Navigator Modal -->
+    <div id="navigator-modal" class="modal-overlay" onclick="handleOutsideNavigatorClick(event)">
+        <div class="modal-content" style="max-width: 850px; padding: 0; border-radius: 28px; border: none; overflow: hidden; box-shadow: 0 30px 60px rgba(0,0,0,0.25);">
+            <div class="modal-header" style="background: white; color: var(--text-dark); padding: 40px 40px 10px; border-radius: 28px 28px 0 0; display: flex; justify-content: space-between; align-items: flex-start;">
+                <div>
+                    <h2 style="margin: 0; font-size: 2rem; font-weight: 800; display: flex; align-items: center; gap: 15px; color: var(--primary-color);">
+                        <i data-lucide="compass" style="width: 32px; height: 32px;"></i> Browse Ayahs
+                    </h2>
+                    <p style="margin: 8px 0 0; color: var(--text-muted); font-size: 1rem; font-weight: 500;">Direct access to all 114 Surahs and 6,236 Verses.</p>
+                </div>
+                <button class="modal-close" style="background: var(--bg-light); color: var(--text-dark); padding: 12px; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.05); transition: all 0.3s;" onclick="closeNavigator()" title="Close (ESC)">
+                    <i data-lucide="x" style="width: 20px; height: 20px;"></i>
+                </button>
+            </div>
+            
+            <div style="padding: 25px 30px;">
+                <div style="display: flex; gap: 15px; margin-bottom: 25px;">
+                    <div style="flex: 1; position: relative;">
+                        <i data-lucide="search" style="position: absolute; left: 15px; top: 50%; transform: translateY(-50%); width: 16px; color: var(--text-muted); opacity: 0.6;"></i>
+                        <input type="text" id="surah-search" placeholder="Search Surah (English, Arabic, or Number)..." 
+                               style="width: 100%; padding: 12px 15px 12px 45px; border-radius: 12px; border: 2px solid #edf2f7; font-size: 0.95rem; outline: none; transition: border-color 0.3s;"
+                               oninput="filterSurahs(this.value)">
+                    </div>
+                </div>
+                <div id="surah-navigator-grid" class="surah-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px; max-height: 400px; overflow-y: auto; padding: 5px;">
+                </div>
+
+                <div style="margin-top: 25px; padding-top: 20px; border-top: 2px solid #edf2f7; display: flex; justify-content: space-between; align-items: center;">
+                    <div id="selected-surah-info" style="font-size: 0.95rem; font-weight: 700; color: var(--primary-color);">Set to: Select a Surah...</div>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <span style="font-size: 0.85rem; font-weight: 600; color: var(--text-muted);">Ayah:</span>
+                        <input type="number" id="jump-verse-num" placeholder="1" min="1" 
+                               style="width: 80px; padding: 10px; border: 2px solid #edf2f7; border-radius: 8px; font-weight: 700; outline: none; transition: border-color 0.3s; text-align: center;">
+                        <button class="btn btn-primary" onclick="executeJump()">
+                            <i data-lucide="arrow-right"></i> Jump
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

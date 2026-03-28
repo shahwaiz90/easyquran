@@ -137,3 +137,326 @@ class EQFooter extends HTMLElement {
   }
 }
 customElements.define('eq-footer', EQFooter);
+
+/* ════════════════════════════════════════════════════════════
+   EQ SIDEBAR
+   ════════════════════════════════════════════════════════════ */
+class EQSidebar extends HTMLElement {
+  connectedCallback() {
+    const type = this.getAttribute('type') || 'hadith';
+    const activeTab = this.getAttribute('active-tab') || '';
+
+    this.innerHTML = `
+      <style>
+        .eq-sidebar {
+            width: 280px;
+            background: #1a4d2e; /* Deep Forest Green */
+            color: white;
+            height: 100vh;
+            position: fixed;
+            left: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            padding: 30px 0;
+            z-index: 1000;
+            font-family: 'Inter', sans-serif !important;
+            box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        /* Mobile Responsive Sidebar */
+        @media (max-width: 1024px) {
+            .eq-sidebar {
+                transform: translateX(-100%);
+            }
+            .eq-sidebar.open {
+                transform: translateX(0);
+            }
+            
+            /* Add overlay when sidebar is open */
+            .sidebar-overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                background: rgba(0,0,0,0.5);
+                z-index: 999;
+                display: none;
+                backdrop-filter: blur(2px);
+            }
+            .sidebar-overlay.active {
+                display: block;
+            }
+        }
+
+        .eq-sidebar .logo {
+            display: flex;
+            align-items: center;
+            padding: 0 25px;
+            margin-bottom: 40px;
+        }
+        .eq-sidebar .logo img {
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+        }
+        .eq-sidebar .logo span {
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            margin-left: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .eq-sidebar .nav-links {
+            flex: 1;
+            padding: 0 15px;
+            overflow-y: auto;
+        }
+
+        .eq-sidebar .nav-link {
+            display: flex !important;
+            align-items: center !important;
+            padding: 12px 15px !important;
+            color: rgba(255, 255, 255, 0.7) !important;
+            text-decoration: none !important;
+            border-radius: 10px !important;
+            margin-bottom: 5px !important;
+            transition: all 0.2s ease !important;
+            font-weight: 500 !important;
+            font-size: 14px !important;
+        }
+
+        .eq-sidebar .nav-link:hover, 
+        .eq-sidebar .nav-link.active {
+            background: rgba(255, 255, 255, 0.1) !important;
+            color: white !important;
+        }
+
+        .eq-sidebar .nav-link i, 
+        .eq-sidebar .nav-link svg {
+            margin-right: 15px !important;
+            width: 20px !important;
+            height: 20px !important;
+            flex-shrink: 0;
+        }
+
+        .eq-sidebar .nav-divider {
+            height: 1px;
+            background: rgba(255, 255, 255, 0.1);
+            margin: 20px 15px;
+        }
+
+        .eq-sidebar .nav-section-title {
+            font-size: 11px;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.4);
+            padding: 0 10px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .eq-sidebar .sidebar-footer {
+            padding: 20px 25px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            background: rgba(0,0,0,0.1);
+        }
+
+        .eq-sidebar .select-modern {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.05);
+            color: white;
+            font-size: 13px;
+            outline: none;
+            cursor: pointer;
+        }
+        .eq-sidebar .select-modern option {
+            background: #1a4d2e;
+            color: white;
+        }
+      </style>
+
+      <aside class="eq-sidebar">
+        <div class="logo" style="cursor: pointer;" onclick="window.location.href='/'">
+            <img src="https://easyquran.app/newappicon.webp" alt="Logo">
+            <span>Easy Quran</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="/quran/" class="nav-link ${activeTab === 'quran' ? 'active' : ''}" id="tab-read">
+                <i data-lucide="book-open"></i>
+                <span>Read Quran</span>
+            </a>
+            <a href="/hadith/" class="nav-link ${activeTab === 'hadith' ? 'active' : ''}" id="tab-hadith">
+                <i data-lucide="library"></i>
+                <span>Hadith Reader</span>
+            </a>
+
+            <div class="nav-divider"></div>
+            
+            ${type === 'hadith' ? `
+                <div class="nav-section-title">HADITH COLLECTIONS</div>
+                <a href="/hadith/" class="nav-link" id="nav-hadith-main" data-collection="all">
+                    <i data-lucide="layout-grid"></i>
+                    <span>All Collections</span>
+                </a>
+                <div id="collections-list">
+                    <a href="/hadith/bukhari/" class="nav-link" data-collection="bukhari"><i data-lucide="scroll"></i><span>Sahih al-Bukhari</span></a>
+                    <a href="/hadith/muslim/" class="nav-link" data-collection="muslim"><i data-lucide="scroll"></i><span>Sahih Muslim</span></a>
+                    <a href="/hadith/nasai/" class="nav-link" data-collection="nasai"><i data-lucide="scroll"></i><span>Sunan an-Nasa'i</span></a>
+                    <a href="/hadith/abudawud/" class="nav-link" data-collection="abudawud"><i data-lucide="scroll"></i><span>Sunan Abi Dawud</span></a>
+                    <a href="/hadith/tirmidhi/" class="nav-link" data-collection="tirmidhi"><i data-lucide="scroll"></i><span>Jami' at-Tirmidhi</span></a>
+                    <a href="/hadith/ibnmajah/" class="nav-link" data-collection="ibnmajah"><i data-lucide="scroll"></i><span>Sunan Ibn Majah</span></a>
+                    <a href="/hadith/malik/" class="nav-link" data-collection="malik"><i data-lucide="scroll"></i><span>Muwatta Malik</span></a>
+                    <a href="/hadith/ahmad/" class="nav-link" data-collection="ahmad"><i data-lucide="scroll"></i><span>Musnad Ahmad</span></a>
+                </div>
+            ` : `
+                <div class="nav-section-title">Comparative Search</div>
+                <div style="padding: 0 10px;" id="quran-nav-lists">
+                    <div id="translation-list" class="collections-list">
+                        <!-- Populate via Quran JS -->
+                    </div>
+                    <div class="nav-divider"></div>
+                    <div class="nav-section-title" style="margin-top: 20px;">Tafseer</div>
+                    <div id="tafseer-list" class="collections-list">
+                        <!-- Populate via Quran JS -->
+                    </div>
+                </div>
+            `}
+        </nav>
+
+        <div class="sidebar-footer">
+            ${type === 'hadith' ? `
+                <div style="font-size: 11px; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 10px; letter-spacing: 1px;">Primary Language</div>
+                <select id="hadith-lang-selector" class="select-modern">
+                    <option value="en">English</option>
+                    <option value="ur">Urdu (اردو)</option>
+                    <option value="bn">Bengali (বাংলা)</option>
+                </select>
+            ` : `
+                <div style="font-size: 11px; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 10px; letter-spacing: 1px;">Reciter</div>
+                <select id="reciter-selector" class="select-modern">
+                    <!-- Reciters will be populated by Quran script -->
+                </select>
+            `}
+        </div>
+      </aside>
+    `;
+
+    // Add click listeners to links to close sidebar on mobile after navigating
+    this.querySelectorAll('.nav-link, .logo').forEach(el => {
+        el.addEventListener('click', () => {
+            const sidebar = this.querySelector('.eq-sidebar');
+            if (sidebar.classList.contains('open')) {
+                this.toggle();
+            }
+        });
+    });
+
+    // Only run if lucide is available globally
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+
+    // Auto-highlight based on current path
+    this.updateActiveFromPath();
+  }
+
+  updateActiveFromPath() {
+    const path = window.location.pathname.replace(/\/$/, '') || '/'; // Remove trailing slash for comparison
+    const links = this.querySelectorAll('.nav-link');
+    
+    // Default: Clear all
+    links.forEach(l => l.classList.remove('active'));
+
+    // Highlight Read Quran / Hadith Reader tabs (Main tabs)
+    if (path.startsWith('/quran')) {
+        const quranTab = this.querySelector('#tab-read');
+        if (quranTab) quranTab.classList.add('active');
+    } else if (path.startsWith('/hadith')) {
+        const hadithTab = this.querySelector('#tab-hadith');
+        if (hadithTab) hadithTab.classList.add('active');
+        
+        // ENFORCE ENGLISH ON HADITH HOME: Hide selector on the root hadith page
+        const langFooter = this.querySelector('.sidebar-footer');
+        if (langFooter && (path === '/hadith' || path === '/hadith/index.html')) {
+            langFooter.style.display = 'none';
+        } else if (langFooter) {
+            langFooter.style.display = 'block';
+        }
+    }
+
+    // Collection Level Highlighting
+    if (path === '/hadith') {
+        const globalHome = this.querySelector('[data-collection="all"]');
+        if (globalHome) globalHome.classList.add('active');
+    } else {
+        links.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href) {
+                const cleanHref = href.replace(/\/$/, '');
+                // Precise match: collection links start with /hadith/COLL
+                if (cleanHref !== '/hadith' && path.startsWith(cleanHref)) {
+                    link.classList.add('active');
+                }
+            }
+        });
+    }
+  }
+
+  setAvailableLanguages(langs) {
+    const select = this.querySelector('#hadith-lang-selector');
+    if (!select) return;
+
+    const options = select.querySelectorAll('option');
+    options.forEach(opt => {
+        // Arabic is always implied or handled separately sometimes, 
+        // but here the dropdown is for translations.
+        // Iflangs includes the option value, show it, otherwise hide.
+        if (langs.includes(opt.value)) {
+            opt.style.display = 'block';
+            opt.disabled = false;
+        } else {
+            opt.style.display = 'none';
+            opt.disabled = true;
+        }
+    });
+
+    // If current selected value is now hidden, fallback to English
+    if (select.selectedOptions[0]?.style.display === 'none') {
+        select.value = 'en';
+        // Trigger change if needed? Usually handle in the caller.
+    }
+  }
+
+  toggle() {
+    const sidebar = this.querySelector('.eq-sidebar');
+    let overlay = document.querySelector('.sidebar-overlay');
+    
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.className = 'sidebar-overlay';
+        document.body.appendChild(overlay);
+        overlay.onclick = () => this.toggle();
+    }
+
+    if (sidebar) {
+        sidebar.classList.toggle('open');
+        overlay.classList.toggle('active');
+        
+        // Prevent body scrolling when menu is open
+        if (sidebar.classList.contains('open')) {
+            document.body.style.overflow = 'hidden';
+        } else {
+            document.body.style.overflow = '';
+        }
+    }
+  }
+}
+customElements.define('eq-sidebar', EQSidebar);
