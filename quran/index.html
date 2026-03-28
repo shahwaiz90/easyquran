@@ -24,11 +24,11 @@
         <!-- Modern Unified Header -->
         <header class="header">
             <div class="header-left">
-                <button class="player-btn mobile-toggle" id="sidebar-toggle" style="margin-right: 15px;">
+                <button class="mobile-toggle" id="sidebar-toggle">
                     <i data-lucide="menu"></i>
                 </button>
                 <div id="reader-header-back" style="display: none;">
-                    <button class="player-btn" onclick="navToHome()" title="Back to Dashboard" style="background: var(--bg-light); padding: 8px; border-radius: 10px; color: var(--primary-color);">
+                    <button class="mobile-toggle" onclick="navToHome()" title="Back to Dashboard">
                         <i data-lucide="arrow-left" style="width: 20px;"></i>
                     </button>
                 </div>
@@ -45,7 +45,7 @@
                 </div>
                 
                 <!-- Dashboard Context -->
-                <div id="dashboard-header-center" style="display: flex; flex-direction: column; align-items: center; width: 100%; max-width: 500px;">
+                <div id="dashboard-header-center" style="display: flex; flex-direction: column; align-items: center; width: 95%; max-width: 1200px; gap: 15px;">
                      <div class="header-explorer" onclick="openNavigator()" title="Browse Ayahs (Shortcut: /)">
                         <div class="explorer-left">
                             <i data-lucide="compass"></i>

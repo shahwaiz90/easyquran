@@ -26,7 +26,7 @@ class EQHeader extends HTMLElement {
               <li><a id="nav-features" href="/features.html"    class="${active === 'features' ? 'active' : ''}">Features</a></li>
               <li><a id="nav-reviews" href="/reviews.html"     class="${active === 'reviews' ? 'active' : ''}">Reviews</a></li>
               <li><a id="nav-ambassadors" href="/ambassadors.html" class="${active === 'ambassadors' ? 'active' : ''}">Join us as Ambassador</a></li>
-              <li><a id="nav-listen" href="/listenquran.html" class="${active === 'listen' ? 'active' : ''}">Listen Quran</a></li>
+              <li><a id="nav-quran" href="/quran/" class="${active === 'quran' ? 'active' : ''}">Quran & Hadith</a></li>
               <li>
                 <a href="https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran" class="btn-nav-accent">
                   📲 Get App
@@ -150,7 +150,7 @@ class EQSidebar extends HTMLElement {
       <style>
         .eq-sidebar {
             width: 280px;
-            background: #1a4d2e; /* Deep Forest Green */
+            background: #004D40; /* Branded Islamic Teal */
             color: white;
             height: 100vh;
             position: fixed;
@@ -231,7 +231,7 @@ class EQSidebar extends HTMLElement {
 
         .eq-sidebar .nav-link:hover, 
         .eq-sidebar .nav-link.active {
-            background: rgba(255, 255, 255, 0.1) !important;
+            background: rgba(230, 244, 241, 0.15) !important;
             color: white !important;
         }
 
@@ -277,7 +277,7 @@ class EQSidebar extends HTMLElement {
             cursor: pointer;
         }
         .eq-sidebar .select-modern option {
-            background: #1a4d2e;
+            background: #004D40;
             color: white;
         }
       </style>
