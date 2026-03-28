@@ -82,8 +82,10 @@ const verseObserver = new IntersectionObserver((entries) => {
                 saveProgress(surah, ayah);
                 
                 // Update address bar as we scroll
-                const cleanUrl = `/surah/${surah}:${ayah}`;
-                history.replaceState({ surah, ayah }, '', cleanUrl);
+                if (!window.isSingleView) {
+                    const cleanUrl = `/surah/${surah}:${ayah}`;
+                    history.replaceState({ surah, ayah, isSingle: false }, '', cleanUrl);
+                }
 
                 // Sync verse-selector dropdown if not already set
                 const vSelector = document.getElementById('verse-selector');
@@ -139,11 +141,17 @@ async function init() {
 
         // If we have a surah selection (direct link or deep link)
         if (currentSurah > 1 || startAyah || urlParams.has('s') || urlParams.has('surah')) {
-            await loadSurah(currentSurah, startAyah);
+            const isSingle = startAyah && lookupPath.includes(':');
+            const isJump = startAyah && lookupPath.includes('#');
+            // Save state immediately on load so back-navigation works correctly
+            history.replaceState({ surah: currentSurah, ayah: startAyah, isSingle: isSingle }, '', lookupPath);
+            await loadSurah(currentSurah, startAyah, isSingle);
         } else {
             // Default: Show Dashboard
             currentLanguage = 'en';
             renderHomeScreen();
+            // Also save initial home state
+            history.replaceState({ home: true }, '', '/quran/');
         }
     } catch (error) { console.error("Init failed", error); }
     finally { showLoading(false); }
@@ -152,8 +160,8 @@ async function init() {
 // Global Nav Helpers
 window.navToSurah = (id, ayah = null) => {
     const url = `/surah/${id}${ayah ? ':' + ayah : ''}`;
-    history.pushState({ surah: id, ayah: ayah }, '', url);
-    loadSurah(id, ayah);
+    history.pushState({ surah: id, ayah: ayah, isSingle: false }, '', url);
+    loadSurah(id, ayah, false);
 };
 
 window.navToHome = () => {
@@ -164,11 +172,26 @@ window.navToHome = () => {
 // Handle browser back/forward buttons
 window.addEventListener('popstate', (e) => {
     if (e.state && e.state.surah) {
-        loadSurah(e.state.surah, e.state.ayah);
+        if (e.state.isSingle) {
+            loadSingleVerse(e.state.surah, e.state.ayah);
+        } else {
+            loadSurah(e.state.surah, e.state.ayah);
+        }
     } else {
         renderHomeScreen();
     }
 });
+
+window.navToSingleVerse = (surahId, ayahNum) => {
+    const url = `/surah/${surahId}:${ayahNum}`;
+    history.pushState({ surah: surahId, ayah: ayahNum, isSingle: true }, '', url);
+    loadSurah(surahId, ayahNum, true);
+};
+
+async function loadSingleVerse(surahId, ayahNum) {
+    // Legacy helper - redirected to unified loadSurah
+    loadSurah(surahId, ayahNum, true);
+}
 
 function saveProgress(surah, ayah) {
     localStorage.setItem('quran_last_read', JSON.stringify({ surah, ayah, time: Date.now() }));
@@ -433,9 +456,10 @@ async function populateSurahSelector() {
     }
 }
 
-async function loadSurah(surahId, startAyah = null) {
+async function loadSurah(surahId, startAyah = null, isSingle = false) {
     const requestId = Date.now();
     loadSurah.lastRequestId = requestId;
+    window.isSingleView = isSingle;
     
     showLoading(true);
     const cleanSurahId = parseInt(surahId);
@@ -477,7 +501,7 @@ async function loadSurah(surahId, startAyah = null) {
         });
 
         if (requestId === loadSurah.lastRequestId) {
-            renderVerses();
+            renderVerses(isSingle, startAyah);
             const chInfo = await (await fetch(`${API_BASE}/chapters/${cleanSurahId}`)).json();
             document.getElementById('current-surah-title').textContent = `${chInfo.chapter.id}. Surah ${chInfo.chapter.name_simple} (${chInfo.chapter.name_arabic})`;
             
@@ -550,12 +574,17 @@ async function loadSurah(surahId, startAyah = null) {
     }
 }
 
-function renderVerses() {
+function renderVerses(isSingleMode = false, singleAyahNum = null) {
     const container = document.getElementById('verses-container');
     container.innerHTML = '';
     const isWbw = false;
 
-    verseData.forEach(verse => {
+    // Determine target list
+    const targetVerses = isSingleMode 
+        ? verseData.filter(v => v.verse_number == singleAyahNum)
+        : verseData;
+
+    targetVerses.forEach(verse => {
         const card = document.createElement('div'); 
         card.className = 'verse-card';
         card.dataset.vkey = verse.verse_key;
@@ -581,20 +610,40 @@ function renderVerses() {
         const playContainer = document.createElement('div');
         playContainer.className = 'play-options-container';
         
+        const dBtn = document.createElement('button');
+        dBtn.innerHTML = '<i data-lucide="external-link"></i>';
+        dBtn.className = 'verse-action-btn';
+        dBtn.title = "Open Dedicated View";
+        dBtn.onclick = () => navToSingleVerse(currentSurah, verse.verse_number);
+        actions.appendChild(dBtn);
+
+        const cBtn = document.createElement('button');
+        cBtn.innerHTML = '<i data-lucide="link"></i>';
+        cBtn.className = 'verse-action-btn copy-btn';
+        cBtn.dataset.vkey = verse.verse_key;
+        cBtn.title = "Copy Link";
+        cBtn.onclick = () => copyVerseLink(verse.verse_key);
+        actions.appendChild(cBtn);
+
+        const wBtn = document.createElement('button');
+        wBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>';
+        wBtn.className = 'verse-action-btn';
+        wBtn.title = "Share on WhatsApp";
+        wBtn.onclick = () => shareToWhatsApp(verse.verse_key);
+        actions.appendChild(wBtn);
+
         const sBtn = document.createElement('button'); 
-        sBtn.innerHTML = '<i data-lucide="share-2" style="width:14px; height:14px;"></i>'; 
-        sBtn.className = 'player-btn btn-icon';
-        sBtn.style.padding = '8px';
-        sBtn.style.opacity = '0.8';
+        sBtn.innerHTML = '<i data-lucide="share-2"></i>'; 
+        sBtn.className = 'verse-action-btn';
+        sBtn.title = "Other Share Options";
         sBtn.onclick = () => shareVerse(verse.verse_key);
         actions.appendChild(sBtn);
 
         const pBtn = document.createElement('button'); 
         pBtn.id = `play-btn-${verse.verse_key}`;
-        pBtn.innerHTML = '<i data-lucide="play" style="width:14px; height:14px;"></i>'; 
-        pBtn.className = 'player-btn btn-icon';
-        pBtn.style.padding = '8px';
-        pBtn.style.opacity = '0.8';
+        pBtn.innerHTML = '<i data-lucide="play"></i>'; 
+        pBtn.className = 'verse-action-btn';
+        pBtn.title = "Play Options";
         pBtn.onclick = (e) => {
             e.stopPropagation();
             togglePlayOptions(verse.verse_key);
@@ -1225,7 +1274,28 @@ function toggleRepeatMode() {
     repeatCount = 0; // Reset state
 }
 
-function shareVerse(verseKey) {
+function copyVerseLink(verseKey) {
+    const parts = verseKey.split(':');
+    const shareUrl = `${window.location.origin}/surah/${parts[0]}:${parts[1]}`;
+    
+    navigator.clipboard.writeText(shareUrl).then(() => {
+        // Find the button to show feedback
+        const btn = document.querySelector(`.copy-btn[data-vkey="${verseKey}"]`);
+        if (btn) {
+            const originalIcon = btn.innerHTML;
+            btn.innerHTML = '<i data-lucide="check" style="width:14px; height:14px; color:#10b981;"></i>';
+            lucide.createIcons();
+            setTimeout(() => {
+                btn.innerHTML = originalIcon;
+                lucide.createIcons();
+            }, 2000);
+        }
+    }).catch(err => {
+        console.error('Failed to copy', err);
+    });
+}
+
+function shareToWhatsApp(verseKey) {
     const card = document.querySelector(`.verse-card[data-vkey="${verseKey}"]`);
     if (!card) return;
 
@@ -1234,7 +1304,7 @@ function shareVerse(verseKey) {
     const surahName = surahSelect ? surahSelect.options[surahSelect.selectedIndex].text : `Surah ${currentSurah}`;
     
     // Arabic
-    const arabic = card.querySelector('.arabic-text')?.innerText || '';
+    const arabic = card.querySelector('.quran-text')?.innerText || '';
     
     // Collect all loaded translations/tafseers in that card
     let shareText = `📖 *${surahName} (${verseKey})*\n\n`;
@@ -1249,7 +1319,39 @@ function shareVerse(verseKey) {
         }
     });
 
-    const shareUrl = `${window.location.origin}/surah/${currentSurah}#${verseKey.split(':')[1]}`;
+    const parts = verseKey.split(':');
+    const shareUrl = `${window.location.origin}/surah/${parts[0]}:${parts[1]}`;
+    shareText += `Read more at: ${shareUrl}`;
+
+    window.open(`https://wa.me/?text=${encodeURIComponent(shareText)}`, '_blank');
+}
+
+function shareVerse(verseKey) {
+    const card = document.querySelector(`.verse-card[data-vkey="${verseKey}"]`);
+    if (!card) return;
+
+    // Get Surah Title from the header or select
+    const surahSelect = document.getElementById('surah-selector');
+    const surahName = surahSelect ? surahSelect.options[surahSelect.selectedIndex].text : `Surah ${currentSurah}`;
+    
+    // Arabic
+    const arabic = card.querySelector('.quran-text')?.innerText || '';
+    
+    // Collect all loaded translations/tafseers in that card
+    let shareText = `📖 *${surahName} (${verseKey})*\n\n`;
+    shareText += `${arabic}\n\n`;
+    
+    const contents = card.querySelectorAll('.translation-block > div, .tafseer-wrapper');
+    contents.forEach(content => {
+        const title = content.querySelector('div:first-child')?.innerText || '';
+        const text = content.querySelector('.urdu-text, div:last-child')?.innerText || '';
+        if (text) {
+            shareText += `📜 *${title}*\n${text.substring(0, 500)}${text.length > 500 ? '...' : ''}\n\n`;
+        }
+    });
+
+    const parts = verseKey.split(':');
+    const shareUrl = `${window.location.origin}/surah/${parts[0]}:${parts[1]}`;
     shareText += `Read more at: ${shareUrl}`;
 
     // Native Share API
