@@ -165,25 +165,31 @@ body {
 }
 
 .header {
-  height: 130px;
+  height: 130px; /* Locked consistency across platforms */
   background: white;
   border-bottom: 1px solid var(--border-color);
-  display: flex;
+  display: flex !important;
   align-items: center;
   justify-content: space-between;
   padding: 0 40px;
+  z-index: 100;
+  position: sticky;
+  top: 0;
+  transition: all 0.3s ease;
 }
 
 .header-left, .header-right {
-  flex: 0 0 100px;
+  flex: 0 0 120px !important; /* Synchronized side width for identical center span */
 }
 
 .header-center {
   flex: 1;
-  display: flex;
-  flex-direction: column;
+  display: flex !important;
+  flex-direction: column; /* Unified vertical alignment */
   align-items: center;
-  gap: 15px; /* Increased gap for hierarchy */
+  justify-content: center;
+  gap: 12px; /* Consistency check gap */
+  min-width: 0;
 }
 
 .breadcrumb-mini {

@@ -105,6 +105,7 @@ let currentPlayingAyah = 1;
 let currentPlayingReciterId = null; // Track what reciter is currently loaded
 let isRepeatMode = false;
 let repeatCount = 0; // Current cycle
+let currentPlaybackRate = 1.0;
 let maxRepeat = 1; // 1 to 5
 
 async function init() {
@@ -221,10 +222,12 @@ async function renderHomeScreen() {
     const playerBar = document.getElementById('audio-player-bar');
 
     if (dashHeader) dashHeader.style.display = 'flex';
-    if (readHeaderBack) readHeaderBack.style.display = 'none';
-    if (readHeaderCenter) readHeaderCenter.style.display = 'none';
-    if (readHeaderRight) readHeaderRight.style.display = 'none';
+    if (readHeaderBack) readHeaderBack.classList.remove('active');
+    if (readHeaderRight) readHeaderRight.classList.remove('active');
     if (playerBar) playerBar.style.display = 'none';
+
+    document.body.classList.remove('reader-view');
+    document.body.classList.add('dashboard-view');
 
     document.getElementById('home-dashboard').style.display = 'block';
     document.getElementById('verses-container').style.display = 'none';
@@ -235,17 +238,17 @@ async function renderHomeScreen() {
     
     let html = `
         <div class="hero-card" ${lastRead ? `onclick="navToSurah(${lastRead.surah}, ${lastRead.ayah})" style="cursor: pointer;"` : ''}>
-            <h1 style="font-size: 2.5rem; margin-bottom: 15px;">Assalamu Alaikum</h1>
-            <p style="opacity: 0.95; font-size: 1.15rem; max-width: 600px; margin-bottom: 30px; line-height: 1.6;">Welcome to your premium Quran study companion. Continue your spiritual journey exploring deep translations and scholarly tafseers.</p>
+            <h1 style="font-size: 3rem; font-weight: 850; margin-bottom: 12px; color: #ffffff; text-shadow: 0 2px 30px rgba(0,0,0,0.1); letter-spacing: -1px;">Assalamu Alaikum</h1>
+            <p style="opacity: 0.98; font-size: 1.25rem; max-width: 700px; margin-bottom: 35px; line-height: 1.6; color: rgba(255,255,255,0.95);">Welcome to your premium Quran study companion. Explore deep translations and scholarly tafseers in a distraction-free environment.</p>
             
             ${lastRead ? `
-                <div class="progress-card shadow-sm" style="background: rgba(255,255,255,0.25); border: 1px solid rgba(255,255,255,0.2);">
-                    <div style="background: white; padding: 12px; border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                        <i data-lucide="play" style="fill: var(--primary-color); color: var(--primary-color); width: 20px;"></i>
+                <div class="progress-card">
+                    <div class="progress-play-icon">
+                        <i data-lucide="play"></i>
                     </div>
-                    <div>
-                        <div style="text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1.5px; opacity: 0.9; margin-bottom: 4px; font-weight: 700;">Continue Your Journey</div>
-                        <div style="font-size: 1.3rem; font-weight: 800;">${allChapters[lastRead.surah-1]?.name_simple || 'Surah ' + lastRead.surah} • ${lastRead.ayah}</div>
+                    <div class="progress-text">
+                        <div class="progress-label">Continue Your Journey</div>
+                        <div class="progress-title">${allChapters[lastRead.surah-1]?.name_simple || 'Surah ' + lastRead.surah} • ${lastRead.ayah}</div>
                     </div>
                 </div>
             ` : ''}
@@ -428,6 +431,16 @@ function changePlayerReciter(reciterId) {
     }
 }
 
+function changePlaybackSpeed(speed) {
+    currentPlaybackRate = parseFloat(speed);
+    if (currentAudio) {
+        currentAudio.playbackSpeed = currentPlaybackRate;
+        currentAudio.playbackRate = currentPlaybackRate;
+    }
+    // Sync speed selectors if multiple exist
+    document.querySelectorAll('.speed-select').forEach(s => s.value = speed);
+}
+
 let allChapters = []; // Store for Navigator
 async function populateSurahSelector() {
     try {
@@ -518,10 +531,12 @@ async function loadSurah(surahId, startAyah = null, isSingle = false) {
             const verses = document.getElementById('verses-container');
             const playerBar = document.getElementById('audio-player-bar');
 
-            if (dashHeader) dashHeader.style.display = 'none';
-            if (readHeaderBack) readHeaderBack.style.display = 'block';
-            if (readHeaderCenter) readHeaderCenter.style.display = 'flex';
-            if (readHeaderRight) readHeaderRight.style.display = 'flex';
+            if (dashHeader) dashHeader.style.display = 'flex'; // Keep consistent in reader
+            if (readHeaderBack) readHeaderBack.classList.add('active');
+            if (readHeaderRight) readHeaderRight.classList.add('active');
+            
+            document.body.classList.add('reader-view');
+            document.body.classList.remove('dashboard-view');
             
             if (home) home.style.display = 'none';
             if (verses) verses.style.display = 'block';
@@ -938,7 +953,7 @@ function playRecitation(s, a, verseKey) {
         currentAudio = null;
     };
 }
-function showLoading(s) { document.getElementById('loading').style.display = s ? 'block' : 'none'; document.getElementById('verses-container').style.display = s ? 'none' : 'block'; }
+// Duplicate showLoading removed to allow the optimized version below to function.
 
 // Lazy Loading and Separate API logic for Tafseers
 const tafseerQueue = [];
@@ -1141,6 +1156,7 @@ function playRecitation(s, a, verseKey) {
     lucide.createIcons();
 
     currentAudio = new Audio(url);
+    currentAudio.playbackRate = currentPlaybackRate;
     currentAudio.onplaying = () => {
         if (playBtn) playBtn.innerHTML = '<i data-lucide="pause" style="width:14px; height:14px;"></i>';
         if (playerPlayBtn) playerPlayBtn.innerHTML = '<i data-lucide="pause"></i>';
@@ -1369,8 +1385,13 @@ function shareVerse(verseKey) {
 }
 
 function showLoading(s) { 
-    document.getElementById('loading').style.display = s ? 'block' : 'none'; 
-    document.getElementById('verses-container').style.display = s ? 'none' : 'block'; 
+    const loading = document.getElementById('loading');
+    const home = document.getElementById('home-dashboard');
+    const verses = document.getElementById('verses-container');
+    
+    if (loading) loading.style.display = s ? 'flex' : 'none'; 
+    if (home) home.style.display = s ? 'none' : (document.body.classList.contains('dashboard-view') ? 'block' : 'none');
+    if (verses) verses.style.display = s ? 'none' : (document.body.classList.contains('reader-view') ? 'block' : 'none');
 }
 
 // Side-bar mobile toggle integration for Quran reader

@@ -27,32 +27,30 @@
                 <button class="mobile-toggle" id="sidebar-toggle">
                     <i data-lucide="menu"></i>
                 </button>
-                <div id="reader-header-back" style="display: none;">
+                <div id="reader-header-back" style="display: none; align-items: center; gap: 15px;">
                     <button class="mobile-toggle" onclick="navToHome()" title="Back to Dashboard">
                         <i data-lucide="arrow-left" style="width: 20px;"></i>
                     </button>
+                    <!-- Title moved here -->
+                    <div id="reader-header-center-inline" style="display: flex; align-items: center;">
+                        <div class="breadcrumb-mini">
+                            <span class="quran-home-link" onclick="navToHome()" style="cursor: pointer;">Quran</span>
+                            <i data-lucide="chevron-right" class="breadcrumb-sep" style="width: 14px; margin: 0 5px;"></i>
+                            <span id="current-surah-title" style="color: var(--primary-color); font-weight: 700;">Surah</span>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="header-center">
-                <!-- Reader Context -->
-                <div id="reader-header-center" style="display: none; align-items: center; gap: 10px;">
-                    <div class="breadcrumb-mini">
-                        <span onclick="navToHome()" style="cursor: pointer;">Quran</span>
-                        <i data-lucide="chevron-right" style="width: 14px; margin: 0 5px;"></i>
-                        <span id="current-surah-title" style="color: var(--primary-color); font-weight: 700;">Surah</span>
-                    </div>
-                </div>
-                
-                <!-- Dashboard Context -->
-                <div id="dashboard-header-center" style="display: flex; flex-direction: column; align-items: center; width: 95%; max-width: 1200px; gap: 15px;">
-                     <div class="header-explorer" onclick="openNavigator()" title="Browse Ayahs (Shortcut: /)">
-                        <div class="explorer-left">
-                            <i data-lucide="compass"></i>
-                            <span>What would you like to read?</span>
-                        </div>
-                        <div class="explorer-shortcut">/</div>
-                    </div>
+                <!-- Dashboard Context: Unified Search Bar Component -->
+                <div id="dashboard-header-center" style="width: 100%; display: flex; justify-content: center;">
+                    <eq-search-bar 
+                        id="quran-navigator-trigger" 
+                        placeholder="What would you like to read?" 
+                        readonly 
+                        onclick="openNavigator()">
+                    </eq-search-bar>
                 </div>
             </div>
 
@@ -118,7 +116,16 @@
                 <div class="player-info">
                     <span id="player-verse-info" style="font-weight: 700; font-size: 0.85rem; color: var(--text-dark);">1:1</span>
                 </div>
-                <div style="display: flex; align-items: center; gap: 8px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <div class="speed-control">
+                        <select id="player-speed-select" class="player-select speed-select" onchange="changePlaybackSpeed(this.value)" title="Playback Speed">
+                            <option value="1">1x</option>
+                            <option value="1.3">1.3x</option>
+                            <option value="1.5">1.5x</option>
+                            <option value="1.8">1.8x</option>
+                            <option value="2">2x</option>
+                        </select>
+                    </div>
                     <div class="repeat-control">
                         <button id="player-repeat-btn" class="player-btn secondary" onclick="toggleRepeatMode()" title="Repeat Ayah">
                             <i data-lucide="repeat"></i>

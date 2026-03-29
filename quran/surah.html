@@ -23,12 +23,17 @@
     <div class="main-layout">
         <!-- Modern Header -->
         <header class="header">
-            <div style="display: flex; gap: 15px; align-items: center;">
-                <button class="player-btn" onclick="window.location.href='index.html'" title="Back to Dashboard" style="background: var(--bg-light); padding: 8px; border-radius: 10px; color: var(--primary-color);">
+            <div class="header-left" style="display: flex; gap: 15px; align-items: center;">
+                <button class="player-btn reader-back-btn" onclick="window.location.href='index.html'" title="Back to Dashboard" style="background: var(--bg-light); padding: 8px; border-radius: 10px; color: var(--primary-color); display: flex;">
                     <i data-lucide="arrow-left" style="width: 20px;"></i>
                 </button>
-                <h2 id="current-surah-title" style="font-weight: 700; color: var(--primary-color); font-size: 1.2rem; margin-right: 10px;">Loading Surah...</h2>
-                <div style="display: flex; gap: 8px; align-items: center;">
+                <h2 id="current-surah-title" style="font-weight: 700; color: var(--primary-color); font-size: 1.2rem; margin: 0;">Loading Surah...</h2>
+            </div>
+
+            <div class="header-center"></div>
+
+            <div class="header-right">
+                <div class="header-controls-group" style="display: flex; gap: 12px; align-items: center;">
                     <button class="btn btn-primary" onclick="openNavigator()" style="padding: 8px 16px; font-size: 0.85rem; display: flex; align-items: center; gap: 8px;">
                         <i data-lucide="book-open" style="width: 14px;"></i> Browse
                     </button>
@@ -36,10 +41,6 @@
                         <option value="" disabled selected>Ayah</option>
                     </select>
                 </div>
-            </div>
-
-            <div class="header-controls">
-                <!-- Additional controls -->
             </div>
         </header>
 
@@ -90,7 +91,16 @@
                 <div class="player-info">
                     <span id="player-verse-info" style="font-weight: 700; font-size: 0.85rem; color: var(--text-dark);">...</span>
                 </div>
-                <div style="display: flex; align-items: center; gap: 8px;">
+                <div style="display: flex; align-items: center; gap: 12px;">
+                    <div class="speed-control">
+                        <select id="player-speed-select" class="player-select speed-select" onchange="changePlaybackSpeed(this.value)" title="Playback Speed">
+                            <option value="1">1x</option>
+                            <option value="1.3">1.3x</option>
+                            <option value="1.5">1.5x</option>
+                            <option value="1.8">1.8x</option>
+                            <option value="2">2x</option>
+                        </select>
+                    </div>
                     <div class="repeat-control">
                         <button id="player-repeat-btn" class="player-btn secondary" onclick="toggleRepeatMode()" title="Repeat Ayah">
                             <i data-lucide="repeat"></i>

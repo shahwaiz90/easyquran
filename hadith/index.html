@@ -26,20 +26,19 @@
             <div class="header-center">
                 <div class="breadcrumb-mini">
                     <span id="breadcrumb-home" style="cursor: pointer;">All Collections</span>
-                    <i data-lucide="chevron-right"></i>
+                    <i data-lucide="chevron-right" style="width: 14px; margin: 0 5px;"></i>
                     <span id="breadcrumb-collection" style="cursor: pointer;">Sahih al-Bukhari</span>
-                    <i data-lucide="chevron-right"></i>
+                    <i data-lucide="chevron-right" style="width: 14px; margin: 0 5px;"></i>
                     <span id="breadcrumb-book" style="cursor: pointer;">All Books</span>
                 </div>
                 
-                <div class="search-bar-container">
-                    <i data-lucide="search"></i>
-                    <input type="text" id="hadith-search-input" placeholder="Search Hadith Collections (Bukhari, Muslim, etc)...">
-                </div>
+                <eq-search-bar 
+                    id="hadith-search-input" 
+                    placeholder="Search across All Collections (114,000+ Hadiths)...">
+                </eq-search-bar>
             </div>
 
             <div class="header-right">
-                <!-- Quran Switcher Removed -->
             </div>
         </header>
 

@@ -150,7 +150,7 @@ class EQSidebar extends HTMLElement {
       <style>
         .eq-sidebar {
             width: 280px;
-            background: #004D40; /* Branded Islamic Teal */
+            background: var(--primary-color, #1a4d2e); /* Forest Green Sync */
             color: white;
             height: 100vh;
             position: fixed;
@@ -460,3 +460,121 @@ class EQSidebar extends HTMLElement {
   }
 }
 customElements.define('eq-sidebar', EQSidebar);
+/* ════════════════════════════════════════════════════════════
+   EQ SEARCH BAR (Shared Component)
+   ════════════════════════════════════════════════════════════ */
+class EQSearchBar extends HTMLElement {
+  constructor() {
+    super();
+    this.style.display = 'block';
+    this.style.width = '100%';
+  }
+
+  connectedCallback() {
+    const placeholder = this.getAttribute('placeholder') || 'What would you like to read?';
+    const isReadOnly = this.hasAttribute('readonly');
+    const id = this.getAttribute('id') || 'eq-search-input';
+
+    this.innerHTML = `
+      <style>
+        .eq-search-container {
+            background: white;
+            border-radius: 18px;
+            padding: 14px 30px; /* Precise match with Hadith padding */
+            display: flex;
+            align-items: center;
+            width: 95%; /* Match Hadith's 95% expansion */
+            max-width: 1200px;
+            margin: 0 auto;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04), 0 2px 10px rgba(0,0,0,0.02);
+            border: 1px solid rgba(0,0,0,0.06);
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            cursor: ${isReadOnly ? 'pointer' : 'text'};
+            position: relative;
+            z-index: 10;
+        }
+
+        .eq-search-container:hover {
+            background: #fdfdfd;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
+        }
+
+        .eq-search-container:focus-within {
+            box-shadow: 0 20px 60px rgba(26, 77, 46, 0.12);
+            transform: translateY(-2px);
+            border-color: rgba(26, 77, 46, 0.2);
+        }
+
+        .eq-search-container i, 
+        .eq-search-container svg {
+            color: var(--primary-color, #1a4d2e);
+            width: 22px;
+            height: 22px;
+            opacity: 0.8;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .eq-search-container input {
+            background: transparent;
+            border: none;
+            outline: none;
+            margin-left: 18px;
+            width: 100%;
+            font-size: 1.25rem; /* Expanded font size to match Hadith precisely */
+            font-weight: 500;
+            color: #2c3e50;
+            letter-spacing: -0.2px;
+            font-family: 'Inter', sans-serif !important;
+            cursor: inherit;
+        }
+
+        .eq-search-container input::placeholder {
+            color: #7f8c8d;
+            opacity: 0.6;
+            font-weight: 400;
+        }
+
+        .eq-search-shortcut {
+            background: #f1f5f9;
+            color: #94a3b8;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-family: var(--main-font);
+            font-size: 0.75rem;
+            font-weight: 700;
+            border: 1px solid #e2e8f0;
+            margin-left: 10px;
+            pointer-events: none;
+        }
+
+        @media (max-width: 768px) {
+            .eq-search-container {
+                padding: 10px 15px;
+            }
+            .eq-search-container input {
+                font-size: 1rem;
+                margin-left: 12px;
+            }
+            .eq-search-shortcut {
+                display: none;
+            }
+        }
+      </style>
+
+      <div class="eq-search-container" id="container-${id}">
+          <i data-lucide="search"></i>
+          <input type="text" id="${id}" placeholder="${placeholder}" ${isReadOnly ? 'readonly' : ''} autocomplete="off">
+          ${isReadOnly ? `<div class="eq-search-shortcut">/</div>` : ''}
+      </div>
+    `;
+
+    // Initialize Lucide Icons if available
+    if (window.lucide) {
+      window.lucide.createIcons();
+    }
+  }
+}
+customElements.define('eq-search-bar', EQSearchBar);
