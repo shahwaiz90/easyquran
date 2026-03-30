@@ -44,9 +44,9 @@ let isTajweedEnabled = savedTajweed === 'true';
 
 let verseData = [];
 let wbwTranslations = {};
-let selectedEditions = { 
-    translations: [95, 97], 
-    tafseers: [] 
+let selectedEditions = {
+    translations: [95, 97],
+    tafseers: []
 };
 const tafseerObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -69,7 +69,7 @@ const verseObserver = new IntersectionObserver((entries) => {
             const vKey = entry.target.dataset.vkey;
             const surah = parseInt(entry.target.dataset.surah);
             const ayah = parseInt(entry.target.dataset.ayah);
-            
+
             // Only update info if NOT currently playing something else
             if (!currentAudio || currentAudio.paused) {
                 currentPlayingId = vKey;
@@ -77,10 +77,10 @@ const verseObserver = new IntersectionObserver((entries) => {
                 currentPlayingAyah = ayah;
                 const info = document.getElementById('player-verse-info');
                 if (info) info.textContent = vKey;
-                
+
                 // Track Progress
                 saveProgress(surah, ayah);
-                
+
                 // Update address bar as we scroll
                 if (!window.isSingleView) {
                     const cleanUrl = `/surah/${surah}:${ayah}`;
@@ -105,18 +105,19 @@ let currentPlayingAyah = 1;
 let currentPlayingReciterId = null; // Track what reciter is currently loaded
 let isRepeatMode = false;
 let repeatCount = 0; // Current cycle
+let currentPlaybackRate = 1.0;
 let maxRepeat = 1; // 1 to 5
 
 async function init() {
     // Check for pending SPA redirect path (from 404.html)
     const pendingPath = sessionStorage.getItem('spa_redirect_path');
     const lookupPath = pendingPath || window.location.pathname;
-    
+
     if (pendingPath) {
         sessionStorage.removeItem('spa_redirect_path');
         history.replaceState(null, '', pendingPath);
     }
-    
+
     // Extract surah ID from various path patterns (e.g. /surah/1, /surah/1:1, /quran/18)
     const match = lookupPath.match(/(?:\/surah\/|\/quran\/|surah-)(\d+)(?::(\d+))?/i);
     const urlParams = new URLSearchParams(window.location.search);
@@ -195,7 +196,7 @@ async function loadSingleVerse(surahId, ayahNum) {
 
 function saveProgress(surah, ayah) {
     localStorage.setItem('quran_last_read', JSON.stringify({ surah, ayah, time: Date.now() }));
-    
+
     // History (last 20 unique surahs)
     let history = JSON.parse(localStorage.getItem('quran_history') || '[]');
     history = history.filter(h => h.surah !== surah);
@@ -221,31 +222,33 @@ async function renderHomeScreen() {
     const playerBar = document.getElementById('audio-player-bar');
 
     if (dashHeader) dashHeader.style.display = 'flex';
-    if (readHeaderBack) readHeaderBack.style.display = 'none';
-    if (readHeaderCenter) readHeaderCenter.style.display = 'none';
-    if (readHeaderRight) readHeaderRight.style.display = 'none';
+    if (readHeaderBack) readHeaderBack.classList.remove('active');
+    if (readHeaderRight) readHeaderRight.classList.remove('active');
     if (playerBar) playerBar.style.display = 'none';
+
+    document.body.classList.remove('reader-view');
+    document.body.classList.add('dashboard-view');
 
     document.getElementById('home-dashboard').style.display = 'block';
     document.getElementById('verses-container').style.display = 'none';
-    
+
     const container = document.getElementById('home-dashboard');
     const lastRead = JSON.parse(localStorage.getItem('quran_last_read'));
     const history = JSON.parse(localStorage.getItem('quran_history') || '[]');
-    
+
     let html = `
         <div class="hero-card" ${lastRead ? `onclick="navToSurah(${lastRead.surah}, ${lastRead.ayah})" style="cursor: pointer;"` : ''}>
-            <h1 style="font-size: 2.5rem; margin-bottom: 15px;">Assalamu Alaikum</h1>
-            <p style="opacity: 0.95; font-size: 1.15rem; max-width: 600px; margin-bottom: 30px; line-height: 1.6;">Welcome to your premium Quran study companion. Continue your spiritual journey exploring deep translations and scholarly tafseers.</p>
+            <h1 style="font-size: 3rem; font-weight: 850; margin-bottom: 12px; color: #ffffff; text-shadow: 0 2px 30px rgba(0,0,0,0.1); letter-spacing: -1px;">Assalamu Alaikum</h1>
+            <p style="opacity: 0.98; font-size: 1.25rem; max-width: 700px; margin-bottom: 35px; line-height: 1.6; color: rgba(255,255,255,0.95);">Welcome to your premium Quran study companion. Explore deep translations and scholarly tafseers in a distraction-free environment.</p>
             
             ${lastRead ? `
-                <div class="progress-card shadow-sm" style="background: rgba(255,255,255,0.25); border: 1px solid rgba(255,255,255,0.2);">
-                    <div style="background: white; padding: 12px; border-radius: 12px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                        <i data-lucide="play" style="fill: var(--primary-color); color: var(--primary-color); width: 20px;"></i>
+                <div class="progress-card">
+                    <div class="progress-play-icon">
+                        <i data-lucide="play"></i>
                     </div>
-                    <div>
-                        <div style="text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1.5px; opacity: 0.9; margin-bottom: 4px; font-weight: 700;">Continue Your Journey</div>
-                        <div style="font-size: 1.3rem; font-weight: 800;">${allChapters[lastRead.surah-1]?.name_simple || 'Surah ' + lastRead.surah} • ${lastRead.ayah}</div>
+                    <div class="progress-text">
+                        <div class="progress-label">Continue Your Journey</div>
+                        <div class="progress-title">${allChapters[lastRead.surah - 1]?.name_simple || 'Surah ' + lastRead.surah} • ${lastRead.ayah}</div>
                     </div>
                 </div>
             ` : ''}
@@ -258,17 +261,17 @@ async function renderHomeScreen() {
                 <h3 class="section-title"><i data-lucide="history"></i> Recently Visited</h3>
                 <div class="history-grid">
                     ${history.map(h => {
-                        const ch = allChapters[h.surah-1];
-                        return `
+            const ch = allChapters[h.surah - 1];
+            return `
                         <div class="history-item" onclick="navToSurah(${h.surah}, ${h.ayah})">
                             <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 8px;">
-                                <div style="color: var(--primary-color); font-weight: 700; font-size: 0.95rem;">${ch?.name_simple || 'Surah '+h.surah}</div>
+                                <div style="color: var(--primary-color); font-weight: 700; font-size: 0.95rem;">${ch?.name_simple || 'Surah ' + h.surah}</div>
                                 <div style="font-size: 0.7rem; color: var(--text-muted); background: var(--secondary-color); padding: 2px 6px; border-radius: 4px;">${formatRelativeTime(h.time)}</div>
                             </div>
                             <div style="font-size: 0.8rem; color: var(--text-dark); opacity: 0.8;">Ayah ${h.ayah}</div>
                             <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px;">${ch?.name_arabic || ''}</div>
                         </div>`;
-                    }).join('')}
+        }).join('')}
                 </div>
             </div>
         `;
@@ -324,7 +327,7 @@ async function loadTranslationsAndTafsirs() {
     console.log("Populating translations and tafseer sidebar...");
     const transList = document.getElementById('translation-list');
     const tafList = document.getElementById('tafseer-list');
-    
+
     if (!transList || !tafList) {
         console.error("Sidebar containers not found!");
         return;
@@ -336,7 +339,7 @@ async function loadTranslationsAndTafsirs() {
     POPULAR_TRANSLATIONS.forEach(t => {
         transList.appendChild(createEditionItem(t.id, t.name, 'translations'));
     });
-    
+
     POPULAR_TAFSEERS.forEach(t => {
         tafList.appendChild(createEditionItem(t.id, t.name, 'tafseers'));
     });
@@ -346,14 +349,14 @@ async function loadTranslationsAndTafsirs() {
 function createEditionItem(id, name, type) {
     const a = document.createElement('a');
     a.href = "javascript:void(0)";
-    a.className = 'nav-link'; 
+    a.className = 'nav-link';
     a.dataset.id = id;
-    
+
     const icon = document.createElement('i');
     icon.dataset.lucide = type === 'translations' ? 'languages' : 'book-open';
     icon.style.width = '20px';
     icon.style.marginRight = '15px';
-    
+
     const span = document.createElement('span');
     span.textContent = name;
     span.style.fontSize = '0.85rem';
@@ -366,7 +369,7 @@ function createEditionItem(id, name, type) {
     if (selectedEditions[type].includes(idNum)) {
         a.classList.add('active');
     }
-    
+
     a.onclick = async (e) => {
         e.preventDefault();
         const idx = selectedEditions[type].indexOf(idNum);
@@ -385,7 +388,7 @@ function createEditionItem(id, name, type) {
 }
 
 // Not implemented for quran.com API in this version
-async function fetchComparativeData(id, type) {}
+async function fetchComparativeData(id, type) { }
 
 function populateReciterSelector() {
     const reciterSelect = document.getElementById('reciter-selector');
@@ -395,11 +398,11 @@ function populateReciterSelector() {
     reciterSelect.onchange = (e) => {
         selectedReciter = RECITERS.find(r => r.id === e.target.value);
         localStorage.setItem('quran_reciter_id', selectedReciter.id);
-        
+
         // Sync player bar if it matches
         const playerSelect = document.getElementById('player-reciter-select');
         if (playerSelect) playerSelect.value = selectedReciter.id;
-        
+
         // If something is playing, restart with new reciter
         if (currentAudio && !currentAudio.paused) {
             playRecitation(currentPlayingSurah, currentPlayingAyah, currentPlayingId);
@@ -417,15 +420,25 @@ function populatePlayerReciterSelector() {
 function changePlayerReciter(reciterId) {
     selectedReciter = RECITERS.find(r => r.id === reciterId);
     localStorage.setItem('quran_reciter_id', selectedReciter.id);
-    
+
     // Sync header selector
     const headerSelect = document.getElementById('reciter-selector');
     if (headerSelect) headerSelect.value = reciterId;
-    
+
     // If something is playing, restart with new reciter
     if (currentAudio && !currentAudio.paused) {
         playRecitation(currentPlayingSurah, currentPlayingAyah, currentPlayingId);
     }
+}
+
+function changePlaybackSpeed(speed) {
+    currentPlaybackRate = parseFloat(speed);
+    if (currentAudio) {
+        currentAudio.playbackSpeed = currentPlaybackRate;
+        currentAudio.playbackRate = currentPlaybackRate;
+    }
+    // Sync speed selectors if multiple exist
+    document.querySelectorAll('.speed-select').forEach(s => s.value = speed);
 }
 
 let allChapters = []; // Store for Navigator
@@ -439,12 +452,12 @@ async function populateSurahSelector() {
             return;
         }
         allChapters = data.chapters;
-        
+
         if (selector) {
             selector.innerHTML = '';
             data.chapters.forEach(c => {
                 const opt = document.createElement('option');
-                opt.value = c.id; 
+                opt.value = c.id;
                 opt.textContent = `${c.id}. ${c.name_simple} (${c.name_arabic})`;
                 selector.appendChild(opt);
             });
@@ -460,18 +473,18 @@ async function loadSurah(surahId, startAyah = null, isSingle = false) {
     const requestId = Date.now();
     loadSurah.lastRequestId = requestId;
     window.isSingleView = isSingle;
-    
+
     showLoading(true);
     const cleanSurahId = parseInt(surahId);
     currentSurah = cleanSurahId;
-    
+
     let url = `${API_BASE}/verses/by_chapter/${cleanSurahId}?words=true&per_page=300&word_fields=text_uthmani,text_indopak,text_v1,text_uthmani_tajweed`;
     if (selectedEditions.translations.length > 0) {
         url += `&translations=${selectedEditions.translations.join(',')}`;
     }
     // Tafseers are fetched separately or provided in details endpoint usually, but verses endpoint supports it in some versions.
     // However, Quran.com V4 usually requires a separate call for tafsir per verse or specific fields.
-    
+
     try {
         const response = await fetch(url);
 
@@ -482,13 +495,13 @@ async function loadSurah(surahId, startAyah = null, isSingle = false) {
                 if (resp.ok) localIndoPakData = await resp.json();
             } catch (err) { console.warn("Local IndoPak fetch failed", err); }
         }
-        
+
         const data = await response.json();
         verseData = data.verses;
-        
+
         // Tafseers are now fetched per verse on demand or via lazy loading
-        comparativeData = {}; 
-        
+        comparativeData = {};
+
         // Populate comparativeData with translations from verseData for the modal
         verseData.forEach(v => {
             if (v.translations) {
@@ -504,32 +517,34 @@ async function loadSurah(surahId, startAyah = null, isSingle = false) {
             renderVerses(isSingle, startAyah);
             const chInfo = await (await fetch(`${API_BASE}/chapters/${cleanSurahId}`)).json();
             document.getElementById('current-surah-title').textContent = `${chInfo.chapter.id}. Surah ${chInfo.chapter.name_simple} (${chInfo.chapter.name_arabic})`;
-            
+
             // Switch View
             document.getElementById('current-surah-title').textContent = `${chInfo.chapter.id}. Surah ${chInfo.chapter.name_simple} (${chInfo.chapter.name_arabic})`;
-            
+
             // Switch View - Unified SPA (Centered Layout)
             const dashHeader = document.getElementById('dashboard-header-center');
             const readHeaderBack = document.getElementById('reader-header-back');
             const readHeaderCenter = document.getElementById('reader-header-center');
             const readHeaderRight = document.getElementById('reader-header-right');
-            
+
             const home = document.getElementById('home-dashboard');
             const verses = document.getElementById('verses-container');
             const playerBar = document.getElementById('audio-player-bar');
 
-            if (dashHeader) dashHeader.style.display = 'none';
-            if (readHeaderBack) readHeaderBack.style.display = 'block';
-            if (readHeaderCenter) readHeaderCenter.style.display = 'flex';
-            if (readHeaderRight) readHeaderRight.style.display = 'flex';
-            
+            if (dashHeader) dashHeader.style.display = 'flex'; // Keep consistent in reader
+            if (readHeaderBack) readHeaderBack.classList.add('active');
+            if (readHeaderRight) readHeaderRight.classList.add('active');
+
+            document.body.classList.add('reader-view');
+            document.body.classList.remove('dashboard-view');
+
             if (home) home.style.display = 'none';
             if (verses) verses.style.display = 'block';
             if (playerBar) playerBar.style.display = 'flex';
-            
+
             const contentArea = document.querySelector('.content-area');
-            if (contentArea) contentArea.scrollTo(0,0);
-            
+            if (contentArea) contentArea.scrollTo(0, 0);
+
             // Populate Verse Selector
             const vSelector = document.getElementById('verse-selector');
             if (vSelector) {
@@ -567,10 +582,10 @@ async function loadSurah(surahId, startAyah = null, isSingle = false) {
                 }
             }
         }
-    } catch (e) { 
-        console.error("LoadSurah failed:", e); 
-    } finally { 
-        if (requestId === loadSurah.lastRequestId) showLoading(false); 
+    } catch (e) {
+        console.error("LoadSurah failed:", e);
+    } finally {
+        if (requestId === loadSurah.lastRequestId) showLoading(false);
     }
 }
 
@@ -580,36 +595,36 @@ function renderVerses(isSingleMode = false, singleAyahNum = null) {
     const isWbw = false;
 
     // Determine target list
-    const targetVerses = isSingleMode 
+    const targetVerses = isSingleMode
         ? verseData.filter(v => v.verse_number == singleAyahNum)
         : verseData;
 
     targetVerses.forEach(verse => {
-        const card = document.createElement('div'); 
+        const card = document.createElement('div');
         card.className = 'verse-card';
         card.dataset.vkey = verse.verse_key;
         card.dataset.surah = verse.chapter_id || currentSurah;
         card.dataset.ayah = verse.verse_number;
-        
+
         // Observe for scroll tracking
         verseObserver.observe(card);
-        
+
         // Verse Header
         const header = document.createElement('div');
-        header.style.display = 'flex'; 
-        header.style.justifyContent = 'space-between'; 
+        header.style.display = 'flex';
+        header.style.justifyContent = 'space-between';
         header.style.marginBottom = '20px';
         header.innerHTML = `<span style="font-weight:700; color:var(--text-muted); font-size: 0.85rem; cursor:pointer;" onclick="openComparativeModal(${verse.verse_number})">${verse.verse_key}</span>`;
-        
+
         const actions = document.createElement('div');
         actions.style.display = 'flex';
         actions.style.alignItems = 'center';
         actions.style.gap = '10px';
-        
+
         // Play options container
         const playContainer = document.createElement('div');
         playContainer.className = 'play-options-container';
-        
+
         const dBtn = document.createElement('button');
         dBtn.innerHTML = '<i data-lucide="external-link"></i>';
         dBtn.className = 'verse-action-btn';
@@ -632,23 +647,23 @@ function renderVerses(isSingleMode = false, singleAyahNum = null) {
         wBtn.onclick = () => shareToWhatsApp(verse.verse_key);
         actions.appendChild(wBtn);
 
-        const sBtn = document.createElement('button'); 
-        sBtn.innerHTML = '<i data-lucide="share-2"></i>'; 
+        const sBtn = document.createElement('button');
+        sBtn.innerHTML = '<i data-lucide="share-2"></i>';
         sBtn.className = 'verse-action-btn';
         sBtn.title = "Other Share Options";
         sBtn.onclick = () => shareVerse(verse.verse_key);
         actions.appendChild(sBtn);
 
-        const pBtn = document.createElement('button'); 
+        const pBtn = document.createElement('button');
         pBtn.id = `play-btn-${verse.verse_key}`;
-        pBtn.innerHTML = '<i data-lucide="play"></i>'; 
+        pBtn.innerHTML = '<i data-lucide="play"></i>';
         pBtn.className = 'verse-action-btn';
         pBtn.title = "Play Options";
         pBtn.onclick = (e) => {
             e.stopPropagation();
             togglePlayOptions(verse.verse_key);
         };
-        
+
         const playPopup = document.createElement('div');
         playPopup.id = `play-popup-${verse.verse_key}`;
         playPopup.className = 'play-options-popup';
@@ -661,7 +676,7 @@ function renderVerses(isSingleMode = false, singleAyahNum = null) {
                 <i data-lucide="fast-forward" style="width:16px;"></i> Continue from here (Continuous)
             </div>
         `;
-        
+
         playContainer.appendChild(pBtn);
         playContainer.appendChild(playPopup);
         actions.appendChild(playContainer);
@@ -671,13 +686,13 @@ function renderVerses(isSingleMode = false, singleAyahNum = null) {
         // Quranic Text Container
         const arabicDiv = document.createElement('div');
         arabicDiv.className = `quran-text mushaf-${currentMushaf} ${isTajweedEnabled ? 'tajweed-text' : ''}`;
-        
+
         if (isWbw) {
             arabicDiv.classList.add('wbw-container');
             verse.words.forEach(word => {
                 const wordGroup = document.createElement('div');
                 wordGroup.className = 'wbw-word-group';
-                
+
                 const arabicWord = document.createElement('span');
                 arabicWord.className = 'quran-word';
                 // Use local IndoPak if available and current mushaf is set to it
@@ -688,14 +703,14 @@ function renderVerses(isSingleMode = false, singleAyahNum = null) {
                     text = word.text_uthmani_tajweed;
                 }
                 arabicWord.textContent = text;
-                
+
                 const meaning = document.createElement('span');
                 meaning.className = 'wbw-meaning';
                 meaning.textContent = word.translation.text;
                 meaning.style.fontSize = '1.1rem'; // Significantly increased
                 meaning.style.fontFamily = "'ClearText', Inter, sans-serif";
                 meaning.style.fontWeight = "500";
-                
+
                 wordGroup.appendChild(arabicWord);
                 if (word.char_type_name === 'word') {
                     wordGroup.appendChild(meaning);
@@ -705,7 +720,7 @@ function renderVerses(isSingleMode = false, singleAyahNum = null) {
         } else {
             arabicDiv.style.textAlign = 'right';
             arabicDiv.style.fontSize = currentMushaf === 'indopak' ? '3rem' : '2.5rem';
-            
+
             if (currentMushaf === 'indopak' && localIndoPakData && localIndoPakData[verse.verse_key]) {
                 arabicDiv.textContent = localIndoPakData[verse.verse_key].text;
             } else {
@@ -717,7 +732,7 @@ function renderVerses(isSingleMode = false, singleAyahNum = null) {
                 }).join(' ');
             }
         }
-        
+
         card.appendChild(arabicDiv);
 
         // Add Translations and Tafseers Block
@@ -733,7 +748,7 @@ function renderVerses(isSingleMode = false, singleAyahNum = null) {
                 tDiv.style.marginBottom = '12px';
                 tDiv.style.borderBottom = '1px solid rgba(245, 158, 11, 0.1)';
                 tDiv.style.paddingBottom = '12px';
-                
+
                 const tName = POPULAR_TRANSLATIONS.find(pt => pt.id == t.resource_id)?.name || 'Translation';
                 const isUrdu = tName.includes('(UR)') || tName.includes('Tafheem') || tName.includes('Jalandhari');
                 tDiv.innerHTML = `
@@ -756,7 +771,7 @@ function renderVerses(isSingleMode = false, singleAyahNum = null) {
                 placeholder.style.marginTop = '20px';
                 placeholder.innerHTML = `<div class="tafseer-loading" style="font-size: 0.75rem; color: var(--text-muted); opacity: 0.5;">Waiting for viewport...</div>`;
                 card.appendChild(placeholder);
-                
+
                 // Observe for lazy loading
                 tafseerObserver.observe(placeholder);
             });
@@ -777,7 +792,7 @@ function openComparativeModal(verseNum) {
 
     const modal = document.getElementById('comparative-modal');
     document.getElementById('modal-title').textContent = `Verse ${verse.verse_key}`;
-    
+
     // Arabic in Modal
     const modalArabic = document.getElementById('modal-arabic');
     modalArabic.className = `arabic-text mushaf-${currentMushaf} ${isTajweedEnabled ? 'tajweed-text' : ''}`;
@@ -788,7 +803,7 @@ function openComparativeModal(verseNum) {
 
     // Segregate by Language
     const groupedTrans = { ur: [], en: [], other: [] };
-    
+
     if (verse.translations) {
         verse.translations.forEach(t => {
             const info = POPULAR_TRANSLATIONS.find(pt => pt.id == t.resource_id);
@@ -803,7 +818,7 @@ function openComparativeModal(verseNum) {
         urHead.className = 'modal-group-header';
         urHead.textContent = 'اردو تراجم (Urdu Translations)';
         body.appendChild(urHead);
-        
+
         groupedTrans.ur.forEach(item => {
             const row = createComparativeRow(item.info, item.text, true);
             body.appendChild(row);
@@ -816,7 +831,7 @@ function openComparativeModal(verseNum) {
         enHead.className = 'modal-group-header';
         enHead.textContent = 'English Translations';
         body.appendChild(enHead);
-        
+
         groupedTrans.en.forEach(item => {
             const row = createComparativeRow(item.info, item.text, false);
             body.appendChild(row);
@@ -828,14 +843,14 @@ function openComparativeModal(verseNum) {
         const vKey = verse.verse_key;
         const info = POPULAR_TAFSEERS.find(pt => pt.id == id);
         const isUrdu = info?.language === 'ur' || info?.name?.includes('(UR)');
-        
+
         const row = document.createElement('div');
         row.style.marginBottom = '25px';
         row.id = `modal-tafseer-${id}-${vKey}`;
-        
+
         if (comparativeData[id] && comparativeData[id][vKey]) {
-            row.innerHTML = createComparativeRowHeader(info, true) + 
-                           `<div class="${isUrdu ? 'urdu-text' : ''}" style="color:#444; line-height: ${isUrdu ? '2.5' : '1.7'}; font-size: ${isUrdu ? '1.1rem' : '0.95rem'}; direction: ${isUrdu ? 'rtl' : 'ltr'};">
+            row.innerHTML = createComparativeRowHeader(info, true) +
+                `<div class="${isUrdu ? 'urdu-text' : ''}" style="color:#444; line-height: ${isUrdu ? '2.5' : '1.7'}; font-size: ${isUrdu ? '1.1rem' : '0.95rem'}; direction: ${isUrdu ? 'rtl' : 'ltr'};">
                                 ${comparativeData[id][vKey]}
                              </div>`;
         } else {
@@ -860,7 +875,7 @@ function createComparativeRow(info, text, isUrdu) {
     row.style.borderRadius = '10px';
     row.style.background = isUrdu ? '#fdfcf7' : '#f8fafc';
     row.style.border = '1px solid #eef2f7';
-    
+
     row.innerHTML = `
         <div style="font-size:0.65rem; color:var(--text-muted); font-weight:700; margin-bottom:10px; opacity:0.7;">
             ${info?.name || 'Translation'}
@@ -880,7 +895,7 @@ function createComparativeRowHeader(info, isTafseer) {
 }
 
 function closeModal() { document.getElementById('comparative-modal').style.display = 'none'; }
-function playAudio(url) { 
+function playAudio(url) {
     if (currentAudio) { currentAudio.pause(); }
     currentAudio = new Audio(url);
     currentAudio.play();
@@ -888,7 +903,7 @@ function playAudio(url) {
 
 function playRecitation(s, a, verseKey) {
     const playBtn = document.getElementById(`play-btn-${verseKey}`);
-    
+
     // Toggle logic
     if (currentPlayingId === verseKey && currentAudio) {
         if (!currentAudio.paused) {
@@ -913,12 +928,12 @@ function playRecitation(s, a, verseKey) {
         }
     }
 
-    const surah = String(s).padStart(3,'0'); const ayah = String(a).padStart(3,'0');
+    const surah = String(s).padStart(3, '0'); const ayah = String(a).padStart(3, '0');
     const url = selectedReciter.id === 'local_urdu' ? `${AUDIO_BASE_LOCAL}/${surah}/${surah}${ayah}.mp3` : `${AUDIO_BASE_EVERYAYAH}/${selectedReciter.folder}/${surah}${ayah}.mp3`;
-    
+
     currentAudio = new Audio(url);
     currentPlayingId = verseKey;
-    
+
     playBtn.innerHTML = '<i data-lucide="loader-2" class="animate-spin" style="width:16px; height:16px;"></i>';
     lucide.createIcons();
 
@@ -938,7 +953,7 @@ function playRecitation(s, a, verseKey) {
         currentAudio = null;
     };
 }
-function showLoading(s) { document.getElementById('loading').style.display = s ? 'block' : 'none'; document.getElementById('verses-container').style.display = s ? 'none' : 'block'; }
+// Duplicate showLoading removed to allow the optimized version below to function.
 
 // Lazy Loading and Separate API logic for Tafseers
 const tafseerQueue = [];
@@ -955,7 +970,7 @@ async function processTafseerQueue() {
 
     while (tafseerQueue.length > 0) {
         const { tafId, verseKey } = tafseerQueue.shift();
-        
+
         // Skip if already loaded in this session
         if (comparativeData[tafId] && comparativeData[tafId][verseKey]) {
             renderTafseerIntoPlaceholder(tafId, verseKey, comparativeData[tafId][verseKey]);
@@ -966,7 +981,7 @@ async function processTafseerQueue() {
             // Corrected endpoint (using QDC API which is more reliable for single verse tafsirs)
             const response = await fetch(`https://api.quran.com/api/qdc/tafsirs/${tafId}/by_ayah/${verseKey}`);
             const data = await response.json();
-            
+
             // Note: QDC API structure is slightly different: data.tafsir.text
             if (data.tafsir && data.tafsir.text) {
                 if (!comparativeData[tafId]) comparativeData[tafId] = {};
@@ -976,7 +991,7 @@ async function processTafseerQueue() {
         } catch (err) {
             console.error(`Failed separate tafseer fetch for ${verseKey}`, err);
         }
-        
+
         // Small delay to prevent rate issues as we process queue
         await new Promise(r => setTimeout(r, 100));
     }
@@ -988,7 +1003,7 @@ function renderTafseerIntoPlaceholder(tafId, vKey, text) {
     const modalEl = document.getElementById(`modal-tafseer-${tafId}-${vKey}`);
     const tInfo = POPULAR_TAFSEERS.find(pt => pt.id == tafId);
     const isUrdu = tInfo?.language === 'ur' || (tInfo?.name || '').includes('(UR)');
-    
+
     // Create preview and full text for collapsing logic
     const isLong = text.length > 500;
 
@@ -1011,10 +1026,10 @@ function renderTafseerIntoPlaceholder(tafId, vKey, text) {
         el.innerHTML = contentHtml;
         el.classList.remove('collapsible'); // Remove loading state
     }
-    
+
     if (modalEl) {
-        modalEl.innerHTML = createComparativeRowHeader(tInfo, true) + 
-                           `<div class="${isUrdu ? 'urdu-text' : ''}" style="color:#444; line-height: ${isUrdu ? '2.5' : '1.7'}; font-size: ${isUrdu ? '1.1rem' : '0.95rem'}; direction: ${isUrdu ? 'rtl' : 'ltr'};">
+        modalEl.innerHTML = createComparativeRowHeader(tInfo, true) +
+            `<div class="${isUrdu ? 'urdu-text' : ''}" style="color:#444; line-height: ${isUrdu ? '2.5' : '1.7'}; font-size: ${isUrdu ? '1.1rem' : '0.95rem'}; direction: ${isUrdu ? 'rtl' : 'ltr'};">
                                 ${text}
                              </div>`;
     }
@@ -1026,7 +1041,7 @@ function toggleTafseer(btn, isTop) {
     const fade = body.querySelector('.tafseer-fade');
     const topBtn = parent.querySelector('.read-less-top-btn');
     const bottomBtn = parent.querySelector('.read-more-btn');
-    
+
     if (body.style.maxHeight === 'none') {
         body.style.maxHeight = '250px';
         fade.style.display = 'block';
@@ -1035,7 +1050,7 @@ function toggleTafseer(btn, isTop) {
             bottomBtn.textContent = 'Read More ↓';
         }
         if (topBtn) topBtn.style.display = 'none';
-        
+
         // Scroll back to top of card if top minimize clicked
         if (isTop) parent.scrollIntoView({ behavior: 'smooth', block: 'center' });
     } else {
@@ -1056,12 +1071,12 @@ function togglePlayOptions(verseKey) {
 
     const allPopups = document.querySelectorAll('.play-options-popup');
     allPopups.forEach(p => { if (p.id !== `play-popup-${verseKey}`) p.style.display = 'none'; });
-    
+
     const popup = document.getElementById(`play-popup-${verseKey}`);
     if (popup) {
         popup.style.display = popup.style.display === 'block' ? 'none' : 'block';
     }
-    
+
     // Close on click outside
     const closePopup = (e) => {
         if (!popup.contains(e.target)) {
@@ -1078,7 +1093,7 @@ function handlePlayAction(s, a, verseKey, mode) {
     isContinuousPlay = (mode === 'continuous');
     const popup = document.getElementById(`play-popup-${verseKey}`);
     if (popup) popup.style.display = 'none';
-    
+
     playRecitation(s, a, verseKey);
 }
 
@@ -1087,7 +1102,7 @@ function playRecitation(s, a, verseKey) {
     const playerBar = document.getElementById('audio-player-bar');
     const playerPlayBtn = document.getElementById('player-play-btn');
     const playerInfo = document.getElementById('player-verse-info');
-    
+
     // Manage card highlighting
     document.querySelectorAll('.verse-card').forEach(c => c.classList.remove('playing'));
     const currentCard = playBtn?.closest('.verse-card');
@@ -1130,17 +1145,18 @@ function playRecitation(s, a, verseKey) {
     currentPlayingSurah = s;
     currentPlayingAyah = a;
     currentPlayingReciterId = selectedReciter.id;
-    
-    const surah = String(s).padStart(3,'0'); const ayah = String(a).padStart(3,'0');
+
+    const surah = String(s).padStart(3, '0'); const ayah = String(a).padStart(3, '0');
     const url = (selectedReciter.id === 'local_urdu')
-        ? `${AUDIO_BASE_LOCAL}/${surah}/${surah}${ayah}.mp3` 
+        ? `${AUDIO_BASE_LOCAL}/${surah}/${surah}${ayah}.mp3`
         : `${AUDIO_BASE_EVERYAYAH}/${selectedReciter.folder}/${surah}${ayah}.mp3`;
-    
+
     if (playBtn) playBtn.innerHTML = '<i data-lucide="loader-2" class="animate-spin" style="width:14px; height:14px;"></i>';
     if (playerPlayBtn) playerPlayBtn.innerHTML = '<i data-lucide="loader-2" class="animate-spin"></i>';
     lucide.createIcons();
 
     currentAudio = new Audio(url);
+    currentAudio.playbackRate = currentPlaybackRate;
     currentAudio.onplaying = () => {
         if (playBtn) playBtn.innerHTML = '<i data-lucide="pause" style="width:14px; height:14px;"></i>';
         if (playerPlayBtn) playerPlayBtn.innerHTML = '<i data-lucide="pause"></i>';
@@ -1154,19 +1170,19 @@ function playRecitation(s, a, verseKey) {
         lucide.createIcons();
         alert(`Audio cannot be loaded. Please check your connection or try another reciter.\n\nSource: ${url}`);
     };
-    
+
     currentAudio.onended = () => {
         if (playBtn) playBtn.innerHTML = '<i data-lucide="play" style="width:14px; height:14px;"></i>';
         if (playerPlayBtn) playerPlayBtn.innerHTML = '<i data-lucide="play"></i>';
         lucide.createIcons();
-        
+
         // Handle Repeat Logic
         if (isRepeatMode && repeatCount < maxRepeat - 1) {
             repeatCount++;
             playRecitation(s, a, verseKey);
             return;
         }
-        
+
         // Reset repeat cycle for next manual play or continuous
         if (isRepeatMode) {
             const badge = document.getElementById('repeat-count-badge');
@@ -1180,10 +1196,10 @@ function playRecitation(s, a, verseKey) {
             // Un-highlight when stopped/ended
             if (currentCard) currentCard.classList.remove('playing');
             // Keep currentPlayingId so player play button can restart it
-            currentAudio = null; 
+            currentAudio = null;
         }
     };
-    
+
     currentAudio.onerror = (e) => {
         console.error("Audio Load Error", e);
         if (currentCard) currentCard.classList.remove('playing');
@@ -1212,15 +1228,15 @@ function stopRecitation() {
     }
     const playBtn = document.getElementById(`play-btn-${currentPlayingId}`);
     if (playBtn) playBtn.innerHTML = '<i data-lucide="play" style="width:14px; height:14px;"></i>';
-    
+
     const playerPlayBtn = document.getElementById('player-play-btn');
     if (playerPlayBtn) playerPlayBtn.innerHTML = '<i data-lucide="play"></i>';
-    
+
     const bar = document.getElementById('audio-player-bar');
     if (bar) bar.classList.remove('active');
-    
+
     document.querySelectorAll('.verse-card').forEach(c => c.classList.remove('playing'));
-    
+
     // Do not set currentPlayingId to null, so togglePlayerPause can restart it
     isContinuousPlay = false;
     lucide.createIcons();
@@ -1242,12 +1258,12 @@ function playNextAyah() {
 function playPreviousAyah() {
     const prevAyahNum = currentPlayingAyah - 1;
     if (prevAyahNum < 1) return;
-    
+
     const prevVerse = verseData.find(v => v.verse_number === prevAyahNum);
     if (prevVerse) {
         const prevCard = document.querySelector(`.verse-card [onclick*="openComparativeModal(${prevAyahNum})"]`)?.closest('.verse-card');
         if (prevCard) prevCard.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        
+
         playRecitation(currentPlayingSurah, prevAyahNum, prevVerse.verse_key);
     }
 }
@@ -1255,7 +1271,7 @@ function playPreviousAyah() {
 function toggleRepeatMode() {
     const btn = document.getElementById('player-repeat-btn');
     const badge = document.getElementById('repeat-count-badge');
-    
+
     if (!isRepeatMode) {
         isRepeatMode = true;
         maxRepeat = 1;
@@ -1268,7 +1284,7 @@ function toggleRepeatMode() {
             btn.classList.remove('active');
         }
     }
-    
+
     badge.textContent = isRepeatMode ? maxRepeat + 'x' : '1x';
     if (!isRepeatMode) badge.textContent = '1x';
     repeatCount = 0; // Reset state
@@ -1277,7 +1293,7 @@ function toggleRepeatMode() {
 function copyVerseLink(verseKey) {
     const parts = verseKey.split(':');
     const shareUrl = `${window.location.origin}/surah/${parts[0]}:${parts[1]}`;
-    
+
     navigator.clipboard.writeText(shareUrl).then(() => {
         // Find the button to show feedback
         const btn = document.querySelector(`.copy-btn[data-vkey="${verseKey}"]`);
@@ -1302,14 +1318,14 @@ function shareToWhatsApp(verseKey) {
     // Get Surah Title from the header or select
     const surahSelect = document.getElementById('surah-selector');
     const surahName = surahSelect ? surahSelect.options[surahSelect.selectedIndex].text : `Surah ${currentSurah}`;
-    
+
     // Arabic
     const arabic = card.querySelector('.quran-text')?.innerText || '';
-    
+
     // Collect all loaded translations/tafseers in that card
     let shareText = `📖 *${surahName} (${verseKey})*\n\n`;
     shareText += `${arabic}\n\n`;
-    
+
     const contents = card.querySelectorAll('.translation-block > div, .tafseer-wrapper');
     contents.forEach(content => {
         const title = content.querySelector('div:first-child')?.innerText || '';
@@ -1333,14 +1349,14 @@ function shareVerse(verseKey) {
     // Get Surah Title from the header or select
     const surahSelect = document.getElementById('surah-selector');
     const surahName = surahSelect ? surahSelect.options[surahSelect.selectedIndex].text : `Surah ${currentSurah}`;
-    
+
     // Arabic
     const arabic = card.querySelector('.quran-text')?.innerText || '';
-    
+
     // Collect all loaded translations/tafseers in that card
     let shareText = `📖 *${surahName} (${verseKey})*\n\n`;
     shareText += `${arabic}\n\n`;
-    
+
     const contents = card.querySelectorAll('.translation-block > div, .tafseer-wrapper');
     contents.forEach(content => {
         const title = content.querySelector('div:first-child')?.innerText || '';
@@ -1368,9 +1384,14 @@ function shareVerse(verseKey) {
     }
 }
 
-function showLoading(s) { 
-    document.getElementById('loading').style.display = s ? 'block' : 'none'; 
-    document.getElementById('verses-container').style.display = s ? 'none' : 'block'; 
+function showLoading(s) {
+    const loading = document.getElementById('loading');
+    const home = document.getElementById('home-dashboard');
+    const verses = document.getElementById('verses-container');
+
+    if (loading) loading.style.display = s ? 'flex' : 'none';
+    if (home) home.style.display = s ? 'none' : (document.body.classList.contains('dashboard-view') ? 'block' : 'none');
+    if (verses) verses.style.display = s ? 'none' : (document.body.classList.contains('reader-view') ? 'block' : 'none');
 }
 
 // Side-bar mobile toggle integration for Quran reader
@@ -1395,7 +1416,7 @@ function openNavigator() {
     const vInput = document.getElementById('jump-verse-num');
     if (sInput) sInput.value = '';
     if (vInput) vInput.value = '';
-    
+
     renderSurahGrid(allChapters);
     selectSurahInNavigator(currentSurah);
     if (sInput) sInput.focus();
@@ -1431,14 +1452,14 @@ function renderSurahGrid(chapters) {
     const grid = document.getElementById('surah-navigator-grid');
     if (!grid) return;
     grid.innerHTML = '';
-    
+
     chapters.forEach(c => {
         const card = document.createElement('div');
         const isActive = parseInt(c.id) == navigatorSelectedSurahId;
         card.className = `surah-grid-card ${isActive ? 'active' : ''}`;
         card.id = `nav-surah-${c.id}`;
         card.onclick = () => selectSurahInNavigator(c.id);
-        
+
         card.innerHTML = `
             <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 2px;">
                 <span class="surah-num">${c.id}</span>
@@ -1456,7 +1477,7 @@ function renderSurahGrid(chapters) {
 
 function filterSurahs(query) {
     const q = query.replaceAll(' ', '').toLowerCase();
-    
+
     // Support Command Format like "12:12"
     if (q.includes(':')) {
         const parts = q.split(':');
@@ -1473,9 +1494,9 @@ function filterSurahs(query) {
         }
     }
 
-    const filtered = allChapters.filter(c => 
-        c.name_simple.toLowerCase().includes(q) || 
-        c.name_arabic.includes(q) || 
+    const filtered = allChapters.filter(c =>
+        c.name_simple.toLowerCase().includes(q) ||
+        c.name_arabic.includes(q) ||
         c.id.toString() === q ||
         (q.length > 2 && c.id.toString().startsWith(q))
     );
@@ -1488,12 +1509,12 @@ function selectSurahInNavigator(id) {
     document.querySelectorAll('.surah-grid-card').forEach(c => c.classList.remove('active'));
     const activeCard = document.getElementById(`nav-surah-${id}`);
     if (activeCard) activeCard.classList.add('active');
-    
+
     const info = allChapters.find(c => parseInt(c.id) == id);
     if (info) {
         const titleArea = document.getElementById('selected-surah-info');
         if (titleArea) titleArea.innerHTML = `<span style="opacity: 0.6; font-weight: 400;">Surah</span> ${info.name_simple} <span style="font-family: 'Amiri'; margin-left: 8px;">${info.name_arabic}</span>`;
-        
+
         const vInput = document.getElementById('jump-verse-num');
         if (vInput) {
             vInput.max = info.verses_count;
@@ -1505,12 +1526,12 @@ function selectSurahInNavigator(id) {
 
 function executeJump() {
     if (!navigatorSelectedSurahId) return;
-    
+
     const verseNum = document.getElementById('jump-verse-num').value;
-    
+
     // Close modal
     closeNavigator();
-    
+
     if (navigatorSelectedSurahId != currentSurah) {
         currentSurah = navigatorSelectedSurahId;
         const targetUrl = verseNum ? `/surah/${currentSurah}:${verseNum}` : `/surah/${currentSurah}`;
@@ -1538,13 +1559,13 @@ window.addEventListener('keydown', (e) => {
         e.preventDefault();
         openNavigator();
     }
-    
+
     // Command + K or Ctrl + K shortcut support
     if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
         e.preventDefault();
         openNavigator();
     }
-    
+
     // ESC to close any modal
     if (e.key === 'Escape') {
         closeModal();
