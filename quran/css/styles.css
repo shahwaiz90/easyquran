@@ -318,7 +318,7 @@ body {
 }
 
 .progress-title {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 900;
   color: var(--primary-color);
   letter-spacing: -0.5px;
@@ -1736,4 +1736,587 @@ body {
   color: var(--primary-color);
   text-align: right;
   margin-top: -5px;
+}
+/* Full Quran Arabic-Only Specific Styles */
+.full-quran-render {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.full-quran-surah {
+  background: white;
+  border-radius: 24px;
+  padding: 50px;
+  margin-bottom: 60px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(212, 163, 115, 0.1);
+  text-align: center;
+}
+
+.full-quran-surah-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #f8f9fa;
+  padding-bottom: 30px;
+}
+
+.surah-num {
+  width: 50px;
+  height: 50px;
+  background: var(--bg-cream);
+  color: var(--primary-color);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid var(--accent-color);
+}
+
+.surah-names {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.surah-names .en {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.surah-names .ar {
+  font-family: 'Amiri', serif;
+  font-size: 2.2rem;
+  color: var(--primary-color);
+}
+
+.mushaf-style {
+  font-family: 'Amiri', serif;
+  font-size: 2.8rem; /* Large, luxury Arabic */
+  line-height: 2.2;
+  color: var(--text-dark);
+  text-align: center;
+  direction: rtl;
+  word-spacing: 5px;
+}
+
+.verse-end {
+  font-size: 1.8rem;
+  color: var(--accent-color);
+  opacity: 0.6;
+  font-weight: 400;
+  margin-left: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+.bismillah-calligraphy {
+  font-family: 'Amiri', serif;
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .full-quran-surah {
+    padding: 30px 15px;
+  }
+  .mushaf-style {
+    font-size: 1.8rem;
+    line-height: 2;
+  }
+}
+
+/* IndoPak Fonts and Styles */
+@font-face {
+  font-family: 'IndoPakQuran';
+  src: url('../../indopak2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.indopak-font {
+  font-family: 'IndoPakQuran', 'Scheherazade New', serif !important;
+}
+
+.indopak-mushaf {
+  font-family: 'indopak-local', 'Noto Nastaliq Urdu', 'Scheherazade New', serif !important;
+  font-size: 3.2rem; /* IndoPak script often needs to be larger */
+  line-height: 2.8;
+}
+
+.verse-unit {
+  position: relative;
+  display: inline-block;
+  padding: 0 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.verse-unit:hover {
+  background: rgba(26, 77, 46, 0.05);
+  border-radius: 8px;
+}
+
+.juz-tag {
+  background: var(--primary-color);
+  color: white;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+.juz-start-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 0 30px;
+  position: relative;
+}
+
+.juz-start-divider::before, 
+.juz-start-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+}
+
+.juz-start-divider span {
+  padding: 8px 24px;
+  background: var(--primary-color);
+  color: white;
+  font-weight: 800;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 15px rgba(26, 77, 46, 0.2);
+  margin: 0 20px;
+}
+
+/* 16-Line Mushaf Aesthetics */
+.mushaf-page-mode {
+  width: 100%;
+  max-width: 800px; /* Standard Mushaf Width */
+  margin: 0 auto;
+  background: #fff;
+  border: 15px solid transparent;
+  border-image: url('https://easyquran.app/border-ornament.png') 30 stretch;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  padding: 40px;
+  position: relative;
+  min-height: 1000px;
+}
+
+.mushaf-style.sixteen-lines {
+  line-height: 2.8;
+  font-size: 2.6rem;
+  text-align: justify;
+  text-align-last: center;
+  word-spacing: 5px;
+}
+
+.indopak-mushaf.sixteen-lines {
+  line-height: 3.2; /* Taller for IndoPak */
+  font-size: 2.8rem;
+}
+
+/* Page Indicator for 16-line feel */
+.page-footer {
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  color: var(--accent-color);
+  letter-spacing: 1px;
+}
+
+/* Audio Playing Highlight for Mushaf */
+.verse-unit.playing {
+  background: rgba(46, 125, 50, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(46, 125, 50, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.verse-unit.playing::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--primary-color);
+  animation: pulse-border 1.5s infinite;
+}
+
+@keyframes pulse-border {
+  0% { opacity: 0.3; }
+  50% { opacity: 1; }
+  100% { opacity: 0.3; }
+}
+
+#last-read-container {
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+#last-read-container:hover {
+  transform: translateY(-2px);
+  background: rgba(26, 77, 46, 0.1) !important;
+}
+
+.mushaf-line.short-line {
+    justify-content: center !important;
+}
+
+/* Page Mode Mushaf Styles */
+.full-quran-page {
+    background: #fffefb;
+    border: 1px solid rgba(26, 77, 46, 0.15);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.06);
+    border-radius: 12px;
+    margin: 30px auto; /* Centered in content area */
+    width: 95%;
+    max-width: 1050px; 
+    padding: 30px 40px;
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 1380px; /* Crucial for 16 substantive lines at 16-line scale */
+    overflow: visible; /* Ensure bottom lines don't get cut off */
+}
+
+/* Uthmani Mode Premium Layout - Extra Wide Card */
+.uthmani-mode.full-quran-page {
+    max-width: 1150px !important;
+    padding: 30px 50px;
+    min-height: 1250px;
+    overflow: visible;
+}
+
+/* Centering Banners and Headers */
+.mushaf-line.banner-line {
+    justify-content: center !important;
+    gap: 0;
+}
+
+.mushaf-page-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 0.85rem;
+}
+
+.bismillah-text {
+    width: 100%;
+    text-align: center;
+}
+
+.surah-header-banner {
+    width: 100%;
+    max-width: 80% !important; /* Don't stretch too wide */
+    margin: 10px auto; 
+    text-align: center;
+}
+
+.uthmani-mode .quran-word-unit, 
+.uthmani-mode .verse-end {
+    font-size: 3.2rem; /* Final Balanced Premium Size */
+    font-family: 'Amiri', serif;
+    line-height: normal;
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.uthmani-mode .mushaf-line {
+    min-height: 110px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mushaf-page-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    color: var(--primary-color);
+    border-bottom: 1px dashed rgba(212, 163, 115, 0.4);
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+    opacity: 0.8;
+}
+
+.mushaf-page-footer {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    border-top: 1px dashed rgba(212, 163, 115, 0.4);
+    padding-top: 15px;
+    margin-top: 25px;
+    font-family: 'Amiri', serif;
+}
+
+.mushaf-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* We handle spacing via flex on lines */
+    flex: 1;
+    min-height: 1100px; /* Force consistent page height */
+}
+
+/* IndoPak specific font scaling */
+.indopak-mushaf {
+    font-family: 'indopak-local', 'Amiri', serif;
+    font-size: 2.1rem; /* Slightly larger for better readability */
+    line-height: 1.2;
+}
+
+.mushaf-line {
+    position: relative;
+    display: flex;
+    align-items: baseline; /* Align text exactly on straight line */
+    justify-content: space-between; /* justify words across line */
+    direction: rtl;
+    width: 100%;
+    flex: 1; /* Each line takes 1/16th of page if 16 lines are rendered */
+    min-height: 55px;
+    padding: 0 15px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(26, 77, 46, 0.1); /* Divider line */
+}
+
+.ruku-margin-marker {
+    position: absolute;
+    left: -85px; /* Safely clears the 40px page padding + 15px line padding */
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--primary-color);
+    font-family: 'Amiri', serif;
+    font-size: 0.9em;
+    padding: 2px 5px;
+    border: 1px solid var(--accent-color);
+    border-radius: 5px;
+    background: var(--bg-cream);
+    z-index: 10;
+}
+
+.mushaf-line.short-line {
+    justify-content: flex-start; /* Don't stretch short lines */
+    gap: 15px;
+}
+
+.surah-header-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #2d5a3c 100%);
+    border: 1px solid rgba(212, 163, 115, 0.4);
+    border-radius: 8px;
+    padding: 8px 30px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #ffd700; /* Golden text */
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    min-width: 80%;
+    height: 80%; /* Fit within the flex line */
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.mushaf-line.bismillah-line {
+    justify-content: center;
+    padding: 25px 0;
+    width: 100%;
+}
+
+.bismillah-text {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, transparent, rgba(212, 163, 115, 0.1), transparent);
+    border-top: 1px solid rgba(212, 163, 115, 0.3);
+    border-bottom: 1px solid rgba(212, 163, 115, 0.3);
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    padding: 10px 60px;
+    position: relative;
+    font-weight: 500;
+}
+
+.bismillah-text::before,
+.bismillah-text::after {
+    content: "۞"; /* Islamic ornament character */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #d4a373;
+    font-size: 1.8rem;
+}
+
+.bismillah-text::before { left: 15px; }
+.bismillah-text::after { right: 15px; }
+
+.mushaf-page-footer {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    text-align: center;
+    font-family: 'indopak-local', serif;
+}
+
+.quran-word-unit, .verse-end {
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 2px 4px;
+    border-radius: 4px;
+    display: inline-block;
+    user-select: none;
+}
+
+/* Script Specific Font Sizes & Scaling */
+.indopak-mode .quran-word-unit, 
+.indopak-mode .verse-end {
+    font-size: 2.8rem; /* IndoPak Premium Size */
+    font-family: 'indopak-local', 'Amiri', serif;
+}
+
+/* Uthmani Mode Premium Layout */
+.uthmani-mode.full-quran-page {
+    max-width: 1000px !important;
+    padding: 30px 45px;
+    overflow: hidden;
+}
+
+.uthmani-mode .quran-word-unit, 
+.uthmani-mode .verse-end {
+    font-size: 3.1rem; /* Safely Rebalanced for 1000px card */
+    font-family: 'Amiri', serif;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
+.uthmani-mode .mushaf-line {
+    min-height: 110px;
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Mobile Responsive Overrides for Mushaf Mode */
+@media (max-width: 600px) {
+    .content-area {
+        padding: 0 !important; /* Critical: Remove outer gaps */
+    }
+
+    .full-quran-page.mushaf-page-mode {
+        width: 100vw !important; /* Total viewport width */
+        margin: 0 !important;
+        padding: 15px 0 !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        min-height: auto !important;
+        background: #fff;
+        overflow: hidden !important; 
+        position: relative;
+    }
+
+    .indopak-mode .quran-word-unit {
+        font-size: 2.8vw !important; /* Significantly smaller for dense 16-line subcontinent grid */
+        letter-spacing: -0.2px;
+    }
+    
+    .uthmani-mode .quran-word-unit, 
+    .uthmani-mode .verse-end {
+        font-size: 3.2vw !important; /* Balanced for Uthmani grid */
+    }
+
+    .mushaf-line {
+        min-height: 44px !important;
+        display: flex !important;
+        justify-content: center !important; 
+        gap: 2px !important;
+        padding: 0 10px !important;
+        box-sizing: border-box !important;
+        width: 100% !important;
+    }
+
+    .mushaf-page-header {
+        font-size: 0.6rem !important;
+        margin-bottom: 20px !important;
+        padding: 0 15px !important;
+    }
+
+    .surah-header-banner {
+        max-width: 90% !important;
+        font-size: 2.8vw !important;
+        padding: 5px 15px !important;
+        margin: 5px auto !important;
+    }
+
+    .bismillah-text {
+        font-size: 3vw !important;
+    }
+
+    .banner-line {
+        justify-content: center !important;
+    }
+}
+
+.quran-word-unit:hover {
+    background: rgba(212, 163, 115, 0.1);
+    transform: scale(1.05);
+}
+
+.quran-word-unit.playing, .verse-end.playing {
+    background: rgba(212, 163, 115, 0.3);
+    color: #5c3011; 
+    box-shadow: 0 0 0 2px rgba(212, 163, 115, 0.1);
+}
+
+#load-more-trigger {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 80px;
+    transition: opacity 0.3s;
+}
+
+.loader-spinner {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(26, 77, 46, 0.1);
+    border-radius: 50%;
+    border-top-color: var(--primary-color);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.sajda-icon {
+    color: #d4a373;
+    font-size: 1.8rem;
+    margin-left: 5px;
+    cursor: help;
+    vertical-align: middle;
+    font-family: serif;
 }

@@ -947,10 +947,15 @@ function playRecitation(s, a, verseKey) {
     });
 
     currentAudio.onended = () => {
-        playBtn.innerHTML = '<i data-lucide="play" style="width:16px; height:16px;"></i>';
-        lucide.createIcons();
-        currentPlayingId = null;
-        currentAudio = null;
+        if (isRepeatMode) {
+            // Replay the same ayah when repeat is active
+            playRecitation(currentPlayingSurah, currentPlayingAyah, currentPlayingId);
+        } else {
+            playBtn.innerHTML = '<i data-lucide="play" style="width:16px; height:16px;"></i>';
+            lucide.createIcons();
+            currentPlayingId = null;
+            currentAudio = null;
+        }
     };
 }
 // Duplicate showLoading removed to allow the optimized version below to function.
@@ -1272,22 +1277,22 @@ function toggleRepeatMode() {
     const btn = document.getElementById('player-repeat-btn');
     const badge = document.getElementById('repeat-count-badge');
 
-    if (!isRepeatMode) {
-        isRepeatMode = true;
-        maxRepeat = 1;
+    // Toggle repeat mode (infinite repeat)
+    isRepeatMode = !isRepeatMode;
+    if (isRepeatMode) {
+        // Activate infinite repeat
         btn.classList.add('active');
+        badge.style.display = 'flex';
+        badge.textContent = '∞';
     } else {
-        maxRepeat++;
-        if (maxRepeat > 5) {
-            isRepeatMode = false;
-            maxRepeat = 1;
-            btn.classList.remove('active');
-        }
+        // Deactivate repeat
+        btn.classList.remove('active');
+        badge.style.display = 'none';
+        badge.textContent = '1x';
     }
-
-    badge.textContent = isRepeatMode ? maxRepeat + 'x' : '1x';
-    if (!isRepeatMode) badge.textContent = '1x';
-    repeatCount = 0; // Reset state
+    // Reset counters
+    repeatCount = 0;
+    maxRepeat = 1;
 }
 
 function copyVerseLink(verseKey) {
