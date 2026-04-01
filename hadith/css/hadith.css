@@ -165,18 +165,12 @@ body {
 }
 
 .header {
-<<<<<<< HEAD
-  height: 130px; /* Locked consistency across platforms */
-  background: white;
-  border-bottom: 1px solid var(--border-color);
-=======
   height: 130px;
   background: #fdfaf5; /* Warm parchment-cream */
   background-image:
     radial-gradient(var(--secondary-color) 0.9px, transparent 0.9px);
   background-size: 28px 28px;
   border-bottom: none;
->>>>>>> feature/full-quran-arabic
   display: flex !important;
   align-items: center;
   justify-content: space-between;
@@ -185,8 +179,6 @@ body {
   position: sticky;
   top: 0;
   transition: all 0.3s ease;
-<<<<<<< HEAD
-=======
   overflow: hidden;
   box-shadow:
     0 1px 0 rgba(212, 163, 115, 0.6),
@@ -244,7 +236,6 @@ body {
   mix-blend-mode: multiply;
   pointer-events: none;
   z-index: 1;
->>>>>>> feature/full-quran-arabic
 }
 
 .header-left, .header-right {
