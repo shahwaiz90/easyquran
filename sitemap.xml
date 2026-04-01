@@ -3,50 +3,36 @@
 
   <!-- ── Core Experience ── -->
   <url>
-    <loc>https://easyquran.app</loc>  
-    <lastmod>2026-04-02</lastmod>
+    <loc>https://easyquran.app</loc>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://easyquran.app/quran/</loc>
-    <lastmod>2026-04-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://easyquran.app/quran/16-lines.html</loc>
-    <lastmod>2026-04-05</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://easyquran.app/quran/surah.html</loc>
-    <lastmod>2026-04-05</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://easyquran.app/quran/full.html</loc>
-    <lastmod>2026-04-05</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://easyquran.app/hadith/</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://easyquran.app/listenquran.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -54,21 +40,21 @@
   <!-- ── Information & Features ── -->
   <url>
     <loc>https://easyquran.app/features.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://easyquran.app/goals.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://easyquran.app/reviews.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -76,28 +62,28 @@
   <!-- ── Community & Support ── -->
   <url>
     <loc>https://easyquran.app/ambassadors.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://easyquran.app/ambassador/saad-azhar.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://easyquran.app/ambassador/munawar-ahmed.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://easyquran.app/privacy-policy.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-03-30</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
