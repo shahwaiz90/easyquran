@@ -400,7 +400,7 @@ async function renderPage(num) {
         // Calculate scale
         const container = document.getElementById('viewer-container');
         const containerWidth = container.clientWidth - 40;
-        const containerHeight = container.clientHeight - 40;
+        const containerHeight = container.clientHeight - 120; // 20px top + 100px bottom padding
         const viewport = page.getViewport({ scale: 1 });
         
         // Fit to both width and height to prevent cutoff
