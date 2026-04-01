@@ -7,7 +7,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -22,16 +23,22 @@ html, body {
 
 :root {
   /* easyquran.app Unified Theme Colors - Forest Green Edition (Sync with Hadith Reader) */
-  --primary-color: #1a4d2e;     /* Deep Forest Green */
+
+  --primary-color: #1a4d2e;
+  /* Deep Forest Green */
   --primary-light: #4f6f52;
-  --secondary-color: #e8dfca;   /* Desert Sand / Beige Sync */
-  --accent-color: #d4a373;      /* Golden Amber Sync */
-  --bg-light: #f5f5f5;          /* Subdued grey-white */
+  --secondary-color: #e8dfca;
+  /* Desert Sand / Beige Sync */
+  --accent-color: #d4a373;
+  /* Golden Amber Sync */
+  --bg-light: #f5f5f5;
+  /* Subdued grey-white */
   --bg-white: #ffffff;
   --text-dark: #2c3e50;
   --text-muted: #7f8c8d;
   --border-color: #e0e0e0;
-  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Soft premium shadow sync */
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  /* Soft premium shadow sync */
   --transition: all 0.3s ease;
   --border-radius: 12px;
   --arabic-font: 'qpc-hafs', 'Amiri', serif;
@@ -44,24 +51,60 @@ html, body {
 }
 
 /* Tajweed Rules */
-.tajweed-text .ghn { color: #09B000; font-weight: bold; } /* Ghunna */
-.tajweed-text .qlq { color: #2FADFF; font-weight: bold; } /* Qalqala */
-.tajweed-text .slnt { color: #A5A5A5; } /* Silent */
-.tajweed-text .mudd_2 { color: #CE9E00; border-bottom: 1px dashed #CE9E00; }
-.tajweed-text .mudd_4 { color: #FF7B00; border-bottom: 1px solid #FF7B00; }
-.tajweed-text .mudd_5 { color: #F40000; border-bottom: 2px solid #F40000; }
-.tajweed-text .mudd_6 { color: #B50000; border-bottom: 2px double #B50000; }
-.tajweed-text .tfkhm { color: #3F48E6; } /* Tafkhim */
+.tajweed-text .ghn {
+  color: #09B000;
+  font-weight: bold;
+}
+
+/* Ghunna */
+.tajweed-text .qlq {
+  color: #2FADFF;
+  font-weight: bold;
+}
+
+/* Qalqala */
+.tajweed-text .slnt {
+  color: #A5A5A5;
+}
+
+/* Silent */
+.tajweed-text .mudd_2 {
+  color: #CE9E00;
+  border-bottom: 1px dashed #CE9E00;
+}
+
+.tajweed-text .mudd_4 {
+  color: #FF7B00;
+  border-bottom: 1px solid #FF7B00;
+}
+
+.tajweed-text .mudd_5 {
+  color: #F40000;
+  border-bottom: 2px solid #F40000;
+}
+
+.tajweed-text .mudd_6 {
+  color: #B50000;
+  border-bottom: 2px double #B50000;
+}
+
+.tajweed-text .tfkhm {
+  color: #3F48E6;
+}
+
+/* Tafkhim */
 
 /* Mushaf Variations */
-.arabic-text.mushaf-indopak, .quran-text.mushaf-indopak {
+.arabic-text.mushaf-indopak,
+.quran-text.mushaf-indopak {
   font-family: 'indopak-local', 'Scheherazade New', serif;
   font-size: 3rem;
   line-height: 2.2;
   direction: rtl;
 }
 
-.arabic-text.mushaf-uthmani, .quran-text.mushaf-uthmani {
+.arabic-text.mushaf-uthmani,
+.quran-text.mushaf-uthmani {
   font-family: 'Amiri', 'qpc-hafs', serif;
   font-size: 2.5rem;
   line-height: 1.8;
@@ -79,7 +122,8 @@ html, body {
 }
 
 .tafseer-wrapper {
-  background: #fffbeb; /* Very light amber */
+  background: #fffbeb;
+  /* Very light amber */
   border: 1px solid #fde68a;
   border-left: 4px solid var(--accent-color);
   border-radius: 12px;
@@ -99,7 +143,8 @@ html, body {
   transition: max-height 0.4s ease-out;
 }
 
-.read-more-btn, .read-less-top-btn {
+.read-more-btn,
+.read-less-top-btn {
   background: none;
   border: none;
   color: var(--accent-color);
@@ -109,7 +154,8 @@ html, body {
   padding: 8px 0;
 }
 
-.read-less-top-btn:hover, .read-more-btn:hover {
+.read-less-top-btn:hover,
+.read-more-btn:hover {
   text-decoration: underline;
   opacity: 0.8;
 }
@@ -118,15 +164,17 @@ html, body {
 /* Audio Player Bottom Bar - Always Visible */
 .audio-player-bar {
   position: fixed;
-  bottom: 0px; 
-  left: 280px; /* Align with sidebar main layout */
+  bottom: 0px;
+  left: 280px;
+  /* Align with sidebar main layout */
   right: 0;
   width: auto;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(10px);
   border-top: 1px solid #e2e8f0;
-  padding: 20px 40px; /* Enhanced bar padding */
-  box-shadow: 0 -10px 30px rgba(0,0,0,0.05);
+  padding: 20px 40px;
+  /* Enhanced bar padding */
+  box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.05);
   z-index: 1500;
   transition: all 0.5s ease;
 }
@@ -139,13 +187,15 @@ html, body {
 }
 
 .verses-container {
-  padding-bottom: 200px; /* Extra space for the persistent player */
+  padding-bottom: 200px;
+  /* Extra space for the persistent player */
 }
 
 /* Home Dashboard Enhancements */
 .home-dashboard {
   width: 100%;
-  max-width: 100%; /* Truly 100% stretchable as requested */
+  max-width: 100%;
+  /* Truly 100% stretchable as requested */
   margin: 0;
   padding: 10px 0 60px;
 }
@@ -158,7 +208,8 @@ html, body {
   margin-bottom: 40px;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(26, 77, 46, 0.15); /* Deep premium shadow sync */
+  box-shadow: 0 20px 60px rgba(26, 77, 46, 0.15);
+  /* Deep premium shadow sync */
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.3s ease;
   cursor: pointer;
 }
@@ -167,7 +218,8 @@ html, body {
   font-size: 2.8rem;
   font-weight: 800;
   margin-bottom: 15px;
-  text-shadow: 0 2px 10px rgba(0,0,0,0.15); /* Improved clarity */
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  /* Improved clarity */
 }
 
 .hero-card:hover {
@@ -198,7 +250,7 @@ html, body {
   display: flex !important;
   align-items: center !important;
   gap: 22px;
-  box-shadow: 0 15px 45px rgba(0,0,0,0.12);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
   margin-top: 15px;
   display: inline-flex !important;
   color: var(--text-dark);
@@ -209,12 +261,13 @@ html, body {
 
 .progress-card:hover {
   transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 20px 60px rgba(0,0,0,0.18);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18);
   background: white;
 }
 
 .progress-play-icon {
-  background: linear-gradient(135deg, var(--accent-color), #fcd34d); /* Oasis Amber Glow */
+  background: linear-gradient(135deg, var(--accent-color), #fcd34d);
+  /* Oasis Amber Glow */
   width: 52px;
   height: 52px;
   border-radius: 16px;
@@ -228,9 +281,20 @@ html, body {
 }
 
 @keyframes play-pulse-premium {
-  0% { transform: scale(1); box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3); }
-  50% { transform: scale(1.1); box-shadow: 0 12px 30px rgba(245, 158, 11, 0.5); }
-  100% { transform: scale(1); box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3); }
+  0% {
+    transform: scale(1);
+    box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3);
+  }
+
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(245, 158, 11, 0.5);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: 0 8px 20px rgba(245, 158, 11, 0.3);
+  }
 }
 
 .progress-play-icon i {
@@ -255,7 +319,7 @@ html, body {
 }
 
 .progress-title {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 900;
   color: var(--primary-color);
   letter-spacing: -0.5px;
@@ -279,7 +343,8 @@ html, body {
   display: flex;
   gap: 15px;
   overflow-x: auto;
-  padding: 10px 10px 30px; /* Enhanced view - removed excessive 230px */
+  padding: 10px 10px 30px;
+  /* Enhanced view - removed excessive 230px */
   scrollbar-width: thin;
 }
 
@@ -295,14 +360,15 @@ html, body {
 
 .history-item:hover {
   border-color: var(--primary-color);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
 
 .surah-browser-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 15px;
-  padding-bottom: 80px; /* Balanced spacing */
+  padding-bottom: 80px;
+  /* Balanced spacing */
 }
 
 .surah-card {
@@ -320,7 +386,7 @@ html, body {
 .surah-card:hover {
   border-color: var(--primary-color);
   transform: translateY(-3px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
 }
 
 .surah-card-num {
@@ -358,7 +424,8 @@ html, body {
   gap: 20px;
 }
 
-.player-left, .player-right {
+.player-left,
+.player-right {
   flex: 1;
   display: flex !important;
   align-items: center !important;
@@ -377,7 +444,8 @@ html, body {
   flex: 0 0 auto;
   display: flex !important;
   align-items: center !important;
-  gap: 30px; /* Wider spacing for controls */
+  gap: 30px;
+  /* Wider spacing for controls */
 }
 
 .player-btn {
@@ -525,7 +593,7 @@ html, body {
   background: white;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   padding: 6px;
   z-index: 1000;
   width: 180px;
@@ -554,8 +622,11 @@ html, body {
 /* Modal Styles */
 .modal-overlay {
   position: fixed;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(0,0,0,0.6);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
   display: none;
   justify-content: center;
@@ -572,12 +643,13 @@ html, body {
   overflow-y: auto;
   padding: 30px;
   position: relative;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .modal-close {
   position: absolute;
-  top: 20px; right: 20px;
+  top: 20px;
+  right: 20px;
   cursor: pointer;
   background: #f1f1f1;
   border: none;
@@ -690,8 +762,17 @@ body {
   flex-direction: column;
   padding: 30px 0;
   z-index: 1000;
-  box-shadow: 4px 0 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease; /* Smooth mobile entry */
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  /* Smooth mobile entry */
+}
+
+/* Unified Reader Header Elements (Desktop + Mobile) */
+#reader-header-back.active,
+#reader-header-right.active {
+  display: flex !important;
+  align-items: center !important;
+  flex-wrap: nowrap !important;
 }
 
 .mobile-toggle {
@@ -705,7 +786,7 @@ body {
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.2s ease;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border: none;
 }
 
@@ -713,12 +794,12 @@ body {
   .mobile-toggle {
     display: flex !important;
   }
-  
+
   /* Initial off-screen state for mobile */
   .sidebar {
     transform: translateX(-100%);
   }
-  
+
   .sidebar.open {
     transform: translateX(0);
   }
@@ -834,11 +915,16 @@ body {
   }
 }
 
-/* Header - Modern & Shared Styling (Centered Alignment Sync) */
+/* Header - Calligraphic Theme */
 .header {
-  height: 130px; /* Precise sync with Hadith reader header height */
-  background: white;
-  border-bottom: 1px solid var(--border-color);
+  height: 130px;
+  background: #fdfaf5;
+  /* Warm parchment-cream */
+  background-image:
+    radial-gradient(var(--secondary-color) 0.9px, transparent 0.9px);
+  background-size: 28px 28px;
+  border-bottom: none;
+  border-image: none;
   display: flex !important;
   align-items: center;
   justify-content: space-between;
@@ -847,10 +933,19 @@ body {
   position: sticky;
   top: 0;
   transition: all 0.3s ease;
+  overflow: hidden;
+  box-shadow:
+    0 1px 0 rgba(212, 163, 115, 0.6),
+    /* golden bottom line */
+    0 4px 20px rgba(26, 77, 46, 0.06),
+    /* soft green shadow down */
+    inset 0 -2px 8px rgba(212, 163, 115, 0.08);
+  /* inner amber glow */
 }
 
 .header-left {
-  flex: 0 0 120px !important; /* Locked footprint to allow center to expand */
+  flex: 0 0 120px !important;
+  /* Locked footprint to allow center to expand */
   display: flex !important;
   align-items: center !important;
   gap: 15px !important;
@@ -859,7 +954,8 @@ body {
 }
 
 .header-right {
-  flex: 0 0 120px !important; /* Symmetric match */
+  flex: 0 0 120px !important;
+  /* Symmetric match */
   display: flex !important;
   align-items: center !important;
   justify-content: flex-end !important;
@@ -869,12 +965,14 @@ body {
 .header-center {
   flex: 1;
   display: flex !important;
-  flex-direction: column; /* Unified vertical alignment */
+  flex-direction: column;
+  /* Unified vertical alignment */
   align-items: center;
   justify-content: center;
   gap: 12px;
   min-width: 0;
-  padding: 0 !important; /* Removed to match Hadith width calculation */
+  padding: 0 !important;
+  /* Removed to match Hadith width calculation */
 }
 
 @media (max-width: 768px) {
@@ -884,7 +982,7 @@ body {
     flex-wrap: wrap;
     gap: 15px;
   }
-  
+
   .header-left {
     order: 1;
     flex: 0 0 auto !important;
@@ -894,14 +992,15 @@ body {
     order: 3;
     flex: 0 0 auto !important;
   }
-  
+
   .header-center {
     order: 2;
     flex: 1 !important;
     display: flex !important;
     justify-content: center !important;
     margin-top: 0 !important;
-    min-width: 100px; /* Allow it to shrink but stay visible */
+    min-width: 100px;
+    /* Allow it to shrink but stay visible */
   }
 
   .header-explorer {
@@ -922,11 +1021,11 @@ body {
   .breadcrumb-mini i {
     display: none;
   }
-  
+
   .header-controls a {
     display: none;
   }
-  
+
   .btn-primary {
     padding: 8px 18px;
     font-size: 0.85rem;
@@ -982,7 +1081,8 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 200px; /* Increased to show more of the title */
+    max-width: 200px;
+    /* Increased to show more of the title */
   }
 
   /* Hamburger padding fix */
@@ -1005,39 +1105,40 @@ body {
     padding: 10px 15px;
     height: auto;
   }
-  
+
   .player-content {
     flex-direction: column;
     gap: 12px;
   }
-  
+
   .player-left {
     width: 100%;
     order: 2;
     justify-content: center !important;
   }
-  
+
   .player-select {
     width: 100%;
   }
-  
+
   .player-center {
     width: 100%;
     order: 1;
     gap: 15px;
     justify-content: space-between;
   }
-  
+
   .player-right {
     width: 100%;
     order: 3;
     justify-content: space-between;
     padding-top: 5px;
-    border-top: 1px solid rgba(0,0,0,0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
   }
 
   .player-btn {
-    padding: 10px; /* Better touch target */
+    padding: 10px;
+    /* Better touch target */
   }
 
   .speed-select {
@@ -1052,7 +1153,404 @@ body {
   gap: 5px;
   font-size: 0.95rem;
   color: var(--text-muted);
-  white-space: nowrap !important; /* Prevent squeezing */
+  white-space: nowrap !important;
+  /* Prevent squeezing */
+  flex-wrap: nowrap !important;
+  font-weight: 500;
+}
+
+/* Search bar and explorer styles are now managed by eq-search-bar in components.js */
+
+/* Single Bismillah calligraphic watermark — Centered */
+.header::before {
+  content: "﷽";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Amiri', serif;
+  font-size: 8rem;
+  opacity: 0.07;
+  color: var(--primary-color);
+  pointer-events: none;
+  z-index: 1;
+  letter-spacing: -2px;
+}
+
+/* Mosque Side Ornaments — Right */
+.header::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 150px;
+  height: 100%;
+  background-image: url('../../assets/mosque_header_accent.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  opacity: 0.2;
+  /* Better visibility for the gold lines */
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Mosque Side Ornament — Left */
+.header-ornament-left {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 150px;
+  height: 100%;
+  background-image: url('../../assets/mosque_header_accent.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transform: scaleX(-1);
+  opacity: 0.2;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Search Bar / Header Explorer - Original Styling Restored */
+.header-explorer {
+  width: 100%;
+  background: #f8fafc;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-radius: 18px;
+  padding: 16px 30px;
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04), 0 2px 10px rgba(0, 0, 0, 0.02);
+  position: relative;
+  z-index: 5;
+}
+
+.header-explorer:hover {
+  background: white;
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 30px rgba(26, 77, 46, 0.08);
+  transform: translateY(-1px);
+}
+
+.explorer-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.explorer-left i {
+  color: var(--primary-color);
+  width: 20px;
+  height: 20px;
+}
+
+.explorer-shortcut {
+  background: white;
+  border: 1px solid #e2e8f0;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 8px;
+  opacity: 0.6;
+  min-width: 30px;
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1024px) {
+  .header-explorer {
+    padding: 10px 15px;
+    height: 48px;
+  }
+
+  .explorer-left span {
+    font-size: 0.9rem;
+  }
+
+  .explorer-shortcut {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-explorer {
+    padding: 12px 20px;
+  }
+}
+
+/* Decorative Corner Ornaments */
+.header-ornament {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  opacity: 0.15;
+  pointer-events: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header-ornament.top-left {
+  top: 5px;
+  left: 5px;
+  background-image: url('data:image/svg+xml,...');
+}
+
+.header-ornament.top-right {
+  top: 5px;
+  right: 5px;
+  background-image: url('data:image/svg+xml,...');
+}
+
+/* New element for the gradient border since ::after is taken */
+.header-border-accent {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg,
+      rgba(26, 77, 46, 0.1) 0%,
+      var(--primary-color) 20%,
+      var(--accent-color) 50%,
+      var(--primary-color) 80%,
+      rgba(26, 77, 46, 0.1) 100%);
+  z-index: 2;
+}
+
+.header-left {
+  flex: 0 0 120px !important;
+  /* Locked footprint to allow center to expand */
+  display: flex !important;
+  align-items: center !important;
+  gap: 15px !important;
+  min-width: 0 !important;
+  flex-wrap: nowrap !important;
+}
+
+.header-right {
+  flex: 0 0 120px !important;
+  /* Symmetric match */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 10px !important;
+}
+
+.header-center {
+  flex: 1;
+  display: flex !important;
+  flex-direction: column;
+  /* Unified vertical alignment */
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 0 !important;
+  /* Removed to match Hadith width calculation */
+}
+
+/* Hide reader elements on desktop explicitly to ensure a clean layout */
+#reader-header-back {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+
+  /* Reader elements should only show when switched by JS, not forced by CSS media query */
+  #reader-header-back.active,
+  #reader-header-right.active {
+    display: flex !important;
+    align-items: center !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .header {
+    height: auto;
+    padding: 12px 20px;
+    flex-wrap: nowrap;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .header-left {
+    order: 1;
+    flex: 0 0 44px !important;
+    width: 44px !important;
+  }
+
+  .header-center {
+    order: 2;
+    flex: 1 1 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    min-width: 0;
+    gap: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .header-right {
+    order: 3;
+    flex: 0 0 auto !important;
+    min-width: 0;
+  }
+
+  /* Force eq-search-bar custom element to fill its flex parent */
+  eq-search-bar {
+    display: block;
+    width: 100%;
+  }
+
+  /* Reader View specific overrides */
+
+  /* Mobile Reader View: Hide Search to make room for Title */
+  .reader-view .header-center {
+    display: flex !important;
+    width: 100% !important;
+    flex: 1 1 100% !important;
+    order: 3;
+    /* Move search below top-row controls on mobile reader if needed, but here we just want centering */
+  }
+
+
+
+  .reader-view .header-left,
+  .reader-view .header-right {
+    flex: 0 0 auto !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    z-index: 100 !important;
+    /* Highest priority */
+    min-width: 48px;
+  }
+
+  .reader-view .header-left {
+    padding-left: 10px !important;
+  }
+
+  .reader-view .header-right {
+    padding-right: 10px !important;
+  }
+
+  .reader-view .header-center {
+    flex: 1 !important;
+    min-width: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    z-index: 10 !important;
+    padding: 0 10px;
+    position: relative;
+    text-align: center;
+  }
+
+  .reader-view .header-center h2 {
+    font-size: 1rem !important;
+    line-height: 1.2;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  #current-surah-title {
+    max-width: 180px !important;
+    margin: 0 auto !important;
+    display: inline-block !important;
+  }
+
+  /* Extreme mobile adjustments */
+  @media (max-width: 480px) {
+    .reader-view #current-surah-title {
+      font-size: 0.95rem !important;
+      max-width: 130px !important;
+    }
+
+    .mobile-toggle {
+      width: 48px !important;
+      height: 48px !important;
+      padding: 0 !important;
+      margin-right: 8px !important;
+      border-radius: 14px !important;
+    }
+
+    .select-modern {
+      min-width: 70px !important;
+      padding: 6px 20px 6px 8px !important;
+    }
+  }
+}
+
+/* Requirement 1: Mobile-friendly music player */
+@media (max-width: 768px) {
+  .audio-player-bar {
+    padding: 10px 15px;
+    height: auto;
+  }
+
+  .player-content {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .player-left {
+    width: 100%;
+    order: 2;
+    justify-content: center !important;
+  }
+
+  .player-select {
+    width: 100%;
+  }
+
+  .player-center {
+    width: 100%;
+    order: 1;
+    gap: 15px;
+    justify-content: space-between;
+  }
+
+  .player-right {
+    width: 100%;
+    order: 3;
+    justify-content: space-between;
+    padding-top: 5px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .player-btn {
+    padding: 10px;
+    /* Better touch target */
+  }
+
+  .speed-select {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+.breadcrumb-mini {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  white-space: nowrap !important;
+  /* Prevent squeezing */
   flex-wrap: nowrap !important;
   font-weight: 500;
 }
@@ -1090,53 +1588,63 @@ body {
 .content-area {
   flex: 1;
   overflow-y: auto;
-  padding: 40px; /* Match Hadith Reader padding */
+  padding: 40px;
+  /* Match Hadith Reader padding */
   background: var(--bg-light);
-  position: relative; /* For absolute loader */
+  position: relative;
+  /* For absolute loader */
 }
 
 .verses-container {
   width: 100%;
-  max-width: 100%; /* Match 100% stretchable Dashboard */
+  max-width: 100%;
+  /* Match 100% stretchable Dashboard */
   margin: 0;
 }
 
 /* Verse Card - Premium Reader Experience */
 .verse-card {
   background: #ffffff;
-  border-radius: 16px; /* Consistency with Hadith radius */
+  border-radius: 16px;
+  /* Consistency with Hadith radius */
   padding: 35px;
   margin-bottom: 30px;
   box-shadow: var(--card-shadow);
-  border: 1px solid rgba(0,0,0,0.06); /* Premium subtle boundary */
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  /* Premium subtle boundary */
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border-left: 5px solid transparent; /* Slot for active/playing indicator */
+  border-left: 5px solid transparent;
+  /* Slot for active/playing indicator */
 }
 
 /* Surah Selection Card (Dashboard Grid) */
 .surah-card {
   background: white;
   border-radius: 16px;
-  padding: 20px !important; /* Fixed padding (was accidentally set to 0) */
+  padding: 20px !important;
+  /* Fixed padding (was accidentally set to 0) */
   position: relative;
   overflow: hidden;
   box-shadow: var(--card-shadow);
-  border: 1px solid rgba(0,0,0,0.06);
+  border: 1px solid rgba(0, 0, 0, 0.06);
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   cursor: pointer;
   display: flex !important;
-  align-items: center !important; /* Horizontal alignment for dash info */
+  align-items: center !important;
+  /* Horizontal alignment for dash info */
   gap: 15px;
 }
 
 .verse-card:hover {
-  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
-  background: #fafafd; /* Very subtle scholarly hint */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  background: #fafafd;
+  /* Very subtle scholarly hint */
   border-left-color: var(--primary-light);
 }
 
 .verse-card.playing {
-  background: #fffbeb; /* Oasis Amber Card - User's favorite */
+  background: #fffbeb;
+  /* Oasis Amber Card - User's favorite */
   border: 1px solid #fde68a;
   border-left: 5px solid var(--accent-color);
   box-shadow: 0 12px 40px rgba(245, 158, 11, 0.1);
@@ -1179,7 +1687,8 @@ body {
   font-size: 1.05rem;
   margin-top: 16px;
   padding: 16px;
-  background: #fffef5; /* Subtle amber tint */
+  background: #fffef5;
+  /* Subtle amber tint */
   border-left: 3px solid var(--accent-color);
   border-radius: 8px;
 }
@@ -1205,11 +1714,13 @@ body {
 }
 
 .wbw-meaning {
-  font-size: 0.95rem; /* Increased significantly */
+  font-size: 0.95rem;
+  /* Increased significantly */
   color: var(--text-muted);
   line-height: 1.2;
   font-family: 'ClearText', Inter, sans-serif;
-  font-weight: 500; /* Medium weight for ClearText */
+  font-weight: 500;
+  /* Medium weight for ClearText */
 }
 
 .wbw-row {
@@ -1227,11 +1738,34 @@ body {
 }
 
 /* Specific Tajweed Classes (from JSON spans) */
-.pn { color: var(--primary-color); font-weight: 700; } /* Proper Name (Allah) */
-.n { color: #1A365D; font-weight: 500; } /* Noun */
-.v { color: #2C7A7B; font-weight: 500; } /* Verb */
-.p { color: #4A5568; } /* Preposition */
-.paren { opacity: 0.7; font-style: italic; font-size: 0.9em; }
+.pn {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* Proper Name (Allah) */
+.n {
+  color: #1A365D;
+  font-weight: 500;
+}
+
+/* Noun */
+.v {
+  color: #2C7A7B;
+  font-weight: 500;
+}
+
+/* Verb */
+.p {
+  color: #4A5568;
+}
+
+/* Preposition */
+.paren {
+  opacity: 0.7;
+  font-style: italic;
+  font-size: 0.9em;
+}
 
 /* Control Buttons - easyquran.app style */
 .btn-primary {
@@ -1272,7 +1806,8 @@ body {
   color: var(--primary-color);
 }
 
-.verse-action-btn svg, .verse-action-btn i {
+.verse-action-btn svg,
+.verse-action-btn i {
   width: 18px;
   height: 18px;
   opacity: 1 !important;
@@ -1297,21 +1832,27 @@ body {
 .loader {
   position: fixed;
   top: 50%;
-  left: calc(50% + 140px); /* Center relative to content area (Viewport 50% + half-sidebar shift) */
+  left: calc(50% + 140px);
+  /* Center relative to content area (Viewport 50% + half-sidebar shift) */
+
   width: 80px;
   height: 80px;
   background: url('/newappicon.webp') no-repeat center center;
   background-size: contain;
   animation: pulse-logo-centered 1.5s ease-in-out infinite;
-  z-index: 10000; /* Over everything */
+  z-index: 10000;
+  /* Over everything */
   pointer-events: none;
-  display: none; /* Controlled by JS */
+  display: none;
+  /* Controlled by JS */
   transform: translate(-50%, -50%);
 }
 
 @media (max-width: 900px) {
   .loader {
-    left: 50%; /* Center in full viewport if sidebar is collapsed/mobile */
+
+    left: 50%;
+    /* Center in full viewport if sidebar is collapsed/mobile */
   }
 }
 
@@ -1331,9 +1872,20 @@ body {
 }
 
 @keyframes pulse-logo-centered {
-  0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.7; }
-  50% { transform: translate(-50%, -50%) scale(1.1); opacity: 1; }
-  100% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.7; }
+  0% {
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0.7;
+  }
 }
 
 /* verse-end marker */
@@ -1347,10 +1899,25 @@ body {
 }
 
 @keyframes highlight-pulse {
-  0% { background: white; }
-  33% { background: #f0f7ff; border-color: var(--primary-color); transform: scale(1.01); }
-  66% { background: #f0f7ff; border-color: var(--primary-color); transform: scale(1.01); }
-  100% { background: white; }
+  0% {
+    background: white;
+  }
+
+  33% {
+    background: #f0f7ff;
+    border-color: var(--primary-color);
+    transform: scale(1.01);
+  }
+
+  66% {
+    background: #f0f7ff;
+    border-color: var(--primary-color);
+    transform: scale(1.01);
+  }
+
+  100% {
+    background: white;
+  }
 }
 
 .highlight-pulse {
@@ -1383,7 +1950,8 @@ body {
 }
 
 .surah-grid-card.active {
-  background: #fffbeb; /* Oasis Amber highlight */
+  background: #fffbeb;
+  /* Oasis Amber highlight */
   border-color: var(--accent-color);
   border-left-color: var(--accent-color);
   box-shadow: 0 4px 15px rgba(245, 158, 11, 0.15);
@@ -1408,4 +1976,1201 @@ body {
   color: var(--primary-color);
   text-align: right;
   margin-top: -5px;
+}
+
+/* Full Quran Arabic-Only Specific Styles */
+.full-quran-render {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.full-quran-surah {
+  background: white;
+  border-radius: 24px;
+  padding: 50px;
+  margin-bottom: 60px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(212, 163, 115, 0.1);
+  text-align: center;
+}
+
+.full-quran-surah-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #f8f9fa;
+  padding-bottom: 30px;
+}
+
+.surah-num {
+  width: 50px;
+  height: 50px;
+  background: var(--bg-cream);
+  color: var(--primary-color);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid var(--accent-color);
+}
+
+.surah-names {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.surah-names .en {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+.surah-names .ar {
+  font-family: 'Amiri', serif;
+  font-size: 2.2rem;
+  color: var(--primary-color);
+}
+
+.mushaf-style {
+  font-family: 'Amiri', serif;
+  font-size: 2.8rem;
+  /* Large, luxury Arabic */
+  line-height: 2.2;
+  color: var(--text-dark);
+  text-align: center;
+  direction: rtl;
+  word-spacing: 5px;
+}
+
+.verse-end {
+  font-size: 1.8rem;
+  color: var(--accent-color);
+  opacity: 0.6;
+  font-weight: 400;
+  margin-left: 10px;
+  font-family: 'Inter', sans-serif;
+}
+
+.bismillah-calligraphy {
+  font-family: 'Amiri', serif;
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+  opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+  .full-quran-surah {
+    padding: 30px 15px;
+  }
+
+  .mushaf-style {
+    font-size: 1.8rem;
+    line-height: 2;
+  }
+}
+
+/* IndoPak Fonts and Styles */
+@font-face {
+  font-family: 'IndoPakQuran';
+  src: url('../../indopak2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.indopak-font {
+  font-family: 'IndoPakQuran', 'Scheherazade New', serif !important;
+}
+
+.indopak-mushaf {
+  font-family: 'indopak-local', 'Noto Nastaliq Urdu', 'Scheherazade New', serif !important;
+  font-size: 3.2rem;
+  /* IndoPak script often needs to be larger */
+  line-height: 2.8;
+}
+
+.verse-unit {
+  position: relative;
+  display: inline-block;
+  padding: 0 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.verse-unit:hover {
+  background: rgba(26, 77, 46, 0.05);
+  border-radius: 8px;
+}
+
+.juz-tag {
+  background: var(--primary-color);
+  color: white;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+
+.juz-start-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 60px 0 30px;
+  position: relative;
+}
+
+.juz-start-divider::before,
+.juz-start-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+}
+
+.juz-start-divider span {
+  padding: 8px 24px;
+  background: var(--primary-color);
+  color: white;
+  font-weight: 800;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  box-shadow: 0 4px 15px rgba(26, 77, 46, 0.2);
+  margin: 0 20px;
+}
+
+/* 16-Line Mushaf Aesthetics */
+.mushaf-page-mode {
+  width: 100%;
+  max-width: 800px;
+  /* Standard Mushaf Width */
+  margin: 0 auto;
+  background: #fff;
+  border: 15px solid transparent;
+  border-image: url('https://easyquran.app/border-ornament.png') 30 stretch;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  position: relative;
+  min-height: 1000px;
+}
+
+.mushaf-style.sixteen-lines {
+  line-height: 2.8;
+  font-size: 2.6rem;
+  text-align: justify;
+  text-align-last: center;
+  word-spacing: 5px;
+}
+
+.indopak-mushaf.sixteen-lines {
+  line-height: 3.2;
+  /* Taller for IndoPak */
+  font-size: 2.8rem;
+}
+
+/* Page Indicator for 16-line feel */
+.page-footer {
+  text-align: center;
+  margin-top: 30px;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.8rem;
+  color: var(--accent-color);
+  letter-spacing: 1px;
+}
+
+/* Audio Playing Highlight for Mushaf */
+.verse-unit.playing {
+  background: rgba(46, 125, 50, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(46, 125, 50, 0.2);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.verse-unit.playing::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--primary-color);
+  animation: pulse-border 1.5s infinite;
+}
+
+@keyframes pulse-border {
+  0% {
+    opacity: 0.3;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+
+#last-read-container {
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+#last-read-container:hover {
+  transform: translateY(-2px);
+  background: rgba(26, 77, 46, 0.1) !important;
+}
+
+.mushaf-line.short-line {
+  justify-content: center !important;
+}
+
+/* Page Mode Mushaf Styles */
+.full-quran-page {
+  background: #fffefb;
+  border: 1px solid rgba(26, 77, 46, 0.15);
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  margin: 30px auto;
+  /* Centered in content area */
+  width: 95%;
+  max-width: 1050px;
+  padding: 30px 40px;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 1380px;
+  /* Crucial for 16 substantive lines at 16-line scale */
+  overflow: visible;
+  /* Ensure bottom lines don't get cut off */
+}
+
+/* Uthmani Mode Premium Layout - Extra Wide Card */
+.uthmani-mode.full-quran-page {
+  max-width: 1150px !important;
+  padding: 30px 50px;
+  min-height: 1250px;
+  overflow: visible;
+}
+
+/* Centering Banners and Headers */
+.mushaf-line.banner-line {
+  justify-content: center !important;
+  gap: 0;
+}
+
+.mushaf-page-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 0.85rem;
+}
+
+.bismillah-text {
+  width: 100%;
+  text-align: center;
+}
+
+.surah-header-banner {
+  width: 100%;
+  max-width: 80% !important;
+  /* Don't stretch too wide */
+  margin: 10px auto;
+  text-align: center;
+}
+
+.uthmani-mode .quran-word-unit,
+.uthmani-mode .verse-end {
+  font-size: 3.2rem;
+  /* Final Balanced Premium Size */
+  font-family: 'Amiri', serif;
+  line-height: normal;
+  padding: 10px 5px;
+  text-align: center;
+}
+
+.uthmani-mode .mushaf-line {
+  min-height: 110px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mushaf-page-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  color: var(--primary-color);
+  border-bottom: 1px dashed rgba(212, 163, 115, 0.4);
+  padding-bottom: 12px;
+  margin-bottom: 25px;
+  opacity: 0.8;
+}
+
+.mushaf-page-footer {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  border-top: 1px dashed rgba(212, 163, 115, 0.4);
+  padding-top: 15px;
+  margin-top: 25px;
+  font-family: 'Amiri', serif;
+}
+
+.mushaf-page-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* We handle spacing via flex on lines */
+  flex: 1;
+  min-height: 1100px;
+  /* Force consistent page height */
+}
+
+/* IndoPak specific font scaling */
+.indopak-mushaf {
+  font-family: 'indopak-local', 'Amiri', serif;
+  font-size: 2.1rem;
+  /* Slightly larger for better readability */
+  line-height: 1.2;
+}
+
+.mushaf-line {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  /* Align text exactly on straight line */
+  justify-content: space-between;
+  /* justify words across line */
+  direction: rtl;
+  width: 100%;
+  flex: 1;
+  /* Each line takes 1/16th of page if 16 lines are rendered */
+  min-height: 55px;
+  padding: 0 15px 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(26, 77, 46, 0.1);
+  /* Divider line */
+}
+
+.ruku-margin-marker {
+  position: absolute;
+  left: -85px;
+  /* Safely clears the 40px page padding + 15px line padding */
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--primary-color);
+  font-family: 'Amiri', serif;
+  font-size: 0.9em;
+  padding: 2px 5px;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  background: var(--bg-cream);
+  z-index: 10;
+}
+
+.mushaf-line.short-line {
+  justify-content: flex-start;
+  /* Don't stretch short lines */
+  gap: 15px;
+}
+
+.surah-header-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-color) 0%, #2d5a3c 100%);
+  border: 1px solid rgba(212, 163, 115, 0.4);
+  border-radius: 8px;
+  padding: 8px 30px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ffd700;
+  /* Golden text */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  min-width: 80%;
+  height: 80%;
+  /* Fit within the flex line */
+  margin: 0 auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mushaf-line.bismillah-line {
+  justify-content: center;
+  padding: 25px 0;
+  width: 100%;
+}
+
+.bismillah-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, transparent, rgba(212, 163, 115, 0.1), transparent);
+  border-top: 1px solid rgba(212, 163, 115, 0.3);
+  border-bottom: 1px solid rgba(212, 163, 115, 0.3);
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  padding: 10px 60px;
+  position: relative;
+  font-weight: 500;
+}
+
+.bismillah-text::before,
+.bismillah-text::after {
+  content: "۞";
+  /* Islamic ornament character */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #d4a373;
+  font-size: 1.8rem;
+}
+
+.bismillah-text::before {
+  left: 15px;
+}
+
+.bismillah-text::after {
+  right: 15px;
+}
+
+.mushaf-page-footer {
+  font-size: 2.2rem;
+  color: var(--primary-color);
+  text-align: center;
+  font-family: 'indopak-local', serif;
+}
+
+.quran-word-unit,
+.verse-end {
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  padding: 2px 4px;
+  border-radius: 4px;
+  display: inline-block;
+  user-select: none;
+}
+
+/* Script Specific Font Sizes & Scaling */
+.indopak-mode .quran-word-unit,
+.indopak-mode .verse-end {
+  font-size: 2.8rem;
+  /* IndoPak Premium Size */
+  font-family: 'indopak-local', 'Amiri', serif;
+}
+
+/* Uthmani Mode Premium Layout */
+.uthmani-mode.full-quran-page {
+  max-width: 1000px !important;
+  padding: 30px 45px;
+  overflow: hidden;
+}
+
+.uthmani-mode .quran-word-unit,
+.uthmani-mode .verse-end {
+  font-size: 3.1rem;
+  /* Safely Rebalanced for 1000px card */
+  font-family: 'Amiri', serif;
+  line-height: normal;
+  padding-bottom: 10px;
+}
+
+.uthmani-mode .mushaf-line {
+  min-height: 110px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Mobile Responsive Overrides for Mushaf Mode */
+@media (max-width: 600px) {
+  .content-area {
+    padding: 0 !important;
+    /* Critical: Remove outer gaps */
+  }
+
+  .full-quran-page.mushaf-page-mode {
+    width: 100vw !important;
+    /* Total viewport width */
+    margin: 0 !important;
+    padding: 15px 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    min-height: auto !important;
+    background: #fff;
+    overflow: hidden !important;
+    position: relative;
+  }
+
+  .indopak-mode .quran-word-unit {
+    font-size: 2.8vw !important;
+    /* Significantly smaller for dense 16-line subcontinent grid */
+    letter-spacing: -0.2px;
+  }
+
+  .uthmani-mode .quran-word-unit,
+  .uthmani-mode .verse-end {
+    font-size: 3.2vw !important;
+    /* Balanced for Uthmani grid */
+  }
+
+  .mushaf-line {
+    min-height: 44px !important;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 2px !important;
+    padding: 0 10px !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+  }
+
+  .mushaf-page-header {
+    font-size: 0.6rem !important;
+    margin-bottom: 20px !important;
+    padding: 0 15px !important;
+  }
+
+  .surah-header-banner {
+    max-width: 90% !important;
+    font-size: 2.8vw !important;
+    padding: 5px 15px !important;
+    margin: 5px auto !important;
+  }
+
+  .bismillah-text {
+    font-size: 3vw !important;
+  }
+
+  .banner-line {
+    justify-content: center !important;
+  }
+}
+
+.quran-word-unit:hover {
+  background: rgba(212, 163, 115, 0.1);
+  transform: scale(1.05);
+}
+
+.quran-word-unit.playing,
+.verse-end.playing {
+  background: rgba(212, 163, 115, 0.3);
+  color: #5c3011;
+  box-shadow: 0 0 0 2px rgba(212, 163, 115, 0.1);
+}
+
+#load-more-trigger {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 80px;
+  transition: opacity 0.3s;
+}
+
+.loader-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(26, 77, 46, 0.1);
+  border-radius: 50%;
+  border-top-color: var(--primary-color);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sajda-icon {
+  color: #d4a373;
+  font-size: 1.8rem;
+  margin-left: 5px;
+  cursor: help;
+  vertical-align: middle;
+  font-family: serif;
+}
+
+/* Simplified Reverted Styles */
+.history-chip-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 15px 25px;
+  background: #fdfaf5;
+  border-bottom: 1px solid rgba(26, 77, 46, 0.1);
+  margin-bottom: 20px;
+}
+
+.history-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.history-chips {
+  display: flex;
+  gap: 10px;
+}
+
+.history-chip {
+  padding: 6px 16px;
+  background: white;
+  border: 1px solid var(--accent-color);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.history-chip:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.surah-header-simple {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(212, 163, 115, 0.2);
+  margin-bottom: 15px;
+}
+
+.surah-num-badge {
+  background: var(--primary-color);
+  color: white;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.surah-title-ar {
+  font-family: 'Amiri', serif;
+  font-size: 2.2rem;
+  color: var(--primary-color);
+}
+
+.verse-count-mini {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Last Read Card Styles */
+.last-read-container {
+  display: flex;
+  gap: 15px;
+  padding: 20px;
+  overflow-x: auto;
+  background: #fdfaf5;
+  border-bottom: 2px solid rgba(212, 163, 115, 0.1);
+  margin-bottom: 20px;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-color) transparent;
+}
+
+.last-read-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.last-read-container::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 10px;
+}
+
+.last-read-card {
+  min-width: 240px;
+  background: white;
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: 0 4px 20px rgba(26, 77, 46, 0.05);
+  border: 1px solid rgba(212, 163, 115, 0.15);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.last-read-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--primary-color);
+  opacity: 0.8;
+}
+
+.last-read-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(26, 77, 46, 0.1);
+  border-color: var(--primary-color);
+}
+
+.card-surah-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-surah-name {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 1.05rem;
+}
+
+.card-surah-arabic {
+  font-family: 'Amiri', serif;
+  color: var(--accent-color);
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.card-verse-info {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-page-label {
+  align-self: flex-end;
+  background: var(--bg-cream);
+  color: var(--primary-color);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border: 1px solid rgba(212, 163, 115, 0.2);
+}
+
+/* Playing Verse Highlight */
+.quran-word-unit.playing {
+  background-color: rgba(26, 77, 46, 0.12) !important;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(26, 77, 46, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+/* Enhanced Surah Banner Info */
+.banner-top-ar {
+  font-size: 2.4rem;
+  margin-bottom: 5px;
+  font-family: 'Amiri', serif;
+}
+
+.banner-info-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 0.75rem;
+  color: rgba(255, 215, 0, 0.95);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  border-top: 1px solid rgba(255, 215, 0, 0.3);
+  padding-top: 5px;
+  margin-top: 5px;
+}
+
+/* Modern Page Jump UI */
+.page-jump-container {
+  display: flex;
+  align-items: center;
+  background: #f1f5f9;
+  border: 1.5px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 0 4px 0 12px;
+  height: 48px;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.page-jump-container:focus-within {
+  border-color: var(--primary-color);
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.page-input-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #94a3b8;
+  margin-right: 8px;
+}
+
+.page-input-field {
+  background: transparent;
+  border: none;
+  width: 45px;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-dark);
+  text-align: center;
+  outline: none;
+}
+
+.page-total {
+  font-size: 0.8rem;
+  color: #64748b;
+  margin: 0 10px;
+  white-space: nowrap;
+}
+
+.jump-go-btn {
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.jump-go-btn:hover {
+  background: var(--primary-dark);
+  transform: translateX(2px);
+}
+
+/* Premium Surah Banner Decoration */
+.surah-header-banner {
+  position: relative;
+  box-shadow: 0 10px 30px rgba(212, 163, 115, 0.1) !important;
+  border: 2px solid rgba(212, 163, 115, 0.5) !important;
+  background: linear-gradient(135deg, #fffcf9 0%, #fff 100%) !important;
+  max-width: 85% !important;
+  margin: 30px auto !important;
+  padding: 20px 40px !important;
+  border-radius: 16px !important;
+}
+
+.surah-header-banner::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 1px solid rgba(212, 163, 115, 0.2);
+  border-radius: 12px;
+  pointer-events: none;
+}
+
+.banner-top-ar {
+  text-shadow: 0 2px 4px rgba(212, 163, 115, 0.2);
+  color: #5c3011 !important;
+}
+
+.banner-info-row {
+  border-top: 1px solid rgba(212, 163, 115, 0.2) !important;
+  color: #8b4513 !important;
+}
+
+/* Enhanced Surah Header Banner */
+.surah-header-banner {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  background: #fffcf4 !important;
+  border: 2px solid #d4a373 !important;
+  border-radius: 12px !important;
+  padding: 10px 20px !important;
+  box-shadow: 0 4px 15px rgba(212, 163, 115, 0.15) !important;
+  margin: 20px auto !important;
+  position: relative !important;
+  overflow: hidden !important;
+  height: 100px !important;
+}
+
+.banner-accent {
+  width: 60px !important;
+  height: 60px !important;
+  background: url('https://easyquran.com/wp-content/uploads/2023/11/mandala-accent.png') no-repeat center !important;
+  background-size: contain !important;
+  opacity: 0.2 !important;
+}
+
+.banner-content {
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 4px !important;
+}
+
+.banner-top-ar {
+  font-family: 'IndoPak', serif !important;
+  font-size: 2.2rem !important;
+  color: #5c3011 !important;
+  line-height: 1 !important;
+  margin-bottom: 5px !important;
+}
+
+.banner-info-row {
+  display: flex !important;
+  gap: 40px !important;
+  border-top: 1px solid rgba(212, 163, 115, 0.3) !important;
+  padding-top: 8px !important;
+  width: 100% !important;
+  justify-content: center !important;
+}
+
+.banner-meta-item {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.meta-label {
+  font-size: 0.65rem !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  color: #9c6644 !important;
+  font-weight: 700 !important;
+}
+
+.meta-value {
+  font-size: 1rem !important;
+  font-weight: 800 !important;
+  color: #5c3011 !important;
+}
+
+/* Quran Completion Message */
+.quran-completion-message {
+  margin-top: 50px !important;
+  padding: 60px 20px !important;
+  text-align: center !important;
+  background: linear-gradient(to bottom, transparent, rgba(212, 163, 115, 0.05)) !important;
+  border-radius: 40px !important;
+}
+
+.completion-arabic {
+  font-size: 2.8rem !important;
+  color: #5c3011 !important;
+  margin: 20px 0 !important;
+}
+
+.completion-sadaq {
+  font-size: 3.5rem !important;
+  color: #8b4513 !important;
+  margin: 30px 0 !important;
+  font-family: 'IndoPak', serif !important;
+}
+
+.completion-text {
+  font-size: 1.2rem !important;
+  font-weight: 600 !important;
+  color: #d4a373 !important;
+}
+
+.completion-ornament {
+  margin-bottom: 20px !important;
+  opacity: 0.6 !important;
+}
+
+/* Fixing Surah Card Cutting */
+.surah-header-banner {
+  height: auto !important;
+  min-height: 100px !important;
+  overflow: visible !important;
+  padding: 15px 25px !important;
+}
+
+.banner-content {
+  overflow: visible !important;
+}
+
+/* Ensure no loader at the end */
+#load-more-trigger {
+  display: flex;
+}
+
+/* Modern Reciter Chips UI */
+.reciter-list-modern {
+  display: flex;
+  gap: 8px;
+  background: #f1f5f9;
+  padding: 4px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+}
+
+.reciter-chip {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: transparent;
+  color: #64748b;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  white-space: nowrap;
+}
+
+.reciter-chip:hover {
+  color: var(--primary-color);
+  background: rgba(34, 197, 94, 0.05);
+}
+
+.reciter-chip.active {
+  background: white;
+  color: var(--primary-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Modern Player Select Consistency */
+.reciter-selector-container {
+  background: #f1f5f9;
+  padding: 2px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.player-select-modern {
+  background: transparent !important;
+  border: none !important;
+  padding: 8px 12px !important;
+  font-size: 0.85rem !important;
+  font-weight: 600 !important;
+  color: #475569 !important;
+  cursor: pointer !important;
+  outline: none !important;
+  width: 210px !important;
+}
+
+.player-select-modern:focus {
+  background: #ffffff !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Mobile Header Fix for Surah Reader */
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 12px !important;
+    gap: 8px !important;
+  }
+
+  .header div[style*="display: flex"] {
+    width: 100% !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
+  }
+
+  #current-surah-title {
+    font-size: 0.95rem !important;
+    max-width: 120px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    margin-right: 0 !important;
+  }
+
+  .header .btn-primary {
+    padding: 6px 10px !important;
+    font-size: 0.75rem !important;
+  }
+
+  #verse-selector {
+    width: 65px !important;
+    font-size: 0.75rem !important;
+  }
+}
+
+/* Absolute priority for the Back Button in header */
+.back-btn-fixed {
+  position: relative !important;
+  z-index: 12000 !important;
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    width: 100% !important;
+    justify-content: flex-start !important;
+  }
+}
+
+/* Extreme Mobile Header Optimization */
+@media (max-width: 480px) {
+  .header {
+    padding: 8px 10px !important;
+    height: 60px !important;
+  }
+
+  .header-left {
+    min-width: 45px !important;
+  }
+
+  /* Hide title on small phones to prevent overlap */
+  #current-surah-title,
+  .header-center h2 {
+    display: none !important;
+  }
+
+  .full-header-controls {
+    gap: 5px !important;
+    width: calc(100% - 50px) !important;
+    justify-content: flex-end !important;
+  }
+
+  #surah-select {
+    min-width: 110px !important;
+    font-size: 0.8rem !important;
+    height: 40px !important;
+  }
+
+  #ayah-select {
+    width: 75px !important;
+    font-size: 0.8rem !important;
+    height: 40px !important;
+  }
+
+  .page-jump-container {
+    display: none !important;
+    /* Hide page jump in extreme narrow header */
+  }
+}
+
+/* Ensure hamburger icon is always clear */
+.mobile-toggle {
+  margin-right: 10px !important;
+  position: relative !important;
+  z-index: 1001 !important;
 }

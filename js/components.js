@@ -293,6 +293,10 @@ class EQSidebar extends HTMLElement {
                 <i data-lucide="book-open"></i>
                 <span>Read Quran</span>
             </a>
+            <a href="/quran/full.html" class="nav-link ${activeTab === 'full-quran' ? 'active' : ''}" id="tab-full-quran">
+                <i data-lucide="layout"></i>
+                <span>Full Quran (Arabic)</span>
+            </a>
             <a href="/hadith/" class="nav-link ${activeTab === 'hadith' ? 'active' : ''}" id="tab-hadith">
                 <i data-lucide="library"></i>
                 <span>Hadith Reader</span>
@@ -316,8 +320,10 @@ class EQSidebar extends HTMLElement {
                     <a href="/hadith/malik/" class="nav-link" data-collection="malik"><i data-lucide="scroll"></i><span>Muwatta Malik</span></a>
                     <a href="/hadith/ahmad/" class="nav-link" data-collection="ahmad"><i data-lucide="scroll"></i><span>Musnad Ahmad</span></a>
                 </div>
+            ` : activeTab === 'full-quran' ? `
+                <!-- Cleaned up per user request -->
             ` : `
-                <div class="nav-section-title">Comparative Search</div>
+                <div class="nav-section-title">Translations & Tools</div>
                 <div style="padding: 0 10px;" id="quran-nav-lists">
                     <div id="translation-list" class="collections-list">
                         <!-- Populate via Quran JS -->
@@ -330,22 +336,7 @@ class EQSidebar extends HTMLElement {
                 </div>
             `}
         </nav>
-
-        <div class="sidebar-footer">
-            ${type === 'hadith' ? `
-                <div style="font-size: 11px; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 10px; letter-spacing: 1px;">Primary Language</div>
-                <select id="hadith-lang-selector" class="select-modern">
-                    <option value="en">English</option>
-                    <option value="ur">Urdu (اردو)</option>
-                    <option value="bn">Bengali (বাংলা)</option>
-                </select>
-            ` : `
-                <div style="font-size: 11px; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 10px; letter-spacing: 1px;">Reciter</div>
-                <select id="reciter-selector" class="select-modern">
-                    <!-- Reciters will be populated by Quran script -->
-                </select>
-            `}
-        </div>
+        </nav>
       </aside>
     `;
 
@@ -375,8 +366,11 @@ class EQSidebar extends HTMLElement {
     // Default: Clear all
     links.forEach(l => l.classList.remove('active'));
 
-    // Highlight Read Quran / Hadith Reader tabs (Main tabs)
-    if (path.startsWith('/quran')) {
+    // Highlight Read Quran / Full Quran / Hadith Reader tabs
+    if (path.includes('/quran/full')) {
+        const fullTab = this.querySelector('#tab-full-quran');
+        if (fullTab) fullTab.classList.add('active');
+    } else if (path === '/quran' || path === '/quran/index.html' || (path.startsWith('/quran') && !path.includes('/full'))) {
         const quranTab = this.querySelector('#tab-read');
         if (quranTab) quranTab.classList.add('active');
     } else if (path.startsWith('/hadith')) {
@@ -399,6 +393,9 @@ class EQSidebar extends HTMLElement {
     } else {
         links.forEach(link => {
             const href = link.getAttribute('href');
+            // SKIP main reader tabs to prevent double-highlighting
+            if (link.id === 'tab-read' || link.id === 'tab-full-quran' || link.id === 'tab-hadith') return;
+            
             if (href) {
                 const cleanHref = href.replace(/\/$/, '');
                 // Precise match: collection links start with /hadith/COLL
