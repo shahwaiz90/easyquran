@@ -222,8 +222,9 @@ async function renderHomeScreen() {
     const playerBar = document.getElementById('audio-player-bar');
 
     if (dashHeader) dashHeader.style.display = 'flex';
-    if (readHeaderBack) readHeaderBack.classList.remove('active');
-    if (readHeaderRight) readHeaderRight.classList.remove('active');
+    if (readHeaderBack) readHeaderBack.style.display = 'none';
+    if (readHeaderCenter) readHeaderCenter.style.display = 'none';
+    if (readHeaderRight) readHeaderRight.style.display = 'none';
     if (playerBar) playerBar.style.display = 'none';
 
     document.body.classList.remove('reader-view');
@@ -531,9 +532,10 @@ async function loadSurah(surahId, startAyah = null, isSingle = false) {
             const verses = document.getElementById('verses-container');
             const playerBar = document.getElementById('audio-player-bar');
 
-            if (dashHeader) dashHeader.style.display = 'flex'; // Keep consistent in reader
-            if (readHeaderBack) readHeaderBack.classList.add('active');
-            if (readHeaderRight) readHeaderRight.classList.add('active');
+            if (dashHeader) dashHeader.style.display = 'none'; 
+            if (readHeaderCenter) readHeaderCenter.style.display = 'flex';
+            if (readHeaderBack) readHeaderBack.style.display = 'flex';
+            if (readHeaderRight) readHeaderRight.style.display = 'flex';
 
             document.body.classList.add('reader-view');
             document.body.classList.remove('dashboard-view');
