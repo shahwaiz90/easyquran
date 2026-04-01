@@ -248,11 +248,8 @@ async function renderHomeScreen() {
                     </div>
                     <div class="progress-text">
                         <div class="progress-label">Continue Your Journey</div>
-<<<<<<< HEAD
-                        <div class="progress-title">${allChapters[lastRead.surah-1]?.name_simple || 'Surah ' + lastRead.surah} • ${lastRead.ayah}</div>
-=======
                         <div class="progress-title">${allChapters[lastRead.surah - 1]?.name_simple || 'Surah ' + lastRead.surah} • ${lastRead.ayah}</div>
->>>>>>> feature/full-quran-arabic
+
                     </div>
                 </div>
             ` : ''}
@@ -535,16 +532,7 @@ async function loadSurah(surahId, startAyah = null, isSingle = false) {
             const verses = document.getElementById('verses-container');
             const playerBar = document.getElementById('audio-player-bar');
 
-<<<<<<< HEAD
-            if (dashHeader) dashHeader.style.display = 'flex'; // Keep consistent in reader
-            if (readHeaderBack) readHeaderBack.classList.add('active');
-            if (readHeaderRight) readHeaderRight.classList.add('active');
-            
-            document.body.classList.add('reader-view');
-            document.body.classList.remove('dashboard-view');
-            
-=======
-            if (dashHeader) dashHeader.style.display = 'none'; 
+            if (dashHeader) dashHeader.style.display = 'none';
             if (readHeaderCenter) readHeaderCenter.style.display = 'flex';
             if (readHeaderBack) readHeaderBack.style.display = 'flex';
             if (readHeaderRight) readHeaderRight.style.display = 'flex';
@@ -552,7 +540,6 @@ async function loadSurah(surahId, startAyah = null, isSingle = false) {
             document.body.classList.add('reader-view');
             document.body.classList.remove('dashboard-view');
 
->>>>>>> feature/full-quran-arabic
             if (home) home.style.display = 'none';
             if (verses) verses.style.display = 'block';
             if (playerBar) playerBar.style.display = 'flex';
@@ -1403,22 +1390,12 @@ function shareVerse(verseKey) {
         window.open(whatsappUrl, '_blank');
     }
 }
-
-<<<<<<< HEAD
-function showLoading(s) { 
-    const loading = document.getElementById('loading');
-    const home = document.getElementById('home-dashboard');
-    const verses = document.getElementById('verses-container');
-    
-    if (loading) loading.style.display = s ? 'flex' : 'none'; 
-=======
 function showLoading(s) {
     const loading = document.getElementById('loading');
     const home = document.getElementById('home-dashboard');
     const verses = document.getElementById('verses-container');
 
     if (loading) loading.style.display = s ? 'flex' : 'none';
->>>>>>> feature/full-quran-arabic
     if (home) home.style.display = s ? 'none' : (document.body.classList.contains('dashboard-view') ? 'block' : 'none');
     if (verses) verses.style.display = s ? 'none' : (document.body.classList.contains('reader-view') ? 'block' : 'none');
 }
