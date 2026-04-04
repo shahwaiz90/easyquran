@@ -1,0 +1,41 @@
+const QURAN_16_LINES_DATA = {
+    parahs: [
+        { id: 1, name: "Alif Lam Meem", nameArabic: "الم", url: "assets/parah/Colour Coded Quran Juz 01.pdf" },
+        { id: 2, name: "Sayaqool", nameArabic: "سيقول", url: "assets/parah/Colour Coded Quran Juz 02.pdf" },
+        { id: 3, name: "Tilkal Rusul", nameArabic: "تلك الرسل", url: "assets/parah/Colour Coded Quran Juz 03.pdf" },
+        { id: 4, name: "Lan Tana Loo", nameArabic: "لن تنالوا", url: "assets/parah/Colour Coded Quran Juz 04.pdf" },
+        { id: 5, name: "Wal Mohsanat", nameArabic: "والمحصنات", url: "assets/parah/Colour Coded Quran Juz 05.pdf" },
+        { id: 6, name: "La Yuhibbullah", nameArabic: "لا يحب الله", url: "assets/parah/Colour Coded Quran Juz 06.pdf" },
+        { id: 7, name: "Wa Iza Samiu", nameArabic: "وإذا سمعوا", url: "assets/parah/Colour Coded Quran Juz 07.pdf" },
+        { id: 8, name: "Wa Lau Annana", nameArabic: "ولو أننا", url: "assets/parah/Colour Coded Quran Juz 08.pdf" },
+        { id: 9, name: "Qalalu Mala", nameArabic: "قال الملأ", url: "assets/parah/Colour Coded Quran Juz 09.pdf" },
+        { id: 10, name: "Wa'lamu", nameArabic: "واعملوا", url: "assets/parah/Colour Coded Quran Juz 10.pdf" },
+        { id: 11, name: "Ya'tazeeroon", nameArabic: "يعتذرون", url: "assets/parah/Colour Coded Quran Juz 11.pdf" },
+        { id: 12, name: "Wa Ma Min Da'abbah", nameArabic: "وما من دابة", url: "assets/parah/Colour Coded Quran Juz 12.pdf" },
+        { id: 13, name: "Wa Ma Ubarri'u", nameArabic: "وما أبرئ", url: "assets/parah/Colour Coded Quran Juz 13.pdf" },
+        { id: 14, name: "Alif Lam Ra", nameArabic: "الر", url: "assets/parah/Colour Coded Quran Juz 14.pdf" },
+        { id: 15, name: "Subhanallazi", nameArabic: "سبحان الذي", url: "assets/parah/Colour Coded Quran Juz 15.pdf" },
+        { id: 16, name: "Qal Alam", nameArabic: "قال ألم", url: "assets/parah/Colour Coded Quran Juz 16.pdf" },
+        { id: 17, name: "Aqtaraba", nameArabic: "اقترب", url: "assets/parah/Colour Coded Quran Juz 17.pdf" },
+        { id: 18, name: "Qad Aflaha", nameArabic: "قد أفلح", url: "assets/parah/Colour Coded Quran Juz 18.pdf" },
+        { id: 19, name: "Wa Qalallazina", nameArabic: "وقال الذين", url: "assets/parah/Colour Coded Quran Juz 19.pdf" },
+        { id: 20, name: "Aman Khalaq", nameArabic: "أمن خلق", url: "assets/parah/Colour Coded Quran Juz 20.pdf" },
+        { id: 21, name: "Utlu Ma Oohi", nameArabic: "اتل ما أوحى", url: "assets/parah/Colour Coded Quran Juz 21.pdf" },
+        { id: 22, name: "Wa May Yaqnut", nameArabic: "ومن يقنت", url: "assets/parah/Colour Coded Quran Juz 22.pdf" },
+        { id: 23, name: "Wa Mali", nameArabic: "وما لي", url: "assets/parah/Colour Coded Quran Juz 23.pdf" },
+        { id: 24, name: "Faman Azlam", nameArabic: "فمن أظلم", url: "assets/parah/Colour Coded Quran Juz 24.pdf" },
+        { id: 25, name: "Ilaihi Yuraddu", nameArabic: "إليه يرد", url: "assets/parah/Colour Coded Quran Juz 25.pdf" },
+        { id: 26, name: "Ha Meem", nameArabic: "حم", url: "assets/parah/Colour Coded Quran Juz 26.pdf" },
+        { id: 27, name: "Qala Fa Ma Khatbukum", nameArabic: "قال فما خطبكم", url: "assets/parah/Colour Coded Quran Juz 27.pdf" },
+        { id: 28, name: "Qad Sami Allah", nameArabic: "قد سمع الله", url: "assets/parah/Colour Coded Quran Juz 28.pdf" },
+        { id: 29, name: "Tabarakallazi", nameArabic: "تبارك الذي", url: "assets/parah/Colour Coded Quran Juz 29.pdf" },
+        { id: 30, name: "Amma Yatasa'aloon", nameArabic: "عم يتساءلون", url: "assets/parah/Colour Coded Quran Juz 30.pdf" }
+    ],
+    tajweed_rules: [
+        { id: "ghunna", color: "#E91E63", name: "Ghunna", description: "Nasalization - Applied when Noon or Meem has a Shaddah.", audio: "https://www.everyayah.com/data/Tajweed_Rules/Ghunna.mp3" },
+        { id: "ikhfa", color: "#4CAF50", name: "Ikhfa", description: "Hiding / Concealment - Soft nasal sound when Noon Saakin or Tanween is followed by Ikhfa letters.", audio: "https://www.everyayah.com/data/Tajweed_Rules/Ikhfa.mp3" },
+        { id: "idgham", color: "#00BCD4", name: "Idgham", description: "Assimilation / Merging - Merging Noon Saakin or Tanween into the next letter.", audio: "https://www.everyayah.com/data/Tajweed_Rules/Idgham.mp3" },
+        { id: "qalqalah", color: "#3F51B5", name: "Qalqalah", description: "Echoing / Bouncing - Vibration in the sound when certain letters are Saakin.", audio: "https://www.everyayah.com/data/Tajweed_Rules/Qalqalah.mp3" },
+        { id: "madd", color: "#FF5722", name: "Madd", description: "Prolongation / Stretch - Stretching the vowel sound.", audio: "https://www.everyayah.com/data/Tajweed_Rules/Madd.mp3" }
+    ]
+};

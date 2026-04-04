@@ -301,6 +301,10 @@ class EQSidebar extends HTMLElement {
                 <i data-lucide="library"></i>
                 <span>Hadith Reader</span>
             </a>
+            <a href="/quran/16-lines.html" class="nav-link ${activeTab === '16-lines' ? 'active' : ''}" id="tab-16-lines">
+                <i data-lucide="book"></i>
+                <span>16-Line Tajweed Quran</span>
+            </a>
 
             <div class="nav-divider"></div>
             
@@ -370,7 +374,10 @@ class EQSidebar extends HTMLElement {
     if (path.includes('/quran/full')) {
         const fullTab = this.querySelector('#tab-full-quran');
         if (fullTab) fullTab.classList.add('active');
-    } else if (path === '/quran' || path === '/quran/index.html' || (path.startsWith('/quran') && !path.includes('/full'))) {
+    } else if (path.includes('/quran/16-lines')) {
+        const linesTab = this.querySelector('#tab-16-lines');
+        if (linesTab) linesTab.classList.add('active');
+    } else if (path === '/quran' || path === '/quran/index.html' || (path.startsWith('/quran') && !path.includes('/full') && !path.includes('/16-lines'))) {
         const quranTab = this.querySelector('#tab-read');
         if (quranTab) quranTab.classList.add('active');
     } else if (path.startsWith('/hadith')) {

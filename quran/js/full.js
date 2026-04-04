@@ -1,3 +1,12 @@
+// Expose global clear function immediately
+window.clearFullHistory = function() {
+    if (confirm('Clear all reading history and start from the beginning of the Quran?')) {
+        localStorage.removeItem('full_quran_last_page');
+        localStorage.removeItem('full_quran_history_v2');
+        window.location.reload();
+    }
+};
+
 let currentScript = 'indopak';
 let loadedPages = [];
 let isLoadingBatch = false;
@@ -46,6 +55,15 @@ const getAyahSelect = () => document.getElementById('ayah-select');
 const getPageInput = () => document.getElementById('page-jump-input');
 
 // --- Initialization & Data Fetching ---
+
+// Expose to global scope
+window.clearFullHistory = function() {
+    if (confirm('Clear all reading history and start from the beginning of the Quran?')) {
+        localStorage.removeItem('full_quran_last_page');
+        localStorage.removeItem('full_quran_history_v2');
+        window.location.reload();
+    }
+};
 
 async function ensureDataReady() {
     if (typeof TARTEEL_TAJ_DATA !== 'undefined' && Object.keys(TARTEEL_TAJ_DATA).length > 0) {

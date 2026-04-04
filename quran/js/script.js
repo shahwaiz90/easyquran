@@ -237,7 +237,7 @@ async function renderHomeScreen() {
     const history = JSON.parse(localStorage.getItem('quran_history') || '[]');
 
     let html = `
-        <div class="hero-card" ${lastRead ? `onclick="navToSurah(${lastRead.surah}, ${lastRead.ayah})" style="cursor: pointer;"` : ''}>
+        <div class="hero-card" ${lastRead ? `onclick="${lastRead.type === '16-lines' ? `location.href='16-lines.html?p=${lastRead.parahId}&pg=${lastRead.page}'` : `navToSurah(${lastRead.surah}, ${lastRead.ayah})`}" style="cursor: pointer;"` : ''}>
             <h1 style="font-size: 3rem; font-weight: 850; margin-bottom: 12px; color: #ffffff; text-shadow: 0 2px 30px rgba(0,0,0,0.1); letter-spacing: -1px;">Assalamu Alaikum</h1>
             <p style="opacity: 0.98; font-size: 1.25rem; max-width: 700px; margin-bottom: 35px; line-height: 1.6; color: rgba(255,255,255,0.95);">Welcome to your premium Quran study companion. Explore deep translations and scholarly tafseers in a distraction-free environment.</p>
             
@@ -248,8 +248,12 @@ async function renderHomeScreen() {
                     </div>
                     <div class="progress-text">
                         <div class="progress-label">Continue Your Journey</div>
-                        <div class="progress-title">${allChapters[lastRead.surah - 1]?.name_simple || 'Surah ' + lastRead.surah} • ${lastRead.ayah}</div>
-
+                        <div class="progress-title">
+                            ${lastRead.type === '16-lines' 
+                                ? `Parah ${lastRead.parahId} (16-Line) • Page ${lastRead.page}`
+                                : `${allChapters[lastRead.surah - 1]?.name_simple || 'Surah ' + lastRead.surah} • Ayah ${lastRead.ayah}`
+                            }
+                        </div>
                     </div>
                 </div>
             ` : ''}
@@ -277,6 +281,45 @@ async function renderHomeScreen() {
             </div>
         `;
     }
+
+    html += `
+        <div class="learning-section">
+            <h3 class="section-title"><i data-lucide="graduation-cap"></i> Foundational Learning</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 25px; opacity: 0.8;">New to reading Quran? Start with these essential guides to master Arabic pronunciation and Tajweed.</p>
+            <div class="learning-grid">
+                <div class="learning-card" onclick="window.open('assets/Noorani-Qaidah-urdu.pdf', '_blank')">
+                    <div class="learning-card-icon">
+                        <i data-lucide="book"></i>
+                    </div>
+                    <div class="learning-card-info">
+                        <div class="learning-name">Noorani Qaida</div>
+                        <div class="learning-desc">The standard foundation for Arabic phonetics and letter recognition.</div>
+                    </div>
+                    <div class="learning-tag">Crucial</div>
+                </div>
+                <div class="learning-card" onclick="window.open('assets/Yassarnal Quran.pdf', '_blank')">
+                    <div class="learning-card-icon">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <div class="learning-card-info">
+                        <div class="learning-name">Yassarnal Quran</div>
+                        <div class="learning-desc">A step-by-step methodology to achieve fluency in Quranic reading.</div>
+                    </div>
+                    <div class="learning-tag">Popular</div>
+                </div>
+                <div class="learning-card" onclick="window.open('assets/Simple rules of Tajweed.pdf', '_blank')">
+                    <div class="learning-card-icon">
+                        <i data-lucide="mic"></i>
+                    </div>
+                    <div class="learning-card-info">
+                        <div class="learning-name">Tajweed Rules</div>
+                        <div class="learning-desc">Essential rules for beautiful and correct Quranic recitation.</div>
+                    </div>
+                    <div class="learning-tag">Premium</div>
+                </div>
+            </div>
+        </div>
+    `;
 
     html += `
         <div class="surah-section">

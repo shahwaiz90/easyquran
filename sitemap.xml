@@ -11,27 +11,28 @@
 
   <url>
     <loc>https://easyquran.app/quran/</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://easyquran.app/listenquran.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <loc>https://easyquran.app/quran/16-lines.html</loc>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://easyquran.app/quran/surah.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://easyquran.app/quran/full.html</loc>
-    <lastmod>2026-04-02</lastmod>
+    <lastmod>2026-04-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
