@@ -324,7 +324,7 @@ class EQSidebar extends HTMLElement {
                     <a href="/hadith/malik/" class="nav-link" data-collection="malik"><i data-lucide="scroll"></i><span>Muwatta Malik</span></a>
                     <a href="/hadith/ahmad/" class="nav-link" data-collection="ahmad"><i data-lucide="scroll"></i><span>Musnad Ahmad</span></a>
                 </div>
-            ` : activeTab === 'full-quran' ? `
+            ` : (activeTab === 'full-quran' || activeTab === '16-lines') ? `
                 <!-- Cleaned up per user request -->
             ` : `
                 <div class="nav-section-title">Translations & Tools</div>

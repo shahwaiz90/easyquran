@@ -2,16 +2,17 @@
 <html lang="en">
 
 <head>
-    <style>
-      @media (max-width: 700px) {
-        .video-grid {
-          grid-template-columns: 1fr !important;
-        }
-        .feature-grid.reviews-grid {
-          grid-template-columns: 1fr !important;
-        }
+  <style>
+    @media (max-width: 700px) {
+      .video-grid {
+        grid-template-columns: 1fr !important;
       }
-    </style>
+
+      .feature-grid.reviews-grid {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -1210,7 +1211,8 @@
       scroll-behavior: smooth;
       scrollbar-width: none;
       -ms-overflow-style: none;
-      padding: 40px 10vw; /* Side padding for partial views */
+      padding: 40px 10vw;
+      /* Side padding for partial views */
     }
 
     .video-carousel::-webkit-scrollbar {
@@ -1218,7 +1220,8 @@
     }
 
     .video-carousel-item {
-      flex: 0 0 85vw; /* Almost full width on mobile */
+      flex: 0 0 85vw;
+      /* Almost full width on mobile */
       scroll-snap-align: center;
       border-radius: 28px;
       overflow: hidden;
@@ -1246,6 +1249,7 @@
       .video-carousel-item {
         flex: 0 0 600px;
       }
+
       .video-carousel {
         padding: 40px 20vw;
       }
@@ -1255,6 +1259,7 @@
       .video-carousel-item {
         flex: 0 0 800px;
       }
+
       .video-carousel {
         padding: 40px 30vw;
       }
@@ -1334,8 +1339,14 @@
         height: 50px;
         font-size: 18px;
       }
-      .carousel-control.prev { left: 10px; }
-      .carousel-control.next { right: 10px; }
+
+      .carousel-control.prev {
+        left: 10px;
+      }
+
+      .carousel-control.next {
+        right: 10px;
+      }
     }
 
     .carousel-indicators {
@@ -1458,6 +1469,7 @@
       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
     }
+
     @media (min-width: 992px) {
       .mobile-only {
         display: none !important;
@@ -1487,12 +1499,12 @@
 
     .goals-card {
       z-index: 1;
-      background: rgba(255,255,255,0.1);
+      background: rgba(255, 255, 255, 0.1);
       padding: 25px;
       border-radius: 15px;
       backdrop-filter: blur(10px);
       min-width: 280px;
-      border: 1px solid rgba(255,255,255,0.2);
+      border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     @media (max-width: 768px) {
@@ -1501,21 +1513,25 @@
         flex-direction: column;
         text-align: center;
       }
+
       .goals-content {
         min-width: 100%;
       }
+
       .goals-card {
         width: 100%;
         min-width: 100%;
       }
+
       .goals-content .cta-buttons {
-          display: flex;
-          flex-direction: column;
-          gap: 15px;
-          align-items: stretch;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
       }
+
       .goals-content h2 {
-          font-size: 28px !important;
+        font-size: 28px !important;
       }
     }
 
@@ -1528,7 +1544,7 @@
       gap: 20px;
       text-decoration: none;
       color: #2D3748;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
       transition: all 0.3s;
       border: 1px solid transparent;
     }
@@ -1635,8 +1651,7 @@
 
 
           <div class="hero-content">
-            <h1 id="hero-title"
-              style="font-size: 56px; font-weight: 800; line-height: 1.1; margin-bottom: 24px;">The
+            <h1 id="hero-title" style="font-size: 56px; font-weight: 800; line-height: 1.1; margin-bottom: 24px;">The
               Quran App for Every Muslim Family</h1>
             <p class="tagline"
               style="font-size: 20px; opacity: 0.95; line-height: 1.6; margin-bottom: 24px; max-width: 600px;">
@@ -1644,12 +1659,15 @@
               <span style="color:#F6AD55; font-weight:700;">Authentic • Ad-Free • Family Friendly</span>
             </p>
 
-            <div class="language-support" style="margin-bottom: 32px; display: flex; flex-direction: column; gap: 8px; animation: fadeInUp .8s ease .2s both;">
-              <p style="font-size: 14px; opacity: 0.8; margin: 0; font-weight: 500; display: flex; align-items: center; gap: 8px;">
+            <div class="language-support"
+              style="margin-bottom: 32px; display: flex; flex-direction: column; gap: 8px; animation: fadeInUp .8s ease .2s both;">
+              <p
+                style="font-size: 14px; opacity: 0.8; margin: 0; font-weight: 500; display: flex; align-items: center; gap: 8px;">
                 <span style="font-size: 18px;">🌐</span> Breaking Barriers: Now with 11+ Global Translations
               </p>
               <div style="display: flex; gap: 10px; flex-wrap: wrap; opacity: 0.9;">
-                <span class="lang-tag" title="Bengali" style="font-weight: 700; border-color: rgba(246, 173, 85, 0.4);">🇧🇩 Bengali</span>
+                <span class="lang-tag" title="Bengali"
+                  style="font-weight: 700; border-color: rgba(246, 173, 85, 0.4);">🇧🇩 Bengali</span>
                 <span class="lang-tag" title="Urdu">🇵🇰 Urdu</span>
                 <span class="lang-tag" title="English">🇬🇧 English</span>
                 <span class="lang-tag" title="Turkish">🇹🇷 Turkish</span>
@@ -1673,6 +1691,7 @@
                 white-space: nowrap;
                 transition: all 0.2s ease;
               }
+
               .lang-tag:hover {
                 background: rgba(255, 255, 255, 0.2);
                 border-color: rgba(246, 173, 85, 0.5);
@@ -1769,7 +1788,8 @@
             <p style="font-size: 18px; opacity: 0.9; margin-bottom: 25px;">Build a Quran habit. Choose from 5,
               10, 30, or 60 minutes daily goals. Track your streak and understanding.</p>
             <div class="cta-buttons">
-              <a href="goals.html" class="btn btn-primary" style="border: none; color: #004D40;">View Goals Challenge</a>
+              <a href="goals.html" class="btn btn-primary" style="border: none; color: #004D40;">View Goals
+                Challenge</a>
             </div>
           </div>
 
@@ -1783,7 +1803,8 @@
                 <div style="font-size: 20px; font-weight: 800;">30 Mins Daily</div>
               </div>
             </div>
-            <div style="height: 8px; background: rgba(255,255,255,0.2); border-radius: 10px; margin-bottom: 10px; overflow: hidden;">
+            <div
+              style="height: 8px; background: rgba(255,255,255,0.2); border-radius: 10px; margin-bottom: 10px; overflow: hidden;">
               <div style="width: 70%; height: 100%; background: #F6AD55; border-radius: 10px;"></div>
             </div>
             <div style="font-size: 14px; opacity: 0.9; display: flex; justify-content: space-between;">
@@ -1864,128 +1885,157 @@
     </section>
 
     <!-- ENHANCED POPULAR SURAHS GRID (Item 2) -->
-    <section class="features mobile-only" style="background: #F7FAFC; padding: 100px 0; border-bottom: 1px solid #E2E8F0;">
+    <section class="features mobile-only"
+      style="background: #F7FAFC; padding: 100px 0; border-bottom: 1px solid #E2E8F0;">
       <div class="container">
         <div style="text-align: center; margin-bottom: 50px;">
-          <h2 class="section-title" style="font-size: 42px; color: #004D40 !important; margin-bottom: 16px;">Read the Holy Quran</h2>
+          <h2 class="section-title" style="font-size: 42px; color: #004D40 !important; margin-bottom: 16px;">Read the
+            Holy Quran</h2>
           <p class="section-subtitle" style="font-size: 20px; max-width: 700px; margin: 0 auto;">
             Launch your favorite Surahs directly in the Easy Quran app for an ad-free, immersive reading experience.
           </p>
         </div>
-        
+
         <div class="surah-grid" style="grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 25px;">
           <!-- 1. Al-Fatiha -->
-          <a href="/surah/1" class="surah-card" style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
-            <div style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
+          <a href="/surah/1" class="surah-card"
+            style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div
+              style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
               <span class="surah-number" style="background: #004D40; color: white;">01</span>
               <span style="font-size: 24px; opacity: 0.1;">📖</span>
             </div>
             <span class="surah-name" style="font-size: 20px; margin-bottom: 4px;">Al-Fatiha</span>
             <span class="surah-name-ar" style="font-size: 26px; color: #004D40; margin-bottom: 15px;">الفاتحة</span>
-            <div style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
+            <div
+              style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
               Open in App ↗
             </div>
           </a>
 
           <!-- 2. Al-Baqarah -->
-          <a href="/surah/2" class="surah-card" style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
-            <div style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
+          <a href="/surah/2" class="surah-card"
+            style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div
+              style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
               <span class="surah-number" style="background: #004D40; color: white;">02</span>
               <span style="font-size: 24px; opacity: 0.1;">📖</span>
             </div>
             <span class="surah-name" style="font-size: 20px; margin-bottom: 4px;">Al-Baqarah</span>
             <span class="surah-name-ar" style="font-size: 26px; color: #004D40; margin-bottom: 15px;">البقرة</span>
-            <div style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
+            <div
+              style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
               Open in App ↗
             </div>
           </a>
 
           <!-- 3. Al-Kahf -->
-          <a href="/surah/18" class="surah-card" style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
-            <div style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
+          <a href="/surah/18" class="surah-card"
+            style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div
+              style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
               <span class="surah-number" style="background: #004D40; color: white;">18</span>
               <span style="font-size: 24px; opacity: 0.1;">📖</span>
             </div>
             <span class="surah-name" style="font-size: 20px; margin-bottom: 4px;">Al-Kahf</span>
             <span class="surah-name-ar" style="font-size: 26px; color: #004D40; margin-bottom: 15px;">الكهف</span>
-            <div style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
+            <div
+              style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
               Open in App ↗
             </div>
           </a>
 
           <!-- 4. Ya-Sin -->
-          <a href="/surah/36" class="surah-card" style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
-            <div style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
+          <a href="/surah/36" class="surah-card"
+            style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div
+              style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
               <span class="surah-number" style="background: #004D40; color: white;">36</span>
               <span style="font-size: 24px; opacity: 0.1;">📖</span>
             </div>
             <span class="surah-name" style="font-size: 20px; margin-bottom: 4px;">Ya-Sin</span>
             <span class="surah-name-ar" style="font-size: 26px; color: #004D40; margin-bottom: 15px;">يس</span>
-            <div style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
+            <div
+              style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
               Open in App ↗
             </div>
           </a>
 
           <!-- 5. Ar-Rahman -->
-          <a href="/surah/55" class="surah-card" style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
-            <div style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
+          <a href="/surah/55" class="surah-card"
+            style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div
+              style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
               <span class="surah-number" style="background: #004D40; color: white;">55</span>
               <span style="font-size: 24px; opacity: 0.1;">📖</span>
             </div>
             <span class="surah-name" style="font-size: 20px; margin-bottom: 4px;">Ar-Rahman</span>
             <span class="surah-name-ar" style="font-size: 26px; color: #004D40; margin-bottom: 15px;">الرحمن</span>
-            <div style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
+            <div
+              style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
               Open in App ↗
             </div>
           </a>
 
           <!-- 6. Al-Mulk -->
-          <a href="/surah/67" class="surah-card" style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
-            <div style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
+          <a href="/surah/67" class="surah-card"
+            style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div
+              style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
               <span class="surah-number" style="background: #004D40; color: white;">67</span>
               <span style="font-size: 24px; opacity: 0.1;">📖</span>
             </div>
             <span class="surah-name" style="font-size: 20px; margin-bottom: 4px;">Al-Mulk</span>
             <span class="surah-name-ar" style="font-size: 26px; color: #004D40; margin-bottom: 15px;">الملك</span>
-            <div style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
+            <div
+              style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
               Open in App ↗
             </div>
           </a>
 
           <!-- 7. Al-Waqi'ah (Added) -->
-          <a href="/surah/56" class="surah-card" style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
-            <div style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
+          <a href="/surah/56" class="surah-card"
+            style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div
+              style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
               <span class="surah-number" style="background: #004D40; color: white;">56</span>
               <span style="font-size: 24px; opacity: 0.1;">📖</span>
             </div>
             <span class="surah-name" style="font-size: 20px; margin-bottom: 4px;">Al-Waqi'ah</span>
             <span class="surah-name-ar" style="font-size: 26px; color: #004D40; margin-bottom: 15px;">الواقعة</span>
-            <div style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
+            <div
+              style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
               Open in App ↗
             </div>
           </a>
 
           <!-- 8. Al-Muzzammil (Added) -->
-          <a href="/surah/73" class="surah-card" style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
-            <div style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
+          <a href="/surah/73" class="surah-card"
+            style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div
+              style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
               <span class="surah-number" style="background: #004D40; color: white;">73</span>
               <span style="font-size: 24px; opacity: 0.1;">📖</span>
             </div>
             <span class="surah-name" style="font-size: 20px; margin-bottom: 4px;">Al-Muzzammil</span>
             <span class="surah-name-ar" style="font-size: 26px; color: #004D40; margin-bottom: 15px;">المزمل</span>
-            <div style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
+            <div
+              style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
               Open in App ↗
             </div>
           </a>
           <!-- 9. Maryam (Added) -->
-          <a href="/surah/19" class="surah-card" style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
-            <div style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
+          <a href="/surah/19" class="surah-card"
+            style="background: white; border: 1px solid #E6F4F1; border-radius: 20px; padding: 30px; box-shadow: 0 4px 20px rgba(0,0,0,0.03);">
+            <div
+              style="display: flex; justify-content: space-between; width: 100%; align-items: flex-start; margin-bottom: 15px;">
               <span class="surah-number" style="background: #004D40; color: white;">19</span>
               <span style="font-size: 24px; opacity: 0.1;">📖</span>
             </div>
             <span class="surah-name" style="font-size: 20px; margin-bottom: 4px;">Maryam</span>
             <span class="surah-name-ar" style="font-size: 26px; color: #004D40; margin-bottom: 15px;">مريم</span>
-            <div style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
+            <div
+              style="background: #E6F4F1; color: #004D40; padding: 6px 16px; border-radius: 50px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; text-transform: uppercase;">
               Open in App ↗
             </div>
           </a>
@@ -2073,7 +2123,8 @@
     </section>
 
     <!-- Reviews Section (Moved Above Team) -->
-    <section class="screenshots-section" id="reviews" aria-labelledby="reviews-title" style="background: transparent !important; box-shadow: none !important;">
+    <section class="screenshots-section" id="reviews" aria-labelledby="reviews-title"
+      style="background: transparent !important; box-shadow: none !important;">
       <div class="container">
 
         <!-- 2. Reviews Section -->
@@ -2083,59 +2134,134 @@
           Trusted by thousands of users worldwide on Google Play
         </p>
         <!-- 1. Video Reviews Grid (3x3, No Carousel, No Gradient) -->
-        <div class="video-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; width: 100%; max-width: 1500px; margin: 0 auto 60px auto;">
-         
+        <div class="video-grid"
+          style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; width: 100%; max-width: 1500px; margin: 0 auto 60px auto;">
+
           <!-- Video 1: Mufti Ibrahim Essa -->
-          <div class="video-review-card" style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; transition: box-shadow 0.3s, transform 0.3s; position: relative; overflow: hidden;">
-            <div style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
-              <iframe width="100%" height="260" loading="lazy" style="border-radius: 18px; border: none; display: block; background: #fff;" src="https://www.youtube-nocookie.com/embed/yOiCxKvzVwg?rel=0&modestbranding=1" title="Mufti Ibrahim Essa Recommendation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="video-review-card"
+            style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; transition: box-shadow 0.3s, transform 0.3s; position: relative; overflow: hidden;">
+            <div
+              style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
+              <iframe width="100%" height="260" loading="lazy"
+                style="border-radius: 18px; border: none; display: block; background: #fff;"
+                src="https://www.youtube-nocookie.com/embed/yOiCxKvzVwg?rel=0&modestbranding=1"
+                title="Mufti Ibrahim Essa Recommendation" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </div>
-            <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">Mufti Ibrahim Essa</h3>
+            <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
+              Mufti Ibrahim Essa</h3>
             <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Scholar Recommendation</p>
-            <div class="video-card-info" style="width: 100%; text-align: center; background: none !important; margin-top: 0; padding-top: 24px; display: none;"></div>
-          </div>  
-          
-          <!-- Video 2: Munawar Ahmed (Shorts) -->
-         <div class="video-review-card" style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; transition: box-shadow 0.3s, transform 0.3s; position: relative; overflow: hidden;">
-            <div style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
-              <iframe width="100%" height="260" loading="lazy" style="border-radius: 18px; border: none; display: block; background: #fff;" src="https://www.youtube-nocookie.com/embed/QRqqNfGBDHA?rel=0&modestbranding=1" title="Munawar Ahmed Data Architect Engineer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="video-card-info"
+              style="width: 100%; text-align: center; background: none !important; margin-top: 0; padding-top: 24px; display: none;">
             </div>
-            <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">Munawar Ahmed</h3>
+          </div>
+
+          <!-- Video 2: Munawar Ahmed (Shorts) -->
+          <div class="video-review-card"
+            style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; transition: box-shadow 0.3s, transform 0.3s; position: relative; overflow: hidden;">
+            <div
+              style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
+              <iframe width="100%" height="260" loading="lazy"
+                style="border-radius: 18px; border: none; display: block; background: #fff;"
+                src="https://www.youtube-nocookie.com/embed/QRqqNfGBDHA?rel=0&modestbranding=1"
+                title="Munawar Ahmed Data Architect Engineer" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
+              Munawar Ahmed</h3>
             <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Data Architect Engineer</p>
-            <div class="video-card-info" style="width: 100%; text-align: center; background: none !important; margin-top: 0; padding-top: 24px; display: none;"></div>
+            <div class="video-card-info"
+              style="width: 100%; text-align: center; background: none !important; margin-top: 0; padding-top: 24px; display: none;">
+            </div>
           </div>
 
           <!-- Video 3: Qari Sana Ullah -->
-         <div class="video-review-card" style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; transition: box-shadow 0.3s, transform 0.3s; position: relative; overflow: hidden;">
-            <div style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
-              <iframe width="100%" height="260" loading="lazy" style="border-radius: 18px; border: none; display: block; background: #fff;" src="https://www.youtube-nocookie.com/embed/MTsy2XKZmiU?rel=0&modestbranding=1" title="Qari Sana Ullah Recommendation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="video-review-card"
+            style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; transition: box-shadow 0.3s, transform 0.3s; position: relative; overflow: hidden;">
+            <div
+              style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
+              <iframe width="100%" height="260" loading="lazy"
+                style="border-radius: 18px; border: none; display: block; background: #fff;"
+                src="https://www.youtube-nocookie.com/embed/MTsy2XKZmiU?rel=0&modestbranding=1"
+                title="Qari Sana Ullah Recommendation" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </div>
-            <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">Qari Sana Ullah</h3>
-            <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Teaching of Quran Translation at Faisalabad Grammar School</p>
-            <div class="video-card-info" style="width: 100%; text-align: center; background: none !important; margin-top: 0; padding-top: 24px; display: none;"></div>
+            <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
+              Qari Sana Ullah</h3>
+            <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Teaching of Quran Translation
+              at Faisalabad Grammar School</p>
+            <div class="video-card-info"
+              style="width: 100%; text-align: center; background: none !important; margin-top: 0; padding-top: 24px; display: none;">
+            </div>
           </div>
 
           <!-- Video 4: Osama Naseem -->
-          <div class="video-review-card" style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; transition: box-shadow 0.3s, transform 0.3s; position: relative; overflow: hidden;">
-            <div style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
-             <iframe width="100%" height="260" loading="lazy" style="border-radius: 18px; border: none; display: block; background: #fff;" src="https://www.youtube-nocookie.com/embed/Qk9cvHcYtdc?rel=0&modestbranding=1" title="Osama Naseem – CEO, AdsSpider – Easy Quran Testimonial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="video-review-card"
+            style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; transition: box-shadow 0.3s, transform 0.3s; position: relative; overflow: hidden;">
+            <div
+              style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
+              <iframe width="100%" height="260" loading="lazy"
+                style="border-radius: 18px; border: none; display: block; background: #fff;"
+                src="https://www.youtube-nocookie.com/embed/Qk9cvHcYtdc?rel=0&modestbranding=1"
+                title="Osama Naseem – CEO, AdsSpider – Easy Quran Testimonial" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </div>
-            <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">Osama Naseem</h3>
-            <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">CEO, AdsSpider — User Testimonial & Review</p>
-            <div class="video-card-info" style="width: 100%; text-align: center; background: none !important; margin-top: 0; padding-top: 24px; display: none;"></div>
+            <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
+              Osama Naseem</h3>
+            <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">CEO, AdsSpider — User
+              Testimonial & Review</p>
+            <div class="video-card-info"
+              style="width: 100%; text-align: center; background: none !important; margin-top: 0; padding-top: 24px; display: none;">
+            </div>
           </div>
 
           <!-- Video 5: Influencer Review (Shorts) -->
-         <div class="video-review-card" style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; transition: box-shadow 0.3s, transform 0.3s; position: relative; overflow: hidden;">
-            <div style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
-             <iframe width="100%" height="260" loading="lazy" style="border-radius: 18px; border: none; display: block; background: #fff;" src="https://www.youtube-nocookie.com/embed/_Xcv7-zDCkQ?rel=0&modestbranding=1" title="Influencer App Review" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <div class="video-review-card"
+            style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; transition: box-shadow 0.3s, transform 0.3s; position: relative; overflow: hidden;">
+            <div
+              style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
+              <iframe width="100%" height="260" loading="lazy"
+                style="border-radius: 18px; border: none; display: block; background: #fff;"
+                src="https://www.youtube-nocookie.com/embed/_Xcv7-zDCkQ?rel=0&modestbranding=1"
+                title="Influencer App Review" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
             </div>
-            <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">Muddassar Altaf</h3>
-            <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Influencer Review — Features walkthrough and why users love the app</p>
-            <div class="video-card-info" style="width: 100%; text-align: center; background: none !important; margin-top: 0; padding-top: 24px; display: none;"></div>
-          </div>  
+            <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
+              Muddassar Altaf</h3>
+            <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Influencer Review — Features
+              walkthrough and why users love the app</p>
+            <div class="video-card-info"
+              style="width: 100%; text-align: center; background: none !important; margin-top: 0; padding-top: 24px; display: none;">
+            </div>
+          </div>
 
-          
+          <!-- Video 6: Haris Bin Abid (Shorts) -->
+          <div class="video-review-card"
+            style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; transition: box-shadow 0.3s, transform 0.3s; position: relative; overflow: hidden;">
+            <div
+              style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
+              <iframe width="100%" height="260" loading="lazy"
+                style="border-radius: 18px; border: none; display: block; background: #fff;"
+                src="https://www.youtube-nocookie.com/embed/ihqc3Li4nDE?rel=0&modestbranding=1"
+                title="Haris Bin Abid Review" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
+              Haris Bin Abid</h3>
+            <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Senior Software Engineer —
+              App performance and interface feedback</p>
+            <div class="video-card-info"
+              style="width: 100%; text-align: center; background: none !important; margin-top: 0; padding-top: 24px; display: none;">
+            </div>
+          </div>
+
+
         </div>
 
 
@@ -2159,34 +2285,47 @@
         </div>
 
         <!-- Reviews Grid -->
-        <div class="feature-grid reviews-grid" style="margin-bottom: 60px; max-width: 1200px; margin-left: auto; margin-right: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; background: none;">
+        <div class="feature-grid reviews-grid"
+          style="margin-bottom: 60px; max-width: 1200px; margin-left: auto; margin-right: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; background: none;">
           <!-- Featured: Hoor Fatima -->
-          <div class="feature-card review-card" style="border: 3px solid #F6AD55; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 18px; background: #fff;">
-            <div style="position: absolute; top: -18px; left: 18px; background: #F6AD55; color: #004D40; padding: 6px 18px; border-radius: 10px; font-weight: bold; font-size: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">★ Featured</div>
+          <div class="feature-card review-card"
+            style="border: 3px solid #F6AD55; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 18px; background: #fff;">
+            <div
+              style="position: absolute; top: -18px; left: 18px; background: #F6AD55; color: #004D40; padding: 6px 18px; border-radius: 10px; font-weight: bold; font-size: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+              ★ Featured</div>
             <div class="review-stars" style="color: #F6AD55; font-size: 24px; margin-bottom: 10px;">★★★★★</div>
-            <p class="review-text" style="font-size: 17px; font-style: italic; color: #222; margin-bottom: 18px;">"This Quran app is truly amazing and very easy to use. I really love the font style — it's clear,
+            <p class="review-text" style="font-size: 17px; font-style: italic; color: #222; margin-bottom: 18px;">"This
+              Quran app is truly amazing and very easy to use. I really love the font style — it's clear,
               beautiful,
               and very comfortable to read for a long time. The revelation order of the Surahs gives a deeper and more
               meaningful perspective while reading. May Allah reward the developers! 🌸"</p>
             <p class="review-author" style="font-weight: bold; color: #222; margin-top: 18px;">— Hoor Fatima</p>
           </div>
           <!-- Featured: Tallat Habib -->
-          <div class="feature-card review-card" style="border: 3px solid #F6AD55; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 18px; background: #fff;">
-            <div style="position: absolute; top: -18px; left: 18px; background: #F6AD55; color: #004D40; padding: 6px 18px; border-radius: 10px; font-weight: bold; font-size: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">★ Featured</div>
+          <div class="feature-card review-card"
+            style="border: 3px solid #F6AD55; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 18px; background: #fff;">
+            <div
+              style="position: absolute; top: -18px; left: 18px; background: #F6AD55; color: #004D40; padding: 6px 18px; border-radius: 10px; font-weight: bold; font-size: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+              ★ Featured</div>
             <div class="review-stars" style="color: #F6AD55; font-size: 24px; margin-bottom: 10px;">★★★★★</div>
-            <p class="review-text" style="font-size: 17px; font-style: italic; color: #222; margin-bottom: 18px;">"Very nice Quran app. No ads and completely free. It has all the required and very nice extra features
+            <p class="review-text" style="font-size: 17px; font-style: italic; color: #222; margin-bottom: 18px;">"Very
+              nice Quran app. No ads and completely free. It has all the required and very nice extra features
               such as tafseer as well."</p>
             <p class="review-author" style="font-weight: bold; color: #222; margin-top: 18px;">— Tallat Habib</p>
           </div>
           <!-- Regular Review -->
-          <div class="feature-card review-card" style="border: 3px solid #F6AD55; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 18px; background: #fff;">
+          <div class="feature-card review-card"
+            style="border: 3px solid #F6AD55; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 18px; background: #fff;">
             <div class="review-stars" style="color: #F6AD55; font-size: 24px; margin-bottom: 10px;">★★★★★</div>
-            <p class="review-text" style="font-size: 17px; font-style: italic; color: #222; margin-bottom: 18px;">"Impressive UI. Very simple to use. No Ads and easy to understand."</p>
+            <p class="review-text" style="font-size: 17px; font-style: italic; color: #222; margin-bottom: 18px;">
+              "Impressive UI. Very simple to use. No Ads and easy to understand."</p>
             <p class="review-author" style="font-weight: bold; color: #222; margin-top: 18px;">— Saad Azhar</p>
           </div>
         </div>
- <div class="feature-card review-card fade-up visible" style="border: 2px solid #F6AD55; max-width: 100%; display: flex; align-items: center; gap: 30px; text-align: left; padding: 40px !important; position: relative; flex-wrap: wrap;">
-          <div style="position: absolute; top: -12px; left: 30px; background: #F6AD55; color: #004D40; padding: 4px 15px; border-radius: 50px; font-weight: bold; font-size: 14px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+        <div class="feature-card review-card fade-up visible"
+          style="border: 2px solid #F6AD55; max-width: 100%; display: flex; align-items: center; gap: 30px; text-align: left; padding: 40px !important; position: relative; flex-wrap: wrap;">
+          <div
+            style="position: absolute; top: -12px; left: 30px; background: #F6AD55; color: #004D40; padding: 4px 15px; border-radius: 50px; font-weight: bold; font-size: 14px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
             Certificate of Authenticity</div>
           <div style="display:none"></div>
 
@@ -2195,15 +2334,18 @@
           <div style="flex: 1; min-width: 300px;">
             <h3 style="color: #004D40; margin-bottom: 8px; font-size: 24px;">Certified for Accuracy &amp; Trust</h3>
             <p class="review-text" style="font-size: 16px; line-height: 1.6; font-style: normal; margin-bottom: 0;">
-              Easy Quran has been rigorously reviewed and certified by recognized Islamic scholars (Mufti Ibrahim Essa) to ensure 100% accuracy of the Arabic text.
+              Easy Quran has been rigorously reviewed and certified by recognized Islamic scholars (Mufti Ibrahim Essa)
+              to ensure 100% accuracy of the Arabic text.
             </p>
           </div>
 
           <div style="display:flex; gap:15px; flex-wrap: wrap; width: 100%; justify-content: flex-start;">
-            <a href="CertificateEnglish.pdf" target="_blank" class="btn" style="font-size:14px; padding:12px 25px; border:none; border-radius:10px; text-decoration:none; color:#004D40 !important; background: #F6AD55; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+            <a href="CertificateEnglish.pdf" target="_blank" class="btn"
+              style="font-size:14px; padding:12px 25px; border:none; border-radius:10px; text-decoration:none; color:#004D40 !important; background: #F6AD55; font-weight: bold; display: flex; align-items: center; gap: 8px;">
               <span>📄</span> View English Certificate
             </a>
-            <a href="CertificateUrdu.pdf" target="_blank" class="btn" style="font-size:14px; padding:12px 25px; border:none; border-radius:10px; text-decoration:none; color:#004D40 !important; background: #F6AD55; font-weight: bold; display: flex; align-items: center; gap: 8px;">
+            <a href="CertificateUrdu.pdf" target="_blank" class="btn"
+              style="font-size:14px; padding:12px 25px; border:none; border-radius:10px; text-decoration:none; color:#004D40 !important; background: #F6AD55; font-weight: bold; display: flex; align-items: center; gap: 8px;">
               <span>📄</span> View Urdu Certificate
             </a>
           </div>
@@ -2312,7 +2454,7 @@
       const updateActiveState = () => {
         const carouselRect = carousel.getBoundingClientRect();
         const carouselCenter = carouselRect.left + carouselRect.width / 2;
-        
+
         let closestIndex = 0;
         let minDistance = Infinity;
 
@@ -2365,12 +2507,12 @@
         ind.addEventListener('click', () => {
           const itemWidth = getScrollAmount();
           const targetScroll = index * itemWidth;
-          
+
           // Centering logic override for clicking indicators
           const containerPadding = parseFloat(window.getComputedStyle(carousel).paddingLeft);
-          carousel.scrollTo({ 
-            left: index * itemWidth, 
-            behavior: 'smooth' 
+          carousel.scrollTo({
+            left: index * itemWidth,
+            behavior: 'smooth'
           });
         });
       });

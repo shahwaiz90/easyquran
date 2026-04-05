@@ -338,12 +338,12 @@ async function loadParah(id, startPage = 1) {
         renderedPages.clear();
         if (swiper) swiper.destroy();
 
-        // Initialize Swiper with Book Flip effect
+        // Initialize Swiper with smooth sliding transition
         swiper = new Swiper('#pdf-swiper', {
-            effect: 'flip',
+            effect: 'slide',
             dir: 'rtl',
             grabCursor: true,
-            speed: 600,
+            speed: 500,
             initialSlide: startPage - 1,
             on: {
                 afterInit: function() {
