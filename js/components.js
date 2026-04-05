@@ -325,31 +325,7 @@ class EQSidebar extends HTMLElement {
                     <a href="/hadith/ahmad/" class="nav-link" data-collection="ahmad"><i data-lucide="scroll"></i><span>Musnad Ahmad</span></a>
                 </div>
             ` : activeTab === 'full-quran' ? `
-                <div class="nav-section-title">READING SETTINGS</div>
-                <div style="padding: 15px;">
-                    <label style="font-size: 11px; color: rgba(255,255,255,0.4); display:block; margin-bottom: 5px;">Script Style</label>
-                    <select id="sidebar-script-select" class="select-modern" onchange="document.getElementById('script-select').value=this.value; document.getElementById('script-select').dispatchEvent(new Event('change'))">
-                        <option value="uthmani">Uthmani</option>
-                        <option value="indopak">IndoPak</option>
-                    </select>
-                    
-                    <label style="font-size: 11px; color: rgba(255,255,255,0.4); display:block; margin: 15px 0 5px;">Font Size</label>
-                    <input type="range" id="sidebar-font-size" min="1.5" max="4.5" step="0.1" value="2.8" style="width: 100%; height: 6px; accent-color: var(--accent-color);" oninput="document.querySelectorAll('.mushaf-style').forEach(m => m.style.fontSize = this.value + 'rem')">
-                </div>
-
-                <div class="nav-section-title">PARA / JUZ</div>
-                <div style="padding: 10px;">
-                    <select id="sidebar-juz-select" class="select-modern" onchange="document.getElementById('juz-select').value=this.value; document.getElementById('juz-select').dispatchEvent(new Event('change'))">
-                        <option value="" disabled selected>Select Para...</option>
-                    </select>
-                </div>
-
-                <div class="nav-section-title">RECITER</div>
-                <div style="padding: 10px;">
-                    <select id="sidebar-reciter-select" class="select-modern" onchange="changePlayerReciter(this.value); document.getElementById('player-reciter-select').value = this.value;">
-                        <!-- Populate via JS -->
-                    </select>
-                </div>
+                <!-- Cleaned up per user request -->
             ` : activeTab === '16-lines' ? `
                 <!-- Cleaned up per user request -->
             ` : `
