@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>16-Line Tajweed Quran - EasyQuran Reader</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Amiri:wght@400;700&display=swap"
+        rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     <script src="../js/components.js" defer></script>
     <!-- Navigation Data -->
@@ -37,7 +40,7 @@
         }
 
         .swiper-slide canvas {
-            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
             max-width: 100%;
             height: auto !important;
             background: white;
@@ -50,7 +53,7 @@
             align-items: center;
             width: 100%;
         }
-        
+
         .pdf-viewer-container {
             flex: 1;
             overflow: hidden;
@@ -59,7 +62,8 @@
             flex-direction: column;
             align-items: center;
             padding: 20px;
-            padding-bottom: 100px; /* Safe zone for floating controls */
+            padding-bottom: 100px;
+            /* Safe zone for floating controls */
             height: calc(100vh - 140px);
             position: relative;
             scroll-behavior: smooth;
@@ -79,7 +83,7 @@
             display: flex;
             gap: 20px;
             align-items: center;
-            box-shadow: 0 15px 45px rgba(0,0,0,0.12), 0 5px 15px rgba(26, 77, 46, 0.05);
+            box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12), 0 5px 15px rgba(26, 77, 46, 0.05);
             z-index: 100;
             border: 1px solid rgba(255, 255, 255, 0.5);
             transition: all 0.3s;
@@ -88,7 +92,7 @@
         .pdf-controls-floating:hover {
             background: rgba(255, 255, 255, 0.9);
             transform: translateX(-50%) translateY(-2px);
-            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.15);
         }
 
         .floating-btn {
@@ -152,8 +156,8 @@
             display: flex;
             flex-direction: column;
             gap: 12px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.03);
-            border: 1px solid rgba(0,0,0,0.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+            border: 1px solid rgba(0, 0, 0, 0.05);
             position: relative;
             overflow: hidden;
         }
@@ -172,7 +176,7 @@
 
         .parah-card:hover {
             transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
             border-color: rgba(26, 77, 46, 0.1);
         }
 
@@ -205,13 +209,14 @@
             gap: 10px;
             color: #1a4d2e;
         }
+
         .loading-overlay {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background: rgba(255,255,255,0.8);
+            background: rgba(255, 255, 255, 0.8);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -230,8 +235,13 @@
         }
 
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         #view-selection {
@@ -264,7 +274,7 @@
 
         .header {
             background: rgba(255, 255, 255, 1);
-            border-bottom: 1px solid rgba(0,0,0,0.08);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.08);
             padding: 0 16px;
             height: 64px;
             display: flex;
@@ -352,24 +362,30 @@
                 height: 56px;
                 padding: 0 8px;
             }
+
             #page-title {
                 font-size: 0.9rem;
                 max-width: 150px;
             }
+
             .back-btn span {
                 display: none;
             }
+
             .back-btn {
                 padding: 8px;
             }
+
             .header-right {
                 gap: 4px;
             }
+
             .header-select {
                 padding: 4px 6px;
                 font-size: 11px;
                 max-width: 80px;
             }
+
             #navigation-controls {
                 gap: 4px !important;
             }
@@ -379,10 +395,12 @@
             .parah-grid {
                 grid-template-columns: 1fr;
             }
+
             .parah-card {
                 padding: 15px;
             }
         }
+
         #audiobook-container {
             margin-top: 40px;
             background: rgba(255, 255, 255, 0.05);
@@ -390,25 +408,24 @@
             padding: 30px;
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
+
         #audiobook-container h2 {
             margin-bottom: 20px;
             font-size: 1.5rem;
             color: #fff;
         }
-        .tajweed-rule-card {
-            cursor: pointer;
-            transition: transform 0.2s, background 0.2s;
-        }
-        .tajweed-rule-card:hover {
-            transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.08);
-        }
-        .tajweed-rule-card:active {
-            transform: scale(0.98);
+
+        .learning-section .tajweed-title {
+            justify-content: center;
+            margin-bottom: 12px;
         }
 
+        .learning-section p {
+            text-align: center;
+        }
     </style>
 </head>
+
 <body class="quran-app-page">
     <eq-sidebar type="quran" active-tab="16-lines"></eq-sidebar>
     <div class="main-layout">
@@ -416,10 +433,10 @@
             <div class="header-left">
                 <button class="mobile-toggle" id="sidebar-toggle"><i data-lucide="menu"></i></button>
                 <div id="viewer-header-actions" style="display: none;">
-                        <button class="back-btn" onclick="window.location.href='16-lines.html'">
-                            <i data-lucide="arrow-left"></i>
-                            <span>Back</span>
-                        </button>
+                    <button class="back-btn" onclick="window.location.href='16-lines.html'">
+                        <i data-lucide="arrow-left"></i>
+                        <span>Back</span>
+                    </button>
                 </div>
             </div>
             <div class="header-center">
@@ -427,9 +444,12 @@
             </div>
             <div class="header-right">
                 <div id="navigation-controls" style="display: none; display: flex; gap: 10px; align-items: center;">
-                    <select id="parah-select" class="header-select" style="padding: 8px; border-radius: 8px; border: 1px solid #ddd; font-family: 'Inter', sans-serif; font-size: 14px; max-width: 120px;"></select>
-                    <select id="surah-select" class="header-select" style="padding: 8px; border-radius: 8px; border: 1px solid #ddd; font-family: 'Inter', sans-serif; font-size: 14px; max-width: 150px;"></select>
-                    <select id="ayah-select" class="header-select" style="padding: 8px; border-radius: 8px; border: 1px solid #ddd; font-family: 'Inter', sans-serif; font-size: 14px; width: 70px;"></select>
+                    <select id="parah-select" class="header-select"
+                        style="padding: 8px; border-radius: 8px; border: 1px solid #ddd; font-family: 'Inter', sans-serif; font-size: 14px; max-width: 120px;"></select>
+                    <select id="surah-select" class="header-select"
+                        style="padding: 8px; border-radius: 8px; border: 1px solid #ddd; font-family: 'Inter', sans-serif; font-size: 14px; max-width: 150px;"></select>
+                    <select id="ayah-select" class="header-select"
+                        style="padding: 8px; border-radius: 8px; border: 1px solid #ddd; font-family: 'Inter', sans-serif; font-size: 14px; width: 70px;"></select>
                 </div>
             </div>
         </header>
@@ -444,7 +464,8 @@
                         <i data-lucide="library"></i>
                         <span>Tajweed Learning Library</span>
                     </div>
-                    <p style="color: #666; font-size: 0.9rem; margin-bottom: 20px;">Use these initial guides to perfect your recitation foundations.</p>
+                    <p style="color: #666; font-size: 0.9rem; margin-bottom: 20px;">Use these initial guides to perfect
+                        your recitation foundations.</p>
                     <div class="learning-grid">
                         <div class="learning-card" onclick="window.open('assets/Noorani-Qaidah-urdu.pdf', '_blank')">
                             <div class="learning-card-icon">
@@ -452,7 +473,7 @@
                             </div>
                             <div class="learning-card-info">
                                 <div class="learning-name">Noorani Qaida</div>
-                                <div class="learning-desc">Master the phonetics of Arabic letters.</div>
+                                <div class="learning-desc">Essential foundation for Arabic phonetics.</div>
                             </div>
                         </div>
                         <div class="learning-card" onclick="window.open('assets/Yassarnal Quran.pdf', '_blank')">
@@ -461,16 +482,17 @@
                             </div>
                             <div class="learning-card-info">
                                 <div class="learning-name">Yassarnal Quran</div>
-                                <div class="learning-desc">Step-by-step reading methodology.</div>
+                                <div class="learning-desc">Effective step-by-step reading guide.</div>
                             </div>
                         </div>
-                        <div class="learning-card" onclick="window.open('assets/Simple rules of Tajweed.pdf', '_blank')">
+                        <div class="learning-card"
+                            onclick="window.open('assets/Simple rules of Tajweed.pdf', '_blank')">
                             <div class="learning-card-icon">
                                 <i data-lucide="mic"></i>
                             </div>
                             <div class="learning-card-info">
                                 <div class="learning-name">Tajweed Rules</div>
-                                <div class="learning-desc">Essential rules for recitation.</div>
+                                <div class="learning-desc">Master correct Quranic recitation.</div>
                             </div>
                         </div>
                     </div>
@@ -495,7 +517,7 @@
                         </div>
                     </div>
 
-                    
+
                     <div class="pdf-controls-floating">
                         <button class="floating-btn" id="next-page" title="Next Page">
                             <i data-lucide="chevron-left"></i>
@@ -523,4 +545,5 @@
         });
     </script>
 </body>
+
 </html>

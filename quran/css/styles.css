@@ -324,18 +324,109 @@ body {
   letter-spacing: -0.5px;
 }
 
+
+/* Learning Center Section */
+.learning-section {
+  margin-bottom: 45px;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.learning-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.learning-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.learning-card:hover {
+  transform: translateY(-5px);
+  background: white;
+  border-color: var(--primary-color);
+  box-shadow: 0 15px 40px rgba(26, 77, 46, 0.08);
+}
+
+.learning-card-icon {
+  width: 56px;
+  height: 56px;
+  background: var(--secondary-color);
+  border-radius: 16px;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: var(--primary-color);
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+}
+
+.learning-card:hover .learning-card-icon {
+  background: var(--primary-color);
+  color: white;
+  transform: rotate(-5deg) scale(1.1);
+}
+
+.learning-card-info {
+  flex: 1;
+}
+
+.learning-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.learning-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.learning-tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--accent-color);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
 .history-section {
   margin-bottom: 45px;
 }
 
 .section-title {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: var(--text-dark);
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
+  text-align: center;
 }
 
 .history-grid {
