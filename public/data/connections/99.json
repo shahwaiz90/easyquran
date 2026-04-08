@@ -1,0 +1,394 @@
+{
+  "ayah_connections": [
+    {
+      "source_key": "99:8",
+      "groups": [
+        {
+          "title": "Evil",
+          "links": [
+            {
+              "target_key": "42:41",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "42:40",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "6:160",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "4:79",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "24:21",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "4:118",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "41:46",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "45:15",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "42:37",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "12:53",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "10:27",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "4:85",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "2:169",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "29:4",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "6:128",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "50:16",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "16:90",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "4:117",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "5:2",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "42:42",
+              "note": "Explore Theme: Evil"
+            },
+            {
+              "target_key": "4:119",
+              "note": "Explore Theme: Evil"
+            }
+          ]
+        },
+        {
+          "title": "Atoms (perhaps meant as \"ants\" originally?)",
+          "links": [
+            {
+              "target_key": "10:61",
+              "note": "Explore Theme: Atoms (perhaps meant as \"ants\" originally?)"
+            },
+            {
+              "target_key": "99:7",
+              "note": "Explore Theme: Atoms (perhaps meant as \"ants\" originally?)"
+            },
+            {
+              "target_key": "34:22",
+              "note": "Explore Theme: Atoms (perhaps meant as \"ants\" originally?)"
+            },
+            {
+              "target_key": "34:3",
+              "note": "Explore Theme: Atoms (perhaps meant as \"ants\" originally?)"
+            }
+          ]
+        },
+        {
+          "title": "Atom",
+          "links": [
+            {
+              "target_key": "10:61",
+              "note": "Explore Theme: Atom"
+            },
+            {
+              "target_key": "99:7",
+              "note": "Explore Theme: Atom"
+            },
+            {
+              "target_key": "34:22",
+              "note": "Explore Theme: Atom"
+            },
+            {
+              "target_key": "34:3",
+              "note": "Explore Theme: Atom"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "99:7",
+      "groups": [
+        {
+          "title": "Equality",
+          "links": [
+            {
+              "target_key": "57:10",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "5:100",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "6:50",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "4:124",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "16:97",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "38:28",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "35:12",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "4:95",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "17:75",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "40:58",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "32:18",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "59:20",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "40:40",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "35:21",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "3:195",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "39:9",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "16:76",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "36:10",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "35:20",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "9:19",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "35:22",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "49:13",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "35:19",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "50:26",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "26:136",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "13:16",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "17:22",
+              "note": "Explore Theme: Equality"
+            },
+            {
+              "target_key": "5:95",
+              "note": "Explore Theme: Equality"
+            }
+          ]
+        },
+        {
+          "title": "Atoms (perhaps meant as \"ants\" originally?)",
+          "links": [
+            {
+              "target_key": "10:61",
+              "note": "Explore Theme: Atoms (perhaps meant as \"ants\" originally?)"
+            },
+            {
+              "target_key": "99:8",
+              "note": "Explore Theme: Atoms (perhaps meant as \"ants\" originally?)"
+            },
+            {
+              "target_key": "34:22",
+              "note": "Explore Theme: Atoms (perhaps meant as \"ants\" originally?)"
+            },
+            {
+              "target_key": "34:3",
+              "note": "Explore Theme: Atoms (perhaps meant as \"ants\" originally?)"
+            }
+          ]
+        },
+        {
+          "title": "Atom",
+          "links": [
+            {
+              "target_key": "10:61",
+              "note": "Explore Theme: Atom"
+            },
+            {
+              "target_key": "99:8",
+              "note": "Explore Theme: Atom"
+            },
+            {
+              "target_key": "34:22",
+              "note": "Explore Theme: Atom"
+            },
+            {
+              "target_key": "34:3",
+              "note": "Explore Theme: Atom"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "99:4",
+      "groups": [
+        {
+          "title": "Inspiration",
+          "links": [
+            {
+              "target_key": "5:111",
+              "note": "Explore Theme: Inspiration"
+            },
+            {
+              "target_key": "99:5",
+              "note": "Explore Theme: Inspiration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "99:5",
+      "groups": [
+        {
+          "title": "Inspiration",
+          "links": [
+            {
+              "target_key": "99:4",
+              "note": "Explore Theme: Inspiration"
+            },
+            {
+              "target_key": "5:111",
+              "note": "Explore Theme: Inspiration"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "99:1",
+      "groups": [
+        {
+          "title": "Earthquake",
+          "links": [
+            {
+              "target_key": "16:26",
+              "note": "Explore Theme: Earthquake"
+            },
+            {
+              "target_key": "7:91",
+              "note": "Explore Theme: Earthquake"
+            },
+            {
+              "target_key": "17:68",
+              "note": "Explore Theme: Earthquake"
+            },
+            {
+              "target_key": "7:78",
+              "note": "Explore Theme: Earthquake"
+            },
+            {
+              "target_key": "29:37",
+              "note": "Explore Theme: Earthquake"
+            },
+            {
+              "target_key": "17:37",
+              "note": "Explore Theme: Earthquake"
+            },
+            {
+              "target_key": "34:9",
+              "note": "Explore Theme: Earthquake"
+            },
+            {
+              "target_key": "67:16",
+              "note": "Explore Theme: Earthquake"
+            },
+            {
+              "target_key": "69:5",
+              "note": "Explore Theme: Earthquake"
+            },
+            {
+              "target_key": "7:155",
+              "note": "Explore Theme: Earthquake"
+            },
+            {
+              "target_key": "7:171",
+              "note": "Explore Theme: Earthquake"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

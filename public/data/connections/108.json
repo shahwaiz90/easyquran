@@ -1,0 +1,301 @@
+{
+  "ayah_connections": [
+    {
+      "source_key": "108:3",
+      "groups": [
+        {
+          "title": "Hatred",
+          "links": [
+            {
+              "target_key": "3:118",
+              "note": "Explore Theme: Hatred"
+            },
+            {
+              "target_key": "15:47",
+              "note": "Explore Theme: Hatred"
+            },
+            {
+              "target_key": "5:91",
+              "note": "Explore Theme: Hatred"
+            },
+            {
+              "target_key": "5:64",
+              "note": "Explore Theme: Hatred"
+            },
+            {
+              "target_key": "5:14",
+              "note": "Explore Theme: Hatred"
+            },
+            {
+              "target_key": "7:43",
+              "note": "Explore Theme: Hatred"
+            },
+            {
+              "target_key": "60:4",
+              "note": "Explore Theme: Hatred"
+            },
+            {
+              "target_key": "59:10",
+              "note": "Explore Theme: Hatred"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "108:2",
+      "groups": [
+        {
+          "title": "Prayer",
+          "links": [
+            {
+              "target_key": "4:77",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "3:16",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "2:3",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "2:126",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "7:170",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "2:110",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "2:125",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "2:153",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "7:206",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "3:113",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "5:91",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "5:12",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "6:162",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "70:22",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "4:43",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "4:101",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "2:43",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "5:106",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "7:31",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "3:191",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "2:177",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "75:31",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "4:103",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "3:39",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "8:3",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "4:102",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "2:83",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "2:157",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "51:18",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "5:55",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "5:58",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "5:6",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "2:285",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "2:277",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "3:9",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "4:142",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "2:238",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "4:162",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "96:10",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "3:8",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "3:194",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "8:35",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "3:147",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "2:286",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "9:103",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "6:92",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "2:129",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "2:239",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "6:72",
+              "note": "Explore Theme: Prayer"
+            },
+            {
+              "target_key": "70:23",
+              "note": "Explore Theme: Prayer"
+            }
+          ]
+        },
+        {
+          "title": "Sacrifice",
+          "links": [
+            {
+              "target_key": "37:102",
+              "note": "Explore Theme: Sacrifice"
+            },
+            {
+              "target_key": "5:27",
+              "note": "Explore Theme: Sacrifice"
+            },
+            {
+              "target_key": "5:97",
+              "note": "Explore Theme: Sacrifice"
+            },
+            {
+              "target_key": "37:107",
+              "note": "Explore Theme: Sacrifice"
+            },
+            {
+              "target_key": "5:2",
+              "note": "Explore Theme: Sacrifice"
+            },
+            {
+              "target_key": "2:196",
+              "note": "Explore Theme: Sacrifice"
+            },
+            {
+              "target_key": "3:183",
+              "note": "Explore Theme: Sacrifice"
+            },
+            {
+              "target_key": "6:162",
+              "note": "Explore Theme: Sacrifice"
+            },
+            {
+              "target_key": "5:95",
+              "note": "Explore Theme: Sacrifice"
+            },
+            {
+              "target_key": "22:36",
+              "note": "Explore Theme: Sacrifice"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1804 @@
+{
+  "ayah_connections": [
+    {
+      "source_key": "92:18",
+      "groups": [
+        {
+          "title": "Charity",
+          "links": [
+            {
+              "target_key": "57:10",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "22:41",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "64:16",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "24:37",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "30:39",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "2:110",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "47:38",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "73:20",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "5:12",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "2:273",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "57:11",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "2:43",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "9:121",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "2:219",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "2:262",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "2:177",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "41:7",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "21:73",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "47:36",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "2:196",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "4:39",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "9:5",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "9:18",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "57:7",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "5:55",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "2:264",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "36:47",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "2:274",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "57:12",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "9:60",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "2:215",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "2:277",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "3:134",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "2:263",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "22:78",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "3:92",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "51:19",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "2:272",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "63:10",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "9:71",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "98:5",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "52:40",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "27:3",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "107:7",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "64:17",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "2:271",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "31:4",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "76:8",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "47:37",
+              "note": "Explore Theme: Charity"
+            },
+            {
+              "target_key": "30:38",
+              "note": "Explore Theme: Charity"
+            }
+          ]
+        },
+        {
+          "title": "Purification",
+          "links": [
+            {
+              "target_key": "3:55",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "87:14",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "2:125",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "79:18",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "53:32",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "9:108",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "20:76",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "8:11",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "4:43",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "62:2",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "3:77",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "80:7",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "24:21",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "2:222",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "3:141",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "24:28",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "74:4",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "80:3",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "98:2",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "22:26",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "19:19",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "5:6",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "2:174",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "35:18",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "33:33",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "18:81",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "2:232",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "2:151",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "9:103",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "18:74",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "2:129",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "5:41",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "3:154",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "91:9",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "24:30",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "18:19",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "19:13",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "4:49",
+              "note": "Explore Theme: Purification"
+            },
+            {
+              "target_key": "3:164",
+              "note": "Explore Theme: Purification"
+            }
+          ]
+        },
+        {
+          "title": "Purity",
+          "links": [
+            {
+              "target_key": "3:55",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "87:14",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "2:125",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "79:18",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "53:32",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "9:108",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "20:76",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "8:11",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "4:43",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "62:2",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "3:77",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "80:7",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "24:21",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "2:222",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "3:141",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "24:28",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "74:4",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "80:3",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "98:2",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "22:26",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "19:19",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "5:6",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "2:174",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "35:18",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "33:33",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "18:81",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "2:232",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "2:151",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "9:103",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "18:74",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "2:129",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "5:41",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "3:154",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "91:9",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "24:30",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "18:19",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "19:13",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "4:49",
+              "note": "Explore Theme: Purity"
+            },
+            {
+              "target_key": "3:164",
+              "note": "Explore Theme: Purity"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "92:3",
+      "groups": [
+        {
+          "title": "Female",
+          "links": [
+            {
+              "target_key": "75:38",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "4:176",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "2:178",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "41:47",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "43:19",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "75:39",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "4:124",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "16:97",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "53:27",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "4:11",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "35:11",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "54:27",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "7:77",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "53:21",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "26:155",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "37:150",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "40:40",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "53:45",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "3:195",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "7:73",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "12:34",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "17:59",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "5:38",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "75:37",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "49:13",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "6:144",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "13:8",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "4:117",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "6:143",
+              "note": "Explore Theme: Female"
+            },
+            {
+              "target_key": "3:36",
+              "note": "Explore Theme: Female"
+            }
+          ]
+        },
+        {
+          "title": "created in pairs",
+          "links": [
+            {
+              "target_key": "78:8",
+              "note": "Explore Theme: created in pairs"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "92:10",
+      "groups": [
+        {
+          "title": "Stinginess",
+          "links": [
+            {
+              "target_key": "68:20",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "9:34",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "64:16",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "17:100",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:27",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "107:1",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "47:38",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:25",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "2:268",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:28",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "9:35",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "25:67",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "4:37",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "69:34",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "70:17",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "92:9",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "89:17",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:23",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "57:24",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "59:9",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:18",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "9:76",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "81:24",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:31",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:21",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "17:29",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "70:16",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "107:3",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "69:33",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "70:15",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:22",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:19",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:24",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:32",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "89:18",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "92:8",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "107:2",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "70:18",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "3:180",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:17",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:30",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:29",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:33",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "47:37",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:26",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "92:11",
+              "note": "Explore Theme: Stinginess"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "92:9",
+      "groups": [
+        {
+          "title": "Stinginess",
+          "links": [
+            {
+              "target_key": "68:20",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "9:34",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "64:16",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "92:10",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "17:100",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:27",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "107:1",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "47:38",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:25",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "2:268",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:28",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "9:35",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "25:67",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "4:37",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "69:34",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "70:17",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "89:17",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:23",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "57:24",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "59:9",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:18",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "9:76",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "81:24",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:31",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:21",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "17:29",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "70:16",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "107:3",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "69:33",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "70:15",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:22",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:19",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:24",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:32",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "89:18",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "92:8",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "107:2",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "70:18",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "3:180",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:17",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:30",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:29",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:33",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "47:37",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:26",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "92:11",
+              "note": "Explore Theme: Stinginess"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "92:8",
+      "groups": [
+        {
+          "title": "Stinginess",
+          "links": [
+            {
+              "target_key": "68:20",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "9:34",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "64:16",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "92:10",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "17:100",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:27",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "107:1",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "47:38",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:25",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "2:268",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:28",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "9:35",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "25:67",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "4:37",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "69:34",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "70:17",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "92:9",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "89:17",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:23",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "57:24",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "59:9",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:18",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "9:76",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "81:24",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:31",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:21",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "17:29",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "70:16",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "107:3",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "69:33",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "70:15",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:22",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:19",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:24",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:32",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "89:18",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "107:2",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "70:18",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "3:180",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:17",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:30",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:29",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:33",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "47:37",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:26",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "92:11",
+              "note": "Explore Theme: Stinginess"
+            }
+          ]
+        },
+        {
+          "title": "niggardliness",
+          "links": [
+            {
+              "target_key": "25:67",
+              "note": "Explore Theme: niggardliness"
+            },
+            {
+              "target_key": "4:37",
+              "note": "Explore Theme: niggardliness"
+            },
+            {
+              "target_key": "3:180",
+              "note": "Explore Theme: niggardliness"
+            },
+            {
+              "target_key": "57:24",
+              "note": "Explore Theme: niggardliness"
+            },
+            {
+              "target_key": "47:37",
+              "note": "Explore Theme: niggardliness"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "92:11",
+      "groups": [
+        {
+          "title": "Stinginess",
+          "links": [
+            {
+              "target_key": "68:20",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "9:34",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "64:16",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "92:10",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "17:100",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:27",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "107:1",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "47:38",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:25",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "2:268",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:28",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "9:35",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "25:67",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "4:37",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "69:34",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "70:17",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "92:9",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "89:17",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:23",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "57:24",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "59:9",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:18",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "9:76",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "81:24",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:31",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:21",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "17:29",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "70:16",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "107:3",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "69:33",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "70:15",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:22",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:19",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:24",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:32",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "89:18",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "92:8",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "107:2",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "70:18",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "3:180",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:17",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:30",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:29",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:33",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "47:37",
+              "note": "Explore Theme: Stinginess"
+            },
+            {
+              "target_key": "68:26",
+              "note": "Explore Theme: Stinginess"
+            }
+          ]
+        },
+        {
+          "title": "Greed",
+          "links": [
+            {
+              "target_key": "9:55",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "9:34",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "102:2",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "4:32",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "104:3",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "57:20",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "4:29",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "8:27",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "33:28",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "9:85",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "9:24",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "25:67",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "102:4",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "68:14",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "17:27",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "15:88",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "100:8",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "102:6",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "102:1",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "102:5",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "89:20",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "64:15",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "104:2",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "71:12",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "20:131",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "4:30",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "28:76",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "16:90",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "102:3",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "111:2",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "63:9",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "71:22",
+              "note": "Explore Theme: Greed"
+            }
+          ]
+        },
+        {
+          "title": "Materialism",
+          "links": [
+            {
+              "target_key": "9:55",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "9:34",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "102:2",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "4:32",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "104:3",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "57:20",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "4:29",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "8:27",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "33:28",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "9:85",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "9:24",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "25:67",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "102:4",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "68:14",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "17:27",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "15:88",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "100:8",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "102:6",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "102:1",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "102:5",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "89:20",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "64:15",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "104:2",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "71:12",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "20:131",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "28:76",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "4:30",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "111:2",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "16:90",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "102:3",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "63:9",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "71:22",
+              "note": "Explore Theme: Materialism"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "92:15",
+      "groups": [
+        {
+          "title": "Wretched",
+          "links": [
+            {
+              "target_key": "11:106",
+              "note": "Explore Theme: Wretched"
+            },
+            {
+              "target_key": "92:14",
+              "note": "Explore Theme: Wretched"
+            },
+            {
+              "target_key": "11:105",
+              "note": "Explore Theme: Wretched"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "92:14",
+      "groups": [
+        {
+          "title": "Wretched",
+          "links": [
+            {
+              "target_key": "11:106",
+              "note": "Explore Theme: Wretched"
+            },
+            {
+              "target_key": "92:15",
+              "note": "Explore Theme: Wretched"
+            },
+            {
+              "target_key": "11:105",
+              "note": "Explore Theme: Wretched"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "92:7",
+      "groups": [
+        {
+          "title": "path toward contentment made easy",
+          "links": [
+            {
+              "target_key": "87:8",
+              "note": "Explore Theme: path toward contentment made easy"
+            },
+            {
+              "target_key": "80:20",
+              "note": "Explore Theme: path toward contentment made easy"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

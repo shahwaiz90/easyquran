@@ -1,0 +1,654 @@
+{
+  "ayah_connections": [
+    {
+      "source_key": "101:8",
+      "groups": [
+        {
+          "title": "Balance",
+          "links": [
+            {
+              "target_key": "7:8",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "23:103",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "11:84",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "57:25",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "23:102",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "55:7",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "11:85",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "42:17",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "15:19",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "21:47",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "55:9",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "101:6",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "6:152",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "7:9",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "7:85",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "17:35",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "18:105",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "55:8",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "83:3",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "26:182",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "101:9",
+              "note": "Explore Theme: Balance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "101:6",
+      "groups": [
+        {
+          "title": "Balance",
+          "links": [
+            {
+              "target_key": "7:8",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "23:103",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "11:84",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "57:25",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "23:102",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "101:8",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "55:7",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "11:85",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "42:17",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "15:19",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "21:47",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "55:9",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "6:152",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "7:9",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "7:85",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "17:35",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "18:105",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "55:8",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "83:3",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "26:182",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "101:9",
+              "note": "Explore Theme: Balance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "101:9",
+      "groups": [
+        {
+          "title": "Balance",
+          "links": [
+            {
+              "target_key": "7:8",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "23:103",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "11:84",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "57:25",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "23:102",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "101:8",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "55:7",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "11:85",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "42:17",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "15:19",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "21:47",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "55:9",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "101:6",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "6:152",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "7:9",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "7:85",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "17:35",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "18:105",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "55:8",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "83:3",
+              "note": "Explore Theme: Balance"
+            },
+            {
+              "target_key": "26:182",
+              "note": "Explore Theme: Balance"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "101:5",
+      "groups": [
+        {
+          "title": "Mountains",
+          "links": [
+            {
+              "target_key": "20:106",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "7:143",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "81:3",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "70:9",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "11:42",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "77:10",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "20:105",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "88:19",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "73:14",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "31:10",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "22:18",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "69:14",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "33:72",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "15:19",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "59:21",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "34:10",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "21:79",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "52:10",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "14:46",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "24:43",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "11:43",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "79:32",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "27:61",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "16:68",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "41:10",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "38:18",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "27:88",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "18:47",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "56:5",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "15:82",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "19:90",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "16:15",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "2:260",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "26:149",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "78:20",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "7:74",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "42:32",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "13:31",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "95:2",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "17:37",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "36:62",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "20:107",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "77:27",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "26:184",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "7:171",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "35:27",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "78:7",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "16:81",
+              "note": "Explore Theme: Mountains"
+            },
+            {
+              "target_key": "50:7",
+              "note": "Explore Theme: Mountains"
+            }
+          ]
+        },
+        {
+          "title": "Color",
+          "links": [
+            {
+              "target_key": "16:13",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "16:69",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "3:14",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "70:8",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "2:69",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "70:9",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "2:212",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "35:27",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "30:22",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "101:4",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "39:21",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "35:28",
+              "note": "Explore Theme: Color"
+            }
+          ]
+        },
+        {
+          "title": "Wool",
+          "links": [
+            {
+              "target_key": "16:80",
+              "note": "Explore Theme: Wool"
+            },
+            {
+              "target_key": "70:8",
+              "note": "Explore Theme: Wool"
+            },
+            {
+              "target_key": "70:9",
+              "note": "Explore Theme: Wool"
+            },
+            {
+              "target_key": "101:4",
+              "note": "Explore Theme: Wool"
+            }
+          ]
+        },
+        {
+          "title": "like tufts of wool",
+          "links": [
+            {
+              "target_key": "70:9",
+              "note": "Explore Theme: like tufts of wool"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "101:4",
+      "groups": [
+        {
+          "title": "Color",
+          "links": [
+            {
+              "target_key": "16:13",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "101:5",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "16:69",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "3:14",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "70:8",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "2:69",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "70:9",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "2:212",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "35:27",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "30:22",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "39:21",
+              "note": "Explore Theme: Color"
+            },
+            {
+              "target_key": "35:28",
+              "note": "Explore Theme: Color"
+            }
+          ]
+        },
+        {
+          "title": "Wool",
+          "links": [
+            {
+              "target_key": "101:5",
+              "note": "Explore Theme: Wool"
+            },
+            {
+              "target_key": "16:80",
+              "note": "Explore Theme: Wool"
+            },
+            {
+              "target_key": "70:8",
+              "note": "Explore Theme: Wool"
+            },
+            {
+              "target_key": "70:9",
+              "note": "Explore Theme: Wool"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

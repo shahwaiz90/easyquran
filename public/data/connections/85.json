@@ -1,0 +1,1498 @@
+{
+  "ayah_connections": [
+    {
+      "source_key": "85:10",
+      "groups": [
+        {
+          "title": "Persecution",
+          "links": [
+            {
+              "target_key": "2:49",
+              "note": "Explore Theme: Persecution"
+            },
+            {
+              "target_key": "29:10",
+              "note": "Explore Theme: Persecution"
+            },
+            {
+              "target_key": "14:12",
+              "note": "Explore Theme: Persecution"
+            },
+            {
+              "target_key": "7:141",
+              "note": "Explore Theme: Persecution"
+            },
+            {
+              "target_key": "8:72",
+              "note": "Explore Theme: Persecution"
+            },
+            {
+              "target_key": "16:110",
+              "note": "Explore Theme: Persecution"
+            },
+            {
+              "target_key": "14:6",
+              "note": "Explore Theme: Persecution"
+            },
+            {
+              "target_key": "8:74",
+              "note": "Explore Theme: Persecution"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "85:11",
+      "groups": [
+        {
+          "title": "Victory",
+          "links": [
+            {
+              "target_key": "57:10",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "44:57",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "48:1",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "48:18",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "9:100",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "32:28",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "39:61",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "9:72",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "33:71",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "32:29",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "8:9",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "9:20",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "5:52",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "9:89",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "61:12",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "110:1",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "5:119",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "2:89",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "64:9",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "4:73",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "59:20",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "48:19",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "57:12",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "10:64",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "37:60",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "48:27",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "4:141",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "40:9",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "23:111",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "110:2",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "30:3",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "45:30",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "8:19",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "9:111",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "110:3",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "61:13",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "48:3",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "48:5",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "8:10",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "30:2",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "6:16",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "24:52",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "48:2",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "30:4",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "30:5",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "78:31",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "14:15",
+              "note": "Explore Theme: Victory"
+            },
+            {
+              "target_key": "4:13",
+              "note": "Explore Theme: Victory"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "85:15",
+      "groups": [
+        {
+          "title": "Lord",
+          "links": [
+            {
+              "target_key": "6:102",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "26:47",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "53:42",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "44:20",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "52:18",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "37:180",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "96:8",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "7:122",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "11:56",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "26:26",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "93:11",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "20:52",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "14:40",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "74:56",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "79:5",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "70:3",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "2:131",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "19:36",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "39:75",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "40:27",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "52:29",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "15:86",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "76:25",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "113:1",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "23:58",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "36:58",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "55:17",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "3:38",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "21:89",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "75:23",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "60:5",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "74:7",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "12:101",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "19:3",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "18:98",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "16:119",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "74:3",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "43:64",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "96:3",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "106:3",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "37:5",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "21:56",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "37:100",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "84:15",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "45:36",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "87:1",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "3:51",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "56:80",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "17:108",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "40:62",
+              "note": "Explore Theme: Lord"
+            }
+          ]
+        },
+        {
+          "title": "Allah's Throne",
+          "links": [
+            {
+              "target_key": "23:116",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "27:26",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "20:5",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "7:54",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "21:22",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "10:3",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "39:75",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "17:42",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "2:255",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "13:2",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "81:20",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "25:59",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "69:17",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "11:7",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "40:7",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "23:86",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "32:4",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "57:4",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "43:82",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "9:129",
+              "note": "Explore Theme: Allah's Throne"
+            },
+            {
+              "target_key": "40:15",
+              "note": "Explore Theme: Allah's Throne"
+            }
+          ]
+        },
+        {
+          "title": "Throne",
+          "links": [
+            {
+              "target_key": "23:116",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "38:34",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "27:26",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "20:5",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "20:4",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "7:54",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "21:22",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "10:3",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "27:41",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "12:100",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "39:75",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "17:42",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "13:2",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "81:20",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "25:59",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "27:23",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "69:17",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "11:7",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "27:38",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "40:7",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "23:86",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "32:4",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "57:4",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "43:82",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "9:129",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "40:15",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "27:42",
+              "note": "Explore Theme: Throne"
+            },
+            {
+              "target_key": "81:19",
+              "note": "Explore Theme: Throne"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "85:17",
+      "groups": [
+        {
+          "title": "Soldiers",
+          "links": [
+            {
+              "target_key": "27:18",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "9:40",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "51:40",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "26:95",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "36:75",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "48:4",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "37:173",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "10:90",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "38:11",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "27:37",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "28:8",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "74:31",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "48:7",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "67:20",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "27:17",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "9:26",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "2:249",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "33:9",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "19:75",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "2:250",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "28:40",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "20:78",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "28:6",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "28:39",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "44:24",
+              "note": "Explore Theme: Soldiers"
+            },
+            {
+              "target_key": "36:28",
+              "note": "Explore Theme: Soldiers"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "85:18",
+      "groups": [
+        {
+          "title": "Thamud",
+          "links": [
+            {
+              "target_key": "54:24",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "11:66",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "69:5",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "54:25",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "54:27",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "69:4",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "41:17",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "54:26",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "27:46",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "27:50",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "7:77",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "11:95",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "29:38",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "26:155",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "15:80",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "51:43",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "50:12",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "27:49",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "38:13",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "26:158",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "53:51",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "54:29",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "14:9",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "27:52",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "54:30",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "11:61",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "27:47",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "54:31",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "7:78",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "9:70",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "88:9",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "91:13",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "7:73",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "15:82",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "17:59",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "26:149",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "54:23",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "11:64",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "27:51",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "26:141",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "54:28",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "7:74",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "91:14",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "41:13",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "40:31",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "26:157",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "25:38",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "11:67",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "27:48",
+              "note": "Explore Theme: Thamud"
+            },
+            {
+              "target_key": "22:42",
+              "note": "Explore Theme: Thamud"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "85:22",
+      "groups": [
+        {
+          "title": "Tablets",
+          "links": [
+            {
+              "target_key": "7:145",
+              "note": "Explore Theme: Tablets"
+            },
+            {
+              "target_key": "7:154",
+              "note": "Explore Theme: Tablets"
+            },
+            {
+              "target_key": "54:13",
+              "note": "Explore Theme: Tablets"
+            },
+            {
+              "target_key": "7:150",
+              "note": "Explore Theme: Tablets"
+            }
+          ]
+        },
+        {
+          "title": "upon an \n\t\t\t\timperishable tablet",
+          "links": [
+            {
+              "target_key": "85:21",
+              "note": "Explore Theme: upon an \n\t\t\t\timperishable tablet"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "85:1",
+      "groups": [
+        {
+          "title": "Constellation",
+          "links": [
+            {
+              "target_key": "15:16",
+              "note": "Explore Theme: Constellation"
+            },
+            {
+              "target_key": "25:61",
+              "note": "Explore Theme: Constellation"
+            }
+          ]
+        },
+        {
+          "title": "constellations",
+          "links": [
+            {
+              "target_key": "15:16",
+              "note": "Explore Theme: constellations"
+            },
+            {
+              "target_key": "25:61",
+              "note": "Explore Theme: constellations"
+            }
+          ]
+        },
+        {
+          "title": "Constellations",
+          "links": [
+            {
+              "target_key": "15:16",
+              "note": "Explore Theme: Constellations"
+            },
+            {
+              "target_key": "25:61",
+              "note": "Explore Theme: Constellations"
+            }
+          ]
+        },
+        {
+          "title": "people of the trench",
+          "links": [
+            {
+              "target_key": "85:4",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:5",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:6",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:3",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:8",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:7",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:2",
+              "note": "Explore Theme: people of the trench"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "85:13",
+      "groups": [
+        {
+          "title": "of humans",
+          "links": [
+            {
+              "target_key": "36:79",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "29:20",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "36:12",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "86:8",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "30:22",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "41:39",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "43:11",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "17:51",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "71:18",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "80:22",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "17:98",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "63:7",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "75:3",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "22:66",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "13:5",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "56:61",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "46:33",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "22:7",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "30:11",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "34:7",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "20:55",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "53:47",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "17:99",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "25:40",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "35:27",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "16:39",
+              "note": "Explore Theme: of humans"
+            },
+            {
+              "target_key": "35:28",
+              "note": "Explore Theme: of humans"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "85:4",
+      "groups": [
+        {
+          "title": "people of the trench",
+          "links": [
+            {
+              "target_key": "85:5",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:6",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:3",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:8",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:1",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:7",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:2",
+              "note": "Explore Theme: people of the trench"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "85:5",
+      "groups": [
+        {
+          "title": "people of the trench",
+          "links": [
+            {
+              "target_key": "85:4",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:6",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:3",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:8",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:1",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:7",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:2",
+              "note": "Explore Theme: people of the trench"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "85:6",
+      "groups": [
+        {
+          "title": "people of the trench",
+          "links": [
+            {
+              "target_key": "85:4",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:5",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:3",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:8",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:1",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:7",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:2",
+              "note": "Explore Theme: people of the trench"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "85:3",
+      "groups": [
+        {
+          "title": "people of the trench",
+          "links": [
+            {
+              "target_key": "85:4",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:5",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:6",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:8",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:1",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:7",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:2",
+              "note": "Explore Theme: people of the trench"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "85:8",
+      "groups": [
+        {
+          "title": "people of the trench",
+          "links": [
+            {
+              "target_key": "85:4",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:5",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:6",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:3",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:1",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:7",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:2",
+              "note": "Explore Theme: people of the trench"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "85:7",
+      "groups": [
+        {
+          "title": "people of the trench",
+          "links": [
+            {
+              "target_key": "85:4",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:5",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:6",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:3",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:8",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:1",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:2",
+              "note": "Explore Theme: people of the trench"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "85:2",
+      "groups": [
+        {
+          "title": "people of the trench",
+          "links": [
+            {
+              "target_key": "85:4",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:5",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:6",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:3",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:8",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:1",
+              "note": "Explore Theme: people of the trench"
+            },
+            {
+              "target_key": "85:7",
+              "note": "Explore Theme: people of the trench"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "85:21",
+      "groups": [
+        {
+          "title": "upon an \n\t\t\t\timperishable tablet",
+          "links": [
+            {
+              "target_key": "85:22",
+              "note": "Explore Theme: upon an \n\t\t\t\timperishable tablet"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1700 @@
+{
+  "ayah_connections": [
+    {
+      "source_key": "114:1",
+      "groups": [
+        {
+          "title": "Protection",
+          "links": [
+            {
+              "target_key": "9:10",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "9:6",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "44:20",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "4:34",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "19:81",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "46:8",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "23:97",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "33:13",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "18:44",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "41:12",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "7:196",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "40:27",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "113:1",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "9:8",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "23:98",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "37:7",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "72:6",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "11:47",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "5:41",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "16:98",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "3:36",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "40:56",
+              "note": "Explore Theme: Protection"
+            }
+          ]
+        },
+        {
+          "title": "Jinn",
+          "links": [
+            {
+              "target_key": "72:1",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:13",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:41",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "11:119",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "27:39",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:3",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:5",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:6",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:4",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:14",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:112",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:130",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:9",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:8",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:18",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:3",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:10",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:2",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:56",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "32:13",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "11:118",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "18:50",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:33",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:39",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:4",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "27:17",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "51:56",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:15",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:15",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "15:18",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "7:179",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:12",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:100",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:30",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:128",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:12",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:74",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "37:8",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "17:88",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:6",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "15:27",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "37:158",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:14",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "7:38",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:7",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:11",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:29",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:2",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "41:29",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:5",
+              "note": "Explore Theme: Jinn"
+            }
+          ]
+        },
+        {
+          "title": "refuge from evil with",
+          "links": [
+            {
+              "target_key": "113:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:6",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:4",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:4",
+              "note": "Explore Theme: refuge from evil with"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "114:5",
+      "groups": [
+        {
+          "title": "Jinn",
+          "links": [
+            {
+              "target_key": "72:1",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:13",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:41",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "11:119",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "27:39",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:3",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:6",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:4",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:14",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:112",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:130",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:9",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:8",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:1",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:18",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:3",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:10",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:2",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:56",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "32:13",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "11:118",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "18:50",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:33",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:39",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:4",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "27:17",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "51:56",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:15",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:15",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "15:18",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "7:179",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:12",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:100",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:30",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:128",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:12",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:74",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "37:8",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "17:88",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:6",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "15:27",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "37:158",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:14",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "7:38",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:7",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:11",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:29",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:2",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "41:29",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:5",
+              "note": "Explore Theme: Jinn"
+            }
+          ]
+        },
+        {
+          "title": "refuge from evil with",
+          "links": [
+            {
+              "target_key": "113:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:6",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:4",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:4",
+              "note": "Explore Theme: refuge from evil with"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "114:6",
+      "groups": [
+        {
+          "title": "Jinn",
+          "links": [
+            {
+              "target_key": "72:1",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:13",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:41",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "11:119",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "27:39",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:3",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:5",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:4",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:14",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:112",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:130",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:9",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:8",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:1",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:18",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:3",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:10",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:2",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:56",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "32:13",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "11:118",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "18:50",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:33",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:39",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:4",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "27:17",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "51:56",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:15",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:15",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "15:18",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "7:179",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:12",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:100",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:30",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:128",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:12",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:74",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "37:8",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "17:88",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:6",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "15:27",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "37:158",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:14",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "7:38",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:7",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:11",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:29",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:2",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "41:29",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:5",
+              "note": "Explore Theme: Jinn"
+            }
+          ]
+        },
+        {
+          "title": "refuge from evil with",
+          "links": [
+            {
+              "target_key": "113:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:4",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:4",
+              "note": "Explore Theme: refuge from evil with"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "114:3",
+      "groups": [
+        {
+          "title": "Jinn",
+          "links": [
+            {
+              "target_key": "72:1",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:13",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:41",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "11:119",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "27:39",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:3",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:5",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:6",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:4",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:14",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:112",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:130",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:9",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:8",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:1",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:18",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:10",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:2",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:56",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "32:13",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "11:118",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "18:50",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:33",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:39",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:4",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "27:17",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "51:56",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:15",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:15",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "15:18",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "7:179",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:12",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:100",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:30",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:128",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:12",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:74",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "37:8",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "17:88",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:6",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "15:27",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "37:158",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:14",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "7:38",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:7",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:11",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:29",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:2",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "41:29",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:5",
+              "note": "Explore Theme: Jinn"
+            }
+          ]
+        },
+        {
+          "title": "refuge from evil with",
+          "links": [
+            {
+              "target_key": "113:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:6",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:4",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:4",
+              "note": "Explore Theme: refuge from evil with"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "114:4",
+      "groups": [
+        {
+          "title": "Jinn",
+          "links": [
+            {
+              "target_key": "72:1",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:13",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:41",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "11:119",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "27:39",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:3",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:5",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:6",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:4",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:14",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:112",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:130",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:9",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:8",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:1",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:18",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:3",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:10",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:2",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:56",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "32:13",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "11:118",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "18:50",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:33",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:39",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "27:17",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "51:56",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:15",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:15",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "15:18",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "7:179",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:12",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:100",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:30",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:128",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:12",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:74",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "37:8",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "17:88",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:6",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "15:27",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "37:158",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:14",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "7:38",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:7",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:11",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:29",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:2",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "41:29",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:5",
+              "note": "Explore Theme: Jinn"
+            }
+          ]
+        },
+        {
+          "title": "refuge from evil with",
+          "links": [
+            {
+              "target_key": "113:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:6",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:4",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:2",
+              "note": "Explore Theme: refuge from evil with"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "114:2",
+      "groups": [
+        {
+          "title": "Jinn",
+          "links": [
+            {
+              "target_key": "72:1",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:13",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:41",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "11:119",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "27:39",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:3",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:5",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:6",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:4",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:14",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:112",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:130",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:9",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:8",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:1",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:18",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:3",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:10",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:2",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:56",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "32:13",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "11:118",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "18:50",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:33",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:39",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "114:4",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "27:17",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "51:56",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:15",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:15",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "15:18",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "7:179",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "34:12",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:100",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:30",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "6:128",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:12",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "55:74",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "37:8",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "17:88",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:6",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "15:27",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "37:158",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:14",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "7:38",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:7",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:11",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "46:29",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "41:29",
+              "note": "Explore Theme: Jinn"
+            },
+            {
+              "target_key": "72:5",
+              "note": "Explore Theme: Jinn"
+            }
+          ]
+        },
+        {
+          "title": "King",
+          "links": [
+            {
+              "target_key": "20:114",
+              "note": "Explore Theme: King"
+            },
+            {
+              "target_key": "23:116",
+              "note": "Explore Theme: King"
+            },
+            {
+              "target_key": "12:54",
+              "note": "Explore Theme: King"
+            },
+            {
+              "target_key": "5:20",
+              "note": "Explore Theme: King"
+            },
+            {
+              "target_key": "2:248",
+              "note": "Explore Theme: King"
+            },
+            {
+              "target_key": "25:2",
+              "note": "Explore Theme: King"
+            },
+            {
+              "target_key": "18:79",
+              "note": "Explore Theme: King"
+            },
+            {
+              "target_key": "12:50",
+              "note": "Explore Theme: King"
+            },
+            {
+              "target_key": "2:247",
+              "note": "Explore Theme: King"
+            },
+            {
+              "target_key": "2:251",
+              "note": "Explore Theme: King"
+            },
+            {
+              "target_key": "12:76",
+              "note": "Explore Theme: King"
+            },
+            {
+              "target_key": "12:43",
+              "note": "Explore Theme: King"
+            },
+            {
+              "target_key": "59:23",
+              "note": "Explore Theme: King"
+            },
+            {
+              "target_key": "2:246",
+              "note": "Explore Theme: King"
+            },
+            {
+              "target_key": "12:72",
+              "note": "Explore Theme: King"
+            },
+            {
+              "target_key": "27:34",
+              "note": "Explore Theme: King"
+            },
+            {
+              "target_key": "62:1",
+              "note": "Explore Theme: King"
+            }
+          ]
+        },
+        {
+          "title": "refuge from evil with",
+          "links": [
+            {
+              "target_key": "113:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:6",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:4",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:4",
+              "note": "Explore Theme: refuge from evil with"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

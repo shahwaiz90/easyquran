@@ -1,0 +1,730 @@
+{
+  "ayah_connections": [
+    {
+      "source_key": "113:3",
+      "groups": [
+        {
+          "title": "Darkness",
+          "links": [
+            {
+              "target_key": "2:17",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "6:122",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "6:76",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "2:20",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "57:9",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "10:26",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "81:1",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "14:5",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "27:63",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "13:10",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "17:78",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "14:1",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "39:6",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "38:32",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "2:187",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "6:1",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "21:87",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "10:27",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "24:40",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "2:19",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "6:59",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "33:43",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "35:20",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "6:39",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "93:2",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "6:97",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "2:257",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "36:37",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "13:16",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "5:16",
+              "note": "Explore Theme: Darkness"
+            },
+            {
+              "target_key": "65:11",
+              "note": "Explore Theme: Darkness"
+            }
+          ]
+        },
+        {
+          "title": "Dark",
+          "links": [
+            {
+              "target_key": "77:33",
+              "note": "Explore Theme: Dark"
+            },
+            {
+              "target_key": "10:27",
+              "note": "Explore Theme: Dark"
+            },
+            {
+              "target_key": "16:58",
+              "note": "Explore Theme: Dark"
+            },
+            {
+              "target_key": "6:76",
+              "note": "Explore Theme: Dark"
+            },
+            {
+              "target_key": "15:65",
+              "note": "Explore Theme: Dark"
+            },
+            {
+              "target_key": "24:40",
+              "note": "Explore Theme: Dark"
+            },
+            {
+              "target_key": "55:64",
+              "note": "Explore Theme: Dark"
+            },
+            {
+              "target_key": "7:171",
+              "note": "Explore Theme: Dark"
+            },
+            {
+              "target_key": "11:81",
+              "note": "Explore Theme: Dark"
+            },
+            {
+              "target_key": "43:17",
+              "note": "Explore Theme: Dark"
+            },
+            {
+              "target_key": "18:86",
+              "note": "Explore Theme: Dark"
+            }
+          ]
+        },
+        {
+          "title": "refuge from evil with",
+          "links": [
+            {
+              "target_key": "113:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:6",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:4",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:4",
+              "note": "Explore Theme: refuge from evil with"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "113:1",
+      "groups": [
+        {
+          "title": "Lord",
+          "links": [
+            {
+              "target_key": "6:102",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "26:47",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "53:42",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "44:20",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "52:18",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "37:180",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "96:8",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "7:122",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "11:56",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "26:26",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "93:11",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "20:52",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "14:40",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "74:56",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "79:5",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "70:3",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "2:131",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "19:36",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "39:75",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "40:27",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "85:15",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "52:29",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "15:86",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "76:25",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "23:58",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "36:58",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "55:17",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "3:38",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "21:89",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "75:23",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "60:5",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "74:7",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "12:101",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "19:3",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "18:98",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "16:119",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "74:3",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "43:64",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "96:3",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "106:3",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "37:5",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "21:56",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "37:100",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "84:15",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "45:36",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "87:1",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "3:51",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "56:80",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "17:108",
+              "note": "Explore Theme: Lord"
+            },
+            {
+              "target_key": "40:62",
+              "note": "Explore Theme: Lord"
+            }
+          ]
+        },
+        {
+          "title": "Protection",
+          "links": [
+            {
+              "target_key": "9:10",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "9:6",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "44:20",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "4:34",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "19:81",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "46:8",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "23:97",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "33:13",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "18:44",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "41:12",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "114:1",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "7:196",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "40:27",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "9:8",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "23:98",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "37:7",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "72:6",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "11:47",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "5:41",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "16:98",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "3:36",
+              "note": "Explore Theme: Protection"
+            },
+            {
+              "target_key": "40:56",
+              "note": "Explore Theme: Protection"
+            }
+          ]
+        },
+        {
+          "title": "refuge from evil with",
+          "links": [
+            {
+              "target_key": "113:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:6",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:4",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:4",
+              "note": "Explore Theme: refuge from evil with"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "113:2",
+      "groups": [
+        {
+          "title": "refuge from evil with",
+          "links": [
+            {
+              "target_key": "114:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:6",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:4",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:4",
+              "note": "Explore Theme: refuge from evil with"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "113:5",
+      "groups": [
+        {
+          "title": "refuge from evil with",
+          "links": [
+            {
+              "target_key": "113:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:6",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:4",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:4",
+              "note": "Explore Theme: refuge from evil with"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "113:4",
+      "groups": [
+        {
+          "title": "refuge from evil with",
+          "links": [
+            {
+              "target_key": "113:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:3",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:5",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "113:1",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:6",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:2",
+              "note": "Explore Theme: refuge from evil with"
+            },
+            {
+              "target_key": "114:4",
+              "note": "Explore Theme: refuge from evil with"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

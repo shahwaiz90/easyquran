@@ -1,0 +1,582 @@
+{
+  "ayah_connections": [
+    {
+      "source_key": "111:2",
+      "groups": [
+        {
+          "title": "Greed",
+          "links": [
+            {
+              "target_key": "9:55",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "9:34",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "102:2",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "4:32",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "104:3",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "57:20",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "4:29",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "8:27",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "33:28",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "9:85",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "9:24",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "25:67",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "102:4",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "68:14",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "17:27",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "15:88",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "100:8",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "102:6",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "102:1",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "102:5",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "89:20",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "64:15",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "104:2",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "71:12",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "20:131",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "4:30",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "28:76",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "16:90",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "102:3",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "63:9",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "71:22",
+              "note": "Explore Theme: Greed"
+            },
+            {
+              "target_key": "92:11",
+              "note": "Explore Theme: Greed"
+            }
+          ]
+        },
+        {
+          "title": "Materialism",
+          "links": [
+            {
+              "target_key": "9:55",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "9:34",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "102:2",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "4:32",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "104:3",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "57:20",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "4:29",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "8:27",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "33:28",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "9:85",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "9:24",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "25:67",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "102:4",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "68:14",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "17:27",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "15:88",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "100:8",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "102:6",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "102:1",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "102:5",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "89:20",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "64:15",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "104:2",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "71:12",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "20:131",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "28:76",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "4:30",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "16:90",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "102:3",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "63:9",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "71:22",
+              "note": "Explore Theme: Materialism"
+            },
+            {
+              "target_key": "92:11",
+              "note": "Explore Theme: Materialism"
+            }
+          ]
+        },
+        {
+          "title": "Firewood",
+          "links": [
+            {
+              "target_key": "111:3",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "72:15",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "111:1",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "111:5",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "111:4",
+              "note": "Explore Theme: Firewood"
+            }
+          ]
+        },
+        {
+          "title": "Abu Lahab (Abd al-Uzza)",
+          "links": [
+            {
+              "target_key": "111:3",
+              "note": "Explore Theme: Abu Lahab (Abd al-Uzza)"
+            },
+            {
+              "target_key": "111:1",
+              "note": "Explore Theme: Abu Lahab (Abd al-Uzza)"
+            }
+          ]
+        },
+        {
+          "title": "Abu lahab",
+          "links": [
+            {
+              "target_key": "111:3",
+              "note": "Explore Theme: Abu lahab"
+            },
+            {
+              "target_key": "111:1",
+              "note": "Explore Theme: Abu lahab"
+            },
+            {
+              "target_key": "111:5",
+              "note": "Explore Theme: Abu lahab"
+            },
+            {
+              "target_key": "111:4",
+              "note": "Explore Theme: Abu lahab"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "111:3",
+      "groups": [
+        {
+          "title": "Firewood",
+          "links": [
+            {
+              "target_key": "111:2",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "72:15",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "111:1",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "111:5",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "111:4",
+              "note": "Explore Theme: Firewood"
+            }
+          ]
+        },
+        {
+          "title": "Abu Lahab (Abd al-Uzza)",
+          "links": [
+            {
+              "target_key": "111:1",
+              "note": "Explore Theme: Abu Lahab (Abd al-Uzza)"
+            },
+            {
+              "target_key": "111:2",
+              "note": "Explore Theme: Abu Lahab (Abd al-Uzza)"
+            }
+          ]
+        },
+        {
+          "title": "Abu lahab",
+          "links": [
+            {
+              "target_key": "111:2",
+              "note": "Explore Theme: Abu lahab"
+            },
+            {
+              "target_key": "111:1",
+              "note": "Explore Theme: Abu lahab"
+            },
+            {
+              "target_key": "111:5",
+              "note": "Explore Theme: Abu lahab"
+            },
+            {
+              "target_key": "111:4",
+              "note": "Explore Theme: Abu lahab"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "111:1",
+      "groups": [
+        {
+          "title": "Firewood",
+          "links": [
+            {
+              "target_key": "111:2",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "111:3",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "72:15",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "111:5",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "111:4",
+              "note": "Explore Theme: Firewood"
+            }
+          ]
+        },
+        {
+          "title": "Abu Lahab (Abd al-Uzza)",
+          "links": [
+            {
+              "target_key": "111:3",
+              "note": "Explore Theme: Abu Lahab (Abd al-Uzza)"
+            },
+            {
+              "target_key": "111:2",
+              "note": "Explore Theme: Abu Lahab (Abd al-Uzza)"
+            }
+          ]
+        },
+        {
+          "title": "Abu lahab",
+          "links": [
+            {
+              "target_key": "111:2",
+              "note": "Explore Theme: Abu lahab"
+            },
+            {
+              "target_key": "111:3",
+              "note": "Explore Theme: Abu lahab"
+            },
+            {
+              "target_key": "111:5",
+              "note": "Explore Theme: Abu lahab"
+            },
+            {
+              "target_key": "111:4",
+              "note": "Explore Theme: Abu lahab"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "111:5",
+      "groups": [
+        {
+          "title": "Firewood",
+          "links": [
+            {
+              "target_key": "111:2",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "111:3",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "72:15",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "111:1",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "111:4",
+              "note": "Explore Theme: Firewood"
+            }
+          ]
+        },
+        {
+          "title": "Abu lahab",
+          "links": [
+            {
+              "target_key": "111:2",
+              "note": "Explore Theme: Abu lahab"
+            },
+            {
+              "target_key": "111:3",
+              "note": "Explore Theme: Abu lahab"
+            },
+            {
+              "target_key": "111:1",
+              "note": "Explore Theme: Abu lahab"
+            },
+            {
+              "target_key": "111:4",
+              "note": "Explore Theme: Abu lahab"
+            }
+          ]
+        },
+        {
+          "title": "his wife",
+          "links": [
+            {
+              "target_key": "111:4",
+              "note": "Explore Theme: his wife"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "111:4",
+      "groups": [
+        {
+          "title": "Firewood",
+          "links": [
+            {
+              "target_key": "111:2",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "111:3",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "72:15",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "111:1",
+              "note": "Explore Theme: Firewood"
+            },
+            {
+              "target_key": "111:5",
+              "note": "Explore Theme: Firewood"
+            }
+          ]
+        },
+        {
+          "title": "Abu lahab",
+          "links": [
+            {
+              "target_key": "111:2",
+              "note": "Explore Theme: Abu lahab"
+            },
+            {
+              "target_key": "111:3",
+              "note": "Explore Theme: Abu lahab"
+            },
+            {
+              "target_key": "111:1",
+              "note": "Explore Theme: Abu lahab"
+            },
+            {
+              "target_key": "111:5",
+              "note": "Explore Theme: Abu lahab"
+            }
+          ]
+        },
+        {
+          "title": "his wife",
+          "links": [
+            {
+              "target_key": "111:5",
+              "note": "Explore Theme: his wife"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

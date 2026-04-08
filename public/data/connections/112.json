@@ -1,0 +1,224 @@
+{
+  "ayah_connections": [
+    {
+      "source_key": "112:1",
+      "groups": [
+        {
+          "title": "Monotheism",
+          "links": [
+            {
+              "target_key": "20:8",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "64:13",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "23:116",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "6:102",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "6:106",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "13:30",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "27:26",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "43:84",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "9:31",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "44:8",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "3:6",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "11:84",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "21:25",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "11:50",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "3:18",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "28:70",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "35:3",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "39:6",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "23:23",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "3:2",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "10:90",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "17:42",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "21:87",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "2:255",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "37:4",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "2:163",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "5:73",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "23:32",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "20:98",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "23:91",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "47:19",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "11:61",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "73:9",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "38:65",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "40:3",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "59:23",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "7:158",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "4:87",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "11:14",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "9:129",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "37:5",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "59:22",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "40:65",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "28:88",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "20:14",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "37:35",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "16:2",
+              "note": "Explore Theme: Monotheism"
+            },
+            {
+              "target_key": "40:62",
+              "note": "Explore Theme: Monotheism"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "source_key": "112:3",
+      "groups": [
+        {
+          "title": "has no son",
+          "links": [
+            {
+              "target_key": "43:81",
+              "note": "Explore Theme: has no son"
+            },
+            {
+              "target_key": "72:3",
+              "note": "Explore Theme: has no son"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
