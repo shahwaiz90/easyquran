@@ -107,7 +107,6 @@ class EQFooter extends HTMLElement {
                <a href="/">Home</a>
                <a href="/goals.html" style="color:#F6AD55;font-weight:bold;">Quran Goals</a>
                <a href="/listenquran.html">Listen Quran</a>
-               <a href="/marketing.html">Marketing</a>
                <a href="/support.html">Support</a>
                <a href="/copyright.html">Copyright</a>
                <a href="/privacy-policy.html">Privacy Policy</a>
