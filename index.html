@@ -12,6 +12,16 @@
         grid-template-columns: 1fr !important;
       }
     }
+
+    .video-review-card {
+      transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important;
+    }
+
+    .video-review-card:hover {
+      transform: translateY(-12px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0, 77, 64, 0.25), 0 8px 16px rgba(246, 173, 85, 0.15) !important;
+      border-color: #F6AD55 !important;
+    }
   </style>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -2129,197 +2139,215 @@
 
         <!-- 2. Reviews Section -->
         <h2 class="section-title" id="reviews-title" style="color: white !important;">
-          What Users Are Saying</h2>
-        <p class="section-subtitle" style="color: rgba(255,255,255,0.9) !important;">
-          Trusted by thousands of users worldwide on Google Play
+          What People Are Saying</h2>
+        <p class="section-subtitle" style="color: rgba(255,255,255,0.9) !important; margin-bottom: 80px;">
+          Trusted by Islamic scholars and thousands of users worldwide
         </p>
-        <!-- 1. Video Reviews Grid (3x3, No Carousel, No Gradient) -->
-        <div class="video-grid"
-          style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; width: 100%; max-width: 1500px; margin: 0 auto 60px auto;">
 
-          <!-- Video 1: Mufti Ibrahim Essa -->
-          <div class="video-review-card"
-            style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; transition: box-shadow 0.3s, transform 0.3s; position: relative; overflow: hidden;">
-            <div
-              style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
-              <iframe width="100%" height="260" loading="lazy"
-                style="border-radius: 18px; border: none; display: block; background: #fff;"
-                src="https://www.youtube-nocookie.com/embed/yOiCxKvzVwg?rel=0&modestbranding=1"
-                title="Mufti Ibrahim Essa Recommendation" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
-              Mufti Ibrahim Essa</h3>
-            <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Scholar Recommendation</p>
-            <div class="video-card-info"
-              style="width: 100%; text-align: center; background: none !important; margin-top: 0; padding-top: 24px; display: none;">
-            </div>
-          </div>
-
-          <!-- Video 2: Munawar Ahmed (Shorts) -->
-          <div class="video-review-card"
-            style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; transition: box-shadow 0.3s, transform 0.3s; position: relative; overflow: hidden;">
-            <div
-              style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
-              <iframe width="100%" height="260" loading="lazy"
-                style="border-radius: 18px; border: none; display: block; background: #fff;"
-                src="https://www.youtube-nocookie.com/embed/QRqqNfGBDHA?rel=0&modestbranding=1"
-                title="Munawar Ahmed Data Architect Engineer" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
-              Munawar Ahmed</h3>
-            <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Data Architect Engineer</p>
-            <div class="video-card-info"
-              style="width: 100%; text-align: center; background: none !important; margin-top: 0; padding-top: 24px; display: none;">
-            </div>
-          </div>
-
-          <!-- Video 3: Qari Sana Ullah -->
-          <div class="video-review-card"
-            style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; transition: box-shadow 0.3s, transform 0.3s; position: relative; overflow: hidden;">
-            <div
-              style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
-              <iframe width="100%" height="260" loading="lazy"
-                style="border-radius: 18px; border: none; display: block; background: #fff;"
-                src="https://www.youtube-nocookie.com/embed/MTsy2XKZmiU?rel=0&modestbranding=1"
-                title="Qari Sana Ullah Recommendation" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
-              Qari Sana Ullah</h3>
-            <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Teaching of Quran Translation
-              at Faisalabad Grammar School</p>
-            <div class="video-card-info"
-              style="width: 100%; text-align: center; background: none !important; margin-top: 0; padding-top: 24px; display: none;">
-            </div>
-          </div>
-
-          <!-- Video 4: Osama Naseem -->
-          <div class="video-review-card"
-            style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; transition: box-shadow 0.3s, transform 0.3s; position: relative; overflow: hidden;">
-            <div
-              style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
-              <iframe width="100%" height="260" loading="lazy"
-                style="border-radius: 18px; border: none; display: block; background: #fff;"
-                src="https://www.youtube-nocookie.com/embed/Qk9cvHcYtdc?rel=0&modestbranding=1"
-                title="Osama Naseem – CEO, AdsSpider – Easy Quran Testimonial" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
-              Osama Naseem</h3>
-            <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">CEO, AdsSpider — User
-              Testimonial & Review</p>
-            <div class="video-card-info"
-              style="width: 100%; text-align: center; background: none !important; margin-top: 0; padding-top: 24px; display: none;">
-            </div>
-          </div>
-
-          <!-- Video 5: Influencer Review (Shorts) -->
-          <div class="video-review-card"
-            style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; transition: box-shadow 0.3s, transform 0.3s; position: relative; overflow: hidden;">
-            <div
-              style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
-              <iframe width="100%" height="260" loading="lazy"
-                style="border-radius: 18px; border: none; display: block; background: #fff;"
-                src="https://www.youtube-nocookie.com/embed/_Xcv7-zDCkQ?rel=0&modestbranding=1"
-                title="Influencer App Review" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
-              Muddassar Altaf</h3>
-            <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Influencer Review — Features
-              walkthrough and why users love the app</p>
-            <div class="video-card-info"
-              style="width: 100%; text-align: center; background: none !important; margin-top: 0; padding-top: 24px; display: none;">
-            </div>
-          </div>
-
-          <!-- Video 6: Haris Bin Abid (Shorts) -->
-          <div class="video-review-card"
-            style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; transition: box-shadow 0.3s, transform 0.3s; position: relative; overflow: hidden;">
-            <div
-              style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
-              <iframe width="100%" height="260" loading="lazy"
-                style="border-radius: 18px; border: none; display: block; background: #fff;"
-                src="https://www.youtube-nocookie.com/embed/ihqc3Li4nDE?rel=0&modestbranding=1"
-                title="Haris Bin Abid Review" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-            <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
-              Haris Bin Abid</h3>
-            <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Senior Software Engineer —
-              App performance and interface feedback</p>
-            <div class="video-card-info"
-              style="width: 100%; text-align: center; background: none !important; margin-top: 0; padding-top: 24px; display: none;">
-            </div>
-          </div>
-
-
-        </div>
-
-
-        <!-- Rating Summary -->
-        <div class="rating-summary">
-          <div class="rating-badge">
-            <span class="rating-score">4.9</span>
-            <div class="stars" aria-label="4.9 star rating">
-              ★★★★★
-            </div>
-          </div>
-
-          <p class="rating-meta" style="color: rgba(255,255,255,0.9) !important;">
-            Rated by muslim families on Google Play • 150+ reviews
+        <!-- SUB-SECTION 1: Scholarly Reviews -->
+        <div class="scholarly-reviews" style="margin-bottom: 100px;">
+          <h3
+            style="text-align: center; font-size: 32px; color: #F6AD55; margin-bottom: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
+            Scholarly Endorsements</h3>
+          <p style="text-align: center; color: rgba(255,255,255,0.8); margin-bottom: 45px; font-size: 19px;">
+            Recommended by qualified Islamic Scholars for accuracy, authenticity, and ease of use.
           </p>
-          <div style="margin-top: 20px;">
-            <a href="reviews.html" style="text-decoration: underline; color: #F6AD55 !important; font-weight: 600;">Read
-              all
-              reviews →</a>
+
+          <div class="video-grid"
+            style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; width: 100%; max-width: 1500px; margin: 0 auto;">
+
+            <!-- Video 1: Mufti Ibrahim Essa -->
+            <div class="video-review-card"
+              style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
+              <div
+                style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
+                <iframe width="100%" height="260" loading="lazy"
+                  style="border-radius: 18px; border: none; display: block; background: #fff;"
+                  src="https://www.youtube-nocookie.com/embed/yOiCxKvzVwg?rel=0&modestbranding=1"
+                  title="Mufti Ibrahim Essa Recommendation" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
+                Mufti Ibrahim Essa</h3>
+              <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Scholar Recommendation</p>
+            </div>
+
+            <!-- Video 7: Mufti Masood Zafar -->
+            <div class="video-review-card"
+              style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
+              <div
+                style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
+                <iframe width="100%" height="260" loading="lazy"
+                  style="border-radius: 18px; border: none; display: block; background: #fff;"
+                  src="https://www.youtube-nocookie.com/embed/CfSPkc0jrvk?rel=0&modestbranding=1"
+                  title="Mufti Masood Zafar Recommendation" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
+                Mufti Masood Zafar</h3>
+              <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Islamic Scholar Review</p>
+            </div>
+
+            <!-- Video 3: Qari Sana Ullah -->
+            <div class="video-review-card"
+              style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
+              <div
+                style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
+                <iframe width="100%" height="260" loading="lazy"
+                  style="border-radius: 18px; border: none; display: block; background: #fff;"
+                  src="https://www.youtube-nocookie.com/embed/MTsy2XKZmiU?rel=0&modestbranding=1"
+                  title="Qari Sana Ullah Recommendation" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
+                Qari Sana Ullah</h3>
+              <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Teaching of Quran Translation
+              </p>
+            </div>
           </div>
         </div>
 
-        <!-- Reviews Grid -->
-        <div class="feature-grid reviews-grid"
-          style="margin-bottom: 60px; max-width: 1200px; margin-left: auto; margin-right: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; background: none;">
-          <!-- Featured: Hoor Fatima -->
-          <div class="feature-card review-card"
-            style="border: 3px solid #F6AD55; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 18px; background: #fff;">
-            <div
-              style="position: absolute; top: -18px; left: 18px; background: #F6AD55; color: #004D40; padding: 6px 18px; border-radius: 10px; font-weight: bold; font-size: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-              ★ Featured</div>
-            <div class="review-stars" style="color: #F6AD55; font-size: 24px; margin-bottom: 10px;">★★★★★</div>
-            <p class="review-text" style="font-size: 17px; font-style: italic; color: #222; margin-bottom: 18px;">"This
-              Quran app is truly amazing and very easy to use. I really love the font style — it's clear,
-              beautiful,
-              and very comfortable to read for a long time. The revelation order of the Surahs gives a deeper and more
-              meaningful perspective while reading. May Allah reward the developers! 🌸"</p>
-            <p class="review-author" style="font-weight: bold; color: #222; margin-top: 18px;">— Hoor Fatima</p>
+        <!-- SUB-SECTION 2: Customer & Technical Reviews -->
+        <div class="customer-reviews">
+          <h3
+            style="text-align: center; font-size: 32px; color: #F6AD55; margin-bottom: 15px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
+            Community & Expert Reviews</h3>
+          <p style="text-align: center; color: rgba(255,255,255,0.8); margin-bottom: 45px; font-size: 19px;">
+            Loved by tech professionals, influencers, and thousands of daily users worldwide.
+          </p>
+
+          <div class="video-grid"
+            style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 40px; width: 100%; max-width: 1000px; margin: 0 auto 60px auto;">
+
+            <!-- Video 2: Munawar Ahmed -->
+            <div class="video-review-card"
+              style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
+              <div
+                style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
+                <iframe width="100%" height="260" loading="lazy"
+                  style="border-radius: 18px; border: none; display: block; background: #fff;"
+                  src="https://www.youtube-nocookie.com/embed/QRqqNfGBDHA?rel=0&modestbranding=1"
+                  title="Munawar Ahmed Data Architect Engineer" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
+                Munawar Ahmed</h3>
+              <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Data Architect Engineer</p>
+            </div>
+
+            <!-- Video 4: Osama Naseem -->
+            <div class="video-review-card"
+              style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
+              <div
+                style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
+                <iframe width="100%" height="260" loading="lazy"
+                  style="border-radius: 18px; border: none; display: block; background: #fff;"
+                  src="https://www.youtube-nocookie.com/embed/Qk9cvHcYtdc?rel=0&modestbranding=1"
+                  title="Osama Naseem – CEO, AdsSpider – Easy Quran Testimonial" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
+                Osama Naseem</h3>
+              <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">CEO, AdsSpider</p>
+            </div>
+
+            <!-- Video 5: Muddassar Altaf -->
+            <div class="video-review-card"
+              style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
+              <div
+                style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
+                <iframe width="100%" height="260" loading="lazy"
+                  style="border-radius: 18px; border: none; display: block; background: #fff;"
+                  src="https://www.youtube-nocookie.com/embed/_Xcv7-zDCkQ?rel=0&modestbranding=1"
+                  title="Influencer App Review" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
+                Muddassar Altaf</h3>
+              <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Influencer Review</p>
+            </div>
+
+            <!-- Video 6: Haris Bin Abid -->
+            <div class="video-review-card"
+              style="background: linear-gradient(135deg, #e6f4f1 60%, #d1f2eb 100%); border-radius: 26px; padding: 38px 32px 40px 32px; display: flex; flex-direction: column; align-items: center; box-shadow: 0 6px 32px 0 rgba(0,77,64,0.08), 0 1.5px 8px 0 rgba(246,173,85,0.07); border: 1.5px solid #e2e8f0; position: relative; overflow: hidden;">
+              <div
+                style="width: 100%; max-width: 420px; margin-bottom: 0; border-radius: 18px; overflow: hidden; box-shadow: 0 2px 12px 0 rgba(0,77,64,0.07); background: #fff; display: flex; flex-direction: column; align-items: center;">
+                <iframe width="100%" height="260" loading="lazy"
+                  style="border-radius: 18px; border: none; display: block; background: #fff;"
+                  src="https://www.youtube-nocookie.com/embed/ihqc3Li4nDE?rel=0&modestbranding=1"
+                  title="Haris Bin Abid Review" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <h3 style="font-size: 22px; color: #004D40; margin: 24px 0 8px 0; font-weight: bold; text-align: center;">
+                Haris Bin Abid</h3>
+              <p style="font-size: 16px; color: #333; margin-bottom: 0; text-align: center;">Senior Software Engineer</p>
+            </div>
           </div>
-          <!-- Featured: Tallat Habib -->
-          <div class="feature-card review-card"
-            style="border: 3px solid #F6AD55; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 18px; background: #fff;">
-            <div
-              style="position: absolute; top: -18px; left: 18px; background: #F6AD55; color: #004D40; padding: 6px 18px; border-radius: 10px; font-weight: bold; font-size: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
-              ★ Featured</div>
-            <div class="review-stars" style="color: #F6AD55; font-size: 24px; margin-bottom: 10px;">★★★★★</div>
-            <p class="review-text" style="font-size: 17px; font-style: italic; color: #222; margin-bottom: 18px;">"Very
-              nice Quran app. No ads and completely free. It has all the required and very nice extra features
-              such as tafseer as well."</p>
-            <p class="review-author" style="font-weight: bold; color: #222; margin-top: 18px;">— Tallat Habib</p>
+
+          <!-- Rating Summary -->
+          <div class="rating-summary">
+            <div class="rating-badge">
+              <span class="rating-score">4.9</span>
+              <div class="stars" aria-label="4.9 star rating">
+                ★★★★★
+              </div>
+            </div>
+
+            <p class="rating-meta" style="color: rgba(255,255,255,0.9) !important;">
+              Rated by muslim families on Google Play • 150+ reviews
+            </p>
+            <div style="margin-top: 20px;">
+              <a href="reviews.html" style="text-decoration: underline; color: #F6AD55 !important; font-weight: 600;">Read
+                all
+                reviews →</a>
+            </div>
           </div>
-          <!-- Regular Review -->
-          <div class="feature-card review-card"
-            style="border: 3px solid #F6AD55; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 18px; background: #fff;">
-            <div class="review-stars" style="color: #F6AD55; font-size: 24px; margin-bottom: 10px;">★★★★★</div>
-            <p class="review-text" style="font-size: 17px; font-style: italic; color: #222; margin-bottom: 18px;">
-              "Impressive UI. Very simple to use. No Ads and easy to understand."</p>
-            <p class="review-author" style="font-weight: bold; color: #222; margin-top: 18px;">— Saad Azhar</p>
+
+          <!-- Reviews Grid -->
+          <div class="feature-grid reviews-grid"
+            style="margin-bottom: 60px; max-width: 1200px; margin-left: auto; margin-right: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; background: none;">
+            <!-- Featured: Hoor Fatima -->
+            <div class="feature-card review-card"
+              style="border: 3px solid #F6AD55; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 18px; background: #fff;">
+              <div
+                style="position: absolute; top: -18px; left: 18px; background: #F6AD55; color: #004D40; padding: 6px 18px; border-radius: 10px; font-weight: bold; font-size: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                ★ Featured</div>
+              <div class="review-stars" style="color: #F6AD55; font-size: 24px; margin-bottom: 10px;">★★★★★</div>
+              <p class="review-text" style="font-size: 17px; font-style: italic; color: #222; margin-bottom: 18px;">"This
+                Quran app is truly amazing and very easy to use. I really love the font style — it's clear,
+                beautiful,
+                and very comfortable to read for a long time. The revelation order of the Surahs gives a deeper and
+                more
+                meaningful perspective while reading. May Allah reward the developers! 🌸"</p>
+              <p class="review-author" style="font-weight: bold; color: #222; margin-top: 18px;">— Hoor Fatima</p>
+            </div>
+            <!-- Featured: Tallat Habib -->
+            <div class="feature-card review-card"
+              style="border: 3px solid #F6AD55; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 18px; background: #fff;">
+              <div
+                style="position: absolute; top: -18px; left: 18px; background: #F6AD55; color: #004D40; padding: 6px 18px; border-radius: 10px; font-weight: bold; font-size: 15px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                ★ Featured</div>
+              <div class="review-stars" style="color: #F6AD55; font-size: 24px; margin-bottom: 10px;">★★★★★</div>
+              <p class="review-text" style="font-size: 17px; font-style: italic; color: #222; margin-bottom: 18px;">"Very
+                nice Quran app. No ads and completely free. It has all the required and very nice extra features
+                such as tafseer as well."</p>
+              <p class="review-author" style="font-weight: bold; color: #222; margin-top: 18px;">— Tallat Habib</p>
+            </div>
+            <!-- Regular Review -->
+            <div class="feature-card review-card"
+              style="border: 3px solid #F6AD55; position: relative; box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-radius: 18px; background: #fff;">
+              <div class="review-stars" style="color: #F6AD55; font-size: 24px; margin-bottom: 10px;">★★★★★</div>
+              <p class="review-text" style="font-size: 17px; font-style: italic; color: #222; margin-bottom: 18px;">
+                "Impressive UI. Very simple to use. No Ads and easy to understand."</p>
+              <p class="review-author" style="font-weight: bold; color: #222; margin-top: 18px;">— Saad Azhar</p>
+            </div>
           </div>
         </div>
         <div class="feature-card review-card fade-up visible"
@@ -2334,8 +2362,8 @@
           <div style="flex: 1; min-width: 300px;">
             <h3 style="color: #004D40; margin-bottom: 8px; font-size: 24px;">Certified for Accuracy &amp; Trust</h3>
             <p class="review-text" style="font-size: 16px; line-height: 1.6; font-style: normal; margin-bottom: 0;">
-              Easy Quran has been rigorously reviewed and certified by recognized Islamic scholars (Mufti Ibrahim Essa)
-              to ensure 100% accuracy of the Arabic text.
+              Easy Quran has been rigorously reviewed and certified by recognized Islamic scholars (Mufti Ibrahim Essa &
+              Mufti Masood Zafar) to ensure 100% accuracy of the Arabic text.
             </p>
           </div>
 
