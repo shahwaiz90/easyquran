@@ -28,7 +28,7 @@ class EQHeader extends HTMLElement {
               <li><a id="nav-ambassadors" href="/ambassadors.html" class="${active === 'ambassadors' ? 'active' : ''}">Join us as Ambassador</a></li>
               <li><a id="nav-quran" href="/quran/" class="${active === 'quran' ? 'active' : ''}">Quran & Hadith</a></li>
               <li>
-                <a href="https://play.google.com/store/apps/details?id=com.ahmadshahwaiz.easyquran" class="btn-nav-accent">
+                <a href="/#download" class="btn-nav-accent">
                   📲 Get App
                 </a>
               </li>
